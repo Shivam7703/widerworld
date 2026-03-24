@@ -29,7 +29,7 @@ export default function AboutSection({ data }:any) {
         <div className="flex flex-col lg:flex-row">
 
           {/* LEFT CONTENT */}
-          <div className="lg:w-[52%] md:order-1 order-2 p-6 bg-zinc-50 md:p-10 lg:pr-16 lg:p-24">
+          <div className="lg:w-[52%] md:order-1 order-2 p-6 bg-white md:p-10 lg:pr-16 lg:p-24">
 
             {/* Badge */}
             {data?.title1 && (

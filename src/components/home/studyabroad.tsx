@@ -108,7 +108,7 @@ export default function Studyabrod() {
           {/* Features list */}
           <ul className="flex flex-col gap-3 pt-1">
             {features.map((f, i) => (
-              <li key={i} className="flex items-center gap-2 text-color3 font-medium text-[15px]">
+              <li key={i} className="flex items-end gap-2 text-color3 font-medium text-[15px]">
                 <span className="text-color2 font-black text-lg tracking-[-4px]">»</span>
                 {f}
               </li>

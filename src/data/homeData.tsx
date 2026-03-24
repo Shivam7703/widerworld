@@ -573,6 +573,7 @@ export const aboutdata = {
 
 export const aboutdata2 = {
   img1: about2,
+  img2: box2,
   title1: "ABOUT US",
   title2: "Leading Immigration ",
   title3: "Consultancy",

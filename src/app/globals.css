@@ -47,8 +47,11 @@ body {
  .font1{
     font-family: "EB Garamond", serif!important;
  }
+ h2{
+  font-family: 'Playfair Display', serif!important;
+ }
+
   h1,
-  h2,
   label,
   input,
   textarea,

@@ -31,7 +31,7 @@ export default function Footer({ footer }: any) {
               <div className="flex gap-2 md:gap-x-3 mt-3  text-4xl text-white">
                 {footer?.socials?.facebook && (
                   <FaFacebook
-                    className=" hover:text-brown2 p-2 bg-[#ffffff19] rounded-full duration-300 "
+                    className=" hover:text-color1 p-2 bg-[#ffffff19] rounded-full duration-300 "
                     onClick={() =>
                       window.open(footer?.socials?.facebook, "_blank")
                     }
@@ -39,7 +39,7 @@ export default function Footer({ footer }: any) {
                 )}
                 {footer?.socials?.instagram && (
                   <AiFillInstagram
-                    className="hover:text-brown2 p-2 bg-[#ffffff19] rounded-full duration-300"
+                    className="hover:text-color1 p-2 bg-[#ffffff19] rounded-full duration-300"
                     onClick={() =>
                       window.open(footer?.socials?.instagram, "_blank")
                     }
@@ -47,7 +47,7 @@ export default function Footer({ footer }: any) {
                 )}
                 {footer?.socials?.linkedin && (
                   <FaLinkedinIn
-                    className="hover:text-brown2 p-2 bg-[#ffffff19] rounded-full duration-300"
+                    className="hover:text-color1 p-2 bg-[#ffffff19] rounded-full duration-300"
                     onClick={() =>
                       window.open(footer?.socials?.linkedin, "_blank")
                     }
@@ -55,7 +55,7 @@ export default function Footer({ footer }: any) {
                 )}
                 {footer?.socials?.youtube && (
                   <TbBrandYoutubeFilled
-                    className="hover:text-brown2 p-2 bg-[#ffffff19] rounded-full duration-300"
+                    className="hover:text-color1 p-2 bg-[#ffffff19] rounded-full duration-300"
                     onClick={() =>
                       window.open(footer?.socials?.youtube, "_blank")
                     }
@@ -63,7 +63,7 @@ export default function Footer({ footer }: any) {
                 )}
                 {footer?.socials?.twitter && (
                   <FaXTwitter
-                    className="hover:text-brown2 p-2 bg-[#ffffff19] rounded-full duration-300"
+                    className="hover:text-color1 p-2 bg-[#ffffff19] rounded-full duration-300"
                     onClick={() =>
                       window.open(footer?.socials?.twitter, "_blank")
                     }

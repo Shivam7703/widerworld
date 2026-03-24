@@ -1,6 +1,7 @@
 import { bann } from "@/assets";
 import Aboutchoose from "@/components/about/aboutchoose";
-import Ourmission from "@/components/about/mission";
+import OurHistory from "@/components/about/history";
+import Mission from "@/components/about/mission";
 
 import Banner from "@/components/global/banner";
 import AboutSection from "@/components/home/AboutSection";
@@ -19,9 +20,11 @@ export default function About() {
         }
         slug={"about-us"}
       />
-      {/* <AboutSection data ={aboutdata2} />
+      <AboutSection data ={aboutdata2} />
+            <Mission /> 
+<OurHistory/>
+      {/* 
       <CountDown data={countDown} />
-      <Ourmission /> 
       <Aboutchoose/>
       <Testimonials/> */}
       
