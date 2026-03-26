@@ -10,16 +10,12 @@ import Marquee from "react-fast-marquee";
 import { VscChromeClose } from "react-icons/vsc";
 import { IoMenu } from "react-icons/io5";
 import {
-  FaArrowRight,
-  FaBars,
-  FaCaretRight,
   FaCreditCard,
   FaFacebook,
   FaLinkedinIn,
-  FaPhone,
   FaSquarePhone,
 } from "react-icons/fa6";
-import { AiFillDollarCircle, AiFillInstagram } from "react-icons/ai";
+import {  AiFillInstagram } from "react-icons/ai";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 
 import { logo, logo2 } from "@/assets";
@@ -44,7 +40,7 @@ const Header = ({ header }: any) => {
         setIsVisible(true);
       } else {
         setIsAtTop(false);
-        setIsVisible(current < lastScrollY || current < 120);
+        setIsVisible(current < lastScrollY || current < 90);
       }
 
       setLastScrollY(current);
@@ -61,7 +57,7 @@ const Header = ({ header }: any) => {
   return (
     <>
       {/* HEADER SPACER */}
-      <div className="h-20 md:h-32 bg-color3" />
+      <div className="h-20 md:h-36 bg-color5" />
 
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -69,18 +65,19 @@ const Header = ({ header }: any) => {
         } ${isAtTop ? " top-0" : "md:-top-12 -top-1"}`}
       >
         {/* ================= DESKTOP HEADER ================= */}
-        <div className="max-md:hidden w-full flex relative items-stretch shadow-2xl ">
+        <div className="max-md:hidden w-full">
+        <div className="w-full flex relative items-stretch  ">
           {/* decorative gradient shapes */}
 
           {/* LOGO */}
           <Link
             href={header?.href || "/"}
-            className="w-64 py-3 bg-white relative z-10"
+            className="w-72 py-3 bg-gradient-to-br from-red-200 via-blue-200 to-indigo-400 flex justify-center items-center z-10"
           >
             <Image
               src={logo}
               alt="Globesway Immigration"
-              className="h-24 mx-auto object-contain hover:scale-105 transition"
+              className="w-[70%] mx-auto object-contain hover:scale-105 transition"
             />
           </Link>
 
@@ -194,7 +191,7 @@ const Header = ({ header }: any) => {
             </div>
 
             {/* NAV BAR */}
-            <div className="flex bg-color5 justify-between items-center w-full px-10 py-5 relative">
+            <div className="flex bg-color5 justify-between items-center w-full px-10 pt-4 pb-7 relative">
               {/* MENU */}
               <div className="flex items-center">
                 <Menu
@@ -209,7 +206,18 @@ const Header = ({ header }: any) => {
                 <PaymentButton />
               </div>
             </div>
+               <div className=" bg-white w-max -mt-4 z-[60] sticky px-10 shadow-lg ">
+            <Menu
+              navItemsArray={navItems}
+              Items={navigationMenu.secondaryMenu}
+              Isprimary={false}
+              onTop={isAtTop}
+            /> 
           </div>
+          </div>
+          
+        </div>
+     
         </div>
 
         {/* ================= MOBILE HEADER ================= */}

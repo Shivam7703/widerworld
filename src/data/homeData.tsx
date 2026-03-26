@@ -44,7 +44,7 @@ import {
   about,
   back,
 } from "@/assets";
-import { FaGlobeAmericas, FaPlaneDeparture } from "react-icons/fa";
+import { FaBriefcase, FaGlobeAmericas, FaPlaneDeparture } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { HiOutlineFlag, HiOutlineLightBulb } from "react-icons/hi";
 import { IoSearch, IoSettingsOutline } from "react-icons/io5";
@@ -60,113 +60,67 @@ export const navigationMenu = {
     {
       id: 3,
       label: "Our Services",
-      href: "/services",
-      subNav: [
-        {
-          id: 1,
-          label: "IELTS",
-          href: "/services/IELTS Coaching & Preparation",
-        },
-        {
-          id: 2,
-          label: "PTE Exam",
-          href: "/services/PTE Exam Coaching & Preparation",
-        },
-        {
-          id: 3,
-          label: "Post Landing Assistance",
-          href: "/services/Post-Landing Assistance",
-        },
-        {
-          id: 4,
-          label: "Job Assistance",
-          href: "/services/Job Assistance",
-        },
-        {
-          id: 5,
-          label: "Immigration Services",
-          href: "/services/Immigration",
-        },
-      ],
-    },
-
-    { id: 4, label: "Blogs", href: "/blogs" },
-    { id: 5, label: "Contact Us", href: "/contact-us" },
-
-    {
-      id: 6,
-      label: "Others",
       href: "#",
       subNav: [
-        { id: 1, label: "Career", href: "/career" },
-        { id: 2, label: "Success Stories", href: "/success-stories" },
-        { id: 3, label: "Awards & Achievements", href: "/awards" },
-        { id: 4, label: "Privacy & Policy", href: "/privacy-policy" },
+        { id: 1, label: "Visa Services", href: "/services/visa-services" },
+        { id: 2, label: "Career Counselling", href: "/services/career-counselling" },
+        { id: 3, label: "Profile Marketing", href: "/services/profile-marketing" },
+        { id: 4, label: "Resume Writing", href: "/services/resume-writing" },
+        {
+          id: 5,
+          label: "Post Landing Services",
+          href: "/services/post-landing-services",
+          subNav: [
+            { id: 1, label: "Pre Hotel / PG", href: "/services/pre-hotel-pg" },
+            { id: 2, label: "Bank Account", href: "/services/bank-account" },
+            { id: 3, label: "Documentation", href: "/services/documentation" },
+            { id: 4, label: "Orientation", href: "/services/orientation" },
+          ],
+        },
       ],
     },
+
+    {
+      id: 4,
+      label: "Coaching",
+      href: "#",
+      subNav: [
+        { id: 1, label: "IELTS", href: "/coaching/ielts" },
+        { id: 2, label: "PTE", href: "/coaching/pte" },
+        { id: 3, label: "TOEFL", href: "/coaching/toefl" },
+        { id: 4, label: "CELPIP", href: "/coaching/celpip" },
+        { id: 5, label: "OET", href: "/coaching/oet" },
+      ],
+    },
+
+    {
+      id: 5,
+      label: "Updates",
+      href: "#",
+      subNav: [
+        { id: 1, label: "News", href: "/news" },
+        { id: 2, label: "Blogs", href: "/blogs" },
+      ],
+    },
+
+    { id: 6, label: "Contact Us", href: "/contact-us" },
   ],
 
   secondaryMenu: [
-    {
-      id: 1,
-      label: "Countries",
-      href: "#",
-      subNav: [
+   
         {
           id: 1,
           label: "Canada",
           href: "#",
           subNav: [
-            {
-              id: 1,
-              label: "Canada Permanent Residency Visa",
-              href: "/visa/canada-pr-visa",
-            },
-            {
-              id: 2,
-              label: "Federal Skilled Worker Program",
-              href: "/visa/federal-skilled-worker-program",
-            },
-            {
-              id: 3,
-              label: "Federal Skilled Trades Program (FSTP)",
-              href: "/visa/federal-skilled-trades-program",
-            },
-            {
-              id: 4,
-              label: "Canadian Experience Class (CEC)",
-              href: "/visa/canadian-experience-class",
-            },
-            {
-              id: 5,
-              label: "Global Talent Stream (GTS)",
-              href: "/visa/global-talent-stream",
-            },
-            {
-              id: 6,
-              label: "Canada Super Visa",
-              href: "/visa/canada-super-visa",
-            },
-            {
-              id: 7,
-              label: "Canada Family Sponsorship Visa",
-              href: "/visa/canada-family-sponsorship-visa",
-            },
-            {
-              id: 8,
-              label: "Atlantic Immigration Pilot",
-              href: "/visa/atlantic-immigration-pilot",
-            },
-            {
-              id: 9,
-              label: "Canada Spouse Visa",
-              href: "/visa/canada-spouse-visa",
-            },
-            {
-              id: 10,
-              label: "Rural Community Immigration Pilot",
-              href: "/visa/rural-community-immigration-pilot",
-            },
+            { id: 1, label: "PR Visa", href: "/visa/canada-pr-visa" },
+            { id: 2, label: "Work", href: "/visa/canada-work-visa" },
+            { id: 3, label: "Study", href: "/visa/canada-study-visa" },
+            { id: 4, label: "Visit", href: "/visa/canada-visit-visa" },
+            { id: 5, label: "Business Visa", href: "/visa/canada-business-visa" },
+            { id: 6, label: "Investor Visa", href: "/visa/canada-investor-visa" },
+            { id: 7, label: "Spouse Visa", href: "/visa/canada-spouse-visa" },
+            { id: 8, label: "Super Visa", href: "/visa/canada-super-visa" },
           ],
         },
 
@@ -175,347 +129,141 @@ export const navigationMenu = {
           label: "Australia",
           href: "#",
           subNav: [
-            {
-              id: 1,
-              label: "Australia Permanent Residency Visa",
-              href: "/visa/Australia Permanent Residency Visa",
-            },
-            {
-              id: 2,
-              label: "Skilled Independent Visa Subclass 189",
-              href: "/visa/Skilled Independent Visa Subclass 189",
-            },
-            {
-              id: 3,
-              label: "Skilled Nominated Visa Subclass 190",
-              href: "/visa/Skilled Nominated Visa Subclass 190",
-            },
-            {
-              id: 4,
-              label: "Australia Subclass 491",
-              href: "/visa/Australia Subclass 491 Visa",
-            },
-            {
-              id: 7,
-              label: "Australia Subclass 600",
-              href: "/visa/Australia Subclass 600",
-            },
-            {
-              id: 5,
-              label: "Employer Nomination Subclass 186",
-              href: "/visa/Employer Nomination Subclass 186",
-            },
-            {
-              id: 6,
-              label: "Australia Spouse Visa",
-              href: "/visa/australia-spouse-visa",
-            },
-            {
-              id: 8,
-              label: "Skill Occupation List",
-              href: "/visa/skill-occupation-list",
-            },
-            {
-              id: 9,
-              label: "Australia Point System",
-              href: "/visa/Australia Point System",
-            },
+            { id: 1, label: "PR Visa", href: "/visa/australia-pr-visa" },
+            { id: 2, label: "Work", href: "/visa/australia-work-visa" },
+            { id: 3, label: "Study", href: "/visa/australia-study-visa" },
+            { id: 4, label: "Visit", href: "/visa/australia-visit-visa" },
+            { id: 5, label: "Business Visa", href: "/visa/australia-business-visa" },
+            { id: 6, label: "Investor Visa", href: "/visa/australia-investor-visa" },
+            { id: 7, label: "Spouse Visa", href: "/visa/australia-spouse-visa" },
           ],
         },
 
         {
           id: 3,
+          label: "New Zealand",
+          href: "#",
+          subNav: [
+            { id: 1, label: "PR Visa", href: "/visa/new-zealand-pr-visa" },
+            { id: 2, label: "Work", href: "/visa/new-zealand-work-visa" },
+            { id: 3, label: "Study", href: "/visa/new-zealand-study-visa" },
+            { id: 4, label: "Visit", href: "/visa/new-zealand-visit-visa" },
+          ],
+        },
+
+        {
+          id: 4,
           label: "Europe",
           href: "#",
           subNav: [
             {
               id: 1,
-              label: "Germany Job Seeker Visa",
-              href: "/visa/germany-job-seeker-visa",
-            },
-            { id: 2, label: "UK Work Permit", href: "/visa/uk-work-permit" },
-            {
-              id: 3,
-              label: "Ireland Work Permit",
-              href: "/visa/ireland-work-permit",
-            },
-            {
-              id: 4,
-              label: "Serbia Work Permit",
-              href: "/visa/Serbia Work Permit",
-            },
-            {
-              id: 5,
-              label: "Poland Work Permit",
-              href: "/visa/Poland Work Permit",
-            },
-            {
-              id: 6,
-              label: "Sweden Work Permit Visa",
-              href: "/visa/Sweden Work Permit Visa",
-            },
-            {
-              id: 7,
-              label: "Norway Work Permit",
-              href: "/visa/Norway Work Permit",
-            },
-            {
-              id: 8,
-              label: "Malta Work Permit",
-              href: "/visa/malta-work-permit",
+              label: "Work Visa",
+              href: "#",
+              subNav: [
+                { id: 1, label: "Ireland", href: "/visa/ireland-work-visa" },
+                { id: 2, label: "Luxembourg", href: "/visa/luxembourg-work-visa" },
+                { id: 3, label: "Malta", href: "/visa/malta-work-visa" },
+                { id: 4, label: "Poland", href: "/visa/poland-work-visa" },
+                { id: 5, label: "Netherlands", href: "/visa/netherlands-work-visa" },
+                { id: 6, label: "Germany", href: "/visa/germany-work-visa" },
+                { id: 7, label: "Sweden", href: "/visa/sweden-work-visa" },
+                { id: 8, label: "Finland", href: "/visa/finland-work-visa" },
+                { id: 9, label: "Italy", href: "/visa/italy-work-visa" },
+                { id: 10, label: "Denmark", href: "/visa/denmark-work-visa" },
+              ],
             },
           ],
         },
 
         {
-          id: 4,
+          id: 5,
           label: "GCC",
           href: "#",
           subNav: [
-            { id: 1, label: "Qatar", href: "/visa/qatar-work-visa" },
             {
-              id: 2,
-              label: "Saudi Arabia",
-              href: "/visa/saudi-arabia-work-visa",
+              id: 1,
+              label: "Work Visa",
+              href: "#",
+              subNav: [
+                { id: 1, label: "UAE", href: "/visa/uae-work-visa" },
+                { id: 2, label: "Oman", href: "/visa/oman-work-visa" },
+                { id: 3, label: "Kuwait", href: "/visa/kuwait-work-visa" },
+                { id: 4, label: "Qatar", href: "/visa/qatar-work-visa" },
+                { id: 5, label: "Saudi Arabia", href: "/visa/saudi-work-visa" },
+              ],
             },
-            { id: 3, label: "Oman", href: "/visa/oman-work-visa" },
-            { id: 4, label: "UAE", href: "/visa/uae-work-visa" },
           ],
         },
-      ],
-    },
+
+        {
+          id: 6,
+          label: "USA",
+          href: "#",
+          subNav: [
+            { id: 1, label: "Visit", href: "/visa/usa-visit-visa" },
+            { id: 2, label: "Investor Visa", href: "/visa/usa-investor-visa" },
+            { id: 3, label: "Business Visa", href: "/visa/usa-business-visa" },
+          ],
+        },
 
     {
-      id: 2,
+      id: 12,
       label: "PNP Programs",
       href: "#",
       subNav: [
-        {
-          id: 1,
-          label: "Ontario PNP Program",
-          href: "/visa/Ontario PNP Program",
-        },
-        {
-          id: 2,
-          label: "Yukon Nominee Program",
-          href: "/visa/Yukon Nominee Program",
-        },
-        {
-          id: 3,
-          label: "NL PNP Program",
-          href: "/visa/Newfoundland and Labrador PNP Program",
-        },
-        { id: 4, label: "Nova Scotia PNP", href: "/visa/nova-scotia-pnp" },
-        { id: 5, label: "Alberta PNP", href: "/visa/alberta-pnp" },
-        { id: 6, label: "Saskatchewan PNP", href: "/visa/saskatchewan-pnp" },
-        {
-          id: 7,
-          label: "Quebec Skilled Worker Program",
-          href: "/visa/quebec-skilled-worker-program",
-        },
-        { id: 8, label: "Manitoba PNP", href: "/visa/Manitoba PNP Draw" },
-        {
-          id: 9,
-          label: "New Brunswick PNP Program",
-          href: "/visa/New Brunswick PNP Program",
-        },
-        {
-          id: 10,
-          label: "Atlantic Immigration Program",
-          href: "/visa/atlantic-immigration-program",
-        },
-        { id: 11, label: "PEI PNP Program", href: "/visa/PEI PNP Program" },
-        { id: 12, label: "BC PNP Program", href: "/visa/BC PNP Program" },
+        { id: 1, label: "AAIP", href: "/visa/aaip" },
+        { id: 2, label: "BC PNP", href: "/visa/bc-pnp" },
+        { id: 3, label: "MPNP", href: "/visa/mpnp" },
+        { id: 4, label: "NBPNP", href: "/visa/nbpnp" },
+        { id: 5, label: "NLPNP", href: "/visa/nlpnp" },
+        { id: 6, label: "NWTNP", href: "/visa/nwtnp" },
+        { id: 7, label: "NSNP", href: "/visa/nsnp" },
+        { id: 8, label: "AIP", href: "/visa/aip" },
+        { id: 9, label: "OINP", href: "/visa/oinp" },
+        { id: 10, label: "PEI PNP", href: "/visa/pei-pnp" },
+        { id: 11, label: "SINP", href: "/visa/sinp" },
+        { id: 12, label: "YNP", href: "/visa/ynp" },
       ],
     },
 
     {
-      id: 3,
+      id: 13,
       label: "Points Calculator",
       href: "#",
       subNav: [
-        {
-          id: 1,
-          label: "CRS Points Calculator",
-          href: "/visa/CRS Points Calculator",
-        },
-        {
-          id: 2,
-          label: "Quebec Points Calculator",
-          href: "/visa/Quebec Points Calculator",
-        },
-        {
-          id: 3,
-          label: "Nova Scotia Points Calculator",
-          href: "/visa/Nova Scotia Points Calculator",
-        },
-        {
-          id: 4,
-          label: "Manitoba Points Calculator",
-          href: "/visa/Manitoba Points Calculator",
-        },
-        {
-          id: 5,
-          label: "SINP Points Calculator",
-          href: "/visa/SINP Points Calculator",
-        },
-        {
-          id: 6,
-          label: "Alberta Points Calculator",
-          href: "/visa/Alberta Points Calculator",
-        },
-        {
-          id: 7,
-          label: "Ontario Points Calculator",
-          href: "/visa/Ontario Points Calculator",
-        },
-        {
-          id: 8,
-          label: "BC Points Calculator",
-          href: "/visa/BC Points Calculator",
-        },
+        { id: 1, label: "Canada 67 Points Calculator", href: "/calculator/canada-67-points" },
+        { id: 2, label: "Australia Points Calculator", href: "/calculator/australia-points" },
+        { id: 3, label: "New Zealand Points Calculator", href: "/calculator/new-zealand-points" },
       ],
     },
 
     {
       id: 4,
-      label: "Permanent Residency",
+      label: "Other Visas",
       href: "#",
       subNav: [
-        { id: 1, label: "Canada PR Visa", href: "/visa/canada-pr-visa" },
-        {
-          id: 2,
-          label: "Australia PR Visa",
-          href: "/visa/Australia Permanent Residency Visa",
-        },
-      ],
-    },
-
-    {
-      id: 5,
-      label: "Work Visa",
-      href: "#",
-      subNav: [
-        {
-          id: 1,
-          label: "Germany Job Seeker Visa",
-          href: "/visa/germany-job-seeker-visa",
-        },
-        { id: 2, label: "UK Work Permit", href: "/visa/uk-work-permit" },
+        { id: 1, label: "Dubai Golden Visa", href: "/visa/dubai-golden-visa" },
+        { id: 2, label: "Schengen Visa", href: "/visa/schengen-visa" },
         {
           id: 3,
-          label: "Ireland Work Permit",
-          href: "/visa/ireland-work-permit",
+          label: "Tourist Visa",
+          href: "#",
+          subNav: [
+            { id: 1, label: "UK", href: "/visa/uk-tourist-visa" },
+            { id: 2, label: "Germany", href: "/visa/germany-tourist-visa" },
+            { id: 3, label: "Ireland", href: "/visa/ireland-tourist-visa" },
+            { id: 4, label: "Luxembourg", href: "/visa/luxembourg-tourist-visa" },
+            { id: 5, label: "Malta", href: "/visa/malta-tourist-visa" },
+            { id: 6, label: "Poland", href: "/visa/poland-tourist-visa" },
+            { id: 7, label: "Netherlands", href: "/visa/netherlands-tourist-visa" },
+            { id: 8, label: "Portugal", href: "/visa/portugal-tourist-visa" },
+            { id: 9, label: "Sweden", href: "/visa/sweden-tourist-visa" },
+            { id: 10, label: "Italy", href: "/visa/italy-tourist-visa" },
+            { id: 11, label: "France", href: "/visa/france-tourist-visa" },
+            { id: 12, label: "Spain", href: "/visa/spain-tourist-visa" },
+          ],
         },
-        {
-          id: 4,
-          label: "Serbia Work Permit",
-          href: "/visa/Serbia Work Permit",
-        },
-
-        {
-          id: 5,
-          label: "Poland Work Permit",
-          href: "/visa/Poland Work Permit",
-        },
-        {
-          id: 6,
-          label: "Sweden Work Permit Visa",
-          href: "/visa/Sweden Work Permit Visa",
-        },
-        {
-          id: 7,
-          label: "Norway Work Permit",
-          href: "/visa/Norway Work Permit",
-        },
-        { id: 8, label: "Malta Work Permit", href: "/visa/malta-work-permit" },
-        {
-          id: 9,
-          label: "Germany oportunity card",
-          href: "/visa/Germany Opportunity Card",
-        },
-        {
-          id: 10,
-          label: "Hong Kong Work Permit",
-          href: "/visa/Hong Kong Work Permit",
-        },
-        {
-          id: 11,
-          label: "Russia Work Permit",
-          href: "/visa/Russia Work Permit",
-        },
-        {
-          id: 12,
-          label: "Singapore Work Permit",
-          href: "/visa/Singapore Work Permit",
-        },
-        { id: 13, label: "Macau Work Permit", href: "/visa/Macau Work Permit" },
-        {
-          id: 14,
-          label: "Taiwan Work Permit",
-          href: "/visa/Taiwan Work Permit",
-        },
-        {
-          id: 14,
-          label: "Austria Work Permit",
-          href: "/visa/Austria Work Permit",
-        },
-        { id: 14, label: "Sweden", href: "/visa/Sweden Work Permit Visa" },
-        { id: 14, label: "Portugal", href: "/visa/Portugal Work Permit" },
-      ],
-    },
-
-    {
-      id: 6,
-      label: "Visitor Visa",
-      href: "#",
-      subNav: [
-        {
-          id: 1,
-          label: "Canada Tourist Visa",
-          href: "/visa/canada-tourist-visa",
-        },
-        {
-          id: 2,
-          label: "Australia Tourist Visa",
-          href: "/visa/australia-tourist-visa",
-        },
-        {
-          id: 3,
-          label: "Germany Tourist Visa",
-          href: "/visa/germany-tourist-visa",
-        },
-        {
-          id: 4,
-          label: "Dubai Tourist Visa",
-          href: "/visa/dubai-tourist-visa",
-        },
-        {
-          id: 5,
-          label: "Singapore Tourist Visa",
-          href: "/visa/singapore-tourist-visa",
-        },
-        { id: 6, label: "UK Tourist Visa", href: "/visa/uk-tourist-visa" },
-      ],
-    },
-
-    {
-      id: 7,
-      label: "Study Abroad",
-      href: "#",
-      subNav: [
-        { id: 1, label: "Study In UK", href: "/visa/Study In UK" },
-        { id: 2, label: "Study In Canada", href: "/visa/Study In Canada" },
-        {
-          id: 3,
-          label: "Study In Australia",
-          href: "/visa/Study In Australia",
-        },
-        { id: 4, label: "Study In Germany", href: "/visa/Study In Germany" },
-        { id: 5, label: "Study In Ireland", href: "/visa/Study In Ireland" },
-        { id: 6, label: "Study In France", href: "/visa/France Study Visa" },
-        { id: 7, label: "Study In Dubai", href: "/visa/Study In Dubai" },
-        { id: 8, label: "Study In Finland", href: "/visa/Finland Study Visa" },
       ],
     },
   ],
@@ -695,6 +443,7 @@ export const countrytomigrate = {
 import { FaUsers, FaGlobe } from "react-icons/fa";
 import { MdVerified } from "react-icons/md";
 import { BiTime } from "react-icons/bi";
+import { FiSettings } from "react-icons/fi";
 
 export const countDown = [
   {
@@ -1187,41 +936,55 @@ export const serviceData = {
       title: "IELTS",
       text: "Eligibility assessment and guidance",
       img: ielts,
+      icon:<FaBriefcase />
     },
     {
       title: "PTE Exams",
       text: "Eligibility assessment and guidance",
       img: pte,
+      icon:<FiSettings />
     },
     {
       title: "Profile Evaluation",
       text: "Eligibility assessment and guidance",
       img: profile,
+            icon:<FiSettings />
+
     },
     {
       title: "Career Counselling",
       text: "Career planning and advice",
       img: Career,
+            icon:<FiSettings />
+
     },
     {
       title: "Immigration Solutions",
       text: "Structured migration pathways",
       img: immigration,
+            icon:<FiSettings />
+
     },
     {
       title: "Visa Documentation Support",
       text: "Accurate document preparation",
       img: visaDocument,
+            icon:<FiSettings />
+
     },
     {
       title: "Job Search Assistance",
       text: "International employment guidance",
       img: jobAssist,
+            icon:<FiSettings />
+
     },
     {
       title: "Post-Landing Support",
       text: "Settlement and integration assistance",
       img: PostLanding,
+            icon:<FiSettings />
+
     },
   ],
 };

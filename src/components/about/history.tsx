@@ -27,7 +27,7 @@ export default function OurHistory() {
       if (!el) return;
       const rect = el.getBoundingClientRect();
       const wh = window.innerHeight;
-      const pct = Math.min(100, Math.max(0, ((wh - rect.top) / (rect.bottom - rect.top)) * 100));
+      const pct = Math.min(100, Math.max(0, ((wh - rect.top) / (rect.bottom - rect.top)) * 90));
       setFillPct(pct);
     }
     window.addEventListener("scroll", updateLine, { passive: true });
@@ -46,9 +46,20 @@ export default function OurHistory() {
       <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-color2 to-color1" />
 
       {/* Blobs */}
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-color2/15 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[360px] h-[360px] bg-color1/10 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-color4/4 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-color2/35 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[360px] h-[360px] bg-color1/10  rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-color4/10 rounded-full blur-[140px] pointer-events-none" />
+
+
+  {/* Background pattern */}
+      <div
+        className="absolute inset-0 opacity-[0.07] pointer-events-none"
+        style={{
+          backgroundImage:
+            "linear-gradient(white 1px,transparent 1px),linear-gradient(90deg,white 1px,transparent 1px)",
+          backgroundSize: "60px 60px",
+        }}
+      />
 
       <div className="max-w-5xl mx-auto relative z-10">
 

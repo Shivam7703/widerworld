@@ -1,12 +1,10 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import { HomefaqData as data } from "@/data/homeData";
 import Faqs from "../global/faqs";
 import { useEffect, useRef, useState } from "react";
-import { box2, faq } from "@/assets";
 import Ripple from "./ripple";
 
 export default function FaqSection() {

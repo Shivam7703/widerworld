@@ -35,9 +35,7 @@ const Menu = ({ Isprimary, Items }: any) => {
 
   return (
     <ul
-      className={`hidden items-center lg:gap-x-0 md:gap-x-0 font-medium w-max ${
-        Isprimary ? "mx-auto" : "ml-28"
-      } md:flex`}
+      className={`hidden items-center lg:gap-x-0 md:gap-x-0 font-medium !max-w-max mx-auto md:flex`}
     >
       {Items.map((item: any) => (
         <li key={item?.id} className="group relative transition-all">
@@ -110,7 +108,7 @@ const Menu = ({ Isprimary, Items }: any) => {
                   {/* ── Second-level dropdown ── */}
                   {nav.subNav && (
                     <div
-                      className="absolute left-[calc(100%+6px)] top-0 z-30 hidden flex-col
+                      className="absolute left-[calc(100%)] top-0 z-30 hidden flex-col
                       w-auto rounded-xl bg-[#243340] border border-white/10
                       py-2 shadow-[0_16px_40px_rgba(0,0,0,0.4)]
                       transition-all group-hover/subnav:flex max-h-[500px]"
@@ -136,7 +134,7 @@ const Menu = ({ Isprimary, Items }: any) => {
                                   ? "bg-[#CB0000] text-white rounded-lg mx-1"
                                   : "text-white/80"
                               }`}
-                            style={{ width: "calc(100% - 8px)" }}
+                            style={{ width: "calc(100%)" }}
                           >
                             <span
                               className="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-0
@@ -154,7 +152,7 @@ const Menu = ({ Isprimary, Items }: any) => {
                           {/* ── Third-level dropdown ── */}
                           {subNav.subNavv && subNav.subNavv.length > 0 && (
                             <div
-                              className="absolute left-[calc(100%+6px)] top-0 z-40 hidden flex-col
+                              className="absolute left-[calc(100% - 8px)] top-0 z-40 hidden flex-col
                               w-auto rounded-xl bg-[#2B3944] border border-white/10
                               py-2 shadow-[0_16px_40px_rgba(0,0,0,0.4)]
                               transition-all group-hover/subsubnav:flex

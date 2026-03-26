@@ -1,51 +1,81 @@
 import React from "react";
+import { contat } from "@/assets";
+import Image from "next/image";
 
 function ConDetail({ data }: any) {
   return (
-    <div className="lg:px-24 md:px-20 sm:p-12 p-7 xl:px-32 mx-auto relative flex justify-between flex-wrap gap-y-5">
-      <div className="bg-gradient-to-r from-blue-800 to-blue-950 w-full h-1/2 absolute bottom-0 left-0 z-0" />
-      {data?.map((item: any, index: number) => (
-        <div
-          key={index}
-          className="group relative border hover:border-none bg-white z-10 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 md:w-[31%] w-full overflow-hidden hover:-translate-y-1"
-        >
-          {/* <div className="group-hover:w-full h-full w-0 absolute top-0 left-0 duration-300 bg-gradient-to-t from-blue-600 to-blue-800 transition-all -z-10"></div> */}
+    <section className="relative overflow-hidden bg-[#f8fbff] lg:px-20 md:px-14 sm:px-10 px-6 py-16 md:py-20">
 
- {/* Decorative Background */}
-      <div className="absolute h-0 w-full top-0 left-0 bg-gradient-to-br from-blue-900 via-violet-800
-                   to-red-700 group-hover:h-full  transition-all duration-500 -z-10"></div>
-      <div className="absolute inset-0 opacity-0 group-hover:opacity-25 
-                      transition-opacity duration-500 z-0">
-        <div className="absolute top-0 right-0 w-32 h-32 bg-white rounded-full 
-                        -mr-16 -mt-16" />
-        <div className="absolute bottom-0 left-0 w-24 h-24 bg-white rounded-full 
-                        -ml-12 -mb-12" />
-      </div>
+      {/* Decorative blur lights */}
+      <div className="absolute top-0 left-0 w-[280px] h-[280px] bg-color1/10 rounded-full blur-[120px]" />
+      <div className="absolute bottom-0 right-0 w-[260px] h-[260px] bg-color2/10 rounded-full blur-[120px]" />
 
+      <div className="max-w-[1300px] mx-auto relative z-10 flex flex-col md:flex-row items-center gap-12 lg:gap-16">
 
+        {/* LEFT IMAGE */}
+        <div className="md:w-[45%] w-full relative min-h-[420px] md:min-h-[500px] lg:min-h-[560px]">
+          <Image
+            src={contat}
+            alt="Contact Illustration"
+            fill
+            className="object-contain object-center"
+          />
+        </div>
 
-          <div className="flex h-full  items-center justify-between gap-5 z-10 p-6">
-            <div className="w-14 h-14 flex-shrink-0 bg-gradient-to-br from-zinc-100 to-white group-hover:from-white group-hover:to-zinc-100 rounded-lg py-3 text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-              <div className="text-3xl mx-auto text-red-600   max-w-min">
-                {item?.icon}
+        {/* RIGHT CONTACT CARDS */}
+        <div className="flex-1 flex flex-col gap-6">
+
+          {data?.map((item: any, index: number) => (
+            <div
+              key={index}
+              className="group relative rounded-3xl bg-white/70 backdrop-blur-lg
+              border border-white/40
+              shadow-[0_10px_30px_rgba(0,0,0,0.05)]
+              hover:shadow-[0_25px_60px_rgba(0,64,148,0.18)]
+              hover:-translate-y-2 transition-all duration-500"
+            >
+              {/* Gradient border glow */}
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-color1/5 via-color2/5 to-white opacity-0 group-hover:opacity-100 blur-xl transition duration-500" />
+
+              <div className="relative flex items-center gap-6 px-8 py-7">
+
+                {/* ICON */}
+                <div
+                  className="w-16 h-16 flex items-center justify-center rounded-2xl
+                  bg-gradient-to-br from-color1 to-color2 text-white text-2xl
+                  shadow-[0_10px_25px_rgba(0,64,148,0.25)]
+                  group-hover:scale-110 transition duration-300"
+                >
+                  {item?.icon}
+                </div>
+
+                {/* TEXT */}
+                <div className="flex flex-col">
+                  <h3 className="text-lg md:text-xl font-semibold text-color3 tracking-wide">
+                    {item?.title}
+                  </h3>
+
+                  <a
+                    href={item?.slug}
+                    className="text-gray-500 mt-1 text-base font-medium
+                    group-hover:text-color1 transition"
+                  >
+                    {item?.text}
+                  </a>
+                </div>
+
+                {/* Right arrow hover */}
+                <div className="ml-auto text-color1 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition duration-300 text-xl">
+                  →
+                </div>
+
               </div>
             </div>
-            <div className="h-full w-[1px] bg-zinc-300"></div>
-            <div className="flex-1">
-              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 group-hover:text-white  duration-300">
-                {item?.title}
-              </h3>
-              <a
-                href={item?.slug}
-                className="text-gray-600 group-hover:text-white cursor-pointer transition-colors duration-300 font-medium flex items-center gap-2 group/link"
-              >
-                <span className=" duration-300">{item?.text}</span>
-              </a>
-            </div>
-          </div>
+          ))}
+
         </div>
-      ))}
-    </div>
+      </div>
+    </section>
   );
 }
 

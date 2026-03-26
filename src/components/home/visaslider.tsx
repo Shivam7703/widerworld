@@ -83,7 +83,7 @@ export default function VisaSlider() {
                   </h3>
 
                   {/* Description — only first card shows it */}
-                    <p className="duration-300 group-hover:py-4 h-0 group-hover:h-fit leading-relaxed line-clamp-3">
+                    <p className=" group-hover:py-4 h-0 group-hover:h-fit duration-300 leading-relaxed line-clamp-3">
                       {card?.text}
                     </p>
 
