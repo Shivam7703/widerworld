@@ -65,7 +65,7 @@ const Menu = ({ Isprimary, Items }: any) => {
           {/* ── First-level dropdown ── */}
           {item.subNav && (
             <div
-              className="absolute w-max -left-2 top-[100%] z-30 hidden flex-col
+              className="absolute w-max -left-2 top-[100%] z-[70] hidden flex-col
               rounded-xl bg-[#1e2d36] border border-white/10
               py-2 shadow-[0_16px_40px_rgba(0,0,0,0.4)]
               transition-all group-hover:flex
@@ -108,7 +108,7 @@ const Menu = ({ Isprimary, Items }: any) => {
                   {/* ── Second-level dropdown ── */}
                   {nav.subNav && (
                     <div
-                      className="absolute left-[calc(100%)] top-0 z-30 hidden flex-col
+                      className="absolute left-[calc(100%)] top-0 z-[70] hidden flex-col
                       w-auto rounded-xl bg-[#243340] border border-white/10
                       py-2 shadow-[0_16px_40px_rgba(0,0,0,0.4)]
                       transition-all group-hover/subnav:flex max-h-[500px]"
@@ -152,7 +152,7 @@ const Menu = ({ Isprimary, Items }: any) => {
                           {/* ── Third-level dropdown ── */}
                           {subNav.subNavv && subNav.subNavv.length > 0 && (
                             <div
-                              className="absolute left-[calc(100% - 8px)] top-0 z-40 hidden flex-col
+                              className="absolute left-[calc(100% - 8px)] top-0 z-[70] hidden flex-col
                               w-auto rounded-xl bg-[#2B3944] border border-white/10
                               py-2 shadow-[0_16px_40px_rgba(0,0,0,0.4)]
                               transition-all group-hover/subsubnav:flex
