@@ -35,7 +35,7 @@ const Menu = ({ Isprimary, Items }: any) => {
 
   return (
     <ul
-      className={`hidden items-center lg:gap-x-0 md:gap-x-0 font-medium !max-w-max mx-auto md:flex`}
+      className={`hidden items-center lg:gap-x-0 md:gap-x-0 font-medium !max-w-max  md:flex`}
     >
       {Items.map((item: any) => (
         <li key={item?.id} className="group relative transition-all">
@@ -206,3 +206,10 @@ const Menu = ({ Isprimary, Items }: any) => {
 };
 
 export default Menu;
+
+
+
+
+
+
+// ]RV*71(O/=|KHu:w

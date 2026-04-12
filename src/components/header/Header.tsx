@@ -72,7 +72,7 @@ const Header = ({ header }: any) => {
           {/* LOGO */}
           <Link
             href={header?.href || "/"}
-            className="w-72 py-3 bg-gradient-to-br from-red-200 via-blue-200 to-indigo-400 flex justify-center items-center z-10"
+            className="w-72 py-3 relative flex justify-center items-center bg-white z-10"
           >
             <Image
               src={logo}
@@ -103,7 +103,7 @@ const Header = ({ header }: any) => {
               <div className="flex gap-3.5 text-lg">
                 {/* Facebook */}
                 <div
-                  className="group relative w-9 h-9 rounded-xl bg-white/90 backdrop-blur-sm
+                  className="group relative w-8 h-8 rounded-xl bg-white/90 backdrop-blur-sm
       border-[1.5px] border-white flex items-center justify-center cursor-pointer
       overflow-hidden transition-all duration-300
       hover:-translate-y-1 hover:scale-110 hover:border-transparent
@@ -124,7 +124,7 @@ const Header = ({ header }: any) => {
 
                 {/* Instagram */}
                 <div
-                  className="group relative w-9 h-9 rounded-xl bg-white/90 backdrop-blur-sm
+                  className="group relative w-8 h-8 rounded-xl bg-white/90 backdrop-blur-sm
       border-[1.5px] border-white flex items-center justify-center cursor-pointer
       overflow-hidden transition-all duration-300
       hover:-translate-y-1 hover:scale-110 hover:border-transparent
@@ -148,7 +148,7 @@ const Header = ({ header }: any) => {
 
                 {/* LinkedIn */}
                 <div
-                  className="group relative w-9 h-9 rounded-xl bg-white/90 backdrop-blur-sm
+                  className="group relative w-8 h-8 rounded-xl bg-white/90 backdrop-blur-sm
       border-[1.5px] border-white flex items-center justify-center cursor-pointer
       overflow-hidden transition-all duration-300
       hover:-translate-y-1 hover:scale-110 hover:border-transparent
@@ -169,7 +169,7 @@ const Header = ({ header }: any) => {
 
                 {/* YouTube */}
                 <div
-                  className="group relative w-9 h-9 rounded-xl bg-white/90 backdrop-blur-sm
+                  className="group relative w-8 h-8 rounded-xl bg-white/90 backdrop-blur-sm
       border-[1.5px] border-white flex items-center justify-center cursor-pointer
       overflow-hidden transition-all duration-300
       hover:-translate-y-1 hover:scale-110 hover:border-transparent
@@ -206,7 +206,7 @@ const Header = ({ header }: any) => {
                 <PaymentButton />
               </div>
             </div>
-               <div className=" bg-white w-max -mt-4 z-[60] sticky px-10 shadow-lg ">
+               <div className=" bg-white w-full -mt-4 z-[60] sticky px-10 shadow-lg ">
             <Menu
               navItemsArray={navItems}
               Items={navigationMenu.secondaryMenu}

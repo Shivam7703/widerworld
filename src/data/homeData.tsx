@@ -302,7 +302,7 @@ export const aboutdata = {
   title2: "Trusted & Expert Immigration ",
   title3: "Consultant",
   para:
-    "We deliver reliable, results-oriented immigration solutions backed by expert guidance, ethical practices, and structured processes. Recognized for offering the best immigration consultants in Noida, we support individuals and families from visa planning to final submission, ensuring clarity, confidence, and complete professional assistance throughout the process.",
+    "We deliver reliable, results-oriented immigration solutions backed by expert guidance, ethical practices, and structured processes. Recognized for offering the best immigration consultants in Noida, we support individuals and families from visa planning to final submission, ensuring clarity, confidence, and complete professional assistance throughout the process. We deliver reliable, results-oriented immigration solutions backed by expert guidance, ethical practices, and structured processes. Recognized for offering the best immigration consultants in Noida, we support individuals and families from visa planning to final process.",
   pointer: [
     {
       id: 1,
@@ -312,6 +312,17 @@ export const aboutdata = {
     },
     {
       id: 2,
+      heading: "Client Satisfaction",
+      text: "Focused on results, trust, and long-term client success.",
+      icon: <RiUserFollowLine />,
+    },     {
+      id: 3,
+      heading: "Transparency",
+      text: "Clear processes, honest advice, and no hidden commitments.",
+      icon: <IoSearch />,
+    },
+    {
+      id: 4,
       heading: "Client Satisfaction",
       text: "Focused on results, trust, and long-term client success.",
       icon: <RiUserFollowLine />,
@@ -440,41 +451,9 @@ export const countrytomigrate = {
   ],
 };
 
-import { FaUsers, FaGlobe } from "react-icons/fa";
-import { MdVerified } from "react-icons/md";
-import { BiTime } from "react-icons/bi";
+
 import { FiSettings } from "react-icons/fi";
 
-export const countDown = [
-  {
-    id: 1,
-    icon: <FaUsers className="text-yellow-400 text-xl" />,
-    suffix: "+",
-    title: "Clients Served",
-    Value: 2000,
-  },
-  {
-    id: 2,
-    icon: <MdVerified className="text-yellow-400 text-xl" />,
-    suffix: "%",
-    title: "Success Rate",
-    Value: 96,
-  },
-  {
-    id: 3,
-    icon: <BiTime className="text-yellow-400 text-xl" />,
-    suffix: "hrs",
-    title: "Average Approval Time",
-    Value: 42,
-  },
-  {
-    id: 4,
-    icon: <FaGlobe className="text-yellow-400 text-xl" />,
-    suffix: "+",
-    title: "Countries Operations",
-    Value: 60,
-  },
-];
 
 export const workingprocess = {
   title1: "Our Working Process",
@@ -752,7 +731,7 @@ export const footer = {
     linkedin: "https://www.linkedin.com/school//",
     youtube: "https://www.youtube.com/c/",
   },
-  copyrightText: "Copyrights © 2024 . Designed and Manage by ",
+  copyrightText: "Copyrights © 2026 . Designed and Manage by ",
   list1: {
     title: "Our Services",
     links: [

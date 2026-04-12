@@ -45,15 +45,7 @@ const data = [
 export default function WorkProcess() {
   return (
     <div className="relative lg:px-20 sm:p-12 p-7 bg-gradient-to-br from-[#f0f4fb] via-[#e8eef8] to-[#f5f0e8]">
-      {/* Background pattern */}
-      <div
-        className="absolute inset-0 opacity-[0.07]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(0,64,148,1) 1px,transparent 1px),linear-gradient(90deg,rgba(0,64,148,1) 1px,transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
-      />
+    
 
       {/* Top accent line */}
       <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-color2 to-color1" />

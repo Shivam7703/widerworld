@@ -9,6 +9,7 @@ import { useState } from "react";
 import { visaSliderdata as data } from "@/data/homeData";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { HiArrowUpRight } from "react-icons/hi2";
+import { plane } from "@/assets";
 
 
 export default function VisaSlider() {
@@ -35,7 +36,11 @@ export default function VisaSlider() {
   return (
     <section className="bg-color3 relative overflow-hidden p-6 md:p-14 lg:px-20">
 
-    
+      <Image
+      src={plane}
+      alt="immigration"
+      className="z-0 absolute top-[15%] right-[2%] opacity-50 object-contain w-max sm:h-64 h-16  animate-y"
+    />
 
       {/* ── HEADER ── */}
       <div className="relative z-10 text-center mb-12">

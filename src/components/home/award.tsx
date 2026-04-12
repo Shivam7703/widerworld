@@ -24,9 +24,9 @@ export default function Award({ data }: any) {
   return (
     <section className="relative w-full bg-white p-6 md:p-16">
 
-<div className="absolute bottom-0 w-full bg-award left-0 h-1/2" />
+<div className="absolute bottom-0 w-full bg-color5 left-0 h-1/2" />
       {/* ── OUTER ROUNDED DARK CONTAINER ── */}
-      <div className="relative w-full max-w-6xl mx-auto bg-color3 rounded-2xl overflow-hidden shadow-xl shadow-black px-8 md:px-14 py-12 md:py-16">
+      <div className="relative w-full max-w-7xl mx-auto bg-color3 rounded-2xl overflow-hidden shadow-xl shadow-black px-8 md:px-14 py-12 md:py-16">
 
         <div className="relative z-10 flex flex-col lg:flex-row items-stretch gap-10 lg:gap-16">
 

@@ -2,6 +2,9 @@
 import React, { useState } from 'react'
 import Countryslider from './countryslider'
 import { canadapnp } from "@/data/homeData";
+import { blog_bg } from '@/assets';
+import Image from 'next/image';
+
 
 const category = [
   { name: "MBBS In Abroad", value: "mbbs" },
@@ -15,7 +18,8 @@ const filterData = {
   cards: canadapnp.cards.filter((card) => card.cat === cat)
 };
   return (
-    <section className="bg-color3 relative overflow-hidden md:py-14 ">
+    <section className="bg-color3 relative overflow-hidden md:py-7 ">
+      <Image src={blog_bg} alt={"img"} className='absolute top-0 left-0 w-full object-contain h-auto z-0 opacity-45' />
       {/* ── HEADER ── */}
       <div className="p-6 relative z-10 text-center ">
         <p className="text-sm font-bold uppercase text-gray-200 mb-4">

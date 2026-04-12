@@ -37,7 +37,7 @@ export default function Canadapnp() {
 
   
       <div
-        className="  sm:p-12 md:p-16 lg:px-20 sticky -mt-28 md:-mt-40"
+        className="  sm:p-12 md:p-16 lg:px-20 sticky -mt-28 md:-mt-44"
       >
       
       <Countryslider data={data} uniqueId = {"canadaSlider"}/>

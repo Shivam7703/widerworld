@@ -2,199 +2,101 @@
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer, zoomIn } from "@/utils/motion"; // adjust path as needed
+import { fadeIn, staggerContainer, zoomIn } from "@/utils/motion";
+import { BiTime } from "react-icons/bi";
+import { FaUsers, FaGlobe } from "react-icons/fa";
+import { MdVerified } from "react-icons/md";
 
-function CountDown({ data }: any) {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.25 });
+const stats = [
+  {
+    id: 1,
+    icon: <FaUsers className="text-blue-600 text-2xl" />,
+    suffix: "+",
+    title: "Clients Served",
+    Value: 2000,
+    desc: "Families and professionals guided through complex immigration processes worldwide.",
+  },
+  {
+    id: 2,
+    icon: <MdVerified className="text-blue-600 text-2xl" />,
+    suffix: "%",
+    title: "Success Rate",
+    Value: 96,
+    desc: "Industry-leading visa approval rate backed by expert legal review at every step.",
+  },
+  {
+    id: 3,
+    icon: <BiTime className="text-blue-600 text-2xl" />,
+    suffix: "hrs",
+    title: "Avg. Approval Time",
+    Value: 42,
+    desc: "Fastest processing in the industry with our streamlined documentation system.",
+  },
+  {
+    id: 4,
+    icon: <FaGlobe className="text-blue-600 text-2xl" />,
+    suffix: "+",
+    title: "Countries Operations",
+    Value: 60,
+    desc: "Active presence across 6 continents serving clients in over 60 destination countries.",
+  },
+];
+
+function CountDown() {
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
-    <section
-      ref={ref}
-      className="relative w-full overflow-hidden py-8 p-6 md:p-12 bg-color3"
-    >
+    <section ref={ref} className="relative w-full bg-white py-6 p-3 md:px-12">
 
-      {/* Deep gradient overlay */}
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-[#0d1b2a] via-color3 to-color5" />
+      <div className="max-w-screen-xl mx-auto shadow-xl rounded-2xl overflow-hidden">
 
-      {/* Red glow — top left */}
-      <div
-        className="absolute pointer-events-none rounded-full"
-        style={{
-          top: -80, left: -80, width: 340, height: 340,
-          background: "radial-gradient(circle, rgba(203,0,0,0.16) 0%, transparent 70%)",
-        }}
-      />
+        {/* Stats Grid */}
+        <motion.div
+          variants={staggerContainer(0.15, 0.1)}
+          initial="hidden"
+          animate={inView ? "show" : "hidden"}
+          className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-zinc-100"
+        >
+          {stats.map((item, index) => (
+       <motion.div
+  key={item.id}
+  variants={zoomIn(index * 0.12, 0.5)}
+  className="group relative bg-zinc-50 flex flex-col py-10 px-6 hover:bg-blue-50 transition-colors duration-300 cursor-default"
+>
+  {/* Top accent */}
+  <div className="absolute top-0 left-0 w-0 h-[3px] bg-blue-600 group-hover:w-full transition-all duration-500 rounded-t-sm" />
 
-      {/* Blue glow — bottom right */}
-      <div
-        className="absolute pointer-events-none rounded-full"
-        style={{
-          bottom: -80, right: -80, width: 340, height: 340,
-          background: "radial-gradient(circle, rgba(0,64,148,0.2) 0%, transparent 70%)",
-        }}
-      />
+  {/* Icon + Number row */}
+  <div className="flex items-center gap-4 mb-3">
+    {/* Icon */}
+    <div className="w-14 h-14 flex-shrink-0 flex items-center justify-center rounded-full bg-blue-50 border border-blue-100 group-hover:bg-blue-100 transition-colors duration-300">
+      {item.icon}
+    </div>
 
-      {/* Subtle grid pattern */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-[0.04]">
-        <defs>
-          <pattern id="darkgrid" x="0" y="0" width="44" height="44" patternUnits="userSpaceOnUse">
-            <path d="M 44 0 L 0 0 0 44" fill="none" stroke="#ffce5b" strokeWidth="0.5" />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#darkgrid)" />
-      </svg>
+    {/* Number */}
+    <div className="text-4xl font-bold text-gray-900 leading-none">
+      {inView ? <CountUp start={0} end={item.Value} duration={2.8} separator="," /> : "0"}
+      <span className="text-blue-600 ml-0.5 text-2xl">{item.suffix}</span>
+    </div>
+  </div>
 
-      {/* Top tri-color border */}
-      <div
-        className="absolute top-0 left-0 w-full h-[2px] pointer-events-none"
-        style={{ background: "linear-gradient(90deg, #CB0000, #ffce5b 50%, #004094)" }}
-      />
+  {/* Divider */}
+  <div className="w-28 h-[2px] bg-blue-200 mb-3 rounded-full" />
 
-      {/* Corner arcs */}
-      <svg className="absolute top-0 left-0 w-28 h-28 pointer-events-none opacity-20">
-        {[20, 36, 52].map((r) => (
-          <path key={r} d={`M0 ${r} A${r} ${r} 0 0 1 ${r} 0`} stroke="#ffce5b" strokeWidth="0.7" fill="none" />
-        ))}
-      </svg>
-      <svg className="absolute bottom-0 right-0 w-28 h-28 pointer-events-none opacity-20" style={{ transform: "rotate(180deg)" }}>
-        {[20, 36, 52].map((r) => (
-          <path key={r} d={`M0 ${r} A${r} ${r} 0 0 1 ${r} 0`} stroke="#ffce5b" strokeWidth="0.7" fill="none" />
-        ))}
-      </svg>
+  {/* Title */}
+  <h3 className="text-sm md:text-base tracking-widest uppercase text-gray-900 font-medium mb-2 group-hover:text-blue-600 transition-colors duration-300">
+    {item.title}
+  </h3>
 
-      {/* ── Section label ── */}
-      <motion.div
-        variants={fadeIn("down", "tween", 0, 0.5)}
-        initial="hidden"
-        animate={inView ? "show" : "hidden"}
-        className="relative z-10 flex items-center justify-center "
-      >
-       
-        <p className="text-sm font-bold uppercase text-gray-200 mb-7">
-          Our Impact
-        </p>
+  {/* Para */}
+  <p className="text-xs sm:text-sm text-gray-500 leading-relaxed">
+    {item.desc}
+  </p>
+</motion.div>
+          ))}
+        </motion.div>
 
-      </motion.div>
-
-      {/* ── Stats grid ── */}
-      <motion.div
-        variants={staggerContainer(0.15, 0.1)}
-        initial="hidden"
-        animate={inView ? "show" : "hidden"}
-        className="relative z-10 max-w-6xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-px rounded-2xl overflow-hidden"
-        style={{
-          background: "rgba(255,255,255,0.05)",
-          border: "1px solid rgba(255,206,91,0.08)",
-        }}
-      >
-        {data?.map((counts: any, index: number) => (
-          <motion.div
-            key={counts?.id}
-            variants={zoomIn(index * 0.12, 0.5)}
-            className="group relative flex flex-col items-center justify-center text-center py-12 px-6 bg-color5 cursor-default"
-            whileHover={{ backgroundColor: "#344a58" } as any}
-            transition={{ duration: 0.25 }}
-          >
-
-            {/* Top accent bar — animates on hover */}
-            <motion.div
-              className="absolute top-0 left-0 w-full h-[2px]"
-              initial={{ background: "transparent" }}
-              whileHover={{
-                background: "linear-gradient(90deg, #CB0000, #ffce5b, #004094)",
-              }}
-            />
-
-            {/* Hover radial glow */}
-            <div
-              className="absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-500"
-              style={{
-                background: "radial-gradient(circle at 50% 60%, rgba(255,206,91,0.07), transparent 65%)",
-              }}
-            />
-
-            {/* Desktop vertical divider */}
-            {index < (data?.length - 1) && (
-              <div
-                className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-px"
-                style={{
-                  height: "40%",
-                  background: "linear-gradient(to bottom, transparent, rgba(255,206,91,0.2), transparent)",
-                }}
-              />
-            )}
-
-            {/* Mobile dividers */}
-            {index === 1 && (
-              <>
-                <div
-                  className="lg:hidden absolute -bottom-px left-[5%] w-[90%] h-px"
-                  style={{ background: "linear-gradient(90deg, transparent, rgba(255,206,91,0.2), transparent)" }}
-                />
-                <div
-                  className="lg:hidden absolute top-[5%] right-0 h-[90%] w-px"
-                  style={{ background: "linear-gradient(to bottom, transparent, rgba(255,206,91,0.2), transparent)" }}
-                />
-              </>
-            )}
-
-            {/* Icon badge */}
-            <motion.div
-              variants={fadeIn("up", "tween", index * 0.1 + 0.1, 0.4)}
-              className="relative mb-5 w-14 h-14 flex items-center justify-center rounded-full text-color4"
-              style={{
-                border: "1px solid rgba(255,206,91,0.22)",
-                background: "rgba(255,206,91,0.06)",
-              }}
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              {counts?.icon}
-            </motion.div>
-
-            {/* Number */}
-            <motion.div
-              variants={fadeIn("up", "tween", index * 0.1 + 0.2, 0.45)}
-              className="mb-2 leading-none text-color4"
-              style={{
-                fontFamily: "'Georgia', serif",
-                fontSize: "clamp(2rem, 4.5vw, 3.2rem)",
-                fontWeight: 700,
-                letterSpacing: "-0.01em",
-              }}
-            >
-              {inView ? (
-                <CountUp start={0} end={counts?.Value} duration={2.8} separator="," />
-              ) : "0"}
-              <span className="text-color4 opacity-85 ml-1" style={{ fontSize: "0.5em" }}>
-                {counts?.suffix}
-              </span>
-            </motion.div>
-
-            {/* Tri-color rule */}
-            <div
-              className="my-3 w-8 h-px"
-              style={{ background: "linear-gradient(90deg, #CB0000, #ffce5b, #004094)" }}
-            />
-
-            {/* Title */}
-            <motion.h3
-              variants={fadeIn("up", "tween", index * 0.1 + 0.3, 0.4)}
-              className="text-xs tracking-widest uppercase text-white/80 group-hover:text-white transition-colors duration-300"
-            >
-              {counts?.title}
-            </motion.h3>
-
-          </motion.div>
-        ))}
-      </motion.div>
-
-      {/* Bottom tri-color border */}
-      <div
-        className="absolute bottom-0 left-0 w-full h-[2px] pointer-events-none"
-        style={{ background: "linear-gradient(90deg, #004094, #ffce5b 50%, #CB0000)" }}
-      />
-
+      </div>
     </section>
   );
 }

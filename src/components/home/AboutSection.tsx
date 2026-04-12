@@ -3,9 +3,8 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BiRightArrowAlt } from "react-icons/bi";
 import Buttonmain from "../global/button";
-import { GiDiamondTrophy, GiTrophyCup } from "react-icons/gi";
+import { plane } from "@/assets";
 const stats = [
   { label: "Visa Success Rate", value: 98,  display: "98%",  color: "#378ADD", sub: "Success"  },
   { label: "Happy Clients",     value: 94,  display: "94%",  color: "#1D9E75", sub: "Happy"    },
@@ -16,7 +15,7 @@ const r = 40, circ = 2 * Math.PI * r; // ≈ 251.2
 
 export default function AboutSection({ data }:any) {
   return (
-    <section className="w-full ">
+    <section className="w-full p-4 md:p-12 lg:px-20 xl:px-24">
 
       <motion.div
         initial={{ opacity: 0, y: 25 }}
@@ -26,10 +25,10 @@ export default function AboutSection({ data }:any) {
         className="bg-white "
       >
 
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col md:flex-row justify-between gap-y-5">
 
           {/* LEFT CONTENT */}
-          <div className="lg:w-[52%] md:order-1 order-2 p-6 bg-white md:p-10 lg:pr-16 lg:p-24">
+          <div className="lg:w-[48%] md:order-1 order-2 bg-white ">
 
             {/* Badge */}
             {data?.title1 && (
@@ -39,7 +38,7 @@ export default function AboutSection({ data }:any) {
             )}
 
             {/* Heading */}
-            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-color3 mb-5 !leading-snug">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-color3 mb-5 !leading-tight">
               {data?.title2}
               <span className="text-color1 ">
                 {data?.title3}
@@ -48,13 +47,13 @@ export default function AboutSection({ data }:any) {
 
             {/* Description */}
             {data?.para && (
-              <p className="text-gray-600 text-[15px] md:text-[17px] leading-relaxed mb-7">
+              <p className="text-gray-800 text-sm md:text-base leading-relaxed mb-7">
                 {data?.para}
               </p>
             )}
 
             {/* POINTERS */}
-            <div className="space-y-5 mb-8">
+            <div className="gap-y-5 mb-8 flex justify-between flex-wrap">
 
               {data?.pointer?.map((item:any, index:number) => (
                 <motion.div
@@ -62,7 +61,7 @@ export default function AboutSection({ data }:any) {
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  className="flex gap-4 items-start group"
+                  className="flex gap-4 sm:w-[48%] w-full items-start group"
                 >
 
                   <div className="w-11 h-11 flex-shrink-0 bg-red-50 rounded-xl
@@ -97,89 +96,68 @@ export default function AboutSection({ data }:any) {
 
 
          {/* RIGHT SIDE IMAGES */}
-<div className="lg:w-[48%] relative md:order-2 bg-color3 order-1 p-4 md:p-8 lg:pb-24">
+<div className="lg:w-[50%] relative md:order-2 bg-white order-1">
+  <div className="relative group w-full h-auto md:h-full min-h-96">
 
-  {/* ── BACKGROUND PATTERN ── */}
-  <svg
-    className="absolute inset-0 w-full h-full pointer-events-none opacity-[0.3]"
-    xmlns="http://www.w3.org/2000/svg"
+{/* MAIN IMAGE - Slight left tilt, hover pe seedha aata hai */}
+{data?.img1 && (
+  <motion.div
+    initial={{ opacity: 0, scale: 0.95 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ delay: 0.2 }}
+    whileHover={{ rotate: 0, scale: 1.04, zIndex: 10 }}
+    className="absolute top-[8%] left-[2%] w-[54%] h-[88%] rounded-xl overflow-hidden border-[3px] border-white cursor-pointer "
+    style={{
+      rotate: '-3deg',
+      boxShadow: '0 8px 32px rgba(0,0,0,0.18)',
+      zIndex: 2,
+      transition: 'box-shadow 0.45s',
+    }}
   >
-    <defs>
-      <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.8"/>
-      </pattern>
-      <pattern id="dots" x="20" y="20" width="40" height="40" patternUnits="userSpaceOnUse">
-        <circle cx="20" cy="20" r="1.5" fill="white"/>
-      </pattern>
-    </defs>
-    <rect width="100%" height="100%" fill="url(#grid)"/>
-    <rect width="100%" height="100%" fill="url(#dots)"/>
-  </svg>
-
-
- 
-
-  
-
-  <div className="relative w-full h-auto md:h-full min-h-96">
-
-    {/* Trophy / rotating text badge */}
-    <div className="absolute top-0 md:top-[2%] right-[4%] w-28 h-28 md:w-40 md:h-40 flex items-center justify-center">
-      <svg
-        className="absolute inset-0 w-full h-full animate-spin"
-        style={{ animationDuration: "10s" }}
-        viewBox="0 0 160 160"
-      >
-        <defs>
-          <path
-            id="circlePath"
-            d="M 80,80 m -60,0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0"
-          />
-        </defs>
-        <text fill="#facc15" fontSize="12.5" fontWeight="600" letterSpacing="3">
-          <textPath href="#circlePath">
-            ✦ 40 YEARS OF EXPERIENCE ✦ SINCE 1992 ON
-          </textPath>
-        </text>
-      </svg>
-      <div className="animate-pulse p-4 border-2 bg-white/10 border-yellow-400 flex justify-center items-center rounded-full z-10">
-        <GiTrophyCup className="text-yellow-400 md:text-6xl text-5xl" />
-      </div>
+    <Image
+      src={data?.img1}
+      alt="immigration"
+      fill
+      className="object-cover transition-transform duration-500 hover:scale-[1.07]"
+    />
+    <div className="absolute bottom-4 left-4 bg-white/90 text-sm font-medium px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      Immigration
     </div>
+  </motion.div>
+)}
 
-    {/* Stats card */}
-    <div className="absolute -bottom-6 z-40 -left-24 flex gap-5 items-center max-md:scale-50 bg-white rounded-2xl">
-      <div className="bg-gradient-to-br from-color1/20 via-rose-500/5 to-rose-700/10 rounded-2xl shadow-black/50 border border-gray-100 shadow-xl sm:p-6 p-3 flex flex-wrap sm:gap-6 justify-center">
-        {stats.map((s, i) => (
-          <CircularStat key={i} stat={s} delay={i * 0.15} />
-        ))}
-      </div>
+
+{/* SECOND IMAGE - Slight right tilt, hover pe seedha aata hai */}
+{data?.img2 && (
+  <motion.div
+    initial={{ opacity: 0, scale: 0.95 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ delay: 0.4 }}
+    whileHover={{ rotate: 0, scale: 1.04, zIndex: 10 }}
+    className="absolute bottom-[6%] right-[2%] w-[54%] h-[88%] rounded-xl overflow-hidden border-[3px] border-white cursor-pointer"
+    style={{
+      rotate: '4deg',
+      boxShadow: '0 8px 32px rgba(0,0,0,0.18)',
+      zIndex: 1,
+      transition: 'box-shadow 0.45s',
+    }}
+  >
+    <Image
+      src={data?.img2}
+      alt="consultants"
+      fill
+      className="object-cover transition-transform duration-500 hover:scale-[1.07]"
+    />
+    <div className="absolute bottom-4 left-4 bg-white/90 text-sm font-medium px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      Consultants
     </div>
-
-    {/* MAIN IMAGE */}
-    {data?.img1 && (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.2 }}
-        className="absolute top-0 left-0 w-[60%] h-[70%] rounded-lg group overflow-hidden shadow-2xl border-2 border-white"
-      >
-        <Image src={data?.img1} alt="immigration" fill className="object-cover group-hover:scale-110 duration-300" />
-      </motion.div>
-    )}
-
-    {/* SECOND IMAGE */}
-    {data?.img2 && (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.4 }}
-        className="absolute bottom-0 right-0 w-[60%] group h-[70%] rounded-lg overflow-hidden shadow-2xl border-2 border-white"
-      >
-        <Image src={data?.img2} alt="consultants" fill className=" group-hover:scale-110 object-cover duration-300" />
-      </motion.div>
-    )}
-
+  </motion.div>
+)}
+ {/* <Image
+      src={plane}
+      alt="immigration"
+      className="z-30 absolute bottom-4 right-[4%] object-contain w-max h-1/3 animate-y"
+    /> */}
   </div>
 </div>
 
@@ -189,6 +167,18 @@ export default function AboutSection({ data }:any) {
     </section>
   );
 }
+
+
+
+
+ {/* Stats card */}
+    {/* <div className="absolute -bottom-6 z-40 -left-24 flex gap-5 items-center max-md:scale-50 bg-white rounded-2xl">
+      <div className="bg-gradient-to-br from-color1/20 via-rose-500/5 to-rose-700/10 rounded-2xl shadow-black/50 border border-gray-100 shadow-xl sm:p-6 p-3 flex flex-wrap sm:gap-6 justify-center">
+        {stats.map((s, i) => (
+          <CircularStat key={i} stat={s} delay={i * 0.15} />
+        ))}
+      </div>
+    </div> */}
 
 
 function CircularStat({ stat, delay }: { stat: typeof stats[0]; delay: number }) {
