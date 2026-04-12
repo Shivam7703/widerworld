@@ -5,7 +5,6 @@ import Testimonials from '@/components/home/testimonial'
 import WhychooseSection from '@/components/home/whychoose'
 import ServiceSection from '@/components/services/service'
 import Serviceschoose from '@/components/services/whyChoose'
-import { countDown } from '@/data/homeData'
 import React from 'react'
 
 function Services() {

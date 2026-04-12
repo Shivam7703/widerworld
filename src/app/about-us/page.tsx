@@ -10,7 +10,7 @@ import Award from "@/components/home/award";
 import CountDown from "@/components/home/Contdown";
 import Testimonials from "@/components/home/testimonial";
 import WhychooseSection from "@/components/home/whychoose";
-import { aboutdata2, countDown } from "@/data/homeData";
+import { aboutdata2} from "@/data/homeData";
 
 export default function About() {
   return (
@@ -27,7 +27,7 @@ export default function About() {
             <Mission /> 
 <OurHistory/>
 <CEOMessage/>
-<CountDown data={countDown}/>
+<CountDown />
 <Award/>
 <WhychooseSection/>
 
