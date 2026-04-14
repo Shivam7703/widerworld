@@ -1,163 +1,194 @@
-import Link from "next/link";
+"use client";
+import { motion } from "motion/react";
 import React from "react";
 import { FaWpforms } from "react-icons/fa";
 import { LuHandshake } from "react-icons/lu";
-import { MdFlight, MdOutlineEngineering, MdOutlineSettings } from "react-icons/md";
+import { MdOutlineEngineering, MdOutlineSettings } from "react-icons/md";
+import Buttonmain from "../global/button";
+import { pro1, shape1 } from "@/assets"; // apni illustration imgs import karo
+import Image from "next/image";
 
 const data = [
   {
+    img: pro1,
     icon: <FaWpforms />,
     heading: "Initial Consultation",
     text: "Understanding client requirements, aircraft details, and operational timelines clearly.",
+    bg: "text-violet-700",
+  
   },
   {
+    img: pro1,
     icon: <MdOutlineSettings />,
     heading: "Strategic Planning",
     text: "Preparing documentation, approvals, and coordination plans with authorities.",
+    bg: "text-emerald-700",
+  
   },
   {
+    img: pro1,
     icon: <MdOutlineEngineering />,
     heading: "Execution & Coordination",
     text: "Managing permits, slots, handling, and services efficiently.",
+    bg: "text-teal-700",
+    
   },
   {
+    img: pro1,
     icon: <LuHandshake />,
     heading: "Final Confirmation",
     text: "Providing updates, confirmations, and ensuring smooth flight completion.",
+      bg: "text-rose-700",
+
   },
   {
+    img: pro1,
+    icon: <FaWpforms />,
+    heading: "Initial Consultation",
+    text: "Understanding client requirements, aircraft details, and operational timelines clearly.",
+    bg: "text-violet-700",
+  
+  },
+  {
+    img: pro1,
     icon: <MdOutlineSettings />,
     heading: "Strategic Planning",
     text: "Preparing documentation, approvals, and coordination plans with authorities.",
+    bg: "text-emerald-700",
+  
   },
   {
+    img: pro1,
     icon: <MdOutlineEngineering />,
     heading: "Execution & Coordination",
     text: "Managing permits, slots, handling, and services efficiently.",
+    bg: "text-teal-700",
+    
   },
   {
+    img: pro1,
     icon: <LuHandshake />,
     heading: "Final Confirmation",
     text: "Providing updates, confirmations, and ensuring smooth flight completion.",
+      bg: "text-rose-700",
+
   },
 ];
 
-export default function WorkProcess() {
+export default function WorkProcessSlider() {
   return (
-    <div className="relative lg:px-20 sm:p-12 p-7 bg-gradient-to-br from-[#f0f4fb] via-[#e8eef8] to-[#f5f0e8]">
-    
+    <div className="w-full px-6 py-16 md:px-12 lg:px-20 xl:px-24 bg-white">
+      <motion.div
+        initial={{ opacity: 0, y: 25 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <div className="flex  flex-wrap justify-between relative items-start">
 
-      {/* Top accent line */}
-      <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-color2 to-color1" />
+          {/* LEFT */}
+          <div className="sticky top-20 md:w-[46%] h-full  w-full">
+            <p className="flex items-center gap-2 text-xs font-semibold uppercase  text-color1 mb-5">
+              <span className="w-7 h-0.5 bg-color1 rounded-full inline-block" />
+              Work Process
+            </p>
+            <h2 className=" text-3xl md:text-4xl xl:text-5xl font-bold !leading-tight text-color3 mb-5">
+              How We Make Your{" "}
+              <span className="text-color1 ">Flight Possible</span>
+            </h2>
+            <p className="text-zinc-700 text-sm md:text-base leading-relaxed mb-8 ">
+              From first contact to final clearance — a seamless, expert-managed
+              journey for every aviation operation worldwide.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel totam molestias dicta provident officia quisquam corporis nemo adipisci distinctio, accusamus optio?
+            </p>
+            
+            <Buttonmain href="/contact-us" text1="Know More" text2="Contact Now" />
+            <Image src={pro1} alt="img" className="md:h-64 h-44 object-contain"/>
+          </div>
 
-      {/* Blobs */}
-      <div className="absolute top-0 right-0 w-[420px] h-[420px] bg-color2/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[360px] h-[360px] bg-color1/7 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 w-[300px] h-[300px] bg-color4/8 rounded-full blur-[100px] pointer-events-none -translate-x-1/2 -translate-y-1/2" />
+          {/* RIGHT — sticky cards stacked */}
+          <div className="relative h-full pb-10 md:w-[50%] w-full">
+{data.map((card, index) => (
+  <div
+    key={index}
+    style={{ top: `${80 + 18 * index}px`, zIndex: 10 + index }}
+    className="sticky mb-10"
+  >
+    <div className="group relative rounded-3xl overflow-hidden border border-black/10 bg-white shadow-[0_10px_30px_rgba(0,0,0,0.12)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.18)] transition-all duration-500">
 
-      {/* Heading */}
-      <p className="text-sm text-center mx-auto font-bold uppercase tracking-[0.22em] text-color2 mb-5 relative">
-        work process
-      </p>
-      <h2 className="font-bold text-center text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto text-color3 relative">
-        Lorem ipsum dolor sit amet{" "}
-        <span className="text-color1">consectetur</span> adipisicing elit.
-      </h2>
+      {/* 🔷 Background Gradient (unique per index) */}
+      <div
+        className={`absolute inset-0 opacity-40 ${
+          index === 0 || 4
+            ? "bg-gradient-to-br from-blue-100 via-white to-rose-100"
+            : index === 1 || 5
+            ? "bg-gradient-to-br from-emerald-100 via-white to-red-100"
+            : index === 2 || 6
+            ? "bg-gradient-to-br from-orange-100 via-white to-indigo-100"
+            : "bg-gradient-to-br from-zinc-100 via-white to-teal-100"
+        }`}
+      />
 
-      {/* Timeline */}
-      <div className="relative mt-9 md:mt-16 max-w-6xl mx-auto">
-        {/* Center Vertical Line */}
-        <div className="absolute md:left-1/2 left-3 top-0 bottom-0 w-[2px] bg-gradient-to-b from-color2/50 via-color1/70 to-color2/50 -translate-x-1/2" />
+      {/* 🔶 Decorative Lines */}
+     
 
-        {data.map((item, index) => {
-          const isOdd = index % 2 !== 0;
-          return (
-            <ProCard key={index} num={index + 1} pro={item} isOdd={isOdd} />
-          );
-        })}
+      {/* 🌟 Big Faded Icon (background) */}
+      <div className={`absolute left-4 bottom-4 text-[80px] opacity-5 group-hover:opacity-10 transition {card.bg}`}>
+        {card.icon}
       </div>
+
+      {/* CONTENT */}
+      <div className="relative flex flex-col md:flex-row items-center gap-6 p-6 md:p-10">
+
+        {/* LEFT */}
+        <div className="flex-1">
+          
+          {/* Icon + Step */}
+          <div className="flex items-center gap-3 mb-4">
+            <div className={`w-12 h-12 flex items-center justify-center rounded-xl bg-black/5 text-gray-700 text-xl shadow-sm group-hover:scale-110 ${card.bg} transition`}>
+              {card.icon}
+            </div>
+
+            <span className="text-[11px] font-semibold uppercase tracking-widest px-3 py-1 rounded-full bg-black/5 text-gray-600">
+              Step 0{index + 1}
+            </span>
+          </div>
+
+          {/* Title */}
+          <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
+            {card.heading}
+          </h3>
+
+          {/* Text */}
+          <p className={`text-sm md:text-base text-gray-600 leading-relaxed max-w-md`}>
+            {card.text}
+          </p>
+        </div>
+
+        {/* RIGHT IMAGE */}
+        <div className="flex-1 relative flex justify-center md:justify-end">
+          <div className="relative">
+
+            {/* Glow */}
+            <div className="absolute inset-0 blur-2xl bg-black/5 rounded-full" />
+
+            <Image
+              src={card.img}
+              alt={card.heading}
+              className="relative h-32 sm:h-40 md:h-52 object-contain drop-shadow-xl group-hover:scale-105 transition duration-500"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Accent */}
+      <div className="h-[3px] w-0 group-hover:w-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 transition-all duration-500" />
+    </div>
+  </div>
+))} 
+          </div>
+
+        </div>
+      </motion.div>
     </div>
   );
 }
-
-const ProCard = ({
-  pro,
-  isOdd,
-  num,
-}: {
-  pro: any;
-  isOdd: boolean;
-  num: number;
-}) => (
-  <div
-    className={`flex md:flex-row flex-row-reverse items-start gap-0 mb-0 md:mb-0 relative group ${
-      isOdd ? "md:flex-row-reverse" : ""
-    }`}
-  >
-    {/* Card Side */}
-    <div
-      className={` md:w-[48%] ${
-        isOdd ? "md:pl-8 lg:pl-16" : "md:pr-8 lg:pr-16"
-      } pb-7 md:pb-16`}
-    >
-      <Link
-        href="/contact-us"
-        className={`space-y-2 ${
-          isOdd ? "md:text-left md:pl-4" : "md:text-right md:pr-4"
-        }`}
-      >
-        <div className="relative bg-white border border-color2/20 rounded-2xl md:p-10 p-6 text-left h-full transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2 group-hover:border-color2 mx-auto overflow-hidden">
-          
-          {/* Top accent bar on hover */}
-          <div className="absolute top-0 left-6 right-6 h-[3px] bg-gradient-to-r from-color2 to-color1 rounded-b opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-          {/* Number Badge */}
-          <div className="absolute top-5 right-3 px-3 py-2 h-max w-max flex items-center justify-center rounded-full text-sm font-bold bg-color2 text-white shadow-lg shadow-color2/30">
-          Step  0{num}
-          </div>
-
-          {/* Icon Box */}
-          <div className="w-14 h-14 rounded-[14px] flex items-center justify-center text-2xl text-color2 bg-gradient-to-br from-color2/8 to-color1/6 border border-color2/10 mb-5  transition-all duration-300 group-hover:bg-gradient-to-br group-hover:from-color2 group-hover:to-color1 group-hover:text-white group-hover:border-transparent">
-            {pro.icon}
-          </div>
-
-          {/* Heading */}
-          <h2 className="text-xl md:text-2xl font-semibold text-color3 mb-3">
-            {pro.heading}
-          </h2>
-
-          {/* Description */}
-          <p className="text-gray-500 text-base md:text-lg leading-relaxed">
-            {pro.text}
-          </p>
-        </div>
-      </Link>
-    </div>
-
-    {/* Step Side */}
-    <div
-      className={`w-[24%] md:w-[49%] sticky top-40 ${
-        isOdd ? "sm:-mr-[0.48%] " : "md:pl-8 lg:pl-[3.66%] "
-      } `}
-    >
-      <div
-        className={`flex items-center  max-sm:-ml-2 w-full gap-2 md:gap-14 ${
-          isOdd ? "md:flex-row-reverse" : "md:justify-start md:-ml-11"
-        }`}
-      >
-        {/* Animated Icon Circle */}
-        <div className="relative flex-shrink-0">
-          <div className="absolute inset-0 bg-color2 rounded-full animate-ping opacity-40" />
-          <div className="relative  rounded-full p-2  sm:p-3 group-hover:bg-color1 sm:text-3xl text-2xl shadow-lg shadow-color2/20 transition-all duration-300 bg-color2 rotate-180  text-white">
-<MdFlight />
-          </div>
-        </div>
-
-        {/* Ghost Step Number */}
-        <div className="flex flex-col leading-none select-none max-sm:hidden text-9xl text-color2/30 group-hover:text-color2/70">
-          {pro?.icon}
-        </div>
-      </div>
-    </div>
-  </div>
-);

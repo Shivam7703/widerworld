@@ -12,6 +12,7 @@ import {
   FaArrowRightLong,
   FaQuoteLeft,
 } from "react-icons/fa6";
+import { blog_bg } from "@/assets";
 
 export default function Testimonials() {
   const uniqueId = "servic123";
@@ -43,6 +44,11 @@ export default function Testimonials() {
   // bg-back
   return (
     <section className=" lg:px-28 md:px-20 sm:p-12 p-6  text-center relative flex flex-col items-center">
+       <Image
+                    src={blog_bg}
+                    alt="img"
+                    className="absolute top-0 w-full left-0 object-contain z-0"
+                  />
       <div className="w-full text-center flex flex-col items-center gap-y-3 mb-8 ">
         <p className="text-sm text-center mx-auto font-bold uppercase tracking-[0.22em] text-color2  relative">
           testimonials

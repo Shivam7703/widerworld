@@ -7,11 +7,16 @@ import { Whychoose as data } from "@/data/homeData";
 import { BiRightArrowAlt } from "react-icons/bi";
 import Link from "next/link";
 import Buttonmain from "../global/button";
+import { shape1 } from "@/assets";
 
 export default function WhychooseSection() {
   return (
     <section className="w-full relative overflow-hidden bg-gradient-to-br from-white via-color1/5 to-white">
-
+<Image
+              src={shape1}
+              alt="img"
+              className="absolute opacity-60 -bottom-6 max-w-[400px] scale-x-[-1] -right-5 object-contain z-0"
+            />
       {/* Background pattern */}
     
 
