@@ -9,7 +9,7 @@ export default function Blogs({ isHome }: any) {
   return (
     <section
       className={`${
-        isHome ? "lg:px-20 md:px-16 sm:p-12 p-6" : "px-3 pb-5"
+        isHome ? "lg:px-20 xl:px-28 md:px-16 sm:p-12 p-6" : "px-3 pb-5"
       } relative w-full overflow-hidden bg-gradient-to-br from-[#f0f4fb] via-[#e8eef8] to-[#f5f0e8]`}
     >
       {/* Top accent line */}
@@ -39,10 +39,10 @@ export default function Blogs({ isHome }: any) {
       {/* ── GRID ── */}
       <div
         className={`grid ${
-          !isHome ? "" : "lg:grid-cols-3"
-        } sm:grid-cols-2 gap-8 max-w-6xl mx-auto relative z-10`}
+          !isHome ? "" : "lg:grid-cols-4"
+        } sm:grid-cols-2 gap-8  mx-auto relative z-10`}
       >
-        {(isHome ? data?.blog?.slice(0, 3) : data?.blog)?.map(
+        {(isHome ? data?.blog?.slice(0, 4) : data?.blog)?.map(
           (blogs: any, index: number) => (
             <div
               key={index}

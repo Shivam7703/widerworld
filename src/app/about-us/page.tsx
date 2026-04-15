@@ -1,5 +1,4 @@
 import { bann } from "@/assets";
-import Aboutchoose from "@/components/about/aboutchoose";
 import CEOMessage from "@/components/about/founder";
 import OurHistory from "@/components/about/history";
 import Mission from "@/components/about/mission";
@@ -31,10 +30,7 @@ export default function About() {
 <Award/>
 <WhychooseSection/>
 
-      {/* 
-      <CountDown data={countDown} />
-      <Aboutchoose/>
-      <Testimonials/> */}
+      
       
     </>
   );

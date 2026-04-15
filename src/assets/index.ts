@@ -13,6 +13,8 @@ import faq from "@/assets/home/faq.png";
 import blog_bg from "@/assets/home/blog_bg.png";
 import pro1 from "@/assets/home/pro1.png";
 import shape1 from "@/assets/home/shape1.png";
+import mission from "@/assets/home/mission.png";
+import vision from "@/assets/home/vision.png";
 
 
 // visa
@@ -173,7 +175,7 @@ import ukTouristVisa from "@/assets/visa2/UK Tourist Visa.jpg";
 
 
 export {
-shape1,  pro1,  logo , logo2, banner,banner2,banner3 ,back,blog_bg, box1, box2, box3,visa1,process1,usflag, ukflag,canadaflag,  bene2,bene3, bene4,contactb, susbanner,prob,aboutb,careerb, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,heade, count, famvisa, prvisa, business,touristvisa
+shape1,mission, vision,  pro1,  logo , logo2, banner,banner2,banner3 ,back,blog_bg, box1, box2, box3,visa1,process1,usflag, ukflag,canadaflag,  bene2,bene3, bene4,contactb, susbanner,prob,aboutb,careerb, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,heade, count, famvisa, prvisa, business,touristvisa
  , sus1,sus2, sus3, sus4, choose1, blog1, blog2, blog3, footerImage, plane, patta, kangaroo, atlanticImmigration, 
   albertaPointsCalculator,faq,ceo,
   alberta, immigration, Career, ielts, jobAssist, PostLanding ,profile, pte ,visaDocument,

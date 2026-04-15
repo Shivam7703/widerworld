@@ -46,7 +46,7 @@ export default function WhychooseSection() {
           <div className="absolute -bottom-3 -left-3 w-20 h-20 border-b-[3px] border-l-[3px] border-color1/40 rounded-bl-2xl pointer-events-none" />
 
           {/* Image container */}
-          <div className="relative w-full h-full min-h-[460px] rounded-2xl overflow-hidden border-[3px] border-white shadow-2xl">
+          <div className="relative hover14 w-full h-full min-h-[460px] rounded-2xl overflow-hidden border-[3px] border-white shadow-2xl">
 
             {/* Gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-color3/25 via-transparent to-transparent z-10" />
