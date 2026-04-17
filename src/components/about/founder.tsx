@@ -110,13 +110,12 @@ export default function CEOMessage() {
               className="text-xl md:text-[22px] font-bold text-color3 leading-[1.5] mb-6 relative z-10"
               style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic" }}
             >
-              "We started with one simple belief — immigration should be transparent, reliable, and accessible. Built on dedication and a commitment to excellence every single day."
+              "From the very beginning, our vision was clear — to make immigration simple, transparent, and truly dependable for every individual. Built on trust and driven by consistency, we focus on doing things the right way, every single day."
             </p>
 
             {/* Body */}
             <p className="text-gray-500 text-sm leading-relaxed mb-8">
-              Our goal is not just to process applications but to build trust in every journey. We grow responsibly, innovate continuously, and create opportunities while maintaining the highest standards of service and integrity.
-            </p>
+Our aim goes beyond just processing applications. We believe in building long-term trust through honest guidance and structured support. With a focus on continuous improvement and responsible growth, we are committed to creating meaningful global opportunities while maintaining the highest standards of integrity and service.            </p>
 
             {/* ── Stats — unique bar style ── */}
             <div className="flex flex-col gap-4 mb-8">
@@ -146,7 +145,7 @@ export default function CEOMessage() {
             <div className="border-l-[3px] border-color1 pl-5 py-2 bg-color1/4 rounded-r-xl mb-8"
               style={{ borderRadius: "0 12px 12px 0" }}>
               <p className="text-gray-500 text-sm italic leading-relaxed">
-                "Connecting lives with trust, clarity, and excellence in every immigration journey we deliver."
+                "Helping people move forward with clear guidance, genuine support, and a commitment to doing things right in every immigration journey."
               </p>
             </div>
 

@@ -4,80 +4,105 @@ import Link from "next/link";
 import { serviceData } from "@/data/homeData";
 
 export default function ServiceSection() {
-
- 
-
   return (
-    <section className="p-4 sm:p-16 lg:px-24 md:px-20 max-w-[1450px] mx-auto !scroll-smooth">
-      {/* Section header */}
-      <div className="w-full text-center flex flex-col items-center gap-y-4 mb-11 md:mb-16">
-          <h4 className="text-color2  mx-auto  font-semibold uppercase text-sm ">
-                    {serviceData?.title1}
-                  </h4>
-      <h2 className="text-color3 font-black capitalize !leading-tight text-2xl md:text-4xl max-w-2xl  mx-auto ">
-               {serviceData?.title2}
-              </h2>
+    <section className="py-14 sm:py-24 px-4 sm:px-16 lg:px-24 max-w-[1450px] mx-auto">
+
+      {/* Header */}
+      <div className="text-center mb-14">
+       <h4 className="text-color2 text-xs font-bold tracking-[0.2em] uppercase mb-4">
+{serviceData.title1}        </h4>
+        <h2
+          className="text-color3 font-bold capitalize text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto"
+        >
+{serviceData.title2}  {" "}         <span className="text-color1">{serviceData.title3} </span>
+        </h2>
+        <div className="w-16 h-[2px] bg-color4 mx-auto mt-4 rounded-full" />
       </div>
 
-      {/* Project grid */}
-      <div
-        className="relative gap-5 md:gap-16 py-7 md:pb-12 grid md:grid-cols-3 grid-cols-2 overflow-y-hidden"
-      >
-       
- {serviceData?.services?.map((pro, index: number) => (
-  <div
-    key={index}
-    className={`group relative rounded-2xl overflow-hidden cursor-pointer
-      shadow-2xl shadow-black/50 
-      hover:shadow-[0_16px_48px_rgba(26,47,74,0.20)]
-      transition-all duration-500 sm:h-[420px] h-72
-    `}
-  >
-    {/* Image */}
-    <Image
-      src={pro.img}
-      alt={pro.title}
-      fill
-      className="object-cover transition-all duration-700 ease-out group-hover:scale-105"
-    />
+      {/* Grid */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
 
+        {serviceData?.services?.map((pro, index: number) => (
+          <div
+            key={index}
+            className="group relative h-[320px] sm:h-[380px] lg:h-[420px] rounded-2xl overflow-hidden"
+          >
 
-    {/* Bottom content panel — dark frosted */}
-    <Link
-      href={`/projects/${pro.title
-        .trim()
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-+|-+$/g, "")}`}
-      className="absolute bottom-0 left-0 right-0 z-20 w-[90%]"
-    >
-      <div
-        className="p-3 sm:p-5 transition-all duration-500 rounded-lg backdrop-blur-md bg-gradient-to-r from-black/80 via-zinc-700/80 to-black/80"
-      >
-        {/* Icon + Title row */}
-        <div className="flex items-center sm:gap-4 gap-2 mb-3">
-          {/* Icon circle */}
-          <div className="sm:w-12 sm:h-12 h-8 w-8 rounded-xl border border-white/60 flex items-center justify-center flex-shrink-0 text-white sm:text-xl text-base 
-            group-hover:border-white/60 group-hover:bg-white/20 transition-all duration-300">
-            {pro.icon}
+            {/* Image */}
+            <Image
+              src={pro.img}
+              alt={pro.title}
+              fill
+              className="object-cover transition duration-700 group-hover:scale-110"
+            />
+
+            {/* Dark luxury overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/50 to-black/90" />
+
+            {/* Glass effect layer */}
+            <div className="absolute inset-0 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition duration-500" />
+
+            {/* Premium Badge */}
+            <div className="absolute top-4 left-4 z-20 px-3 py-[5px] text-[10px]
+                            bg-black/40 backdrop-blur-md border border-color4/40
+                            text-[#E6D3A3] rounded-full tracking-widest uppercase">
+              Immigration
+            </div>
+
+            {/* Content */}
+            <Link
+              href={`/projects/${pro.title
+                .trim()
+                .toLowerCase()
+                .replace(/[^a-z0-9]+/g, "-")}`}
+              className="absolute bottom-0 w-full p-5 z-20"
+            >
+
+              {/* Icon */}
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center
+                              bg-color4/10 border border-color4/40 text-color4
+                              mb-3 transition-all duration-300
+                              group-hover:bg-color4/20 group-hover:shadow-[0_0_20px_rgba(198,164,92,0.35)]">
+                {pro.icon}
+              </div>
+
+              {/* Title */}
+              <h3
+                className="text-white text-[1rem] sm:text-[1.2rem] font-semibold mb-2 leading-snug"
+                style={{ fontFamily: "'Playfair Display', serif" }}
+              >
+                {pro.title}
+              </h3>
+
+              {/* Divider */}
+              <div className="h-[1px] bg-white/20 mb-3 relative overflow-hidden">
+                <span className="absolute left-0 top-0 h-full w-6 bg-color4 group-hover:w-full transition-all duration-500" />
+              </div>
+
+              {/* Description */}
+              <p className="text-white/70 text-xs leading-relaxed
+                            max-h-0 opacity-0 overflow-hidden
+                            group-hover:max-h-24 group-hover:opacity-100
+                            transition-all duration-500">
+                Expert guidance for visa processing, documentation, and smooth
+                immigration journeys tailored to your goals.
+              </p>
+
+              {/* CTA */}
+              <span className="inline-flex items-center gap-1 mt-3 text-[10px]
+                               tracking-[0.2em] uppercase text-color4
+                               opacity-0 translate-y-2
+                               group-hover:opacity-100 group-hover:translate-y-0
+                               transition-all duration-300">
+                Discover →
+              </span>
+            </Link>
+
+            {/* Hover glow border */}
+            <div className="absolute inset-0 rounded-2xl border border-transparent
+                            group-hover:border-color4/40 transition duration-500" />
           </div>
-          <h2 className="text-white font-bold text-sm sm:text-2xl leading-tight">
-            {pro.title}
-          </h2>
-        </div>
-
-        {/* Divider line — animated */}
-        <div className="w-full bg-zinc-500">
-        <div className="h-[1.5px] w-10 bg-white/90 group-hover:w-full  duration-500 rounded-full my-4" />
-</div>
-        
-          <p className="text-gray-100 sm:text-base text-xs group-hover:sm:py-4 max-h-0 group-hover:max-h-96 duration-300 leading-relaxed overflow-hidden">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat adipisci nostrum, optio officiis repellendus architecto ea aliquid nobis suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui doloremque repudiandae quia.
-          </p>
-      </div>
-    </Link>
-  </div>
-))}
+        ))}
 
       </div>
     </section>

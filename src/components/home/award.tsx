@@ -8,10 +8,10 @@ import Buttonmain from "../global/button";
 import { bann, cl1, cl2, cl4 } from "@/assets";
 
 const checkpoints = [
-  "Customer-Centric Approach",
+  "Customer-Focused Approach",
   "Transparent Communication",
-  "365 / 24x7 Quick Supports",
-  "Critical Illness Insurance",
+  "24x7 Quick Supports",
+  "Complete Visa Solutions",
 ];
 
 const avatars = [
@@ -20,7 +20,7 @@ const avatars = [
   cl4,
 ];
 
-export default function Award({ data }: any) {
+export default function Award() {
   return (
     <section className="relative w-full bg-white p-6 md:p-16">
 
@@ -42,24 +42,24 @@ export default function Award({ data }: any) {
           >
             {/* Label */}
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-gray-200 mb-5">
-              {data?.label ?? "About Bustar Insurance"}
+INDIA’S NO.1 Certified Immigration & Visa Experts
             </p>
 
             {/* Heading */}
             <h2 className="text-white font-bold text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
-              {data?.heading ?? (
-                <>Secure your family&apos;s with trusted insurance today</>
-              )}
+              Secure your future abroad with the best immigration consultants in Delhi today.
+
             </h2>
 
             {/* Paragraph */}
             <p className="text-gray-400  md:text-base leading-relaxed mb-8 max-w-lg">
-              {data?.para ?? "We are a trusted insurance provider with years of experience, helping individuals and businesses secure their future with the right coverage"}
+             We are a reliable immigration service provider with proven experience, helping individuals and families achieve their global goals with the right visa pathways
+
             </p>
 
             {/* 2×2 Checkpoints Grid */}
             <div className="grid grid-cols-2 gap-x-6 gap-y-4 mb-10">
-              {(data?.checkpoints ?? checkpoints).map((item: string, i: number) => (
+              {checkpoints.map((item: string, i: number) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 10 }}
@@ -96,7 +96,7 @@ export default function Award({ data }: any) {
             <div className="relative h-72 sm:h-96 w-full rounded-xl overflow-hidden"
               >
               <Image
-                src={data?.img || bann}
+                src={ bann}
                 alt="insurance"
                 fill
                 className="object-cover object-center h-full w-full "
@@ -118,7 +118,7 @@ export default function Award({ data }: any) {
               <div className="flex items-center gap-4 mb-3">
                 {/* Overlapping avatars */}
                 <div className="flex -space-x-3 flex-shrink-0">
-                  {(data?.avatars ?? avatars).map((src: string, i: number) => (
+                  {avatars?.map((src:any, i: number) => (
                     <div
                       key={i}
                       className="w-10 h-10 rounded-full border-2 border-color1 overflow-hidden relative"
@@ -136,17 +136,18 @@ export default function Award({ data }: any) {
 
                 {/* Contact link */}
                 <Link
-                  href={data?.expertHref ?? "/contact"}
+                  href={ "/contact"}
                   className="text-white font-bold text-base underline underline-offset-2
                     hover:text-white/80 transition-colors duration-200 leading-snug"
                 >
-                  {data?.expertText ?? "Contact Our Experts"}
+          Start Your Journey With Us
                 </Link>
               </div>
 
               {/* Description */}
               <p className="text-white/85 text-sm leading-relaxed">
-                {data?.expertDesc ?? "We provide the best services to ensuring your outstanding growth Lorem ipsum dolor sit."}
+               Our team is here to guide you with the right support for smooth and successful outcomes
+
               </p>
             </motion.div>
 

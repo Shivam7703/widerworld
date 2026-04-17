@@ -8,12 +8,32 @@ import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { HiArrowUpRight } from "react-icons/hi2";
 
 const data = [
-  { title: "IELTS",  text: "lorem ipsum adipisicing elit. Et nisi quis repellendus!", href: "visa/ielts" },
-  { title: "TOEFL",  text: "lorem ipsum adipisicing elit. Et nisi quis repellendus!", href: "visa/toefl" },
-  { title: "PTE",    text: "lorem ipsum adipisicing elit. Et nisi quis repellendus!", href: "visa/pte"   },
-  { title: "GMAT",   text: "lorem ipsum adipisicing elit. Et nisi quis repellendus!", href: "visa/gmat"  },
-  { title: "GRE",    text: "lorem ipsum adipisicing elit. Et nisi quis repellendus!", href: "visa/gre"   },
-  { title: "SAT",    text: "lorem ipsum adipisicing elit. Et nisi quis repellendus!", href: "visa/sat"   },
+  {
+    title: "IELTS",
+    text: "Prepare for IELTS with expert guidance and regular practice sessions",
+    href: "visa/ielts",
+  },
+  {
+    title: "PTE",
+    text: "Score high in PTE with structured learning and practice sessions",
+    href: "visa/pte",
+  },
+  {
+    title: "TOEFL",
+    text: "Master the TOEFL exam with smart strategies and consistent practice daily",
+    href: "visa/toefl",
+  },
+  {
+    title: "OET",
+    text: "Get specialized OET training for healthcare professionals with expert guidance",
+    href: "visa/oet",
+  },
+  {
+    title: "CELPIP",
+    text: "Achieve CELPIP success with focused coaching and regular practice sessions",
+    href: "visa/celpip",
+  },
+  
 ];
 
 export default function Coaching() {
@@ -55,8 +75,8 @@ export default function Coaching() {
         <h2
           className="text-color3 font-black text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto"
         >
-          Lorem ipsum, dolor sit amet{" "}
-          <span className="text-color1">consectetur</span>
+          Expert Coaching Programs to{" "}
+          <span className="text-color1">Boost Your Success</span>
         </h2>
         <div className="w-24 h-[2px] bg-gradient-to-r from-color2 to-color1 mx-auto rounded-full" />
       </div>

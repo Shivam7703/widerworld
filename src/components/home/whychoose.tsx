@@ -4,8 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import { Whychoose as data } from "@/data/homeData";
-import { BiRightArrowAlt } from "react-icons/bi";
-import Link from "next/link";
+
 import Buttonmain from "../global/button";
 import { shape1 } from "@/assets";
 
@@ -93,15 +92,13 @@ export default function WhychooseSection() {
           className="sm:w-[47%] w-full sm:space-y-6 space-y-5"
         >
          <span className="block text-color2 font-bold uppercase text-xs tracking-[0.22em]">
-          Why choose us
-        </span>
+{data?.title1}        </span>
 
           {/* Heading */}
-          <h2 className="font-black text-color3 text-3xl md:text-5xl leading-tight" >
-            Lorem ipsum dolor sit.
-            <span className="block mt-2 text-color1">
-              Lorem, ipsum.
-            </span>
+          <h2 className="font-black text-color3 capitalize text-3xl md:text-5xl leading-tight" >
+            {data?.title2} {" "}
+            <span className=" text-color1">
+{data?.title3}             </span>
           </h2>
 
           {/* Para */}

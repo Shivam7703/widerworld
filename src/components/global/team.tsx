@@ -8,7 +8,7 @@ import { FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
 const data = {
   title1: "Meet Our Team",
   title2: "Our Team is Our",
-  title3: "Speciality & Pride",
+  title3: "Strength and Success",
   members: [
     { img: ceo, name: "Raman Kartik",  designation: "Graphic Designer"   },
     { img: ceo, name: "Priya Sharma",  designation: "Lead Engineer"       },
@@ -72,7 +72,7 @@ export default function Team() {
           <div className="h-[3px] w-16 rounded-full bg-gradient-to-r from-color2 to-color1" />
 
           <p className="text-gray-400 text-base max-w-2xl leading-relaxed">
-            The passionate individuals behind our excellence — each bringing unique expertise and dedication to every project.
+A dedicated group of professionals committed to delivering the best guidance with expertise, experience, and genuine support at every step of your journey.
           </p>
         </motion.div>
 

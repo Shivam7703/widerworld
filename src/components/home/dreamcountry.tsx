@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react'
 import Countryslider from './countryslider'
-import { canadapnp } from "@/data/homeData";
+import { offercountry } from "@/data/homeData";
 import { blog_bg } from '@/assets';
 import Image from 'next/image';
 
@@ -15,7 +15,7 @@ function Dreamcountry() {
   const [cat, setCat] = useState("mbbs");
 
 const filterData = {
-  cards: canadapnp.cards.filter((card) => card.cat === cat)
+  cards: offercountry.cards.filter((card) => card.cat === cat)
 };
   return (
     <section className="bg-color3 relative overflow-hidden md:py-7 ">
@@ -23,10 +23,10 @@ const filterData = {
       {/* ── HEADER ── */}
       <div className="p-6 relative z-10 text-center ">
         <p className="text-sm font-bold uppercase text-gray-200 mb-4">
-          {canadapnp.title1}
+          {offercountry.title1}
         </p>
         <h2 className="text-white font-bold text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto">
-          {canadapnp.title2}
+          {offercountry.title2}
         </h2>
 
         {/* thin line */}
@@ -52,7 +52,7 @@ const filterData = {
 
         {/* Slider */}
         <div className="pb-4 sm:p-10 lg:px-20  relative">
-          <Countryslider data={filterData} uniqueId="dream123" />
+          <Countryslider data={filterData} uniqueId="dream1238" />
         </div>
     </section>
   );

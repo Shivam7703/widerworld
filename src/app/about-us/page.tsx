@@ -18,7 +18,7 @@ export default function About() {
         img={bann}
         title={"About Us"}
         para={
-          "Experienced visa consultants in Noida deliver clear guidance, professional support, and reliable immigration solutions for global opportunities."
+          "Helping individuals and families achieve their global dreams with expert guidance, reliable visa solutions, and personalized support at every step."
         }
         slug={"about-us"}
       />

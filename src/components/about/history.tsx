@@ -18,42 +18,42 @@ const milestones = [
     theme: "amber", 
     icon: LuSparkles, 
     title: "The Beginning",        
-    text: "Founded with a single office and a vision to simplify immigration. Started with 3 team members and a passion for changing lives."          
+    text: "The journey began with a clear goal—to simplify immigration for individuals facing confusion and misinformation. Starting with focused consultation services, the aim was to provide honest guidance, profile-based solutions, and a transparent approach to every visa application from day one."          
   },
   { 
     year: "2008", 
     theme: "indigo",  
     icon: LuBuilding2, 
-    title: "National Expansion",     
-    text: "Expanded operations across 5 major cities. Crossed 500 successful visa applications milestone with a certified team."              
+    title: "Expansion of Services",     
+    text: "As client trust grew, services expanded beyond consultation into complete visa processing. From documentation to application filing, structured systems were introduced to handle different visa categories efficiently while maintaining accuracy and compliance with changing immigration policies."              
   },
   { 
     year: "2012", 
     theme: "amber", 
     icon: LuAward, 
-    title: "Global Recognition",     
-    text: "Received first international certification and partnered with 50+ universities worldwide for global education pathways."                   
+    title: "Building Industry Recognition",     
+    text: "Consistent results and client satisfaction helped build a strong reputation in the immigration space. Through reliable guidance and successful outcomes, the company gained recognition as a dependable partner for individuals planning to study, work, or settle abroad."                   
   },
   { 
     year: "2016", 
     theme: "indigo",  
     icon: LuGraduationCap, 
-    title: "5,000 Lives Changed",    
-    text: "Celebrated 5,000+ successful clients. Launched dedicated MBBS abroad and specialized study visa expert divisions."           
+    title: "Years of Experience",    
+    text: "With years of hands-on experience, the team developed deep expertise in handling diverse immigration profiles. This experience allows better understanding of complex cases, improving success rates and ensuring clients receive well-informed and practical guidance."           
   },
   { 
     year: "2020", 
     theme: "amber", 
     icon: LuMonitorSmartphone, 
-    title: "Digital Transformation", 
-    text: "Launched digital platform for end-to-end visa tracking. Served clients across 100+ countries during global challenges."                 
+    title: "Clients Successfully Served", 
+    text: "A growing base of satisfied clients reflects strong trust and consistency, with thousands of applications handled precisely, high client satisfaction with repeat referrals, and a proven track record across multiple visa categories."                 
   },
   { 
     year: "2024", 
     theme: "indigo",  
     icon: LuGlobe, 
-    title: "20 Years Excellence", 
-    text: "Celebrating two decades of trust — 10,000+ satisfied clients, 150+ country coverage, and a 95% approval rate."                               
+    title: "Proven Success Rate", 
+    text: "The journey continues with a strong focus on results. A high success rate, backed by structured processes and expert guidance, highlights the commitment to delivering positive outcomes and helping clients achieve their global goals with confidence."                               
   },
 ];
 

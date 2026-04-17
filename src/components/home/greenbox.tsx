@@ -1,5 +1,5 @@
 "use client";
-import { box1, box2, box3 } from "@/assets";
+import { box1, box2, box3, mission, plane, pro1, vision } from "@/assets";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,27 +12,27 @@ export default function Greenbox() {
   const data = [
     {
       id: 1,
-      img: box1,
-      heading: "Passport Services",
-      para: "Complete assistance for passport applications, renewals, and documentation.",
+      img: mission,
+      heading: "Visa Application Support",
+      para: "Complete assistance with visa filing, ensuring every step is handled accurately for better approval chances",
       icon: <BsPassportFill />,
-      bg: "bg-color3",
+      bg: "bg-white border",
     },
     {
       id: 2,
-      img: box2,
-      heading: "Fast-Track Visa Processing",
-      para: "Efficient visa handling with accurate documentation and timely submissions.",
+      img: plane,
+      heading: "Documentation Assistance",
+      para: "Proper guidance for preparing and verifying all required documents to avoid errors and delays.",
       icon: <RiSpeedMiniFill />,
-      bg: "bg-color2",
+      bg: "bg-white border",
     },
     {
       id: 3,
-      img: box3,
-      heading: "Dedicated Client Support",
-      para: "Expert assistance and guidance at every step of your immigration process.",
+      img: vision,
+      heading: "Client Support Services",
+      para: "Dedicated support for every client with clear communication and guidance throughout the entire process.",
       icon: <RiUserCommunityFill />,
-      bg: "bg-color3",
+      bg: "bg-white border",
     },
   ];
 
@@ -54,48 +54,36 @@ export default function Greenbox() {
             hover:shadow-[0_35px_80px_rgba(0,0,0,0.35)]`}
           >
 
-             {/* <div className="relative h-[240px] overflow-hidden">
-              <Image
-                src={card.img}
-                alt={card.heading}
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-
-              <div className="absolute inset-0 bg-gradient-to-b
-              from-transparent via-transparent to-black/70" />
-            </div> */}
-
-
+             <div className="h-56 w-56 bg-gradient-to-tr from-red-500 to-red-700 rotate-45 z-0 absolute -top-32 -right-32 object-contain"/>
+             <div className="h-56 w-56 bg-gradient-to-tr from-red-500 to-red-700 opacity-30 rotate-45 z-0 absolute -top-4 -right-44 object-contain"/>
 
             {/* BODY */}
             <div className="px-7 pt-11 pb-8 text-white">
             {/* ICON */}
             <div
               className=" w-[60px] h-[60px] mb-5 
-              rounded-xl bg-white/10 backdrop-blur-md
-              border border-white/30
+              rounded-xl bg-color5 
               flex items-center justify-center text-[24px] text-white
-              shadow-lg transition-all duration-400
+               transition-all duration-400 shadow-md shadow-black/35
               group-hover:scale-110 group-hover:-rotate-6"
              
             >
               {card.icon}
             </div>
               {/* GOLD LINE */}
-              <div className="h-[3px] bg-[#C9992A] rounded-full mb-4
+              <div className="h-[3px] bg-color1 rounded-full mb-4
               w-10 transition-all duration-400 group-hover:w-24" />
 
               {/* TITLE */}
               <h2
-                className="text-[24px] font-bold mb-3"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                className="text-[24px] font-bold text-color3 mb-3"
+              
               >
                 {card.heading}
               </h2>
 
               {/* PARA */}
-              <p className="text-[15px] text-white/80 leading-[1.7] mb-6">
+              <p className="text-[15px] text-black/80 leading-[1.7] mb-6">
                 {card.para}
               </p>
 
@@ -105,10 +93,10 @@ export default function Greenbox() {
                 className="inline-flex items-center gap-2
                 px-5 py-[9px] rounded-full
                 text-[13px] font-semibold tracking-wide
-                border border-white/40 text-white
+                border border-black/40 text-black
                 backdrop-blur-sm
                 transition-all duration-300
-                hover:bg-white hover:text-black"
+                hover:bg-black hover:text-white"
               >
                 Learn More
                 <MdArrowRightAlt className="text-[18px]

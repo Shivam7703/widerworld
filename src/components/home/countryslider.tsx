@@ -31,7 +31,7 @@ export default function Countryslider({data, uniqueId}:any) {
           >
             {data?.cards?.map((card: any, index: number) => (
 
-<SwiperSlide key={card.id ?? index}>
+<SwiperSlide key={index}>
   <div
     className="group relative my-6 bg-white rounded-3xl overflow-hidden
     shadow-lg hover:shadow-2xl 

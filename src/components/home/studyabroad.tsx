@@ -8,10 +8,10 @@ const imgs=[
     box1,box2,box3
 ]
 const features = [
-  "Experienced Visa Consultants",
-  "Fast & Reliable Processing",
-  "Personalized Travel Assistance",
-  "Global Reach And Support",
+  "Experienced Immigration Consultants",
+  "Fast & Reliable Visa Processing",
+  "Personalized Client Assistance",
+  "Global reach and support",
 ];
 
 export default function Studyabrod() {
@@ -76,15 +76,14 @@ export default function Studyabrod() {
 
         {/* Heading */}
         <h2 className="font-extrabold uppercase text-color3 text-3xl md:text-4xl lg:text-5xl !leading-tight mb-5">
-          Trusted Guidance For Every{" "}
-          <span className="text-color1">Visa Journey</span>
+          Trusted Support for Every Step of Your{" "}
+          <span className="text-color1">VImmigration Journey</span>
         </h2>
 
         {/* Description */}
         <p className="text-gray-500 text-base leading-relaxed mb-8 max-w-lg">
-          We Provide Expert Guidance For Every Visa Application, Ensuring Smooth
-          Processing, Personalized Support, And Reliable Assistance To Make Your
-          Travel Experience Seamless And Stress-Free.
+          We provide professional assistance for every visa application, ensuring a smooth process, accurate documentation, and reliable support to make your journey abroad simple and stress-free.
+
         </p>
 
         {/* Experience + Features */}

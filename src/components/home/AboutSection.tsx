@@ -2,16 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import Buttonmain from "../global/button";
-import { plane } from "@/assets";
-const stats = [
-  { label: "Visa Success Rate", value: 98,  display: "98%",  color: "#378ADD", sub: "Success"  },
-  { label: "Happy Clients",     value: 94,  display: "94%",  color: "#1D9E75", sub: "Happy"    },
-  { label: "Countries Covered", value: 87,  display: "87%",  color: "#EF9F27", sub: "Coverage" },
-  { label: "Total Clients",     value: 96,  display: "10K+", color: "#D4537E", sub: "Clients"  },
-];
-const r = 40, circ = 2 * Math.PI * r; // ≈ 251.2
 
 export default function AboutSection({ data }:any) {
   return (
@@ -153,11 +144,7 @@ export default function AboutSection({ data }:any) {
     </div>
   </motion.div>
 )}
- {/* <Image
-      src={plane}
-      alt="immigration"
-      className="z-30 absolute bottom-4 right-[4%] object-contain w-max h-1/3 animate-y"
-    /> */}
+ 
   </div>
 </div>
 
@@ -170,47 +157,4 @@ export default function AboutSection({ data }:any) {
 
 
 
-
- {/* Stats card */}
-    {/* <div className="absolute -bottom-6 z-40 -left-24 flex gap-5 items-center max-md:scale-50 bg-white rounded-2xl">
-      <div className="bg-gradient-to-br from-color1/20 via-rose-500/5 to-rose-700/10 rounded-2xl shadow-black/50 border border-gray-100 shadow-xl sm:p-6 p-3 flex flex-wrap sm:gap-6 justify-center">
-        {stats.map((s, i) => (
-          <CircularStat key={i} stat={s} delay={i * 0.15} />
-        ))}
-      </div>
-    </div> */}
-
-
-function CircularStat({ stat, delay }: { stat: typeof stats[0]; delay: number }) {
-  const offset = circ - (stat.value / 100) * circ;
-  return (
-    <div className="flex flex-col items-center gap-2">
-      <svg width="100" height="100" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r={r} fill="none" stroke="#e5e7eb" strokeWidth="7" />
-        <motion.circle
-          cx="50" cy="50" r={r}
-          fill="none"
-          stroke={stat.color}
-          strokeWidth="7"
-          strokeLinecap="round"
-          strokeDasharray={circ}
-          initial={{ strokeDashoffset: circ }}
-          whileInView={{ strokeDashoffset: offset }}
-          transition={{ delay, duration: 1.4, ease: "easeOut" }}
-          style={{ rotate: "-90deg", transformOrigin: "50% 50%" }}
-        />
-        <text x="50" y="46" textAnchor="middle" dominantBaseline="central"
-          className="fill-color3 font-semibold" style={{ fontSize: 20 }}>
-          {stat.display}
-        </text>
-        <text x="50" y="65" textAnchor="middle" dominantBaseline="central"
-          className="fill-gray-400" style={{ fontSize: 10 }}>
-          {stat.sub}
-        </text>
-      </svg>
-      <span className="text-sm font-medium text-gray-500 text-center leading-tight">
-        {stat.label}
-      </span>
-    </div>
-  );
-}
+ 

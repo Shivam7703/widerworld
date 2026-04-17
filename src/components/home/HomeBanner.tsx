@@ -35,7 +35,7 @@ export default function HomeBanner() {
 
   return (
     <section
-      className="relative w-full overflow-hidden h-[70vh] md:h-screen"
+      className="relative w-full overflow-hidden h-[70vh] md:h-screen max-h-[700px]"
     >
       {/* ── Swiper ── */}
       <Swiper {...swiperOptions} className="w-full h-full">
@@ -86,14 +86,11 @@ export default function HomeBanner() {
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.25 }}
-                        className="text-white font-bold leading-tight mb-5"
-                        style={{
-                          fontFamily: "'Cormorant Garamond', serif",
-                          fontSize: "clamp(2rem, 4.5vw, 3.75rem)",
-                        }}
+                        className="text-white font-bold lg:text-5xl md:text-3xl text-2xl !leading-tight capitalize mb-5"
+                       
                       >
                         {item.title1}
-                        <span className="text-color4"> {item.title2}</span>
+                        <span className="text-color4 "> {item.title2}</span>
                       </motion.h1>
 
                       {/* Para */}
@@ -101,7 +98,7 @@ export default function HomeBanner() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
-                        className="text-white/90 sm:text-xl text-lg leading-relaxed mb-8 max-w-xl"
+                        className="text-white/90 sm:text-base  text-sm leading-relaxed mb-8 max-w-xl"
                       >
                         {item.para}
                       </motion.p>

@@ -13,65 +13,50 @@ const data = [
     img: pro1,
     icon: <FaWpforms />,
     heading: "Initial Consultation",
-    text: "Understanding client requirements, aircraft details, and operational timelines clearly.",
+    text: "Understanding your profile and goals, and discussing suitable visa options clearly",
     bg: "text-violet-700",
-  
   },
   {
     img: pro1,
     icon: <MdOutlineSettings />,
-    heading: "Strategic Planning",
-    text: "Preparing documentation, approvals, and coordination plans with authorities.",
+    heading: "Profile Evaluation",
+    text: "Assessing eligibility and suggesting the best pathways based on your background",
     bg: "text-emerald-700",
-  
   },
   {
     img: pro1,
     icon: <MdOutlineEngineering />,
-    heading: "Execution & Coordination",
-    text: "Managing permits, slots, handling, and services efficiently.",
+    heading: "Documentation Guidance",
+    text: "Providing support to prepare and organize all required documents correctly",
     bg: "text-teal-700",
-    
   },
   {
     img: pro1,
     icon: <LuHandshake />,
-    heading: "Final Confirmation",
-    text: "Providing updates, confirmations, and ensuring smooth flight completion.",
-      bg: "text-rose-700",
-
+    heading: "Application Preparation",
+    text: "Filling and reviewing your application with accuracy and attention to detail",
+    bg: "text-rose-700",
   },
   {
     img: pro1,
     icon: <FaWpforms />,
-    heading: "Initial Consultation",
-    text: "Understanding client requirements, aircraft details, and operational timelines clearly.",
+    heading: "Submission Process",
+    text: "Timely submission of the application with proper checks and compliance standards",
     bg: "text-violet-700",
-  
   },
   {
     img: pro1,
     icon: <MdOutlineSettings />,
-    heading: "Strategic Planning",
-    text: "Preparing documentation, approvals, and coordination plans with authorities.",
+    heading: "Follow-Up & Updates",
+    text: "Tracking application status and providing regular updates throughout the process",
     bg: "text-emerald-700",
-  
   },
   {
     img: pro1,
     icon: <MdOutlineEngineering />,
-    heading: "Execution & Coordination",
-    text: "Managing permits, slots, handling, and services efficiently.",
+    heading: "Final Outcome Support",
+    text: "Assisting you after approval with the next steps and travel guidance",
     bg: "text-teal-700",
-    
-  },
-  {
-    img: pro1,
-    icon: <LuHandshake />,
-    heading: "Final Confirmation",
-    text: "Providing updates, confirmations, and ensuring smooth flight completion.",
-      bg: "text-rose-700",
-
   },
 ];
 
@@ -85,16 +70,16 @@ export default function WorkProcessSlider() {
         viewport={{ once: true }}
       >
         <div className="flex  flex-wrap justify-between relative items-start">
-
+  
           {/* LEFT */}
           <div className="sticky top-20 md:w-[46%] h-full  w-full">
             <p className="flex items-center gap-2 text-xs font-semibold uppercase  text-color1 mb-5">
               <span className="w-7 h-0.5 bg-color1 rounded-full inline-block" />
               Work Process
             </p>
-            <h2 className=" text-3xl md:text-4xl xl:text-5xl font-bold !leading-tight text-color3 mb-5">
-              How We Make Your{" "}
-              <span className="text-color1 ">Flight Possible</span>
+            <h2 className=" text-3xl md:text-4xl xl:text-5xl font-bold !leading-tight text-color3 capitalize mb-5">
+              Simple steps ensuring smooth{" "}
+              <span className="text-color1 ">visa processing</span>
             </h2>
             <p className="text-zinc-700 text-sm md:text-base leading-relaxed mb-8 ">
               From first contact to final clearance — a seamless, expert-managed

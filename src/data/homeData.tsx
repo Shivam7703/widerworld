@@ -60,7 +60,7 @@ export const navigationMenu = {
     {
       id: 3,
       label: "Our Services",
-      href: "#",
+      href: "services",
       subNav: [
         { id: 1, label: "Visa Services", href: "/services/visa-services" },
         { id: 2, label: "Career Counselling", href: "/services/career-counselling" },
@@ -274,22 +274,22 @@ export const sliderContent = [
   {
     id: 1, // Fix duplicate id issue by using unique ids
     img: banner2,
-    welcome: "Best Agri-input & Crop Protection Firm ",
-    title1: "Helping farmers grow more with ",
-    title2: "simple and effective products.",
+    welcome: "Best Immigration Consultants in Delhi",
+    title1: "Experts guiding your global career with ",
+    title2: "complete visa support",
     para:
-      "Making farming simple and effective. Your crops will be protected while the soil gets nourished for increased production.",
+      "Get step-by-step assistance, accurate documentation, and reliable guidance to make your visa process smooth, secure, and successful.",
     btntext: "Contact Us",
     href: "/contact-us",
   },
   {
     id: 2, // Fix duplicate id issue by using unique ids
     img: bann,
-    welcome: "Best Agri-input & Crop Protection Firm ",
-    title1: "Leading the Future of Crop ",
-    title2: "Protection & Growth",
+    welcome: "Build Your Future Abroad with Confidence",
+    title1: "Secure your future abroad with trusted",
+    title2: "work and PR pathways",
     para:
-      "Empowering farmers with innovative agri-solutions that ensure healthier crops and higher yields. Sustainable, effective, and farmer-focused—we help you grow with confidence.",
+      "We connect you with verified opportunities, strong profiles, and complete processing support to help you build a stable career and long-term settlement overseas.",
     btntext: "Contact Us",
     href: "/contact-us",
   },
@@ -299,21 +299,21 @@ export const aboutdata = {
   img1: about2,
   img2:about,
   title1: "ABOUT US",
-  title2: "Trusted & Expert Immigration ",
-  title3: "Consultant",
+  title2: "Professional & Trusted Visa",
+  title3: "Consultants in Delhi",
   para:
-    "We deliver reliable, results-oriented immigration solutions backed by expert guidance, ethical practices, and structured processes. Recognized for offering the best immigration consultants in Noida, we support individuals and families from visa planning to final submission, ensuring clarity, confidence, and complete professional assistance throughout the process. We deliver reliable, results-oriented immigration solutions backed by expert guidance, ethical practices, and structured processes. Recognized for offering the best immigration consultants in Noida, we support individuals and families from visa planning to final process.",
+    "We offer reliable, result-focused immigration solutions backed by expert knowledge, ethical practices, and a structured approach. Known for delivering dependable services, we assist individuals and families from visa planning to final submission, ensuring clarity, accuracy, and complete professional support throughout the entire process.",
   pointer: [
     {
       id: 1,
       heading: "Transparency",
-      text: "Clear processes, honest advice, and no hidden commitments.",
+      text: "Clear communication, honest advice, and straightforward processes with no hidden commitments.",
       icon: <IoSearch />,
     },
     {
       id: 2,
       heading: "Client Satisfaction",
-      text: "Focused on results, trust, and long-term client success.",
+      text: "Focused on trust, real results, and delivering a smooth experience for every client.",
       icon: <RiUserFollowLine />,
     },     {
       id: 3,
@@ -334,32 +334,32 @@ export const aboutdata2 = {
   img1: about2,
   img2: box2,
   title1: "ABOUT US",
-  title2: "Leading Immigration ",
-  title3: "Consultancy",
+  title2: "Visa Consultants in ",
+  title3: "Delhi",
   para:
-    "Focused on clarity and compliance, we are the best immigration consultants in Noida, delivering profile-based immigration guidance and end-to-end visa support. Our expert team follows ethical practices and structured processes to help individuals and families achieve global opportunities with confidence.",
+    "Focused on accuracy and transparency, we are among the leading immigration consultants in Delhi, offering profile-based immigration guidance and complete visa support. Our expert team follows ethical practices and structured processes to help individuals and families achieve global opportunities with confidence.",
 
   pointer: [
     {
       id: 1,
-      heading: "Leading Immigration Consultancy",
+      heading: "Trusted Immigration Consultancy",
       text:
-        "Delivering ethical guidance, expert support, and reliable solutions for global immigration success.",
+        "Expert guidance and reliable support for your immigration journey.",
       icon: <FaPlaneDeparture />,
     },
     {
       id: 2,
-      heading: "Immigration Solutions That Work",
+      heading: "Immigration Solutions That Deliver",
       text:
-        "Structured processes and expert guidance to help you move abroad with confidence.",
+        "Structured processes to help you move abroad with clarity and confidence.",
       icon: <IoSettingsOutline />,
     },
   ],
 };
 
 export const visaSliderdata = {
-  title1: "Wide Range of Visa Options",
-  title2: "Structured Immigration Services for PR and Citizenship",
+  title1: "Diverse Range Of Visa Opportunities",
+  title2: "Well-Planned Services for PR & Citizenship",
 
   cards: [
     {
@@ -367,35 +367,35 @@ export const visaSliderdata = {
       img: visa1,
       heading: "Work Visa",
       text:
-        "Support for work visa applications with proper documents and employer-compliant immigration procedures.",
+        " Opportunities to work abroad with proper visa support and complete process guidance",
     },
     {
       id: 2,
       img: prvisa,
-      heading: "Permanent Residency Visa",
+      heading: "PR Visa",
       text:
-        "Guidance to apply for permanent residency through structured programs and accurate profile submission.",
+        " Secure permanent residency with structured application support and accurate documentation assistance throughout",
     },
     {
       id: 3,
       img: famvisa,
       heading: "Family Sponsorship Visa",
       text:
-        "Help families reunite abroad through legal sponsorship filing and complete documentation support.",
+        " Reunite with your family abroad through reliable sponsorship visa application assistance and support",
     },
     {
       id: 4,
       img: business,
       heading: "Business & Investor Visa",
       text:
-        "Assistance for investors and entrepreneurs applying through approved business and investment immigration routes.",
+        " Expand globally with business visa solutions and expert guidance for investment opportunities abroad",
     },
     {
       id: 5,
       img: touristvisa,
-      heading: "Tourist / Visitor Visa",
+      heading: "Tourist/Visitor Visa",
       text:
-        "Simple assistance for visitor visa applications with clear guidance and timely submission.",
+        " Hassle-free travel visa assistance with proper documentation and smooth application processing support",
     },
   ],
 };
@@ -493,141 +493,113 @@ export const workingprocess = {
 
 export const canadapnp = {
   bgImg:back,
-  title1: "Countries We Offer",
+  title1: "Countries We Serve",
   title2:
-    "Offering skilled workers and entrepreneurs ",
-
+    "Connecting You to Global Opportunities",
   cards: [
     {
       id: 1,
       img: ontario,
       flag: canadaflag,
-      cat:"abroad",
-      heading: "Ontario Immigrant Nominee Program (OINP) ",
-      points: ["• Processing: 3–6 Months", "• High Nomination Quota"],
+      cat: "abroad",
+      heading: "Canada",
+      points: [
+        "• Processing: 3–6 Months",
+        "• High Nomination Quota",
+        "• Top destination for study, work, and permanent residency with strong opportunities",
+      ],
       text:
-        "Provincial nomination for skilled workers to live and work in Ontario.",
+        "Top destination for study, work, and permanent residency with strong opportunities",
       link: "/canada-pnp",
     },
     {
       id: 2,
       img: bcPnpProgram,
       flag: canadaflag,
-            cat:"mbbs",
-
-      heading: "British Columbia PNP (BC PNP)",
-      points: ["• Processing: 2–4 Months", "• Regular Invitation Rounds"],
+      cat: "mbbs",
+      heading: "Australia",
+      points: [
+        "• Processing: 2–4 Months",
+        "• Regular Invitation Rounds",
+        "• Quality education, work opportunities, and clear pathways to permanent residency options",
+      ],
       text:
-        "Nominations for skilled workers and entrepreneurs targeting opportunities in British Columbia.",
+        "Quality education, work opportunities, and clear pathways to permanent residency options",
       link: "/canada-pnp",
     },
     {
       id: 3,
       img: alberta,
       flag: canadaflag,
-            cat:"abroad",
-
-      heading: "Alberta Immigrant Nominee Program (AINP)",
-      points: ["• Processing: 4–6 Months", "• Lower CRS Possibility"],
+      cat: "abroad",
+      heading: "New Zealand",
+      points: [
+        "• Processing: 4–6 Months",
+        "• Lower CRS Possibility",
+        "• Growing destination offering quality education, work visas, and a peaceful lifestyle benefits",
+      ],
       text:
-        "Streamlined immigration for workers with skills needed in Alberta’s labor market.",
+        "Growing destination offering quality education, work visas, and a peaceful lifestyle benefits",
       link: "/canada-pnp",
     },
     {
       id: 4,
       img: saskatchewanPnp,
       flag: canadaflag,
-            cat:"abroad",
-
-      heading: "Saskatchewan Immigrant",
-      points: ["• Processing: 2–5 Months", "• In-Demand Occupation Stream"],
+      cat: "abroad",
+      heading: "Europe",
+      points: [
+        "• Processing: 2–5 Months",
+        "• In-Demand Occupation Stream",
+        "• Multiple countries offering work opportunities, study options, and diverse cultural experiences",
+      ],
       text:
-        "Offers pathways for workers, entrepreneurs, and farmers to settle in Saskatchewan.",
+        "Multiple countries offering work opportunities, study options, and diverse cultural experiences",
       link: "/canada-pnp",
     },
     {
       id: 5,
       img: manitoba,
       flag: canadaflag,
-            cat:"mbbs",
-
-      heading: "Manitoba Provincial Nominee Program (MPNP)",
-      points: ["• Processing: 3–5 Months", "• Strong Provincial Support"],
+      cat: "mbbs",
+      heading: "GCC",
+      points: [
+        "• Processing: 3–5 Months",
+        "• Strong Provincial Support",
+        "• Attractive work destinations with tax-free income and growing career opportunities",
+      ],
       text:
-        "Supports skilled workers and international graduates aiming to live in Manitoba.",
+        "Attractive work destinations with tax-free income and growing career opportunities",
       link: "/canada-pnp",
     },
     {
       id: 6,
       img: novaScotia,
       flag: canadaflag,
-            cat:"mbbs",
-
-      heading: "Nova Scotia Nominee Program (NSNP)",
-      points: ["• Processing: 3–6 Months", "• Express Entry Priority"],
+      cat: "mbbs",
+      heading: "USA",
+      points: [
+        "• Processing: 3–6 Months",
+        "• Express Entry Priority",
+        "• Global leader in education, innovation, and diverse career opportunities across industries",
+      ],
       text:
-        "Nomination stream focused on attracting workers and graduates to Nova Scotia.",
+        "Global leader in education, innovation, and diverse career opportunities across industries",
       link: "/canada-pnp",
     },
-        {
-      id: 7,
-      img: manitoba,
-      flag: canadaflag,
-            cat:"abroad",
 
-      heading: "Manitoba Provincial Nominee Program (MPNP)",
-      points: ["• Processing: 3–5 Months", "• Strong Provincial Support"],
-      text:
-        "Supports skilled workers and international graduates aiming to live in Manitoba.",
-      link: "/canada-pnp",
-    },
-    {
-      id: 8,
-      img: novaScotia,
-      flag: canadaflag,
-            cat:"abroad",
-
-      heading: "Nova Scotia Nominee Program (NSNP)",
-      points: ["• Processing: 3–6 Months", "• Express Entry Priority"],
-      text:
-        "Nomination stream focused on attracting workers and graduates to Nova Scotia.",
-      link: "/canada-pnp",
-    },
-        {
-      id: 9,
-      img: manitoba,
-      flag: canadaflag,
-            cat:"mbbs",
-
-      heading: "Manitoba Provincial Nominee Program (MPNP)",
-      points: ["• Processing: 3–5 Months", "• Strong Provincial Support"],
-      text:
-        "Supports skilled workers and international graduates aiming to live in Manitoba.",
-      link: "/canada-pnp",
-    },
-    {
-      id: 10,
-      img: novaScotia,
-      flag: canadaflag,
-            cat:"abroad",
-
-      heading: "Nova Scotia Nominee Program (NSNP)",
-      points: ["• Processing: 3–6 Months", "• Express Entry Priority"],
-      text:
-        "Nomination stream focused on attracting workers and graduates to Nova Scotia.",
-      link: "/canada-pnp",
-    },
   ],
+
 };
 
 export const Whychoose = {
   img: box1,
 
   title1: "Why Choose Us",
-  title2: "India’s Best immigration consultants ",
-  title3: "",
+  title2: "We provide trusted guidance with",
+  title3: "a clear process",
   para:
-    "Wider World, the immigration consultants in Noida, offers reliable and result-driven immigration solutions backed by experienced professionals and transparent processes. We focus on profile-based guidance, accurate documentation, and legal compliance to ensure smooth visa applications. With a client-first approach, ethical practices, and personalized support, we help individuals and families in Noida achieve their global immigration goals with confidence and clarity.",
+    "Wider World, the best immigration consultants in Delhi, offers reliable and result-driven immigration solutions backed by experienced professionals and transparent processes. We focus on profile-based guidance, accurate documentation, and legal compliance to ensure smooth visa applications. With a client-first approach and personalized support, we help individuals and families achieve their global immigration goals with confidence and clarity.",
 
   success: [
     { id: 1, value: "100%", text: "Visa Success Rate" },
@@ -637,35 +609,303 @@ export const Whychoose = {
 };
 
 export const testimonialData = {
-  title1: "Testimonial",
-  title2: "What Our Client Says",
+ 
   testimonials: [
     {
       title: "Suresh Dixit",
       text:
-        "WiderWorldcore guided my Canada PR smoothly with honest advice, clear timelines, and perfect documentation. Truly the best immigration consultants in Noida for anyone seeking transparent, professional, and reliable immigration support.",
+        "I had a very smooth experience with Wider World Immigration. From the initial consultation to the final submission, they guided me at every step and ensured my documents were accurate. The entire visa process felt well-managed and stress-free.",
       img: cl1,
     },
     {
       title: "Mohan Rane",
       text:
-        "Excellent support for my work permit application. The team explained every step, handled documents professionally, and kept me updated. Their guidance reduced stress and helped me make confident decisions abroad.",
+        "The team at Wider World Immigration is very supportive and easy to communicate with. They explained each step clearly and kept me informed throughout the process. Their guidance helped me avoid mistakes and complete my application without confusion. They are the best visa consultants in Delhi.",
       img: cl1,
     },
     {
       title: "Manoj Saini",
       text:
-        "WiderWorldcore helped us reunite through family sponsorship with clear communication and ethical advice. We experienced the best Visa consultants in Noida, with personalized attention and smooth processing throughout the entire journey.",
+        "I was quite confused in the beginning, but Wider World Immigration provided clear and practical guidance. They helped me choose the right visa option and handled my documentation carefully. The entire experience was smooth, and I felt confident throughout the process.",
       img: cl1,
     },
     {
       title: "Sam Goyal",
       text:
-        "From IELTS coaching to visa filing, the service was professional and supportive. Trainers and consultants worked together to strengthen my profile and guide me confidently toward my overseas goals successfully.",
+        "Wider World Immigration has a very professional and reliable team. They managed my application from start to finish with proper attention to detail. Everything was done on time, and I am fully satisfied with their service and overall support.",
       img: cl1,
     },
   ],
 };
+
+export const offercountry = {
+  title1: "Countries We Offer",
+  title2:
+    "Top global destinations with strong career and immigration opportunities",
+   cards: [
+    {
+      id: 1,
+      img: ontario,
+      flag: canadaflag,
+      cat: "abroad",
+      heading: "Study in Canada",
+      points: ["• High-Quality Education", "• Post-Study Work", "• PR Opportunities"],
+      text: "High-quality education with post-study work and PR opportunities",
+      link: "/canada-pnp",
+    },
+    {
+      id: 2,
+      img: bcPnpProgram,
+      flag: canadaflag,
+      cat: "abroad",
+      heading: "Study in USA",
+      points: ["• Top Universities", "• Diverse Courses", "• Global Career Opportunities"],
+      text: "Top universities with diverse courses and global career opportunities",
+      link: "/canada-pnp",
+    },
+    {
+      id: 3,
+      img: alberta,
+      flag: canadaflag,
+      cat: "abroad",
+      heading: "Study in Australia",
+      points: ["• Quality Education", "• Work Opportunities", "• Student-Friendly Environment"],
+      text: "Quality education with work opportunities and a student-friendly environment",
+      link: "/canada-pnp",
+    },
+    {
+      id: 4,
+      img: saskatchewanPnp,
+      flag: canadaflag,
+      cat: "abroad",
+      heading: "Study in Dubai",
+      points: ["• Modern Education Hub", "• Global Exposure", "• Tax-Free Benefits"],
+      text: "Modern education hub with global exposure and tax-free benefits",
+      link: "/canada-pnp",
+    },
+    {
+      id: 5,
+      img: manitoba,
+      flag: canadaflag,
+      cat: "abroad",
+      heading: "Study in Italy",
+      points: ["• Affordable Education", "• Rich Culture", "• European Degree"],
+      text: "Affordable education with rich culture and European degree recognition",
+      link: "/canada-pnp",
+    },
+    {
+      id: 6,
+      img: novaScotia,
+      flag: canadaflag,
+      cat: "abroad",
+      heading: "Study in France",
+      points: ["• Quality Education", "• Low Fees", "• Global Opportunities"],
+      text: "Quality education with low fees and global career opportunities",
+      link: "/canada-pnp",
+    },
+    {
+      id: 7,
+      img: manitoba,
+      flag: canadaflag,
+      cat: "abroad",
+      heading: "Study in Malaysia",
+      points: ["• Affordable", "• International Universities", "• Modern Infrastructure"],
+      text: "Affordable education with international universities and modern infrastructure",
+      link: "/canada-pnp",
+    },
+    {
+      id: 8,
+      img: novaScotia,
+      flag: canadaflag,
+      cat: "abroad",
+      heading: "Study in New Zealand",
+      points: ["• Safe Country", "• Quality Education", "• Post-Study Work"],
+      text: "Safe country with quality education and post-study work options",
+      link: "/canada-pnp",
+    },
+    {
+      id: 9,
+      img: manitoba,
+      flag: canadaflag,
+      cat: "abroad",
+      heading: "Study in Ireland",
+      points: ["• Strong Job Market", "• Excellent Education", "• Career Growth"],
+      text: "Strong job market with excellent education and career growth",
+      link: "/canada-pnp",
+    },
+    {
+      id: 10,
+      img: novaScotia,
+      flag: canadaflag,
+      cat: "abroad",
+      heading: "Study in UK",
+      points: ["• Globally Recognized", "• Short Duration", "• Flexible Courses"],
+      text: "Globally recognized degrees with shorter course duration options",
+      link: "/canada-pnp",
+    },
+    {
+      id: 11,
+      img: manitoba,
+      flag: canadaflag,
+      cat: "abroad",
+      heading: "Study in Singapore",
+      points: ["• World-Class Education", "• Industry Connections", "• Career Opportunities"],
+      text: "World-class education with strong industry connections and career opportunities",
+      link: "/canada-pnp",
+    },
+        {
+      id: 1,
+      img: ontario,
+      flag: canadaflag,
+      cat: "mbbs",
+      heading: "MBBS in Philippines",
+      points: ["• Affordable Fees", "• English Medium", "• Good Clinical Exposure"],
+      text: "Affordable MBBS with English medium and good clinical exposure",
+      link: "/canada-pnp",
+    },
+    {
+      id: 2,
+      img: bcPnpProgram,
+      flag: canadaflag,
+      cat: "mbbs",
+      heading: "MBBS in Russia",
+      points: ["• Globally Recognized", "• Affordable Fees", "• Quality Education"],
+      text: "Globally recognized degrees with affordable fees and quality education",
+      link: "/canada-pnp",
+    },
+    {
+      id: 3,
+      img: alberta,
+      flag: canadaflag,
+      cat: "mbbs",
+      heading: "MBBS in Bangladesh",
+      points: ["• Indian Syllabus", "• High FMGE Rate", "• Affordable Option"],
+      text: "Similar syllabus to India with high FMGE passing rates",
+      link: "/canada-pnp",
+    },
+    {
+      id: 4,
+      img: saskatchewanPnp,
+      flag: canadaflag,
+      cat: "mbbs",
+      heading: "MBBS in Mauritius",
+      points: ["• Safe Country", "• Multicultural Environment", "• Quality Education"],
+      text: "Quality education in a safe and multicultural environment",
+      link: "/canada-pnp",
+    },
+    {
+      id: 5,
+      img: manitoba,
+      flag: canadaflag,
+      cat: "mbbs",
+      heading: "MBBS in Nepal",
+      points: ["• Indian Curriculum", "• Easy Travel", "• Cultural Similarity"],
+      text: "Indian-based curriculum with easy travel and cultural similarity",
+      link: "/canada-pnp",
+    },
+    {
+      id: 6,
+      img: novaScotia,
+      flag: canadaflag,
+      cat: "mbbs",
+      heading: "MBBS in Uzbekistan",
+      points: ["• Affordable Fees", "• Modern Infrastructure", "• Experienced Faculty"],
+      text: "Affordable fees with modern infrastructure and experienced faculty support",
+      link: "/canada-pnp",
+    },
+    {
+      id: 7,
+      img: manitoba,
+      flag: canadaflag,
+      cat: "mbbs",
+      heading: "MBBS in Kazakhstan",
+      points: ["• Recognized Universities", "• Affordable", "• Good Facilities"],
+      text: "Recognized universities with affordable education and good facilities",
+      link: "/canada-pnp",
+    },
+    {
+      id: 8,
+      img: novaScotia,
+      flag: canadaflag,
+      cat: "mbbs",
+      heading: "MBBS in Belarus",
+      points: ["• High Quality Education", "• Advanced Labs", "• Strong Infrastructure"],
+      text: "High-quality medical education with advanced labs and infrastructure",
+      link: "/canada-pnp",
+    },
+    {
+      id: 9,
+      img: manitoba,
+      flag: canadaflag,
+      cat: "mbbs",
+      heading: "MBBS in Georgia",
+      points: ["• European Standard", "• English Medium", "• Recognized Degree"],
+      text: "European standard education with English medium programs available",
+      link: "/canada-pnp",
+    },
+    {
+      id: 10,
+      img: novaScotia,
+      flag: canadaflag,
+      cat: "mbbs",
+      heading: "MBBS in Armenia",
+      points: ["• Affordable", "• Safe Country", "• Quality Education"],
+      text: "Affordable MBBS with quality education and a safe environment",
+      link: "/canada-pnp",
+    },
+    {
+      id: 11,
+      img: manitoba,
+      flag: canadaflag,
+      cat: "mbbs",
+      heading: "MBBS in China",
+      points: ["• Top Universities", "• Advanced Technology", "• Global Recognition"],
+      text: "Top universities with advanced technology and global recognition",
+      link: "/canada-pnp",
+    },
+    {
+      id: 12,
+      img: novaScotia,
+      flag: canadaflag,
+      cat: "mbbs",
+      heading: "MBBS in Poland",
+      points: ["• European Degree", "• High Standards", "• Global Opportunities"],
+      text: "European degree with high education standards and global opportunities",
+      link: "/canada-pnp",
+    },
+    {
+      id: 13,
+      img: manitoba,
+      flag: canadaflag,
+      cat: "mbbs",
+      heading: "MBBS in Germany",
+      points: ["• Low Tuition Fees", "• Excellent Education", "• High Exposure"],
+      text: "Low tuition fees with excellent medical education and exposure",
+      link: "/canada-pnp",
+    },
+    {
+      id: 14,
+      img: novaScotia,
+      flag: canadaflag,
+      cat: "mbbs",
+      heading: "MBBS in Malaysia",
+      points: ["• Affordable", "• Modern Campus", "• International Recognition"],
+      text: "Affordable education with modern campuses and international recognition",
+      link: "/canada-pnp",
+    },
+    {
+      id: 15,
+      img: manitoba,
+      flag: canadaflag,
+      cat: "mbbs",
+      heading: "MBBS in Kyrgyzstan",
+      points: ["• Budget Friendly", "• Easy Admission", "• Good Training"],
+      text: "Budget-friendly MBBS with a simple admission process and good training",
+      link: "/canada-pnp",
+    },
+  ],
+};
+
 
 export const HomefaqData = {
   title1: "FAQs",
@@ -673,48 +913,32 @@ export const HomefaqData = {
   title3: " Questions",
 
   para1:
-    "Our Frequently Asked Questions section answers common concerns about visas, eligibility, timelines, and documentation. ",
-  Counts: [
+    "Find clear answers to your most common queries about visas, eligibility, processing time, and required documents—all in one place.",
+faqs: [
     {
-      value: 100,
-      title: "Expert Guidance",
-    },
-    {
-      value: 96,
-      title: "Personalized Support",
-    },
-    {
-      value: 94,
-      title: "Global Expertise",
-    },
-  ],
-  para2:
-    "Designed to offer clarity and transparency, it helps you make informed decisions while choosing the Right immigration consultants in Noida for your global plans.",
-  faqs: [
-    {
-      que: "How do I know which visa is right for me?",
+      que: "Which country is best for PR in 2026?",
       ans:
-        "Visa selection depends on your age, education, work experience, language ability, and future goals. Our experts evaluate your complete profile and suggest the most suitable and compliant visa pathway, ensuring you receive the best immigration consultants.",
+        "The best country for PR depends on your profile, skills, and goals. Countries like Canada, Australia, and Germany are popular due to strong job markets and clear PR pathways. Instead of following trends, it’s important to choose a country where your profile has higher chances of success.",
     },
     {
-      que: "Can you guarantee visa approval?",
+      que: "How long does the visa process usually take?",
       ans:
-        "No legitimate consultant can legally guarantee visa approval. We focus on correct documentation, ethical guidance, and proper program selection to maximize success while strictly following immigration laws and professional standards.",
+        "Visa processing time depends on the country, visa type, and your documentation. It can take anywhere from a few weeks to several months. Delays usually happen due to incomplete documents or high application volumes, so proper guidance and accurate submission can help speed up the process.",
     },
     {
-      que: "Can you help if my application was refused?",
+      que: "Can I apply without IELTS or English tests?",
       ans:
-        "Yes, we review refused applications to identify errors, gaps, or compliance issues. Our consultants suggest corrective strategies, improve documentation, and guide you on reapplication or alternative visa options to strengthen your chances of success.",
+        "Yes, some countries and visa types allow applications without IELTS, depending on your profile and the program you choose. However, having an English proficiency score can improve your chances. It’s always better to check all available options based on your qualifications and career goals.",
     },
     {
-      que: "Why should I use a WiderWorldcore instead of applying on my own?",
+      que: "How much money is required to move abroad?",
       ans:
-        "Immigration rules are complex and constantly changing. WiderWorldcore provides expert guidance, accurate documentation, and profile-based strategies to reduce mistakes, avoid refusals, and ensure your application meets legal and procedural requirements confidently.",
+        "The cost depends on the country, visa type, and lifestyle. It usually includes visa fees, proof of funds, travel, and initial living expenses. Proper planning is important so you are financially prepared and avoid stress after moving. Guidance can help you estimate the exact cost.",
     },
     {
-      que: "What does a Wider World consultant do?",
+      que: "Can I get a job abroad before moving?",
       ans:
-        "A Wider World consultant evaluates your profile, recommends suitable visa pathways, manages documentation, files applications accurately, and provides continuous guidance from initial assessment to final decision, ensuring transparency, compliance, and personalized support throughout your immigration journey.",
+        "Yes, many countries allow you to apply for jobs before moving. Having a job offer can improve your visa chances. However, finding the right job requires proper profile building, resume preparation, and applying through the right platforms. Guidance can make this process easier and faster.",
     },
   ],
 };
@@ -908,7 +1132,8 @@ export const contactdetail = [
 // services
 export const serviceData = {
   title1: "Our Services",
-  title2: "Smart solutions for global immigration",
+  title2: "Smart solutions for",
+  title3: "global immigration",
 
   services: [
     {
