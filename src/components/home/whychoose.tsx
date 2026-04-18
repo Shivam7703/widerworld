@@ -95,7 +95,7 @@ export default function WhychooseSection() {
 {data?.title1}        </span>
 
           {/* Heading */}
-          <h2 className="font-black text-color3 text-3xl md:text-5xl " >
+          <h2 className="font-bold text-color3 text-3xl md:text-5xl " >
             {data?.title2} {" "}
             <span className=" text-color1">
 {data?.title3}             </span>
