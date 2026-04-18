@@ -29,6 +29,10 @@ body {
 
 }
  
+h2{
+  text-transform: capitalize;
+  line-height: 1.2!important;
+}
 
 .bg-back {
   background: url(../assets/home/background-1.webp);

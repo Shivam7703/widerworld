@@ -28,7 +28,7 @@ export default function FaqSection() {
             {data?.title1}
           </motion.h4>
         )}
-        <h2 className="text-zinc-900 font-extrabold text-3xl md:text-5xl leading-tight">
+        <h2 className="text-color3 font-bold text-3xl md:text-5xl !leading-tight">
           {data?.title2}
           <span className="text-color1">
             {data?.title3}

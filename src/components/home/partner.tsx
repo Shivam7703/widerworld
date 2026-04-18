@@ -33,7 +33,7 @@ export default function Partners() {
         <p className="text-xs font-bold uppercase tracking-[0.22em] text-color2 mb-3">
           Our Network
         </p>
-        <h2 className="font-black text-color3 text-3xl md:text-5xl uppercase tracking-tight">
+        <h2 className="font-bold text-color3 text-3xl md:text-5xl tracking-tight">
           150+{" "}
           <span className="text-color1">Tie Ups</span>{" "}
           Across The World

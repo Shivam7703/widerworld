@@ -75,9 +75,9 @@ export default function Studyabrod() {
         </span>
 
         {/* Heading */}
-        <h2 className="font-extrabold uppercase text-color3 text-3xl md:text-4xl lg:text-5xl !leading-tight mb-5">
+        <h2 className="font-bold  capitalize text-color3 text-3xl md:text-4xl lg:text-5xl !leading-tight mb-5">
           Trusted Support for Every Step of Your{" "}
-          <span className="text-color1">VImmigration Journey</span>
+          <span className="text-color1">Immigration Journey</span>
         </h2>
 
         {/* Description */}

@@ -63,7 +63,7 @@ export default function Team() {
           </h4>
 
           <h2
-            className="text-3xl md:text-5xl font-black text-white leading-tight max-w-2xl"
+            className="text-3xl md:text-5xl font-bold text-white leading-tight max-w-2xl"
             
           >
             {data.title2}{" "}{data.title3}

@@ -46,7 +46,7 @@ INDIA’S NO.1 Certified Immigration & Visa Experts
             </p>
 
             {/* Heading */}
-            <h2 className="text-white font-bold text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
+            <h2 className="text-white font-bold text-3xl md:text-4xl !leading-tight mb-6">
               Secure your future abroad with the best immigration consultants in Delhi today.
 
             </h2>

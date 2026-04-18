@@ -28,7 +28,7 @@ export default function Blogs({ isHome }: any) {
             </span>
           )}
           <h2
-            className="text-color3 font-black !leading-tight text-2xl md:text-4xl max-w-2xl mx-auto"
+            className="text-color3 font-bold !leading-tight text-2xl md:text-4xl max-w-2xl mx-auto"
           >
             {data.title2}
           </h2>

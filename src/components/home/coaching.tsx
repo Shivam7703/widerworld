@@ -73,7 +73,7 @@ export default function Coaching() {
           Coaching We Offer
         </h4>
         <h2
-          className="text-color3 font-black text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto"
+          className="text-color3 font-bold text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto"
         >
           Expert Coaching Programs to{" "}
           <span className="text-color1">Boost Your Success</span>

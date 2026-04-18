@@ -60,7 +60,7 @@ export const navigationMenu = {
     {
       id: 3,
       label: "Our Services",
-      href: "services",
+      href: "/services",
       subNav: [
         { id: 1, label: "Visa Services", href: "/services/visa-services" },
         { id: 2, label: "Career Counselling", href: "/services/career-counselling" },
@@ -1129,69 +1129,7 @@ export const contactdetail = [
   },
 ];
 
-// services
-export const serviceData = {
-  title1: "Our Services",
-  title2: "Smart solutions for",
-  title3: "global immigration",
 
-  services: [
-    {
-      title: "IELTS",
-      text: "Eligibility assessment and guidance",
-      img: ielts,
-      icon:<FaBriefcase />
-    },
-    {
-      title: "PTE Exams",
-      text: "Eligibility assessment and guidance",
-      img: pte,
-      icon:<FiSettings />
-    },
-    {
-      title: "Profile Evaluation",
-      text: "Eligibility assessment and guidance",
-      img: profile,
-            icon:<FiSettings />
-
-    },
-    {
-      title: "Career Counselling",
-      text: "Career planning and advice",
-      img: Career,
-            icon:<FiSettings />
-
-    },
-    {
-      title: "Immigration Solutions",
-      text: "Structured migration pathways",
-      img: immigration,
-            icon:<FiSettings />
-
-    },
-    {
-      title: "Visa Documentation Support",
-      text: "Accurate document preparation",
-      img: visaDocument,
-            icon:<FiSettings />
-
-    },
-    {
-      title: "Job Search Assistance",
-      text: "International employment guidance",
-      img: jobAssist,
-            icon:<FiSettings />
-
-    },
-    {
-      title: "Post-Landing Support",
-      text: "Settlement and integration assistance",
-      img: PostLanding,
-            icon:<FiSettings />
-
-    },
-  ],
-};
 
 export const servicechoose = {
   img: box1,

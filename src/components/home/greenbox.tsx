@@ -54,8 +54,8 @@ export default function Greenbox() {
             hover:shadow-[0_35px_80px_rgba(0,0,0,0.35)]`}
           >
 
-             <div className="h-56 w-56 bg-gradient-to-tr from-red-500 to-red-700 rotate-45 z-0 absolute -top-32 -right-32 object-contain"/>
-             <div className="h-56 w-56 bg-gradient-to-tr from-red-500 to-red-700 opacity-30 rotate-45 z-0 absolute -top-4 -right-44 object-contain"/>
+             <div className="h-56 w-56 group-hover:opacity-40  bg-gradient-to-tr from-red-500 to-red-700 rotate-45 z-0 absolute -top-32 -right-32 object-contain"/>
+             <div className="h-56 w-56 bg-gradient-to-tr from-red-500 to-red-700 opacity-30 rotate-45 z-0 absolute -top-4 -right-44 group-hover:-top-16 duration-700 group-hover:-right-32 object-contain"/>
 
             {/* BODY */}
             <div className="px-7 pt-11 pb-8 text-white">

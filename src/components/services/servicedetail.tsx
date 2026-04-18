@@ -1,162 +1,123 @@
 "use client"
 import React from "react";
-import BlogAside from "../blog/side";
 import Image from "next/image";
+import Faq from "../global/faqs";
+import ServiceAside from "./serviceside";
 
 export default function Servicedetails({ data }: any) {
   return (
-    <div className="relative min-h-screen" style={{ background: "#faf9f7", fontFamily: "'Georgia', serif" }}>
+    <div className="min-h-screen bg-slate-100 font-sans">
 
-   
+      {/* Top 3-color bar */}
+      <div className="h-1 bg-gradient-to-r from-color1 via-color3 to-[#1A2F4A]" />
 
-      {/* Top border accent */}
-      <div className="absolute top-0 left-0 right-0 h-[2px]"
-        style={{ background: "linear-gradient(90deg, transparent 0%, #c9a84c 30%, #e8c96a 50%, #c9a84c 70%, transparent 100%)" }} />
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-10 py-7 sm:py-10 lg:py-12">
+        <div className="flex flex-wrap gap-5 justify-between items-start">
 
-      <div className="relative  mx-auto lg:px-28 xl:px-32 md:p-20 sm:p-12 p-7">
-
-        
-
-        <div className="flex flex-col lg:flex-row gap-12 justify-between xl:gap-16 items-start">
-
-          {/* ── Sidebar ─────────────────────────────────── */}
-          <aside className="w-full md:w-[33%]  shrink-0 lg:sticky lg:top-10">
-            <div className="relative">
-              {/* Corner ornaments */}
-              <span className="absolute -top-3 -left-3 w-5 h-5 border-t border-l pointer-events-none" style={{ borderColor: "#c9a84c" }} />
-              <span className="absolute -bottom-3 -right-3 w-5 h-5 border-b border-r pointer-events-none" style={{ borderColor: "#c9a84c" }} />
-           
-                <BlogAside />
-            </div>
+          {/* ── Sidebar ── */}
+          <aside className="w-full md:order-1 order-2 md:w-[30%] shrink-0 md:sticky md:top-8">
+<ServiceAside/>
           </aside>
 
-          {/* ── Main Content ─────────────────────────────── */}
-          <main className="flex-1 w-full md:w-[60%] min-w-0 space-y-16">
+          {/* ── Main ── */}
+          <main className="flex-1 min-w-0 flex flex-col md:order-2 order-1 md:w-[64%] w-full gap-4 sm:gap-5">
 
-            {/* Hero Image */}
-            <div className="relative group">
-              <div className="relative overflow-hidden rounded-2xl"
-                style={{ border: "1px solid #ede9e0", boxShadow: "0 8px 48px rgba(0,0,0,0.08)" }}>
+            {/* Hero Card */}
+            <div className="rounded-2xl overflow-hidden bg-white border border-slate-200">
+              <div className="h-1 bg-gradient-to-r from-color1 to-color3" />
 
-                {/* Gold top strip */}
-                <div className="absolute top-0 left-0 right-0 h-[3px] z-10"
-                  style={{ background: "linear-gradient(90deg, #c9a84c, #e8c96a, #c9a84c)" }} />
-
-                <div className="relative aspect-[16/9] overflow-hidden">
+              <div
+                className="relative overflow-hidden"
+                style={{ aspectRatio: "2" }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-[#1A2F4A] via-[#2B3944] to-[#1A2F4A]" />
+                {data?.img && (
                   <Image
-                    src={data?.img}
-                    alt={data?.title}
+                    src={data.img}
+                    alt={data?.title || "Service"}
                     fill
-                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                    className="object-cover"
                     priority
                   />
-                  {/* Subtle dark gradient at bottom */}
-                  <div className="absolute inset-0"
-                    style={{ background: "linear-gradient(to top, rgba(20,18,14,0.55) 0%, transparent 55%)" }} />
-                </div>
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1A2F4A]/75 via-[#1A2F4A]/20 to-transparent" />
 
-                {/* Badge */}
-                <div className="absolute bottom-5 left-6 z-10">
-                  <div className="flex items-center gap-2 px-4 py-2 rounded-full text-xs tracking-widest uppercase"
-                    style={{
-                      background: "rgba(201,168,76,0.92)",
-                      color: "#14120e",
-                      fontWeight: 600,
-                      backdropFilter: "blur(8px)",
-                      letterSpacing: "0.12em",
-                    }}>
-                    <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
-                      <path d="M6 1L7.5 4.5L11 5L8.5 7.5L9 11L6 9.5L3 11L3.5 7.5L1 5L4.5 4.5L6 1Z"
-                        fill="currentColor" />
-                    </svg>
-                    Services
-                  </div>
+                <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between p-4 sm:p-5">
+                  <span className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[10.5px] font-semibold uppercase tracking-widest text-white bg-color2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-color4" />
+                    {data?.title || "Our Service"}
+                  </span>
+                  
                 </div>
-              </div>
+              </div>             
             </div>
 
-            {/* Article */}
-            <article className="space-y-14">
-              {data?.content?.map((section: any, secIndex: number) => (
-                <section key={secIndex} className="space-y-10">
+            {/* Article sections */}
+            {data?.content?.map((section: any, secIndex: number) => (
+              <div key={secIndex} className="rounded-2xl overflow-hidden bg-white border border-slate-200">
 
-                  {/* Section heading */}
-                  {section?.heading && (
-                    <div className="relative pb-5">
+                {/* Card header */}
+                {section?.heading && (
+                  <div className="flex items-center gap-3 px-5 sm:px-6 py-4 bg-color2">
+                    <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 bg-color4/15 border border-color4/30">
+                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 2L10 6H14L11 9L12.5 13L8 10.5L3.5 13L5 9L2 6H6L8 2Z" fill="#ffce5b" />
+                      </svg>
+                    </div>
+                    <div>
                       <h2
-                        className="text-3xl sm:text-4xl lg:text-[2.6rem] leading-tight font-bold"
-                        style={{ color: "#1a1714", fontFamily: "'Georgia', serif", letterSpacing: "-0.02em" }}
+                        className="text-lg sm:text-xl font-bold text-white leading-tight "
                         dangerouslySetInnerHTML={{ __html: section.heading }}
                       />
-                      {/* Underline ornament */}
-                      <div className="mt-4 flex items-center gap-2">
-                        <div className="h-[2px] w-12 rounded-full" style={{ background: "#c9a84c" }} />
-                        <div className="w-1.5 h-1.5 rounded-full" style={{ background: "#c9a84c" }} />
-                        <div className="h-[2px] w-6 rounded-full" style={{ background: "#e8c96a60" }} />
-                      </div>
+                     
                     </div>
-                  )}
+                  </div>
+                )}
 
-                  {/* Subcontent */}
+                <div className="p-5 sm:p-6 space-y-5">
                   {section?.subcontent?.map((item: any, index: number) => (
-                    <div key={index} className="space-y-6">
+                    <div key={index}>
 
                       {/* Subheading */}
                       {item?.subheading && (
-                        <h3
-                          className="text-xl sm:text-2xl font-semibold flex items-center gap-3"
-                          style={{ color: "#2d2a24" }}
-                        >
-                          <span className="w-1.5 h-6 rounded-full shrink-0" style={{ background: "linear-gradient(to bottom, #c9a84c, #e8c96a)" }} />
+                        <h3 className="flex items-start gap-2 text-base sm:text-xl font-semibold mb-2.5 text-color3">
+                          <span className="w-[3px] h-5 rounded-sm bg-color1 flex-shrink-0 mt-[3px]" />
                           <span dangerouslySetInnerHTML={{ __html: item.subheading }} />
                         </h3>
                       )}
 
+                      {/* Decorative rule — first item only */}
+                      {index === 0 && (
+                        <div className="flex items-center gap-2 mb-4">
+                          <div className="h-[3px] w-7 rounded bg-color1" />
+                          <div className="h-[3px] w-4 rounded bg-color3" />
+                          <div className="w-2 h-2 rounded-full bg-color4" />
+                          <div className="flex-1 h-px bg-slate-300" />
+                        </div>
+                      )}
+
                       {/* Paragraph */}
                       {item?.para && (
-                        <p
-                          className="text-base sm:text-lg leading-[1.85]"
-                          style={{
-                            color: "#5a5650",
-                            borderLeft: "2px solid #e8c96a40",
-                            paddingLeft: "1.25rem",
-                          }}
+                        <div
+                          className="text-sm sm:text-base leading-[1.8] mb-4 pl-3 border-l-2 border-color5 text-slate-800"
                           dangerouslySetInnerHTML={{ __html: item.para }}
                         />
                       )}
 
-                      {/* List */}
-                      {item?.list && Array.isArray(item.list) && (
-                        <ul className="space-y-3 mt-2">
+                      {/* List — 2-col */}
+                      {item?.list && Array.isArray(item.list) && item.list.length > 0 && (
+                        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4 list-none p-0">
                           {item.list.map((li: string, i: number) => (
-                            <li key={i}
-                              className="group flex items-start gap-4 px-5 py-4 rounded-xl transition-all duration-300 cursor-default"
-                              style={{
-                                background: "#ffffff",
-                                border: "1px solid #ede9e0",
-                                boxShadow: "0 1px 4px rgba(0,0,0,0.03)",
-                              }}
-                              onMouseEnter={e => {
-                                (e.currentTarget as HTMLLIElement).style.borderColor = "#c9a84c60";
-                                (e.currentTarget as HTMLLIElement).style.boxShadow = "0 4px 20px rgba(201,168,76,0.1)";
-                              }}
-                              onMouseLeave={e => {
-                                (e.currentTarget as HTMLLIElement).style.borderColor = "#ede9e0";
-                                (e.currentTarget as HTMLLIElement).style.boxShadow = "0 1px 4px rgba(0,0,0,0.03)";
-                              }}
+                            <li
+                              key={i}
+                              className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl text-xs sm:text-sm leading-[1.55] border border-slate-200 bg-slate-50 text-slate-700 transition-colors duration-200 cursor-default hover:border-color3 hover:bg-blue-50"
                             >
-                              {/* Gold check icon */}
-                              <span className="shrink-0 mt-0.5 w-5 h-5 rounded-full flex items-center justify-center"
-                                style={{ background: "linear-gradient(135deg, #c9a84c, #e8c96a)" }}>
-                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
-                                  <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                              <span className="w-4 h-4 rounded-md bg-color1 flex items-center justify-center flex-shrink-0 mt-[1px]">
+                                <svg width="8" height="7" viewBox="0 0 10 8" fill="none">
+                                  <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                               </span>
-                              <span
-                                className="text-base sm:text-[0.95rem] leading-relaxed"
-                                style={{ color: "#3d3a34" }}
-                                dangerouslySetInnerHTML={{ __html: li }}
-                              />
+                              <span dangerouslySetInnerHTML={{ __html: li }} />
                             </li>
                           ))}
                         </ul>
@@ -164,34 +125,33 @@ export default function Servicedetails({ data }: any) {
 
                       {/* Table */}
                       {item?.table && (
-                        <div className="mt-6 overflow-hidden rounded-2xl"
-                          style={{ border: "1px solid #ede9e0", boxShadow: "0 4px 24px rgba(0,0,0,0.05)" }}>
-                          {/* Gold top accent */}
-                          <div className="h-[3px]" style={{ background: "linear-gradient(90deg, #c9a84c, #e8c96a, #c9a84c)" }} />
+                        <div className="rounded-xl overflow-hidden mt-2 border border-slate-200">
+                          <div className="h-[3px] bg-gradient-to-r from-color1 to-color3" />
                           <div className="overflow-x-auto">
-                            <table className="w-full text-sm sm:text-base bg-slate-300">
+                            <table className="w-full text-xs sm:text-[13px] border-collapse">
                               <thead>
-                                <tr style={{ background: "#1a1714" }}>
-                                  {item.table.theading?.map((th: string, thIndex: number) => (
-                                    <th key={thIndex}
-                                      className="px-6 py-4 text-left text-xs bg-gradient-to-r from-amber-500 to-amber-600 text-white first:rounded-tl-2xl last:rounded-tr-2xl tracking-[0.15em] uppercase"
-                                     >
+                                <tr className="bg-color1">
+                                  {item.table.theading?.map((th: string, i: number) => (
+                                    <th
+                                      key={i}
+                                      className="px-4 py-3 text-left text-sm font-semibold uppercase tracking-[.12em] text-white"
+                                    >
                                       {th}
                                     </th>
                                   ))}
                                 </tr>
                               </thead>
-                              <tbody style={{ background: "#ffffff" }}>
-                                {item.table.rows?.map((row: any, rIndex: number) => (
-                                  <tr key={rIndex}
-                                    style={{ borderBottom: "1px solid #f0ece4" }}
-                                    onMouseEnter={e => ((e.currentTarget as HTMLTableRowElement).style.background = "#faf8f4")}
-                                    onMouseLeave={e => ((e.currentTarget as HTMLTableRowElement).style.background = "#ffffff")}
-                                    className="transition-colors duration-200">
-                                    {row?.colum?.map((col: string, cIndex: number) => (
-                                      <td key={cIndex}
-                                        className="px-6 py-4"
-                                        style={{ color: cIndex === 0 ? "#2d2a24" : "#5a5650", fontWeight: cIndex === 0 ? 500 : 400 }}>
+                              <tbody>
+                                {item.table.rows?.map((row: any, ri: number) => (
+                                  <tr
+                                    key={ri}
+                                    className="border-b border-slate-200 hover:bg-blue-50/50 transition-colors"
+                                  >
+                                    {row?.colum?.map((col: string, ci: number) => (
+                                      <td
+                                        key={ci}
+                                        className={`px-4 py-2.5 ${ci === 0 ? "text-color3 font-medium" : "text-slate-600 font-normal"}`}
+                                      >
                                         {col}
                                       </td>
                                     ))}
@@ -205,28 +165,39 @@ export default function Servicedetails({ data }: any) {
 
                     </div>
                   ))}
-                </section>
-              ))}
-            </article>
-
-            {/* Footer ornament */}
-            <div className="flex items-center gap-4 pt-6">
-              <div className="h-px flex-1" style={{ background: "linear-gradient(90deg, #c9a84c40, transparent)" }} />
-              <div className="flex gap-1.5">
-                {[0, 1, 2].map(i => (
-                  <div key={i} className="w-1.5 h-1.5 rounded-full" style={{ background: i === 1 ? "#c9a84c" : "#c9a84c40" }} />
-                ))}
+                </div>
               </div>
-              <div className="h-px flex-1" style={{ background: "linear-gradient(90deg, transparent, #c9a84c40)" }} />
-            </div>
+            ))}
 
+
+
+ <div  className="rounded-2xl overflow-hidden bg-white border border-slate-200">
+
+                {/* Card header */}
+                  <div className="flex items-center gap-3 px-5 sm:px-6 py-4 bg-color2">
+                    <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 bg-color4/15 border border-color4/30">
+                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 2L10 6H14L11 9L12.5 13L8 10.5L3.5 13L5 9L2 6H6L8 2Z" fill="#ffce5b" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h6
+                        className="text-lg sm:text-xl font-bold text-white leading-tight "
+                      >Frequently asked question</h6>
+                    </div>
+                  </div>
+                                       <div className="p-5 sm:p-6 space-y-5"><Faq data={data?.faq}/></div>
+
+              </div>
+
+            {/* Bottom accent */}
+            <div className="h-1 rounded-full bg-gradient-to-r from-color1 via-color4 to-color3" />
           </main>
         </div>
       </div>
 
-      {/* Bottom border accent */}
-      <div className="absolute bottom-0 left-0 right-0 h-[2px]"
-        style={{ background: "linear-gradient(90deg, transparent 0%, #c9a84c 30%, #e8c96a 50%, #c9a84c 70%, transparent 100%)" }} />
+      {/* Bottom bar */}
+      <div className="h-1 bg-gradient-to-r from-color1 via-color3 to-[#1A2F4A]" />
     </div>
   );
 }
