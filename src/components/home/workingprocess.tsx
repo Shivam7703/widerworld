@@ -82,8 +82,7 @@ export default function WorkProcessSlider() {
               <span className="text-color1 ">visa processing</span>
             </h2>
             <p className="text-zinc-700 text-sm md:text-base leading-relaxed mb-8 ">
-              From first contact to final clearance — a seamless, expert-managed
-              journey for every aviation operation worldwide.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel totam molestias dicta provident officia quisquam corporis nemo adipisci distinctio, accusamus optio?
+              A well-defined and structured approach ensures that every stage of your visa process is handled with clarity and precision. From initial profile evaluation and documentation preparation to application submission and tracking, each step is carefully managed to avoid errors or delays. This systematic process not only simplifies complex procedures but also enhances accuracy and efficiency, ultimately improving your chances of a successful outcome while giving you confidence throughout your immigration journey.
             </p>
             
             <Buttonmain href="/contact-us" text1="Know More" text2="Contact Now" />

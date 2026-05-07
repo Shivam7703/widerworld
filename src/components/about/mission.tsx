@@ -7,20 +7,20 @@ import Image from "next/image";
 
 const data = [{
   label: "Our Mission",
-  text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iste quam aperiam ea voluptates maxime similique, natus illo cum, deserunt optio labore, cumque obcaecati! Ex sit possimus cupiditate consequuntur facilis.",
-points:["Lorem ipsum dolor sit amet consectetur","Lorem ipsum dolor sit amet consectetur"],
+  text:"Our mission is to simplify the immigration journey by providing clear guidance, reliable support, and result-oriented solutions tailored to individual goals. We focus on making complex processes easy to understand while ensuring accuracy, transparency, and a smooth experience from start to finish.",
+points:["Expert visa and immigration consulting","Transparent and honest guidance"],
   img: mission,
   icon: TbTargetArrow
 },{
   label: "Our Vision",
-  text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iste quam aperiam ea voluptates maxime similique, natus illo cum, deserunt optio labore, cumque obcaecati! Ex sit possimus cupiditate consequuntur facilis.",
-points:["Lorem ipsum dolor sit amet consectetur","Lorem ipsum dolor sit amet consectetur"],
+  text:"Our vision is to become a trusted and recognized name in global immigration services by consistently delivering quality outcomes and building long-term relationships. We aim to empower individuals to achieve international opportunities with confidence and clarity.",
+points:["Making global mobility simple and accessible","Commitment to excellence in every visa journey"],
   img: vision,
   icon: MdOutlineVisibility
 },{
   label: "Our Values",
-  text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iste quam aperiam ea voluptates maxime similique, natus illo cum, deserunt optio labore, cumque obcaecati! Ex sit possimus cupiditate consequuntur facilis.",
-points:["Lorem ipsum dolor sit amet consectetur","Lorem ipsum dolor sit amet consectetur"],
+  text:"Our values are rooted in transparency, integrity, and commitment to excellence. We believe in honest communication, ethical practices, and delivering services that prioritize client success while maintaining professionalism at every stage.",
+points:["Maintain honesty, transparency, and strong ethical work standards","Focus on client success with dedication and professionalism"],
   img: mission,
   icon: MdOutlineVisibility
 }]

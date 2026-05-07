@@ -12,7 +12,7 @@ function Contact() {
         img={bann}
         title={"Contact Us"}
         para={
-          "Connect with experienced immigration consultants in Noida for clear guidance, support, and confident visa decisions."
+          "Connect with trusted Immigration Consultants in India for expert guidance, smooth visa processing, and personalized support for your study, work, or settlement journey abroad."
         }
         slug={"contact-us"}
       />

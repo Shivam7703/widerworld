@@ -3,196 +3,178 @@ import React from "react";
 import Image from "next/image";
 import Faq from "../global/faqs";
 import ServiceAside from "./serviceside";
+     import { FaCheckCircle } from "react-icons/fa";
 
 export default function Servicedetails({ data }: any) {
   return (
-    <div className="min-h-screen bg-slate-100 font-sans">
+    <div className="min-h-screen bg-slate-100">
 
       {/* Top 3-color bar */}
       <div className="h-1 bg-gradient-to-r from-color1 via-color3 to-[#1A2F4A]" />
 
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-10 py-7 sm:py-10 lg:py-12">
-        <div className="flex flex-wrap gap-5 justify-between items-start">
+      <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-10 py-7 sm:py-10 lg:py-12">
+        <div className="flex flex-wrap w-full gap-[5%] items-start">
 
           {/* ── Sidebar ── */}
-          <aside className="w-full md:order-1 order-2 md:w-[30%] shrink-0 md:sticky md:top-8">
+          <div className="w-full md:order-1 order-2 md:w-[30%] shrink-0 md:sticky md:top-8">
 <ServiceAside/>
-          </aside>
+          </div>
 
           {/* ── Main ── */}
-          <main className="flex-1 min-w-0 flex flex-col md:order-2 order-1 md:w-[64%] w-full gap-4 sm:gap-5">
 
-            {/* Hero Card */}
-            <div className="rounded-2xl overflow-hidden bg-white border border-slate-200">
-              <div className="h-1 bg-gradient-to-r from-color1 to-color3" />
+<div className="md:order-2 order-1 md:w-[64%] w-full flex flex-col gap-10 p-6 md:p-8 rounded-2xl bg-white">
 
+  {/* Hero Image */}
+  <div className="overflow-hidden rounded-3xl">
+    {data?.img && (
+      <Image
+        src={data.img}
+        alt={data?.title || "Service"}
+        width={1200}
+        height={600}
+        priority
+        className="w-full h-auto object-cover rounded-3xl"
+      />
+    )}
+  </div>
+
+  {/* Title */}
+  <div className="space-y-3">
+    <span className="text-2xl md:text-4xl font-bold uppercase tracking-[0.2em] text-color3">
+      {data?.title}
+    </span>
+
+    <div className="w-32 h-[3px] rounded-full bg-color1" />
+  </div>
+
+  {/* Content */}
+  <div className="space-y-10">
+
+    {data?.content?.map((section: any, secIndex: number) => (
+      <div key={secIndex} className="space-y-8">
+
+        {/* Heading */}
+        {section?.heading && (
+          <div className="space-y-3">
+            <h2
+              className="text-xl sm:text-2xl font-bold text-color2 leading-snug"
+              dangerouslySetInnerHTML={{ __html: section.heading }}
+            />
+
+            <div className="w-14 h-[3px] rounded-full bg-color1" />
+          </div>
+        )}
+
+        {/* Sub Content */}
+        {section?.subcontent?.map((item: any, index: number) => (
+          <div key={index} className="space-y-4">
+
+            {/* Subheading */}
+            {item?.subheading && (
+              <h3
+                className="text-lg sm:text-xl font-bold text-color3"
+                dangerouslySetInnerHTML={{ __html: item.subheading }}
+              />
+            )}
+
+            {/* Paragraph */}
+            {item?.para && (
               <div
-                className="relative overflow-hidden"
-                style={{ aspectRatio: "2" }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-[#1A2F4A] via-[#2B3944] to-[#1A2F4A]" />
-                {data?.img && (
-                  <Image
-                    src={data.img}
-                    alt={data?.title || "Service"}
-                    fill
-                    className="object-cover"
-                    priority
-                  />
-                )}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1A2F4A]/75 via-[#1A2F4A]/20 to-transparent" />
+                className="text-sm font-medium sm:text-base leading-[1.9] text-zinc-800"
+                dangerouslySetInnerHTML={{ __html: item.para }}
+              />
+            )}
 
-                <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between p-4 sm:p-5">
-                  <span className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[10.5px] font-semibold uppercase tracking-widest text-white bg-color2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-color4" />
-                    {data?.title || "Our Service"}
-                  </span>
-                  
-                </div>
-              </div>             
-            </div>
+            {/* List */}
+            {item?.list &&
+              Array.isArray(item.list) &&
+              item.list.length > 0 && (
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
 
-            {/* Article sections */}
-            {data?.content?.map((section: any, secIndex: number) => (
-              <div key={secIndex} className="rounded-2xl overflow-hidden bg-white border border-slate-200">
+                  {item.list.map((li: string, i: number) => (
+                    <li
+                      key={i}
+                      className="flex items-start gap-3"
+                    >
+                      <FaCheckCircle className="text-color1 mt-2 text-sm flex-shrink-0" />
 
-                {/* Card header */}
-                {section?.heading && (
-                  <div className="flex items-center gap-3 px-5 sm:px-6 py-4 bg-color2">
-                    <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 bg-color4/15 border border-color4/30">
-                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                        <path d="M8 2L10 6H14L11 9L12.5 13L8 10.5L3.5 13L5 9L2 6H6L8 2Z" fill="#ffce5b" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h2
-                        className="text-lg sm:text-xl font-bold text-white leading-tight "
-                        dangerouslySetInnerHTML={{ __html: section.heading }}
+                      <span
+                        className="text-sm sm:text-base font-medium !leading-relaxed text-slate-600"
+                        dangerouslySetInnerHTML={{ __html: li }}
                       />
-                     
-                    </div>
-                  </div>
-                )}
-
-                <div className="p-5 sm:p-6 space-y-5">
-                  {section?.subcontent?.map((item: any, index: number) => (
-                    <div key={index}>
-
-                      {/* Subheading */}
-                      {item?.subheading && (
-                        <h3 className="flex items-start gap-2 text-base sm:text-xl font-semibold mb-2.5 text-color3">
-                          <span className="w-[3px] h-5 rounded-sm bg-color1 flex-shrink-0 mt-[3px]" />
-                          <span dangerouslySetInnerHTML={{ __html: item.subheading }} />
-                        </h3>
-                      )}
-
-                      {/* Decorative rule — first item only */}
-                      {index === 0 && (
-                        <div className="flex items-center gap-2 mb-4">
-                          <div className="h-[3px] w-7 rounded bg-color1" />
-                          <div className="h-[3px] w-4 rounded bg-color3" />
-                          <div className="w-2 h-2 rounded-full bg-color4" />
-                          <div className="flex-1 h-px bg-slate-300" />
-                        </div>
-                      )}
-
-                      {/* Paragraph */}
-                      {item?.para && (
-                        <div
-                          className="text-sm sm:text-base leading-[1.8] mb-4 pl-3 border-l-2 border-color5 text-slate-800"
-                          dangerouslySetInnerHTML={{ __html: item.para }}
-                        />
-                      )}
-
-                      {/* List — 2-col */}
-                      {item?.list && Array.isArray(item.list) && item.list.length > 0 && (
-                        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4 list-none p-0">
-                          {item.list.map((li: string, i: number) => (
-                            <li
-                              key={i}
-                              className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl text-xs sm:text-sm leading-[1.55] border border-slate-200 bg-slate-50 text-slate-700 transition-colors duration-200 cursor-default hover:border-color3 hover:bg-blue-50"
-                            >
-                              <span className="w-4 h-4 rounded-md bg-color1 flex items-center justify-center flex-shrink-0 mt-[1px]">
-                                <svg width="8" height="7" viewBox="0 0 10 8" fill="none">
-                                  <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                              </span>
-                              <span dangerouslySetInnerHTML={{ __html: li }} />
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-
-                      {/* Table */}
-                      {item?.table && (
-                        <div className="rounded-xl overflow-hidden mt-2 border border-slate-200">
-                          <div className="h-[3px] bg-gradient-to-r from-color1 to-color3" />
-                          <div className="overflow-x-auto">
-                            <table className="w-full text-xs sm:text-[13px] border-collapse">
-                              <thead>
-                                <tr className="bg-color1">
-                                  {item.table.theading?.map((th: string, i: number) => (
-                                    <th
-                                      key={i}
-                                      className="px-4 py-3 text-left text-sm font-semibold uppercase tracking-[.12em] text-white"
-                                    >
-                                      {th}
-                                    </th>
-                                  ))}
-                                </tr>
-                              </thead>
-                              <tbody>
-                                {item.table.rows?.map((row: any, ri: number) => (
-                                  <tr
-                                    key={ri}
-                                    className="border-b border-slate-200 hover:bg-blue-50/50 transition-colors"
-                                  >
-                                    {row?.colum?.map((col: string, ci: number) => (
-                                      <td
-                                        key={ci}
-                                        className={`px-4 py-2.5 ${ci === 0 ? "text-color3 font-medium" : "text-slate-600 font-normal"}`}
-                                      >
-                                        {col}
-                                      </td>
-                                    ))}
-                                  </tr>
-                                ))}
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      )}
-
-                    </div>
+                    </li>
                   ))}
-                </div>
+                </ul>
+              )}
+
+            {/* Table */}
+            {item?.table && (
+              <div className="overflow-x-auto pt-3">
+
+                <table className="w-full border border-slate-200">
+
+                  <thead>
+                    <tr className="bg-slate-100">
+
+                      {item.table.theading?.map(
+                        (th: string, i: number) => (
+                          <th
+                            key={i}
+                            className="px-5 py-4 text-left text-sm font-semibold text-color2 border-b border-slate-200"
+                          >
+                            {th}
+                          </th>
+                        )
+                      )}
+
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    {item.table.rows?.map((row: any, ri: number) => (
+                      <tr
+                        key={ri}
+                        className="border-b border-slate-200"
+                      >
+                        {row?.colum?.map((col: string, ci: number) => (
+                          <td
+                            key={ci}
+                            className="px-5 py-4 text-sm leading-[1.8] text-slate-700"
+                          >
+                            {col}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+
+                </table>
               </div>
-            ))}
+            )}
 
+          </div>
+        ))}
 
+      </div>
+    ))}
 
- <div  className="rounded-2xl overflow-hidden bg-white border border-slate-200">
+  </div>
 
-                {/* Card header */}
-                  <div className="flex items-center gap-3 px-5 sm:px-6 py-4 bg-color2">
-                    <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 bg-color4/15 border border-color4/30">
-                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                        <path d="M8 2L10 6H14L11 9L12.5 13L8 10.5L3.5 13L5 9L2 6H6L8 2Z" fill="#ffce5b" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h6
-                        className="text-lg sm:text-xl font-bold text-white leading-tight "
-                      >Frequently asked question</h6>
-                    </div>
-                  </div>
-                                       <div className="p-5 sm:p-6 space-y-5"><Faq data={data?.faq}/></div>
+  {/* FAQ */}
+  <div className="space-y-4 pt-4">
 
-              </div>
+    <div className="space-y-3">
+      <h2 className="text-2xl sm:text-3xl font-bold text-color2">
+        Frequently Asked Questions
+      </h2>
 
-            {/* Bottom accent */}
-            <div className="h-1 rounded-full bg-gradient-to-r from-color1 via-color4 to-color3" />
-          </main>
+      <div className="w-16 h-[3px] rounded-full bg-color1" />
+    </div>
+
+    <Faq data={data?.faq} />
+  </div>
+
+</div>
         </div>
       </div>
 

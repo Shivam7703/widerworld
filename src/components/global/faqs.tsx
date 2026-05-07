@@ -34,20 +34,13 @@ function Faq({ data }: { data: { que: string; ans: string }[] }) {
               onClick={() => toggle(index)}
               className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
             >
-              <div className="flex items-center gap-4">
-                <span
-                  className={`text-xs font-black tracking-widest shrink-0 transition-colors duration-300
-                    ${isOpen ? "text-color1" : "text-color2/30 group-hover:text-color2/50"}`}
-                >
-                  0{index + 1}
-                </span>
+             
                 <h3
-                  className={`text-base font-semibold transition-colors duration-300 leading-snug
-                    ${isOpen ? "text-color3" : "text-color5"}`}
+                  className={`text-base sm:text-xl font-semibold transition-colors duration-300 leading-snug
+                    ${isOpen ? "text-color2" : "text-color3"}`}
                 >
                   {item.que}
                 </h3>
-              </div>
 
               <BsArrowUpRightCircleFill
                 className={`text-xl shrink-0 transition-all duration-300
@@ -64,8 +57,8 @@ function Faq({ data }: { data: { que: string; ans: string }[] }) {
                 ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
             >
               <div className="overflow-hidden">
-                <div className="px-6 pb-6 pl-14">
-                  <p className="text-gray-700 md:text-base leading-relaxed">
+                <div className="px-6 pb-6">
+                  <p className="text-zinc-500 text-sm md:text-base font-medium !leading-relaxed">
                     {item.ans}
                   </p>
                 </div>

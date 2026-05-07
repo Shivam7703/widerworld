@@ -15,12 +15,12 @@ const inputFields = [
 ];
 
 const pointers = [
-  "20+ years of trusted visa consultancy experience",
-  "95% visa approval rate across all categories",
-  "Expert guidance for 150+ countries worldwide",
-  "Personalized support from application to approval",
-  "Transparent process with zero hidden charges",
-  "Dedicated team available 6 days a week",
+  "20+ years of experience as leading Immigration Consultants in India",
+  "High visa success rate across multiple categories and countries",
+  "Expert consultation for 150+ global destinations",
+  "End-to-end support from application to final decision",
+  "Clear and transparent process with no hidden charges",
+  "Dedicated team available 6 days a week for continuous assistance",
 ];
 
 function Form() {
@@ -70,12 +70,11 @@ function Form() {
               <h2
                 className="text-white font-black text-3xl md:text-4xl !leading-tight mb-5"
               >
-                Making Visas Simple With{" "}
-                Expert Consultants
+               Simplifying Your Visa Journey with Trusted Experts
               </h2>
 
               <p className="text-white/80 leading-relaxed mb-10">
-                Get personalized immigration guidance from our certified experts. We handle every step so you don't have to.
+Get personalized assistance from experienced Immigration Consultants in India who guide you at every step. From profile evaluation to final approval, we make your immigration process smooth, transparent, and stress-free.
               </p>
 
               {/* Divider */}

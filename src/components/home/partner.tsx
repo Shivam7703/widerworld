@@ -1,10 +1,8 @@
 import Image from "next/image";
-import { logo } from "@/assets"; // apne path se adjust karo
+import { p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12 } from "@/assets"; // apne path se adjust karo
 
 const partners = [
-  { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 },
-  { id: 5 }, { id: 6 }, { id: 7 }, { id: 8 },
-  { id: 9 }, { id: 10 }, { id: 11 }, { id: 12 },
+  p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12
 ];
 
 export default function Partners() {
@@ -52,7 +50,7 @@ export default function Partners() {
 
             return (
               <div
-                key={partner.id}
+                key={index}
                 className={`
                   relative flex items-center justify-center p-6 md:p-8
                   group cursor-pointer transition-all duration-300
@@ -62,10 +60,10 @@ export default function Partners() {
                 `}
               >
                 {/* Logo */}
-                <div className="relative w-full h-14 sm:h-20 transition-all duration-300 group-hover:scale-105 sm:filter grayscale group-hover:grayscale-0 opacity-60 group-hover:opacity-100">
+                <div className="relative w-full max-w-36 h-14 sm:h-20 transition-all duration-300 group-hover:scale-105 sm:filter grayscale group-hover:grayscale-0 opacity-60 group-hover:opacity-100">
                   <Image
-                    src={logo}
-                    alt={`partner-${partner.id}`}
+                    src={partner}
+                    alt={`partner-${index}`}
                     fill
                     className="object-contain"
                   />
