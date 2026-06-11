@@ -104,10 +104,10 @@ const Header = ({ header }: any) => {
                 {/* Facebook */}
                 <div
                   className="group relative w-8 h-8 rounded-xl bg-white/90 backdrop-blur-sm
-      border-[1.5px] border-white flex items-center justify-center cursor-pointer
-      overflow-hidden transition-all duration-300
-      hover:-translate-y-1 hover:scale-110 hover:border-transparent
-      hover:shadow-[0_10px_28px_rgba(0,0,0,0.25)]"
+                      border-[1.5px] border-white flex items-center justify-center cursor-pointer
+                        overflow-hidden transition-all duration-300
+                        hover:-translate-y-1 hover:scale-110 hover:border-transparent
+                        hover:shadow-[0_10px_28px_rgba(0,0,0,0.25)]"
                   onClick={() =>
                     window.open(
                       "https://www.facebook.com/globeswayimmigration",

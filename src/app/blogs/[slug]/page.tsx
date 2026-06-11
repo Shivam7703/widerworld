@@ -1,10 +1,11 @@
 // app/blogs/[slug]/page.tsx
+
 import { notFound } from "next/navigation";
-import React from "react";
-import { blogData } from "@/data/homeData";
 import { bann } from "@/assets";
 import Banner from "@/components/global/banner";
 import Blogdetails from "@/components/blog/blog-detail";
+// API functions import karein
+import { getBlog } from "@/lib/api"; 
 
 interface PageProps {
   params: {
@@ -12,43 +13,49 @@ interface PageProps {
   };
 }
 
-// Helper function to create consistent slugs
-const createSlug = (title: string): string => {
-  return title
-    .trim()
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-};
+// SEO Meta Tags
+export async function generateMetadata({ params }: PageProps) {
+  // Yaha hum imported getBlog use kar rahe hain
+  const blog = await getBlog({ slug: params.slug });
+  
+  if (!blog || blog.error) return { title: "Blog Not Found" };
 
-// Generate static paths for blogs - removed Promise return type
-export function generateStaticParams() {
-  const blogsData = blogData.blog;
-  return blogsData.map((blog: any) => ({
-    slug: createSlug(blog.heading),
-  }));
+  return {
+    title: blog.post_title,
+    description: blog.description || "",
+    alternates: {
+      canonical: `https://www.widerworld.in/blogs/${blog.post_name}`,
+    },
+  };
 }
 
-export default function BlogPage({ params }: PageProps) {
-  const decodedSlug = createSlug(decodeURIComponent(params.slug));
-  const blogsData = blogData.blog;
-  const singleBlog = blogsData.find(
-    (blog: any) => createSlug(blog.heading) === decodedSlug
-  );
+// Static paths
+// export async function generateStaticParams() {
+//   try {
+//     const API_URL = "https://widerworld.in/next-blog.php";
+//     const res = await fetch(`${API_URL}?per_page=200`);
+//     const json = await res.json();
+//     return (json.data || []).map((blog: any) => ({ slug: blog.post_name }));
+//   } catch {
+//     return [];
+//   }
+// }
 
-  if (!singleBlog) {
-    notFound();
-  }
+export default async function BlogPage({ params }: PageProps) {
+  // Yaha bhi imported getBlog use kar rahe hain
+  const blog = await getBlog({ slug: params.slug });
+
+  if (!blog || blog.error) notFound();
 
   return (
     <main>
       <Banner
         img={bann}
-        title={singleBlog.heading}
-        para="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        slug={`blogs/${createSlug(singleBlog.heading)}`}
+        title={blog.post_title}
+        para={blog.description || ""}
+        slug={`blogs/${blog.post_name}`}
       />
-      <Blogdetails data={singleBlog} />
+      <Blogdetails data={blog} />
     </main>
   );
 }

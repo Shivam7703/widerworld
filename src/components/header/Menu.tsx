@@ -134,7 +134,7 @@ const Menu = ({ Isprimary, Items }: any) => {
                                   ? "bg-[#CB0000] text-white rounded-lg mx-1"
                                   : "text-white/80"
                               }`}
-                            style={{ width: "calc(100%)" }}
+                            style={{ width: "calc(100% - 8px)" }}
                           >
                             <span
                               className="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-0

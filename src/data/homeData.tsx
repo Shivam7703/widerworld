@@ -2,28 +2,13 @@ import {
   about2,
   banner,
   banner2,
-  banner3,
   bene2,
   box1,
   box2,
   box3,
   cl1,
-  cl2,
-  cl3,
-  cl4,
-  cl5,
-  cl6,
-  cl7,
-  cl8,
-  cl9,
-  immigration,
-  Career,
-  ielts,
-  jobAssist,
-  PostLanding,
-  profile,
-  pte,
-  visaDocument,
+
+ 
   famvisa,
   prvisa,
   business,
@@ -40,11 +25,10 @@ import {
   novaScotia,
   manitoba,
   saskatchewanPnp,
-  bann,
   about,
   back,
 } from "@/assets";
-import { FaBriefcase, FaGlobeAmericas, FaPlaneDeparture } from "react-icons/fa";
+import { FaGlobeAmericas, FaPlaneDeparture } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { HiOutlineFlag, HiOutlineLightBulb } from "react-icons/hi";
 import { IoSearch, IoSettingsOutline } from "react-icons/io5";
@@ -203,7 +187,7 @@ export const navigationMenu = {
           subNav: [
             { id: 1, label: "Tourist Visa", href: "/visa/USA Visit Visa (B1/B2)" },
             { id: 2, label: "Investor Visa", href: "/visa/USA Investor Visa (EB-5)" },
-            { id: 3, label: "Business Visa", href: "/visa/usa-business-visa" },
+            { id: 3, label: "Business Visa", href: "/visa/USA Visit Visa (B1/B2)" },
           ],
         },
 

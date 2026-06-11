@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import BlogAside from "../blog/side";
+import ServiceAside from "../services/serviceside";
 import Image from "next/image";
 
 import { bann } from "@/assets";
@@ -130,7 +130,7 @@ export default function Visadetails({ data }: any) {
 
         {/* Sidebar */}
         <div className="md:w-[33%] w-full md:sticky md:top-10 h-full space-y-5">
-          <BlogAside />
+<ServiceAside/>
         </div>
       </div>
     </div>

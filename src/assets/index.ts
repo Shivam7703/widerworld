@@ -94,6 +94,10 @@ import social from "@/assets/about/social.webp";
 
 // services
 import ielts from "@/assets/home/ielts.jpg";
+import toefl from "@/assets/home/toefl.jpg";
+import celpip from "@/assets/home/celpip.jpg";
+import oet from "@/assets/home/oet.jpg";
+
 import immigration from "@/assets/home/immigration.webp";
 import jobAssist from "@/assets/home/job assistance.jpg";
 import PostLanding from "@/assets/home/post-landing.webp";
@@ -101,6 +105,11 @@ import profile from "@/assets/home/profile assistance.webp";
 import pte from "@/assets/home/pte.jpg";
 import visaDocument from "@/assets/home/visa documentation.webp";
 import Career from "@/assets/home/career counselling.webp";
+import Resume from "@/assets/home/resume.jpg";
+import hotel from "@/assets/home/hotel.jpg";
+import bank from "@/assets/home/bank.jpg";
+import documentation from "@/assets/home/documentation.jpg";
+import orientation from "@/assets/home/orientation.jpg";
 
 
 // visas
@@ -185,8 +194,8 @@ export {p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12,
 shape1,mission, vision,  pro1,  logo , logo2, banner,banner2,banner3 ,back,blog_bg, box1, box2, box3,visa1,process1,usflag, ukflag,canadaflag,  bene2,bene3, bene4,contactb, susbanner,prob,aboutb,careerb, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,heade, count, famvisa, prvisa, business,touristvisa
  , sus1,sus2, sus3, sus4, choose1, blog1, blog2, blog3, footerImage, plane, patta, kangaroo, atlanticImmigration, 
   faq,ceo,
-  alberta, immigration, Career, ielts, jobAssist, PostLanding ,profile, pte ,visaDocument,
-  australiaPR,
+  alberta, immigration, Career, ielts,toefl,celpip,oet, jobAssist, PostLanding ,profile, pte ,visaDocument, Resume,
+  hotel, bank, documentation,orientation, australiaPR,
   australiaSpouseVisa,
   australiaPointSystem,
   australiaSubclass491,

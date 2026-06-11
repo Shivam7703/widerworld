@@ -1,8 +1,8 @@
-import { immigration, Career, ielts, jobAssist, PostLanding ,profile, pte ,visaDocument, canadaPR,} from "@/assets";
+import { immigration, Career, ielts, jobAssist, PostLanding ,profile, pte ,visaDocument, canadaPR, Resume, hotel, bank, documentation, orientation,} from "@/assets";
 
 export const servicedata = [
  {
-    "img": canadaPR,
+    "img": visaDocument,
     "title": "Visa Services",
     "metatitle": "Visa Services – Complete Guide 2026",
     "metakey": "",
@@ -189,7 +189,7 @@ export const servicedata = [
     ]
 },
 {
-    "img": canadaPR,
+    "img": Career,
     "title": "Career Counselling",
     "metatitle": "Career Counselling – Complete Guide 2026",
     "metakey": "",
@@ -374,7 +374,7 @@ export const servicedata = [
     ]
 },
 {
-    "img": canadaPR,
+    "img": profile,
     "title": "Profile Marketing",
     "metatitle": "Profile Marketing – Complete Guide 2026",
     "metakey": "",
@@ -559,7 +559,7 @@ export const servicedata = [
     ]
 },
 {
-    "img": canadaPR,
+    "img": Resume,
     "title": "Resume Writing",
     "metatitle": "Resume Writing – Complete Guide 2026",
     "metakey": "",
@@ -743,7 +743,7 @@ export const servicedata = [
     ]
 },
 {
-    "img": canadaPR,
+    "img": PostLanding,
     "title": "Post-Landing Services",
     "metatitle": "Post-Landing Services – Complete Guide 2026",
     "metakey": "",
@@ -927,7 +927,7 @@ export const servicedata = [
     ]
 },
 {
-    "img": canadaPR,
+    "img": hotel,
     "title": "Pre-Hotel/PG",
     "metatitle": "Pre-Hotel/PG Service – Complete Guide 2026",
     "metakey": "",
@@ -1013,8 +1013,9 @@ export const servicedata = [
             "ans": " Yes, all options provided under our Pre Hotel / PG service are verified for safety and reliability. We ensure that accommodations meet basic standards, giving you a secure and comfortable environment when you arrive in a new country."
         }
     ]
-},{
-    "img": canadaPR,
+},
+{
+    "img": bank,
     "title": "Bank Account",
     "metatitle": "Bank Account Service – Complete Guide 2026",
     "metakey": "",
@@ -1094,7 +1095,7 @@ export const servicedata = [
     ]
 },
 {
-    "img": canadaPR,
+    "img": documentation,
     "title": "Documentation",
     "metatitle": "Documentation Service – Complete Guide 2026",
     "metakey": "",
@@ -1174,7 +1175,7 @@ export const servicedata = [
     ]
 },
 {
-    "img": canadaPR,
+    "img": orientation,
     "title": "Orientation",
     "metatitle": "Orientation Service – Complete Guide 2026",
     "metakey": "",

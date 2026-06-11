@@ -6,7 +6,7 @@ import Buttonmain from "../global/button";
 
 export default function AboutSection({ data }:any) {
   return (
-    <section className="w-full p-4 md:p-12 lg:px-20 xl:px-24">
+    <section className="w-full p-4 py-7 md:p-12 lg:px-20 xl:px-24">
 
       <motion.div
         initial={{ opacity: 0, y: 25 }}

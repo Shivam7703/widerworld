@@ -21,11 +21,11 @@ const createSlug = (title: string): string => {
     .replace(/^-+|-+$/g, "");
 };
 
-export function generateStaticParams(){
-    return visaData.map((visas:any) => ({
-        slug: createSlug(visas.title)
-    }));
-}
+// export function generateStaticParams(){
+//     return visaData.map((visas:any) => ({
+//         slug: createSlug(visas.title)
+//     }));
+// }
 
 export default function Visapage({params}:Pageprops){
     const decodedSlug = createSlug(params.slug);
@@ -41,7 +41,7 @@ return(
         img={bann}
         title={singlevisa.title}
         para={singlevisa?.metadesc}
-        slug={`blogs/${createSlug(singlevisa.title)}`}
+        slug={`visa/${createSlug(singlevisa.title)}`}
       />
       <Visadetails data={singlevisa} />
     </main>

@@ -21,19 +21,19 @@ const createSlug = (title: string): string => {
 };
 
 // Generate static paths for blogs - removed Promise return type
-export function generateStaticParams() {
-  const blogsData = servicedata;
-  return blogsData.map((blog: any) => ({
-    slug: createSlug(blog.title),
-  }));
-}
+// export function generateStaticParams() {
+//   const blogsData = servicedata;
+//   return blogsData.map((blog: any) => ({
+//     slug: createSlug(blog.title),
+//   }));
+// }
 
 export default function BlogPage({ params }: PageProps) {
   const decodedSlug = createSlug(decodeURIComponent(params.slug));
   const blogsData = servicedata;
   const singleService = blogsData.find(
     (blog: any) => createSlug(blog.title) === decodedSlug
-  );
+  ); 
 
   if (!singleService) {
     notFound();
@@ -45,7 +45,7 @@ export default function BlogPage({ params }: PageProps) {
         img={bann}
         title={singleService.title}
         para={singleService?.metadesc}
-        slug={`blogs/${createSlug(singleService.title)}`}
+        slug={`services/${createSlug(singleService.title)}`}
       />
       <Servicedetails data={singleService} />
     </main>

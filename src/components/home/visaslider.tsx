@@ -118,7 +118,7 @@ export default function VisaSlider() {
       {/* ── NAV ARROWS ── */}
       <button
         className={`${uniqueId}-next absolute z-30 right-2 md:right-6 top-[62%] -translate-y-1/2
-          w-12 h-12 border border-white/80 rounded-full bg-white/10 hover:bg-color1
+          w-12 h-12 border border-white/80 rounded-full bg-color2/70 hover:bg-color1
           flex items-center justify-center text-white shadow-xl
           transition-all duration-300 hover:scale-110`}
       >
@@ -126,7 +126,7 @@ export default function VisaSlider() {
       </button>
       <button
         className={`${uniqueId}-prev absolute z-30 left-2 md:left-6 top-[62%] -translate-y-1/2
-          w-12 h-12 border border-white/80 rounded-full bg-white/10 hover:bg-color1
+          w-12 h-12 border border-white/80 rounded-full bg-color2/70 hover:bg-color1
           flex items-center justify-center text-white shadow-xl
           transition-all duration-300 hover:scale-110`}
       >

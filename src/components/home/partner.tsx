@@ -8,16 +8,7 @@ const partners = [
 export default function Partners() {
   return (
     <section className="relative bg-gradient-to-br from-[#f0f4fb] via-[#e8eef8] to-[#f5f0e8] md:py-12 p-6 md:px-14 lg:px-20 overflow-hidden">
-
-      {/* Background pattern */}
-      <div
-        className="absolute inset-0 opacity-[0.04] pointer-events-none"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(0,64,148,1) 1px,transparent 1px),linear-gradient(90deg,rgba(0,64,148,1) 1px,transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
-      />
+    
 
       {/* Top accent line */}
       <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-color2 to-color1" />
