@@ -14,7 +14,7 @@ export default function WhychooseSection() {
 <Image
               src={shape1}
               alt="img"
-              className="absolute opacity-60 -bottom-6 max-w-[400px] scale-x-[-1] -right-5 object-contain z-0"
+              className="absolute opacity-60 bottom-0 max-w-[400px] scale-x-[-1] -right-5 object-contain z-0"
             />
       {/* Background pattern */}
     

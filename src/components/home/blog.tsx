@@ -33,9 +33,11 @@ export default function Blogs({ isHome, page = 1 }: Props) {
         const limit = isHome ? 4 : 12;
         const currentPage = isHome ? 1 : page;
         
+        // perpage
+        const perPage = isHome ? 4 : 12;
+
         // Centralized API function use kiya
-        const data = await getBlogs(currentPage);
-        
+       const data = await getBlogs(currentPage, perPage);     
         // Agar aapki API ka response structure alag hai, to yaha adjust kar sakte hain.
         // Assuming data.data holds the array based on your previous code.
         setBlogs(data.data || []);

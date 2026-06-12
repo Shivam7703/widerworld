@@ -2,9 +2,9 @@
 
 const API_URL = "https://widerworld.in/next-blog.php"
 
-export async function getBlogs(page = 1) {
+export async function getBlogs(page = 1, perPage = 12) {
   const res = await fetch(
-    `${API_URL}?page=${page}&per_page=12`,
+    `${API_URL}?page=${page}&per_page=${perPage}`,
     { next: { revalidate: 3600 } }
   )
   return res.json()

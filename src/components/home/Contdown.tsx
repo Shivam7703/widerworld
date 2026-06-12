@@ -59,7 +59,7 @@ function CountDown() {
  <Image
               src={shape1}
               alt="img"
-              className="absolute top-0 max-w-[500px] scale-x-100 right-0 object-contain z-0"
+              className="absolute bottom-0 max-w-[500px] scale-x-100 right-2 object-contain z-0"
             />
       <div className="max-w-screen-xl mx-auto shadow-lg shadow-black/40 rounded-2xl overflow-hidden">
 

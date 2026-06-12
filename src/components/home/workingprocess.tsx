@@ -5,7 +5,7 @@ import { FaWpforms } from "react-icons/fa";
 import { LuHandshake } from "react-icons/lu";
 import { MdOutlineEngineering, MdOutlineSettings } from "react-icons/md";
 import Buttonmain from "../global/button";
-import { pro1, shape1 } from "@/assets"; // apni illustration imgs import karo
+import { pro1 } from "@/assets"; // apni illustration imgs import karo
 import Image from "next/image";
 
 const data = [
