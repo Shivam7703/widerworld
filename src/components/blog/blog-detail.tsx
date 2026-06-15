@@ -139,7 +139,7 @@ export default function Blogdetails({ data }: { data: BlogData }) {
                 prose-headings:text-zinc-800 prose-headings:font-bold
                 prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl
                 prose-p:text-zinc-700 prose-p:leading-relaxed
-                prose-a:text-amber-600 prose-a:no-underline hover:prose-a:underline
+                 prose-a:no-underline 
                 prose-ul:text-zinc-700 prose-ol:text-zinc-700
                 prose-li:my-1
                 prose-table:border prose-td:border prose-td:p-2 prose-th:border prose-th:p-2
