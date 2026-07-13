@@ -4,9 +4,9 @@ export const coachingdata = [
     {
   "img": ielts,
   "title": "IELTS",
-  "metatitle": "",
+  "metatitle": "IELTS",
   "metakey": "ielts exam, ielts preparation, ielts online test",
-  "metadesc": "",
+  "metadesc": "Achieve your target IELTS score with expert coaching, practice tests, and personalized training for study, work, and immigration success.",
   "content": [
     {
       "subcontent": [
@@ -134,14 +134,8 @@ export const coachingdata = [
       ]
     },
     {
-      "heading": "",
+      "heading": "<p>IELTS Preparation: What Actually Works</p>",
       "subcontent": [
-        {
-          "subheading": "",
-          "para": "IELTS Preparation: What Actually Works",
-          "list": "",
-          "table": ""
-        },
         {
           "subheading": "",
           "para": "Effective IELTS preparation is not about studying harder—it's about studying smarter. Many applicants underestimate the importance of structured IELTS preparation, which often leads to lower scores and missed opportunities.",
@@ -155,22 +149,16 @@ export const coachingdata = [
           "table": ""
         },
         {
-          "subheading": "",
-          "para": "Key Elements of Effective IELTS Preparation",
-          "list": "",
-          "table": ""
-        },
-        {
-          "subheading": "",
+          "subheading": "Key Elements of Effective IELTS Preparation",
           "para": "",
-          "list": [
+ "list": [
             "Understanding scoring criteria for each section",
             "Practicing time management and accuracy",
             "Improving vocabulary and grammar",
             "Taking regular mock tests",
             "Focusing on real exam scenarios"
           ],
-          "table": ""
+           "table": ""
         },
         {
           "subheading": "",
@@ -217,14 +205,8 @@ export const coachingdata = [
       ]
     },
     {
-      "heading": "",
+      "heading": "<p>Common Challenges in IELTS Exam</p>",
       "subcontent": [
-        {
-          "subheading": "Common Challenges in IELTS Exam",
-          "para": "",
-          "list": "",
-          "table": ""
-        },
         {
           "subheading": "",
           "para": "Many candidates face challenges while preparing for the IELTS exam, often due to a lack of proper guidance or strategy.",
@@ -331,10 +313,10 @@ export const coachingdata = [
       ]
     },
     {
-      "heading": "",
+      "heading": "<p>Long-Term Value of IELTS Exam</p>",
       "subcontent": [
         {
-          "subheading": "Long-Term Value of IELTS Exam",
+          "subheading": "",
           "para": "The benefits of the IELTS exam extend beyond immigration. A strong score can:",
           "list": ["Improve job opportunities abroad","Increase chances of university admission","Enhance professional credibility","Open multiple immigration pathways","Open multiple immigration pathways",],
           "table": ""
@@ -407,12 +389,13 @@ export const coachingdata = [
     }
   ]
 },
+
 {
     "img": pte,
     "title": "PTE",
-    "metatitle": "",
+    "metatitle": "PTE",
     "metakey": "PTE, PTE Exam",
-    "metadesc": "",
+    "metadesc": "Prepare for the PTE exam with professional guidance, mock tests, and proven strategies to achieve your desired score for global opportunities.",
     "content": [
         {
             "subcontent": [
@@ -718,9 +701,9 @@ export const coachingdata = [
 {
     "img": toefl,
     "title": "TOEFL",
-    "metatitle": "",
+    "metatitle": "TOEFL",
     "metakey": "toefl exam, toefl test, toefl test cost, toefl preparation guide",
-    "metadesc": "",
+    "metadesc": "Excel in the TOEFL exam with expert coaching, comprehensive study materials, and practice sessions designed to improve your English proficiency.",
     "content": [
         {
             "subcontent": [
@@ -1045,9 +1028,9 @@ export const coachingdata = [
 {
     "img": celpip,
     "title": "CELPIP",
-    "metatitle": "",
+    "metatitle": "CELPIP",
     "metakey": "celpip test, celpip exam, celpip test price",
-    "metadesc": "",
+    "metadesc": "Boost your CELPIP score with expert training, real exam practice, and personalized preparation for Canadian immigration and permanent residency.",
     "content": [
         {
             "subcontent": [
@@ -1356,9 +1339,9 @@ export const coachingdata = [
 {
     "img": oet,
     "title": "OET",
-    "metatitle": "",
+    "metatitle": "OET",
     "metakey": "oet exam, oet english test",
-    "metadesc": "",
+    "metadesc": "Prepare for the OET exam with specialized coaching for healthcare professionals. Improve your English skills and achieve your career goals abroad.",
     "content": [
         {
             "subcontent": [

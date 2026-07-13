@@ -59,7 +59,7 @@ function CountDown() {
  <Image
               src={shape1}
               alt="img"
-              className="absolute bottom-0 max-w-[500px] scale-x-100 right-2 object-contain z-0"
+              className="absolute bottom-0 max-w-[500px] scale-x-100 right-2 object-contain opacity-50 z-0"
             />
       <div className="max-w-screen-xl mx-auto shadow-lg shadow-black/40 rounded-2xl overflow-hidden">
 
@@ -99,7 +99,7 @@ function CountDown() {
   <div className="w-full h-[2px] bg-blue-200 my-3 rounded-full" />
 
   {/* Title */}
-  <h3 className="text-sm md:text-base tracking-widest uppercase text-color3 font-medium mb-2 group-hover:text-red-600 transition-colors duration-300">
+  <h3 className="text-sm md:text-base tracking-widest uppercase text-color2 font-semibold mb-2 md:mb-3 group-hover:text-red-600 transition-colors duration-300">
     {item.title}
   </h3>
 

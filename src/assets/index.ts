@@ -11,7 +11,6 @@ import patta from "@/assets/home/patta.png";
 import kangaroo from "@/assets/home/kangaroo.png";
 import faq from "@/assets/home/faq.png";
 import blog_bg from "@/assets/home/blog_bg.png";
-import pro1 from "@/assets/home/pro1.png";
 import shape1 from "@/assets/home/shape1.png";
 import mission from "@/assets/home/mission.png";
 import vision from "@/assets/home/vision.png";
@@ -37,12 +36,6 @@ import business from "@/assets/home/business.jpeg";
 import touristvisa from "@/assets/home/touristvisa.jpg";
 
 
-// flag
-import usflag from "@/assets/flag/us.png";
-import ukflag from "@/assets/flag/uk.png";
-import canadaflag from "@/assets/flag/canada.jpg";
-
-
 import heade from "@/assets/home/header.webp";
 import count from "@/assets/home/count.webp";
 import susbanner from "@/assets/home/sustainability.webp";
@@ -64,7 +57,7 @@ import bene2 from "@/assets/home/bene2.jpg";
 import bene3 from "@/assets/home/bene3.jpg";
 import bene4 from "@/assets/home/bene4.jpg";
 import banner from "@/assets/home/Bannner1.jpg";
-import banner2 from "@/assets/home/Bannner1.jpg";
+import banner2 from "@/assets/home/banner2.jpg";
 import banner3 from "@/assets/home/Banner3.jpeg";
 import prob from "@/assets/home/probanner.jpg";
 import bann from "@/assets/home/bann.webp";
@@ -85,7 +78,14 @@ import cl6 from "@/assets/home/cl6.jpg";
 import cl7 from "@/assets/home/cl7.jpg";
 import cl8 from "@/assets/home/cl8.jpg";
 import cl9 from "@/assets/home/cl9.jpg";
-
+import step1 from "@/assets/home/step1.webp"
+import step2 from "@/assets/home/step2.webp"
+import step3 from "@/assets/home/step3.png"
+import step4 from "@/assets/home/step4.webp"
+import step5 from "@/assets/home/step5.png"
+import step6 from "@/assets/home/step6.webp"
+import step7 from "@/assets/home/step7.png"
+import step from "@/assets/home/process.png"
 
 // about
 import com from "@/assets/about/com.webp";
@@ -94,6 +94,7 @@ import social from "@/assets/about/social.webp";
 
 // services
 import ielts from "@/assets/home/ielts.jpg";
+import workVisa from "@/assets/home/workvisa.jpg";
 import toefl from "@/assets/home/toefl.jpg";
 import celpip from "@/assets/home/celpip.jpg";
 import oet from "@/assets/home/oet.jpg";
@@ -188,10 +189,24 @@ import swedenTouristVisa from "@/assets/visa3/Sweden Tourist Visa.webp";
 import usaInvestorVisa from "@/assets/visa3/USA Investor Visa.webp";
 import usaVisitVisa from "@/assets/visa3/USA Visit Visa.webp";
 
+// contry and flag
+import usa from "@/assets/flag/us.png";
+import uk from "@/assets/flag/uk.webp";
+import usaimg from "@/assets/flag/us-img.jpg";
+import canada from "@/assets/flag/canada.webp";
+import canimg from "@/assets/flag/cana-img.webp";
+import aus from "@/assets/flag/australia.webp";
+import ausimg from "@/assets/flag/aus-img.webp";
+import euro from "@/assets/flag/europe.webp";
+import euroimg from "@/assets/flag/euro-img.webp";
+import gcc from "@/assets/flag/GCC.jpg";
+import gccimg from "@/assets/flag/gcc-img.jpg";
+import newflag from "@/assets/flag/new.png";
+import newimg from "@/assets/flag/new-img.jpg";
 
 
-export {p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12,
-shape1,mission, vision,  pro1,  logo , logo2, banner,banner2,banner3 ,back,blog_bg, box1, box2, box3,visa1,process1,usflag, ukflag,canadaflag,  bene2,bene3, bene4,contactb, susbanner,prob,aboutb,careerb, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,heade, count, famvisa, prvisa, business,touristvisa
+export {step,step1,step2,step3,step4,step5,step6,step7,newflag,newimg,usa,usaimg,canada,canimg,aus,ausimg,euro,euroimg,gcc,gccimg,uk,p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12,
+shape1,mission, vision, logo , logo2, banner,banner2,banner3 ,back,blog_bg, box1, box2, box3,visa1,process1,  bene2,bene3, bene4,contactb, susbanner,prob,aboutb,careerb, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,heade, count, famvisa, prvisa, business,touristvisa
  , sus1,sus2, sus3, sus4, choose1, blog1, blog2, blog3, footerImage, plane, patta, kangaroo, atlanticImmigration, 
   faq,ceo,
   alberta, immigration, Career, ielts,toefl,celpip,oet, jobAssist, PostLanding ,profile, pte ,visaDocument, Resume,
@@ -261,6 +276,6 @@ shape1,mission, vision,  pro1,  logo , logo2, banner,banner2,banner3 ,back,blog_
   spainTouristVisa,
   swedenTouristVisa,
   usaInvestorVisa,
-  usaVisitVisa,
+  usaVisitVisa, workVisa
  }
 

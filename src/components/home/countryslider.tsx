@@ -37,9 +37,6 @@ export default function Countryslider({data, uniqueId}:any) {
     shadow-lg hover:shadow-2xl 
     transition-all duration-500"
   >
-
-   
-
     {/* IMAGE */}
     <div className="relative h-48 overflow-hidden">
 
@@ -89,7 +86,7 @@ export default function Countryslider({data, uniqueId}:any) {
         {card.heading ?? card.name}
       </h3>
 
-      <p className="text-zinc-800  leading-relaxed mx-auto">
+      <p className="text-zinc-600 text-sm sm:text-base mx-auto">
         {card.text ?? "Lorem Ipsum Has Been The Industry's Standard"}
       </p>
 

@@ -1,5 +1,5 @@
 "use client";
-import { box1, box2, box3, mission, plane, pro1, vision } from "@/assets";
+import { box1, box2, box3, mission, plane,  vision } from "@/assets";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";

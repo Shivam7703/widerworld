@@ -78,21 +78,24 @@ export default function Blogs({ isHome, page = 1 }: Props) {
     <section
       className={`${
         isHome ? "lg:px-20 xl:px-28 md:px-16 sm:p-12 p-6" : "px-3 pb-5"
-      } relative w-full overflow-hidden bg-gradient-to-br from-[#f0f4fb] via-[#e8eef8] to-[#f5f0e8]`}
+      } relative w-full overflow-hidden bg-blue-50`}
     >
       {/* Blobs, Header, Grid etc. remain unchanged */}
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-color2/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-20 right-0 w-[400px] h-[400px] bg-color2/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[360px] h-[360px] bg-color1/7 rounded-full blur-[100px] pointer-events-none" />
 
       {isHome && (
         <div className="text-center mb-8 sm:mb-12 relative z-10">
-          <span className="text-color2 font-bold uppercase text-sm tracking-[0.22em] mb-4">
+          <span className="text-color2 font-bold uppercase text-xs tracking-[0.22em] mb-4">
             Latest Blogs
           </span>
-          <h2 className="text-color3 font-bold !leading-tight text-2xl md:text-4xl max-w-2xl mx-auto">
-            Insights & Immigration Updates
-          </h2>
-          <div className="w-16 h-[3px] bg-gradient-to-r from-color2 to-color1 rounded-full mx-auto mt-5" />
+           <h2
+          className="text-color3 font-bold text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto"
+        >
+          Latest Insight and{" "}
+          <span className="text-color1">Updated Blogs</span>
+        </h2>
+        <div className="w-24 h-[2px] bg-gradient-to-r from-color2 to-color1 mx-auto rounded-full" />
         </div>
       )}
 

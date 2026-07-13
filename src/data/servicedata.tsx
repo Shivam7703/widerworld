@@ -4,9 +4,9 @@ export const servicedata = [
  {
     "img": visaDocument,
     "title": "Visa Services",
-    "metatitle": "Visa Services – Complete Guide 2026",
-    "metakey": "",
-    "metadesc": "Professional Visa Services offering structured end-to-end guidance for permanent residency, work visas, study permits, and business immigration pathways.",
+    "metatitle": "Visa Services",
+    "metakey": "Visa Services, Immigration Services, Best Visa Services",
+    "metadesc": "Get expert visa services for study, work, PR, and visitor visas. Enjoy hassle-free documentation, application support, and higher approval chances.",
     "content": [
         {
             "subcontent": [
@@ -14,7 +14,7 @@ export const servicedata = [
                     "para": "Navigating global immigration systems today requires more than just filling out forms—it demands precision, strategy, and a deep understanding of evolving immigration policies. Visa Services are designed to simplify this complexity by offering structured, end-to-end guidance that transforms a multi-layered process into a clear and manageable journey."
                 },
                 {
-                    "para": "Whether you are applying for permanent residency, a work visa, a study permit, or a business immigration pathway, each route comes with its own eligibility criteria, documentation standards, and decision frameworks. Professional Visa Services ensures that your application is not only complete but strategically aligned with current immigration trends, significantly improving your chances of approval."
+                    "para": "Whether you are <a href='https://www.widerworld.in/pr-visa/'>applying for permanent residency</a>, a work visa, a study permit, or a business immigration pathway, each route comes with its own eligibility criteria, documentation standards, and decision frameworks. Professional Visa Services ensures that your application is not only complete but strategically aligned with current immigration trends, significantly improving your chances of approval."
                 }
             ]
         },
@@ -62,7 +62,7 @@ export const servicedata = [
             ]
         },
         {
-            "heading": "<h3>Strategic Importance of Proper Visa Planning</h3>",
+            "heading": "<p>Strategic Importance of Proper Visa Planning</p>",
             "subcontent": [
                 {
                     "para": "A common misconception among applicants is that meeting basic eligibility is enough. In reality, immigration systems are competitive and dynamic, meaning that how you present your profile matters just as much as your qualifications."
@@ -118,7 +118,7 @@ export const servicedata = [
             ]
         },
         {
-            "heading": "<h4>Common Challenges Applicants Face</h4>",
+            "heading": "<p>Common Challenges Applicants Face</p>",
             "subcontent": [
                 {
                     "para": "Many applicants encounter issues due to a lack of clarity or an incomplete understanding of immigration systems."
@@ -158,7 +158,7 @@ export const servicedata = [
             ]
         },
         {
-            "heading": "<h5>Long-Term Perspective: Beyond Approval</h5>",
+            "heading": "<h4>Long-Term Perspective: Beyond Approval</h4>",
             "subcontent": [
                 {
                     "para": "Visa approval is only the first step in your global journey. Long-term success depends on how well you adapt, secure employment, and integrate into your new environment."
@@ -180,7 +180,7 @@ export const servicedata = [
         },
         {
             "que": "3. Can visa services guarantee visa approval?",
-            "ans": " No, approval depends on immigration authorities. However, professional services significantly increase your chances by ensuring your application is accurate, complete, and strategically aligned with requirements."
+            "ans": " No, approval depends on <a href='https://en.wikipedia.org/wiki/Bureau_of_Immigration_(India)'>immigration authorities</a>. However, professional services significantly increase your chances by ensuring your application is accurate, complete, and strategically aligned with requirements."
         },
         {
             "que": "4. What should I do if my visa application gets rejected?",
@@ -191,9 +191,9 @@ export const servicedata = [
 {
     "img": Career,
     "title": "Career Counselling",
-    "metatitle": "Career Counselling – Complete Guide 2026",
-    "metakey": "",
-    "metadesc": "Professional career counselling to help you choose the right country, industry, and immigration pathway based on your profile and global opportunities.",
+    "metatitle": "Career Counselling",
+    "metakey": "Career Counselling",
+    "metadesc": "Receive personalized career counselling to choose the right course, country, or profession with expert guidance based on your goals and skills.",
     "content": [
         {
             "subcontent": [
@@ -249,7 +249,7 @@ export const servicedata = [
             ]
         },
         {
-            "heading": "<h3>Why Career Counselling Is Crucial Today</h3>",
+            "heading": "<p>Why Career Counselling Is Crucial Today</p>",
             "subcontent": [
                 {
                     "para": "Many applicants make decisions based on trends, social media, or peer influence rather than data and strategy. This often leads to mismatched career choices, visa refusals, or limited growth opportunities."
@@ -276,16 +276,16 @@ export const servicedata = [
                 },
                 {
                     "subheading": "4. Skill Gap Analysis and Improvement Plan",
-                    "para": "Many candidates face rejection not due to lack of potential but due to specific skill gaps. Identifying and addressing these gaps is a critical part of career counselling. Common Areas for Improvement: Language proficiency (IELTS/PTE), Technical or industry-specific skills, Work experience alignment, Certifications and licensing. A structured improvement plan helps you become a stronger and more competitive candidate."
+                    "para": "Many candidates face rejection not due to lack of potential but due to specific skill gaps. Identifying and addressing these gaps is a critical part of career counselling. Common Areas for Improvement: Language proficiency <a href='https://www.widerworld.in/ielts/'>(IELTS/PTE)</a>, Technical or industry-specific skills, Work experience alignment, Certifications and licensing. A structured improvement plan helps you become a stronger and more competitive candidate."
                 },
                 {
                     "subheading": "5. Long-Term Career Strategy",
-                    "para": "Career counselling is not just about immediate outcomes—it focuses on long-term success. This includes planning for career progression, salary growth, and settlement opportunities. A well-defined strategy ensures that your decisions today continue to benefit you years down the line, whether you aim for permanent residency, career advancement, or entrepreneurship."
+                    "para": "Career counselling is not just about immediate outcomes—it focuses on long-term success. This includes planning for career progression, salary growth, and settlement opportunities. A well-defined strategy ensures that your decisions today continue to benefit you years down the line, whether you aim for <a href='https://en.wikipedia.org/wiki/Permanent_residency'>permanent residency</a>, career advancement, or entrepreneurship."
                 }
             ]
         },
         {
-            "heading": "<h4>Benefits of Professional Career Counselling</h4>",
+            "heading": "<h3>Benefits of Professional Career Counselling</h3>",
             "subcontent": [
                 {
                     "list": [
@@ -303,7 +303,7 @@ export const servicedata = [
             ]
         },
         {
-            "heading": "<h4>Common Mistakes Without Career Guidance</h4>",
+            "heading": "<p>Common Mistakes Without Career Guidance</p>",
             "subcontent": [
                 {
                     "para": "Many applicants face setbacks due to a lack of proper counselling."
@@ -343,7 +343,7 @@ export const servicedata = [
             ]
         },
         {
-            "heading": "<h5>Long-Term Impact of Career Counselling</h5>",
+            "heading": "<h4>Long-Term Impact of Career Counselling</h4>",
             "subcontent": [
                 {
                     "para": "Career counselling shapes not just your next step, but your entire professional journey. A well-planned path leads to better job opportunities, higher earning potential, and smoother immigration outcomes."
@@ -376,9 +376,9 @@ export const servicedata = [
 {
     "img": profile,
     "title": "Profile Marketing",
-    "metatitle": "Profile Marketing – Complete Guide 2026",
-    "metakey": "",
-    "metadesc": "Professional profile marketing services to position your skills and experience in front of global employers, recruiters, and hiring platforms.",
+    "metatitle": "Profile Marketing",
+    "metakey": "Profile Marketing, Profile Marketing Services",
+    "metadesc": "Boost your job prospects with professional profile marketing. Increase your visibility among global employers and recruiters with strategic branding.",
     "content": [
         {
             "subcontent": [
@@ -434,7 +434,7 @@ export const servicedata = [
             ]
         },
         {
-            "heading": "<h3>Why Profile Marketing Services Are Essential in Global Hiring</h3>",
+            "heading": "<p>Why Profile Marketing Services Are Essential in Global Hiring</p>",
             "subcontent": [
                 {
                     "para": "The global job market is highly competitive, with thousands of candidates applying for the same roles. Recruiters often rely on automated systems and keyword filtering to shortlist candidates, meaning that even qualified profiles can go unnoticed if not properly optimized."
@@ -453,7 +453,7 @@ export const servicedata = [
                 },
                 {
                     "subheading": "2. Resume and Content Optimization",
-                    "para": "A resume is not just a document — it is a marketing tool. Profile marketing focuses on structuring your resume to highlight achievements, skills, and impact rather than just responsibilities. Key Enhancements: Keyword optimization for ATS (Applicant Tracking Systems), Achievement-focused content, Clear and professional formatting, Industry-specific customization. This improves both human readability and system-based screening success."
+                    "para": "A resume is not just a document — it is a marketing tool. Profile marketing focuses on structuring your resume to highlight achievements, skills, and impact rather than just responsibilities. Key Enhancements: Keyword optimization for <a href='https://en.wikipedia.org/wiki/Applicant_tracking_system'>ATS</a> (Applicant Tracking Systems), Achievement-focused content, Clear and professional formatting, Industry-specific customization. This improves both human readability and system-based screening success."
                 },
                 {
                     "subheading": "3. Multi-Platform Distribution",
@@ -488,7 +488,7 @@ export const servicedata = [
             ]
         },
         {
-            "heading": "<h4>Common Challenges Without Profile Marketing</h4>",
+            "heading": "<p>Common Challenges Without Profile Marketing</p>",
             "subcontent": [
                 {
                     "para": "Many candidates struggle not because they lack skills, but because their profiles are not properly marketed."
@@ -508,7 +508,7 @@ export const servicedata = [
             ]
         },
         {
-            "heading": "<p>Timeline and Execution Flow</p>",
+            "heading": "<h4>Timeline and Execution Flow</h4>",
             "subcontent": [
                 {
                     "table": {
@@ -528,7 +528,7 @@ export const servicedata = [
             ]
         },
         {
-            "heading": "<h5>Long-Term Impact of Profile Marketing</h5>",
+            "heading": "<p>Long-Term Impact of Profile Marketing</p>",
             "subcontent": [
                 {
                     "para": "Effective profile marketing services do more than generate short-term job opportunities — it builds your long-term professional presence. A well-positioned profile continues to attract recruiters, even after initial placement."
@@ -561,9 +561,9 @@ export const servicedata = [
 {
     "img": Resume,
     "title": "Resume Writing",
-    "metatitle": "Resume Writing – Complete Guide 2026",
-    "metakey": "",
-    "metadesc": "Professional resume writing services to transform your profile into a compelling, ATS-optimized document that captures recruiter attention globally.",
+    "metatitle": "Resume Writing",
+    "metakey": "Resume Writing, Abroad Resume Writing",
+    "metadesc": "Stand out with ATS-friendly resume writing services. Get a professionally crafted resume that highlights your skills, achievements, and career goals.",
     "content": [
         {
             "subcontent": [
@@ -745,9 +745,9 @@ export const servicedata = [
 {
     "img": PostLanding,
     "title": "Post-Landing Services",
-    "metatitle": "Post-Landing Services – Complete Guide 2026",
-    "metakey": "",
-    "metadesc": "Professional post-landing services to help you settle smoothly into a new country with accommodation, documentation, employment, and essential support.",
+    "metatitle": "Post-Landing Services",
+    "metakey": "Post-Landing Services, Abroad Settlement, Immigration Support",
+    "metadesc": "Settle abroad with confidence through post landing services, including local guidance, documentation support, banking assistance, and more.",
     "content": [
         {
             "subcontent": [
@@ -803,7 +803,7 @@ export const servicedata = [
             ]
         },
         {
-            "heading": "<h3>Why Post-Landing Support Is Essential</h3>",
+            "heading": "<p>Why Post-Landing Support Is Essential</p>",
             "subcontent": [
                 {
                     "para": "Many immigrants underestimate the challenges of settling in a new country. While obtaining a visa is a structured process, post-arrival life requires navigating unfamiliar systems, cultural differences, and practical responsibilities."
@@ -852,12 +852,12 @@ export const servicedata = [
                     ]
                 },
                 {
-                    "para": "These benefits make post-landing support a crucial part of the immigration journey."
+                    "para": "These benefits make post-landing support a crucial part of the <a href='https://en.wikipedia.org/wiki/Immigration'>immigration </a>journey."
                 }
             ]
         },
         {
-            "heading": "<h4>Common Challenges Without Post-Landing Support</h4>",
+            "heading": "<p>Common Challenges Without Post-Landing Support</p>",
             "subcontent": [
                 {
                     "para": "Many new immigrants face difficulties due to a lack of preparation or guidance."
@@ -896,7 +896,7 @@ export const servicedata = [
             ]
         },
         {
-            "heading": "<h5>Long-Term Settlement Success</h5>",
+            "heading": "<h4>Long-Term Settlement Success</h4>",
             "subcontent": [
                 {
                     "para": "Post-landing services are not just about initial support—they set the foundation for long-term success. A well-planned transition helps you integrate faster, build networks, and establish financial stability."
@@ -929,9 +929,9 @@ export const servicedata = [
 {
     "img": hotel,
     "title": "Pre-Hotel/PG",
-    "metatitle": "Pre-Hotel/PG Service – Complete Guide 2026",
-    "metakey": "",
-    "metadesc": "Pre-booked hotel and PG accommodation before your arrival for a safe, comfortable, and stress-free start in a new country.",
+    "metatitle": "Pre-Hotel/PG",
+    "metakey": "Pre-Hotel/PG",
+    "metadesc": "Book safe and affordable pre-arranged hotel or PG accommodation before your arrival. Start your journey with comfort, convenience, and peace of mind.",
     "content": [
         {
             "subcontent": [
@@ -971,7 +971,7 @@ export const servicedata = [
             ]
         },
         {
-            "heading": "<h3>Why This Service Is Important</h3>",
+            "heading": "<p>Why This Service Is Important</p>",
             "subcontent": [
                 {
                     "list": [
@@ -987,7 +987,7 @@ export const servicedata = [
             ]
         },
         {
-            "heading": "<h4>Long-Term Impact</h4>",
+            "heading": "<p>Long-Term Impact</p>",
             "subcontent": [
                 {
                     "para": "With our Pre Hotel / PG service, your journey begins with comfort and confidence instead of uncertainty. By taking care of your stay in advance through reliable Pre Hotel / PG support, we help you focus on what truly matters—settling in, exploring opportunities, and starting your new life smoothly."
@@ -1017,9 +1017,9 @@ export const servicedata = [
 {
     "img": bank,
     "title": "Bank Account",
-    "metatitle": "Bank Account Service – Complete Guide 2026",
-    "metakey": "",
-    "metadesc": "Professional bank account opening service to help you set up your local account smoothly for salary deposits, payments, and daily financial management.",
+    "metatitle": "Bank Account",
+    "metakey": "Bank Account",
+    "metadesc": "Open your bank account abroad with expert assistance. Get support with documentation, account setup, and a smooth financial transition.",
     "content": [
         {
             "subcontent": [
@@ -1059,7 +1059,7 @@ export const servicedata = [
             ]
         },
         {
-            "heading": "<h3>Why This Service Is Important</h3>",
+            "heading": "<p>Why This Service Is Important</p>",
             "subcontent": [
                 {
                     "list": [
@@ -1098,8 +1098,8 @@ export const servicedata = [
     "img": documentation,
     "title": "Documentation",
     "metatitle": "Documentation Service – Complete Guide 2026",
-    "metakey": "",
-    "metadesc": "Professional documentation service to help you complete all legal registrations, applications, and visa documentation requirements smoothly after arrival.",
+    "metakey": "Documentation, Visa Documentation",
+    "metadesc": "Simplify your immigration journey with expert documentation services. Ensure accurate paperwork, timely submissions, and a hassle-free process.",
     "content": [
         {
             "subcontent": [
@@ -1126,7 +1126,7 @@ export const servicedata = [
             ]
         },
         {
-            "heading": "<h2>How We Help You</h2>",
+            "heading": "<p>How We Help You</p>",
             "subcontent": [
                 {
                     "list": [
@@ -1139,7 +1139,7 @@ export const servicedata = [
             ]
         },
         {
-            "heading": "<h3>Why This Service Is Important</h3>",
+            "heading": "<h2>Why This Service Is Important</h2>",
             "subcontent": [
                 {
                     "list": [
@@ -1178,8 +1178,8 @@ export const servicedata = [
     "img": orientation,
     "title": "Orientation",
     "metatitle": "Orientation Service – Complete Guide 2026",
-    "metakey": "",
-    "metadesc": "Professional orientation service to help you understand local systems, transport, culture, and daily life essentials for a smooth transition to your new country.",
+    "metakey": "Orientation",
+    "metadesc": "Prepare for your international journey with pre-departure orientation. Learn about culture, travel, accommodation, and settling in confidently.",
     "content": [
         {
             "subcontent": [

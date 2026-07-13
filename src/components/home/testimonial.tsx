@@ -54,9 +54,9 @@ export default function Testimonials() {
           testimonials
         </p>
         <h2 className="font-bold text-center text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto text-color5 relative">
-          Real client feedback reflecting
+          Our Client's
 {" "}
-          <span className="text-color1">trust, success, and service</span> quality.
+          <span className="text-color1">Valuable Words</span>
         </h2>
       </div>
 

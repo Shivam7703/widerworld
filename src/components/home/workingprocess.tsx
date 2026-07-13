@@ -5,54 +5,54 @@ import { FaWpforms } from "react-icons/fa";
 import { LuHandshake } from "react-icons/lu";
 import { MdOutlineEngineering, MdOutlineSettings } from "react-icons/md";
 import Buttonmain from "../global/button";
-import { pro1 } from "@/assets"; // apni illustration imgs import karo
+import { step,step1,step2,step3,step4,step5,step6,step7 } from "@/assets"; // apni illustration imgs import karo
 import Image from "next/image";
 
 const data = [
   {
-    img: pro1,
+    img: step1,
     icon: <FaWpforms />,
     heading: "Initial Consultation",
     text: "Understanding your profile and goals, and discussing suitable visa options clearly",
     bg: "text-violet-700",
   },
   {
-    img: pro1,
+    img: step2,
     icon: <MdOutlineSettings />,
     heading: "Profile Evaluation",
     text: "Assessing eligibility and suggesting the best pathways based on your background",
     bg: "text-emerald-700",
   },
   {
-    img: pro1,
+    img: step3,
     icon: <MdOutlineEngineering />,
     heading: "Documentation Guidance",
     text: "Providing support to prepare and organize all required documents correctly",
     bg: "text-teal-700",
   },
   {
-    img: pro1,
+    img: step4,
     icon: <LuHandshake />,
     heading: "Application Preparation",
     text: "Filling and reviewing your application with accuracy and attention to detail",
     bg: "text-rose-700",
   },
   {
-    img: pro1,
+    img: step5,
     icon: <FaWpforms />,
     heading: "Submission Process",
     text: "Timely submission of the application with proper checks and compliance standards",
     bg: "text-violet-700",
   },
   {
-    img: pro1,
+    img: step6,
     icon: <MdOutlineSettings />,
     heading: "Follow-Up & Updates",
     text: "Tracking application status and providing regular updates throughout the process",
     bg: "text-emerald-700",
   },
   {
-    img: pro1,
+    img: step7,
     icon: <MdOutlineEngineering />,
     heading: "Final Outcome Support",
     text: "Assisting you after approval with the next steps and travel guidance",
@@ -86,7 +86,7 @@ export default function WorkProcessSlider() {
             </p>
             
             <Buttonmain href="/contact-us" text1="Know More" text2="Contact Now" />
-            <Image src={pro1} alt="img" className="md:h-64 h-44 object-contain"/>
+            <Image src={step} alt="img" className="md:h-64 h-44 object-contain"/>
           </div>
 
           {/* RIGHT — sticky cards stacked */}

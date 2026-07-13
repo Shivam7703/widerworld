@@ -25,10 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` font-sans relative`}
-        style={{
-          fontFamily: "var(--font-sans), sans-serif",
-        }}
+        className={` relative`}
+       
       >
         {/* <Image
           src={patta}

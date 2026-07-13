@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { HiArrowUpRight } from "react-icons/hi2";
 import { FaCheck } from "react-icons/fa6";
 import Buttonmain from "../global/button";
-import { bann, cl1, cl2, cl4 } from "@/assets";
+import { bann, banner2, cl1, cl2, cl4 } from "@/assets";
 
 const checkpoints = [
   "Customer-Focused Approach",
@@ -24,9 +24,9 @@ export default function Award() {
   return (
     <section className="relative w-full bg-white p-6 md:p-16">
 
-<div className="absolute bottom-0 w-full bg-color5 left-0 h-1/2" />
+<div className="absolute bottom-0 w-full bg-color2 left-0 h-1/2" />
       {/* ── OUTER ROUNDED DARK CONTAINER ── */}
-      <div className="relative w-full max-w-7xl mx-auto bg-color3 rounded-2xl overflow-hidden shadow-xl shadow-black px-8 md:px-14 py-12 md:py-16">
+      <div className="relative w-full max-w-7xl mx-auto bg-white  rounded-3xl overflow-hidden shadow-xl shadow-black/70 p-8  md:p-12 lg:p-14">
 
         <div className="relative z-10 flex flex-col lg:flex-row items-stretch gap-10 lg:gap-16">
 
@@ -41,62 +41,59 @@ export default function Award() {
             className="flex-1 min-w-0"
           >
             {/* Label */}
-            <p className="text-sm font-bold uppercase tracking-[0.22em] text-gray-200 mb-5">
-INDIA’S NO.1 Certified Immigration & Visa Experts
+            <p className="text-sm font-bold uppercase tracking-[0.22em] text-zinc-800 md:mb-4 mb-2">
+             INDIA’S NO.1 Certified Immigration & Visa Experts
             </p>
 
             {/* Heading */}
-            <h2 className="text-white font-bold text-3xl md:text-4xl !leading-tight mb-6">
-              Secure your future abroad with the best immigration consultants in Delhi today.
-
+            <h2 className="text-color2 font-bold text-3xl md:text-4xl !leading-tight mb-6">
+            Secure your future abroad with the best immigration consultants in Delhi today.
             </h2>
 
             {/* Paragraph */}
-            <p className="text-gray-400  md:text-base leading-relaxed mb-8 max-w-lg">
+            <p className="text-zinc-700  md:text-base leading-relaxed mb-8 max-w-lg">
              We are a reliable immigration service provider with proven experience, helping individuals and families achieve their global goals with the right visa pathways
-
             </p>
 
             {/* 2×2 Checkpoints Grid */}
             <div className="grid grid-cols-2 gap-x-6 gap-y-4 mb-10">
               {checkpoints.map((item: string, i: number) => (
-                <motion.div
+                  <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.08, duration: 0.4 }}
                   viewport={{ once: true }}
                   className="flex items-center gap-3"
-                >
+                  >
                   <span className="flex-shrink-0 w-5 h-5 flex items-center justify-center">
-                    <FaCheck className="text-color1 text-sm" />
+                  <FaCheck className="text-color1 text-sm" />
                   </span>
-                  <span className="text-white text-sm md:text-[15px]">{item}</span>
+                  <span className="text-zinc-800 text-sm md:text-[15px]">{item}</span>
                 </motion.div>
               ))}
             </div>
 
             {/* CTA Button */}
-                          <Buttonmain href={"/contact-us"} text1={"Get Start Now"} text2={"Get Start Now"}/>
-
-          </motion.div>
-
+            <Buttonmain href={"/contact-us"} text1={"Get Start Now"} text2={"Get Start Now"}/>
+            </motion.div>
           {/* ══════════════════════════════
               RIGHT — Image + Red Card
           ══════════════════════════════ */}
-          <motion.div
+            <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.15 }}
             viewport={{ once: true }}
             className="relative flex-shrink-0 w-full lg:w-[46%]"
-          >
+            >
+{/* <div className="bg-gradient-to-tr from-red-500/70 to-red-900/60 w-52 h-52 rotate-45 -top-16 -right-24  absolute"/> */}
 
             {/* Main Image */}
-            <div className="relative h-72 sm:h-96 w-full rounded-xl overflow-hidden"
+            <div className="relative h-72 sm:h-[400px] shadow-lg w-full rounded-xl overflow-hidden"
               >
               <Image
-                src={ bann}
+                src={ banner2}
                 alt="insurance"
                 fill
                 className="object-cover object-center h-full w-full "
@@ -109,7 +106,7 @@ INDIA’S NO.1 Certified Immigration & Visa Experts
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
               viewport={{ once: true }}
-              className="absolute bottom-0 right-0
+              className="absolute bottom-0 -left-8
                w-[90%] md:w-[70%] bg-color1
                 rounded-tl-2xl rounded-br-xl
                 px-6 py-5 shadow-2xl"

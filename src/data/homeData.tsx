@@ -16,9 +16,6 @@ import {
   contactb,
   logo2,
   process1,
-  ukflag,
-  visa1,
-  canadaflag,
   ontario,
   bcPnpProgram,
   alberta,
@@ -27,6 +24,20 @@ import {
   saskatchewanPnp,
   about,
   back,
+  workVisa,
+  canada,
+  canimg,
+  ausimg,
+  aus,
+  newflag,
+  newimg,
+  euro,
+  euroimg,
+  gcc,
+  gccimg,
+  usaimg,
+  usa,
+  uk,
 } from "@/assets";
 import { FaGlobeAmericas, FaPlaneDeparture } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
@@ -185,9 +196,9 @@ export const navigationMenu = {
           label: "USA",
           href: "#",
           subNav: [
-            { id: 1, label: "Tourist Visa", href: "/visa/USA Visit Visa (B1/B2)" },
+            { id: 1, label: "Tourist Visa", href: "/visa/USA Visit Visa" },
             { id: 2, label: "Investor Visa", href: "/visa/USA Investor Visa (EB-5)" },
-            { id: 3, label: "Business Visa", href: "/visa/USA Visit Visa (B1/B2)" },
+            { id: 3, label: "Business Visa", href: "/visa/USA Business Visa (B1)" },
           ],
         },
 
@@ -348,7 +359,7 @@ export const visaSliderdata = {
   cards: [
     {
       id: 1,
-      img: visa1,
+      img: workVisa,
       heading: "Work Visa",
       text:
         " Opportunities to work abroad with proper visa support and complete process guidance",
@@ -391,7 +402,7 @@ export const countrytomigrate = {
   cards: [
     {
       id: 1,
-      img: canadaflag,
+      img: canada,
       heading: "United States",
       link: "country/us",
       points: [
@@ -403,7 +414,7 @@ export const countrytomigrate = {
     },
     {
       id: 2,
-      img: ukflag,
+      img: uk,
       heading: "United Kingdom",
       link: "country/uk",
       points: [
@@ -415,14 +426,14 @@ export const countrytomigrate = {
     },
     {
       id: 3,
-      img: canadaflag,
+      img: canada,
       heading: "Canada",
       link: "country/canada",
       points: ["PR Pathways", "Express Entry", "Student Visa", "24/7 Support"],
     },
     {
       id: 4,
-      img: ukflag,
+      img:uk,
       heading: "Australia",
       link: "country/australia",
       points: [
@@ -483,8 +494,8 @@ export const canadapnp = {
   cards: [
     {
       id: 1,
-      img: ontario,
-      flag: canadaflag,
+      img: canimg,
+      flag: canada,
       cat: "abroad",
       heading: "Canada",
       points: [
@@ -498,8 +509,8 @@ export const canadapnp = {
     },
     {
       id: 2,
-      img: bcPnpProgram,
-      flag: canadaflag,
+      img: ausimg,
+      flag: aus,
       cat: "mbbs",
       heading: "Australia",
       points: [
@@ -513,8 +524,8 @@ export const canadapnp = {
     },
     {
       id: 3,
-      img: alberta,
-      flag: canadaflag,
+      img: newimg,
+      flag: newflag,
       cat: "abroad",
       heading: "New Zealand",
       points: [
@@ -528,8 +539,8 @@ export const canadapnp = {
     },
     {
       id: 4,
-      img: saskatchewanPnp,
-      flag: canadaflag,
+      img: euroimg,
+      flag: euro,
       cat: "abroad",
       heading: "Europe",
       points: [
@@ -543,8 +554,8 @@ export const canadapnp = {
     },
     {
       id: 5,
-      img: manitoba,
-      flag: canadaflag,
+      img: gccimg,
+      flag: gcc,
       cat: "mbbs",
       heading: "GCC",
       points: [
@@ -558,8 +569,8 @@ export const canadapnp = {
     },
     {
       id: 6,
-      img: novaScotia,
-      flag: canadaflag,
+      img: usaimg,
+      flag: usa,
       cat: "mbbs",
       heading: "USA",
       points: [
@@ -571,14 +582,11 @@ export const canadapnp = {
         "Global leader in education, innovation, and diverse career opportunities across industries",
       link: "/canada-pnp",
     },
-
   ],
-
 };
 
 export const Whychoose = {
   img: box1,
-
   title1: "Why Choose Us",
   title2: "We provide trusted guidance with",
   title3: "a clear process",
@@ -625,12 +633,12 @@ export const testimonialData = {
 export const offercountry = {
   title1: "Countries We Offer",
   title2:
-    "Top global destinations with strong career and immigration opportunities",
+    "Top destinations with career and immigration opportunities",
    cards: [
     {
       id: 1,
       img: ontario,
-      flag: canadaflag,
+      flag: canada,
       cat: "abroad",
       heading: "Study in Canada",
       points: ["• High-Quality Education", "• Post-Study Work", "• PR Opportunities"],
@@ -640,7 +648,7 @@ export const offercountry = {
     {
       id: 2,
       img: bcPnpProgram,
-      flag: canadaflag,
+      flag: canada,
       cat: "abroad",
       heading: "Study in USA",
       points: ["• Top Universities", "• Diverse Courses", "• Global Career Opportunities"],
@@ -650,7 +658,7 @@ export const offercountry = {
     {
       id: 3,
       img: alberta,
-      flag: canadaflag,
+      flag: canada,
       cat: "abroad",
       heading: "Study in Australia",
       points: ["• Quality Education", "• Work Opportunities", "• Student-Friendly Environment"],
@@ -660,7 +668,7 @@ export const offercountry = {
     {
       id: 4,
       img: saskatchewanPnp,
-      flag: canadaflag,
+      flag: canada,
       cat: "abroad",
       heading: "Study in Dubai",
       points: ["• Modern Education Hub", "• Global Exposure", "• Tax-Free Benefits"],
@@ -670,7 +678,7 @@ export const offercountry = {
     {
       id: 5,
       img: manitoba,
-      flag: canadaflag,
+      flag: canada,
       cat: "abroad",
       heading: "Study in Italy",
       points: ["• Affordable Education", "• Rich Culture", "• European Degree"],
@@ -680,7 +688,7 @@ export const offercountry = {
     {
       id: 6,
       img: novaScotia,
-      flag: canadaflag,
+      flag: canada,
       cat: "abroad",
       heading: "Study in France",
       points: ["• Quality Education", "• Low Fees", "• Global Opportunities"],
@@ -690,7 +698,7 @@ export const offercountry = {
     {
       id: 7,
       img: manitoba,
-      flag: canadaflag,
+      flag: canada,
       cat: "abroad",
       heading: "Study in Malaysia",
       points: ["• Affordable", "• International Universities", "• Modern Infrastructure"],
@@ -700,7 +708,7 @@ export const offercountry = {
     {
       id: 8,
       img: novaScotia,
-      flag: canadaflag,
+      flag: canada,
       cat: "abroad",
       heading: "Study in New Zealand",
       points: ["• Safe Country", "• Quality Education", "• Post-Study Work"],
@@ -710,7 +718,7 @@ export const offercountry = {
     {
       id: 9,
       img: manitoba,
-      flag: canadaflag,
+      flag: canada,
       cat: "abroad",
       heading: "Study in Ireland",
       points: ["• Strong Job Market", "• Excellent Education", "• Career Growth"],
@@ -720,7 +728,7 @@ export const offercountry = {
     {
       id: 10,
       img: novaScotia,
-      flag: canadaflag,
+      flag: canada,
       cat: "abroad",
       heading: "Study in UK",
       points: ["• Globally Recognized", "• Short Duration", "• Flexible Courses"],
@@ -730,7 +738,7 @@ export const offercountry = {
     {
       id: 11,
       img: manitoba,
-      flag: canadaflag,
+      flag: canada,
       cat: "abroad",
       heading: "Study in Singapore",
       points: ["• World-Class Education", "• Industry Connections", "• Career Opportunities"],
@@ -740,7 +748,7 @@ export const offercountry = {
         {
       id: 1,
       img: ontario,
-      flag: canadaflag,
+      flag: canada,
       cat: "mbbs",
       heading: "MBBS in Philippines",
       points: ["• Affordable Fees", "• English Medium", "• Good Clinical Exposure"],
@@ -750,7 +758,7 @@ export const offercountry = {
     {
       id: 2,
       img: bcPnpProgram,
-      flag: canadaflag,
+      flag: canada,
       cat: "mbbs",
       heading: "MBBS in Russia",
       points: ["• Globally Recognized", "• Affordable Fees", "• Quality Education"],
@@ -760,7 +768,7 @@ export const offercountry = {
     {
       id: 3,
       img: alberta,
-      flag: canadaflag,
+      flag: canada,
       cat: "mbbs",
       heading: "MBBS in Bangladesh",
       points: ["• Indian Syllabus", "• High FMGE Rate", "• Affordable Option"],
@@ -770,7 +778,7 @@ export const offercountry = {
     {
       id: 4,
       img: saskatchewanPnp,
-      flag: canadaflag,
+      flag: canada,
       cat: "mbbs",
       heading: "MBBS in Mauritius",
       points: ["• Safe Country", "• Multicultural Environment", "• Quality Education"],
@@ -780,7 +788,7 @@ export const offercountry = {
     {
       id: 5,
       img: manitoba,
-      flag: canadaflag,
+      flag: canada,
       cat: "mbbs",
       heading: "MBBS in Nepal",
       points: ["• Indian Curriculum", "• Easy Travel", "• Cultural Similarity"],
@@ -790,7 +798,7 @@ export const offercountry = {
     {
       id: 6,
       img: novaScotia,
-      flag: canadaflag,
+      flag: canada,
       cat: "mbbs",
       heading: "MBBS in Uzbekistan",
       points: ["• Affordable Fees", "• Modern Infrastructure", "• Experienced Faculty"],
@@ -800,7 +808,7 @@ export const offercountry = {
     {
       id: 7,
       img: manitoba,
-      flag: canadaflag,
+      flag: canada,
       cat: "mbbs",
       heading: "MBBS in Kazakhstan",
       points: ["• Recognized Universities", "• Affordable", "• Good Facilities"],
@@ -810,7 +818,7 @@ export const offercountry = {
     {
       id: 8,
       img: novaScotia,
-      flag: canadaflag,
+      flag: canada,
       cat: "mbbs",
       heading: "MBBS in Belarus",
       points: ["• High Quality Education", "• Advanced Labs", "• Strong Infrastructure"],
@@ -820,7 +828,7 @@ export const offercountry = {
     {
       id: 9,
       img: manitoba,
-      flag: canadaflag,
+      flag: canada,
       cat: "mbbs",
       heading: "MBBS in Georgia",
       points: ["• European Standard", "• English Medium", "• Recognized Degree"],
@@ -830,7 +838,7 @@ export const offercountry = {
     {
       id: 10,
       img: novaScotia,
-      flag: canadaflag,
+      flag: canada,
       cat: "mbbs",
       heading: "MBBS in Armenia",
       points: ["• Affordable", "• Safe Country", "• Quality Education"],
@@ -840,7 +848,7 @@ export const offercountry = {
     {
       id: 11,
       img: manitoba,
-      flag: canadaflag,
+      flag: canada,
       cat: "mbbs",
       heading: "MBBS in China",
       points: ["• Top Universities", "• Advanced Technology", "• Global Recognition"],
@@ -850,7 +858,7 @@ export const offercountry = {
     {
       id: 12,
       img: novaScotia,
-      flag: canadaflag,
+      flag: canada,
       cat: "mbbs",
       heading: "MBBS in Poland",
       points: ["• European Degree", "• High Standards", "• Global Opportunities"],
@@ -860,7 +868,7 @@ export const offercountry = {
     {
       id: 13,
       img: manitoba,
-      flag: canadaflag,
+      flag: canada,
       cat: "mbbs",
       heading: "MBBS in Germany",
       points: ["• Low Tuition Fees", "• Excellent Education", "• High Exposure"],
@@ -870,7 +878,7 @@ export const offercountry = {
     {
       id: 14,
       img: novaScotia,
-      flag: canadaflag,
+      flag: canada,
       cat: "mbbs",
       heading: "MBBS in Malaysia",
       points: ["• Affordable", "• Modern Campus", "• International Recognition"],
@@ -880,7 +888,7 @@ export const offercountry = {
     {
       id: 15,
       img: manitoba,
-      flag: canadaflag,
+      flag: canada,
       cat: "mbbs",
       heading: "MBBS in Kyrgyzstan",
       points: ["• Budget Friendly", "• Easy Admission", "• Good Training"],
