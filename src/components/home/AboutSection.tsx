@@ -106,13 +106,13 @@ export default function AboutSection({ data }:any) {
     }}
   >
     <Image
-      src={data?.img1}
+      src={data?.img2}
       alt="immigration"
       fill
       className="object-cover transition-transform duration-500 hover:scale-[1.07]"
     />
     <div className="absolute bottom-4 left-4 bg-white/90 text-sm font-medium px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-      Immigration
+        Consultants
     </div>
   </motion.div>
 )}
@@ -134,14 +134,13 @@ export default function AboutSection({ data }:any) {
     }}
   >
     <Image
-      src={data?.img2}
+      src={data?.img1}
       alt="consultants"
       fill
       className="object-cover transition-transform duration-500 hover:scale-[1.07]"
     />
     <div className="absolute bottom-4 left-4 bg-white/90 text-sm font-medium px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-      Consultants
-    </div>
+   Immigration </div>
   </motion.div>
 )}
  

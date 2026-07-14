@@ -52,7 +52,7 @@ export default function Studyabrod() {
 
   {/* Card Back — box3, rotated right */}
   <div className="absolute w-[49%] h-[86%] right-[3%] top-[12%] rotate-[8deg] z-[1] rounded-2xl duration-300 ease-in-out  hover:!z-10 overflow-hidden border-[3px] border-white shadow-xl">
-    <Image src={imgs[2]} alt="img" fill className="object-cover object-center" />
+    <Image src={imgs[0]} alt="img" fill className="object-cover object-center" />
   </div>
 
   {/* Card Mid — box2, slight left tilt */}
@@ -62,7 +62,7 @@ export default function Studyabrod() {
 
   {/* Card Front — box1, straight, red border */}
   <div className="absolute w-[50%] h-[86%] left-[7%] top-[12%] -rotate-[10deg] z-[3] rounded-2xl duration-300 ease-in-out  overflow-hidden border-[3px] border-white shadow-2xl">
-    <Image src={imgs[0]} alt="img" fill className="object-cover object-center" />
+    <Image src={imgs[2]} alt="img" fill className="object-cover object-center" />
   </div>
 </div>
 

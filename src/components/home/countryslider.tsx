@@ -86,7 +86,7 @@ export default function Countryslider({data, uniqueId}:any) {
         {card.heading ?? card.name}
       </h3>
 
-      <p className="text-zinc-600 text-sm sm:text-base mx-auto">
+      <p className="text-zinc-600 text-sm sm:text-base mx-auto line-clamp-3">
         {card.text ?? "Lorem Ipsum Has Been The Industry's Standard"}
       </p>
 
@@ -97,7 +97,7 @@ export default function Countryslider({data, uniqueId}:any) {
   px-4 py-2  flex justify-center  w-full
   rounded-2xl
   transition-all duration-300
-  hover:bg-color3 bg-color2 text-white
+  hover:bg-color1 bg-color2 text-white
   hover:shadow-md
   group"
 >
