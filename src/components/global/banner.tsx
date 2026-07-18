@@ -43,7 +43,7 @@ export default function Banner({title, para, img, slug}:any) {
                    <motion.p className="md:text-lg text-base max-w-2xl"> {para}
                    </motion.p>
 
-                   <motion.p className="py-3 w-max mt-7 bg-[#00000046] backdrop-blur-sm text-sm rounded-3xl px-6">Home &nbsp;/ &nbsp; <span className="text-green2 font-bold">{slug}</span>
+                   <motion.p className="py-3 w-max mt-7 bg-[#00000046] backdrop-blur-sm text-sm rounded-3xl px-6">Home &nbsp;/ &nbsp; <span className="text-green2 font-bold">{slug.length > 20 ? `${slug.slice(0, 20)}...` : slug}</span>
                    </motion.p>
                    
                   </motion.div>

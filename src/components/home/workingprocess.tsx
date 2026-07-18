@@ -73,8 +73,8 @@ export default function WorkProcessSlider() {
   
           {/* LEFT */}
           <div className="sticky top-20 md:w-[46%] h-full  w-full">
-            <p className="flex items-center gap-2 text-xs font-semibold uppercase  text-color1 mb-5">
-              <span className="w-7 h-0.5 bg-color1 rounded-full inline-block" />
+            <p className="flex items-center text-xs tracking-[0.22em]font-bold uppercase  text-color1 mb-5">
+       
               Work Process
             </p>
             <h2 className=" text-3xl md:text-4xl xl:text-5xl font-bold !leading-tight text-color3 capitalize mb-5">

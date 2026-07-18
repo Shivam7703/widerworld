@@ -28,6 +28,57 @@ interface BlogData {
   images: { "image:loc": string }[] | null
 }
 
+function formatPostContent(html: string): string {
+  if (!html) return "";
+
+  // "FAQS" ko "Frequently Asked Questions" se replace karo
+  html = html.replace(/>FAQs?</gi, ">Frequently Asked Questions<");
+
+  // NEW FIX: Kisi bhi tag me laga hua style="..." ya class="..."
+  // attribute hata do (single ya double quotes dono handle karega)
+  html = html.replace(/\s(style|class)=("[^"]*"|'[^']*')/gi, "");
+
+  // Heading ke turant baad agar sirf single \r\n hai, use double kar do
+  html = html.replace(/(<\/h[1-6]>)\r?\n(?!\r?\n)/gi, "$1\r\n\r\n");
+
+  // FIX: Ek hi <li> ke andar "•" se joint multiple items ko
+  // alag-alag <li> me todo (jaise "Strong job market... • English-speaking...")
+  html = html.replace(/<li>([\s\S]*?)<\/li>/gi, (match: string, inner: string): string => {
+    if (/•/.test(inner)) {
+      // sirf plain text nikalo, andar ke span/tags hata do
+      const plainText = inner
+        .replace(/<[^>]+>/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+
+      const parts = plainText
+        .split("•")
+        .map((p: string) => p.trim())
+        .filter(Boolean);
+
+      if (parts.length > 1) {
+        return parts.map((p: string) => `<li>${p}</li>`).join("");
+      }
+    }
+    return match;
+  });
+
+  const blocks = html.split(/\r?\n\r?\n/);
+
+  return blocks
+    .map((block) => {
+      const trimmed = block.trim();
+      if (!trimmed) return "";
+
+      if (/^<(h[1-6]|ul|ol|table|blockquote|p|div|img)/i.test(trimmed)) {
+        return trimmed;
+      }
+
+      return `<p>${trimmed}</p>`;
+    })
+    .join("\n");
+}
+
 export default function Blogdetails({ data }: { data: BlogData }) {
   const [likes, setLikes] = useState(246)
   const [bookmarked, setBookmarked] = useState(false)
@@ -80,7 +131,7 @@ export default function Blogdetails({ data }: { data: BlogData }) {
   return (
     <div className="lg:px-24 md:p-20 sm:p-12 p-7 bg-gradient-to-b from-zinc-50 relative to-white">
       <div className="flex flex-wrap justify-between gap-y-7 relative w-full">
-        <div className="md:w-[60%] w-full">
+        <div className="md:w-[63%] w-full">
 
           {/* Hero Image */}
           <div className="relative overflow-hidden rounded-2xl shadow-2xl mb-12 group">
@@ -131,24 +182,20 @@ export default function Blogdetails({ data }: { data: BlogData }) {
             </div>
           </header>
 
-          {/* Article Content — WordPress HTML directly render */}
-          <article className="relative bg-white rounded-xl shadow-lg p-8 md:p-12 mb-16">
-            <div className="absolute left-0 top-0 w-1.5 h-full bg-gradient-to-b from-amber-500 via-amber-600 to-transparent rounded-l-xl" />
-            <div
-              className="prose prose-lg max-w-none
-                prose-headings:text-zinc-800 prose-headings:font-bold
-                prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl
-                prose-p:text-zinc-700 prose-p:leading-relaxed
-                prose-a:no-underline 
-                prose-ul:text-zinc-700 prose-ol:text-zinc-700
-                prose-li:my-1
-                prose-table:border prose-td:border prose-td:p-2 prose-th:border prose-th:p-2
-                prose-strong:text-zinc-800"
-              dangerouslySetInnerHTML={{ __html: data?.post_content || "" }}
-            />
-            <div className="absolute -top-8 -right-8 w-20 h-20 bg-amber-100 rounded-full opacity-50 blur-xl animate-pulse" />
-            <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-zinc-100 rounded-full opacity-50 blur-xl animate-pulse" style={{ animationDelay: "1s" }} />
-          </article>
+        {/* Article Content */}
+<article className="relative  overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-xl p-6 md:p-10 lg:p-14 mb-16">
+
+  {/* Left Accent */}
+  <div className="absolute left-0 top-0 h-full w-2 bg-gradient-to-b from-amber-500 via-orange-500 to-transparent" />
+
+  {/* Glow */}
+  <div className="absolute -top-24 -right-24 h-56 w-56 rounded-full bg-amber-200/30 blur-3xl" />
+  <div className="absolute -bottom-24 -left-24 h-56 w-56 rounded-full bg-orange-100/30 blur-3xl" />
+<div
+  className="blog-content"
+  dangerouslySetInnerHTML={{ __html: formatPostContent(data?.post_content || "") }}
+/>
+</article>
 
           {/* Share Section */}
           <div className="bg-gradient-to-r from-zinc-50 to-amber-50 rounded-xl p-8 mb-8 border border-zinc-200 hover:shadow-lg transition-shadow duration-300">
