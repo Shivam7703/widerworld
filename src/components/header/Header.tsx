@@ -18,7 +18,7 @@ import {
 import {  AiFillInstagram } from "react-icons/ai";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 
-import { logo, logo2 } from "@/assets";
+import { logo, logo2, logo3 } from "@/assets";
 import { navigationMenu } from "@/data/homeData";
 import { MdEmail } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
@@ -57,7 +57,7 @@ const Header = ({ header }: any) => {
   return (
     <>
       {/* HEADER SPACER */}
-      <div className="h-20 md:h-36 bg-color5" />
+      <div className="h-20 md:h-36 bg-white" />
 
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -66,23 +66,7 @@ const Header = ({ header }: any) => {
       >
         {/* ================= DESKTOP HEADER ================= */}
         <div className="max-md:hidden w-full">
-        <div className="w-full flex relative items-stretch  ">
-          {/* decorative gradient shapes */}
-
-          {/* LOGO */}
-          <Link
-            href={header?.href || "/"}
-            className="w-72 py-3 relative flex justify-center items-center bg-white z-10"
-          >
-            <Image
-              src={logo}
-              alt="Globesway Immigration"
-              className="w-[70%] mx-auto object-contain hover:scale-105 transition"
-            />
-          </Link>
-
-          <div className="w-full relative z-10">
-            {/* TOP BAR */}
+          {/* TOP BAR */}
             <div
               className="flex justify-between items-center px-8 py-2 w-full text-sm font-medium text-white
       bg-color1 shadow-lg"
@@ -189,9 +173,26 @@ const Header = ({ header }: any) => {
                 </div>
               </div>
             </div>
+        <div className="w-full flex relative items-stretch  ">
+          {/* decorative gradient shapes */}
+
+          {/* LOGO */}
+          <Link
+            href={header?.href || "/"}
+            className="w-72 py-3 relative flex justify-center items-center bg-white z-10"
+          >
+            <Image
+              src={logo3}
+              alt="Globesway Immigration"
+              className="w-[85%] mx-auto object-contain hover:scale-105 transition"
+            />
+          </Link>
+
+          <div className="w-full relative z-10">
+            
 
             {/* NAV BAR */}
-            <div className="flex bg-color5 justify-between items-center w-full px-10 pt-4 pb-7 relative">
+            <div className="flex bg-color2 justify-between items-center w-full px-10 pt-4 pb-7 relative">
               {/* MENU */}
               <div className="flex items-center">
                 <Menu
@@ -345,9 +346,9 @@ function PaymentButton() {
               animation: "spinBorder 4s linear infinite",
             }}
           />
-
+            
           {/* inner mask */}
-          <span className="absolute inset-[2px] rounded-full bg-[#44535b]" />
+          <span className="absolute inset-[2px] rounded-full bg-[#27528e]" />
         </span>
 
         {/* text swap */}

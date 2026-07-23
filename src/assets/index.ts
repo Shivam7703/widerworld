@@ -1,5 +1,7 @@
 import logo from "@/assets/logo.png";
 import logo2 from "@/assets/logo-white.png";
+import logo3 from "@/assets/logo3.webp";
+
 import box1 from "@/assets/home/box1.jpg";
 import box2 from "@/assets/home/box2.jpg";
 import box3 from "@/assets/home/box3.jpg";
@@ -7,9 +9,11 @@ import visa1 from "@/assets/home/visa1.jpg";
 import process1 from "@/assets/home/process1.png";
 import footerImage from "@/assets/home/toronto.png";
 import plane from "@/assets/home/plane.png";
+import plane2 from "@/assets/home/plane2.png";
 import patta from "@/assets/home/patta.png";
 import kangaroo from "@/assets/home/kangaroo.png";
 import faq from "@/assets/home/faq.png";
+import faq2 from "@/assets/home/faq2.png";
 import blog_bg from "@/assets/home/blog_bg.png";
 import shape1 from "@/assets/home/shape1.png";
 import mission from "@/assets/home/mission.png";
@@ -205,8 +209,8 @@ import newflag from "@/assets/flag/new.png";
 import newimg from "@/assets/flag/new-img.jpg";
 
 
-export {step,step1,step2,step3,step4,step5,step6,step7,newflag,newimg,usa,usaimg,canada,canimg,aus,ausimg,euro,euroimg,gcc,gccimg,uk,p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12,
-shape1,mission, vision, logo , logo2, banner,banner2,banner3 ,back,blog_bg, box1, box2, box3,visa1,process1,  bene2,bene3, bene4,contactb, susbanner,prob,aboutb,careerb, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,heade, count, famvisa, prvisa, business,touristvisa
+export {plane2,faq2,step,step1,step2,step3,step4,step5,step6,step7,newflag,newimg,usa,usaimg,canada,canimg,aus,ausimg,euro,euroimg,gcc,gccimg,uk,p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12,
+shape1,mission, vision, logo , logo2, logo3, banner,banner2,banner3 ,back,blog_bg, box1, box2, box3,visa1,process1,  bene2,bene3, bene4,contactb, susbanner,prob,aboutb,careerb, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,heade, count, famvisa, prvisa, business,touristvisa
  , sus1,sus2, sus3, sus4, choose1, blog1, blog2, blog3, footerImage, plane, patta, kangaroo, atlanticImmigration, 
   faq,ceo,
   alberta, immigration, Career, ielts,toefl,celpip,oet, jobAssist, PostLanding ,profile, pte ,visaDocument, Resume,

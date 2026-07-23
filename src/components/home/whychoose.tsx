@@ -10,7 +10,7 @@ import { shape1 } from "@/assets";
 
 export default function WhychooseSection() {
   return (
-    <section className="w-full relative overflow-hidden bg-gradient-to-br from-white via-color1/5 to-white">
+    <section className="w-full relative overflow-hidden bg-white">
 <Image
               src={shape1}
               alt="img"
@@ -20,7 +20,7 @@ export default function WhychooseSection() {
     
 
       {/* Top accent line */}
-      <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-color2 to-color1" />
+      {/* <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-color2 to-color1" /> */}
 
       {/* Blobs */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-color2/10 rounded-full blur-[120px] pointer-events-none" />

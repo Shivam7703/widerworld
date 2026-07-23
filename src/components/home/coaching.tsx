@@ -58,14 +58,14 @@ export default function Coaching() {
   };
 
   return (
-    <section className="relative overflow-hidden p-6 md:p-14  bg-gradient-to-br from-[#f0f4fb] via-[#e8eef8] to-[#f5f0e8]">
+    <section className="relative overflow-hidden p-6 md:p-14 bg-white">
 
       {/* Top accent line */}
-      <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-color2 to-color1" />
+      {/* <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-color2 to-color1" /> */}
 
       {/* Blobs */}
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-color2/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[360px] h-[360px] bg-color1/7 rounded-full blur-[100px] pointer-events-none" />
+      {/* <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-color2/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[360px] h-[360px] bg-color1/5 rounded-full blur-[100px] pointer-events-none" /> */}
 
       {/* ── HEADER ── */}
       <div className="relative z-10 text-center mb-7 sm:mb-12">
@@ -85,26 +85,26 @@ export default function Coaching() {
       <div className="relative z-10 px-7 sm:px-12">
         <Swiper {...swiperOptions} className={uniqueId}>
           {data?.map((card: any, index: number) => (
-            <SwiperSlide key={index} className="group !h-auto pb-2">
+            <SwiperSlide key={index} className="group !h-auto py-2">
               <div className="flex flex-col relative h-full rounded-2xl overflow-hidden
-                bg-white border border-color2/10
-                shadow-[0_4px_20px_rgba(26,47,74,0.07)]
+                bg-white border border-color2/20
+                shadow-sm
                 transition-all duration-300
                 group-hover:-translate-y-2
-                group-hover:shadow-[0_16px_48px_rgba(0,64,148,0.13)]
-                group-hover:border-color2/25">
+                group-hover:shadow-lg
+                group-hover:border-color2/40">
 
                 {/* ── TOP COLOR BAND ── */}
-                <div className="h-[3px] w-full bg-gradient-to-r from-color2 to-color1" />
+                <div className="h-[3px] w-full bg-color1" />
 
                 {/* ── NUMBER + TITLE BLOCK ── */}
                 <div className="relative px-6 pt-7 pb-5">
 
                   {/* Ghost number */}
                   <span
-                    className="absolute top-2 right-5 text-7xl font-black text-color3/5 select-none leading-none"
+                    className="absolute -right-16 -top-16 z-30 bg-color3/10 h-40 w-40 rounded-full "
                   >
-                    {String(index + 1).padStart(2, "0")}
+                    
                   </span>
 
                   {/* Number badge */}

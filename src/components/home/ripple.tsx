@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
 import Image from "next/image";
-import { faq } from "@/assets";
+import { faq, faq2 } from "@/assets";
 
 export default function Ripple() {
   return (
@@ -13,17 +13,17 @@ export default function Ripple() {
       <div className="relative w-full h-full min-h-[570px] max-sm:!pb-5 rounded-2xl overflow-hidden">
 
         {/* Gradient background */}
-        <div className="absolute inset-0 z-0"
+        {/* <div className="absolute inset-0 z-0"
           style={{ background: "linear-gradient(135deg, #e8f0fb 0%, #f0e8f8 50%, #fbe8e8 100%)" }} />
         <div className="absolute top-0 left-0 w-64 h-64 rounded-full z-0"
           style={{ background: "radial-gradient(circle, rgba(0,64,148,0.12) 0%, transparent 70%)" }} />
         <div className="absolute bottom-1/3 right-0 w-56 h-56 rounded-full z-0"
           style={{ background: "radial-gradient(circle, rgba(203,0,0,0.08) 0%, transparent 70%)" }} />
         <div className="absolute top-6 right-10 w-32 h-32 rounded-full z-0"
-          style={{ background: "radial-gradient(circle, rgba(255,206,91,0.15) 0%, transparent 70%)" }} />
+          style={{ background: "radial-gradient(circle, rgba(255,206,91,0.15) 0%, transparent 70%)" }} /> */}
 
         {/* Floating badges */}
-        <div className="absolute top-5 left-5 z-30 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg border border-color2/15 flex items-center gap-2">
+        <div className="absolute bottom-5 right-5 z-30 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg border border-color2/15 flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-color4" />
           <span className="text-xs font-bold text-color2">⭐ 10K+ Clients</span>
         </div>
@@ -32,26 +32,21 @@ export default function Ripple() {
         </div>
 
         {/* Image with webkit reflect */}
-        <div className="relative z-10 w-full  max-sm:p-6 flex items-end justify-center" style={{ height: "72%" }}>
-          <div style={{
-            WebkitBoxReflect: "below 0px linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 100%)",
-          }}>
+        <div className="relative z-10 w-full  max-sm:p-6 flex items-end justify-center h-full">
+          <div >
             <Image
-              src={faq}
+              src={faq2}
               alt="FAQ Expert"
-              width={600}
-              height={460}
-              className="object-contain object-bottom w-full  max-w-[580px]"
-              style={{
-                filter: "drop-shadow(0px 28px 32px rgba(0,64,148,0.22)) drop-shadow(0px 10px 20px rgba(0,64,148,0.15))",
-              }}
+              fill
+              className="object-contain object-bottom h-full "
+            
             />
           </div>
         </div>
 
         {/* Animated Waves */}
      {/* Animated Waves */}
-<div className="absolute bottom-0 -left-5 w-[120%] z-20 overflow-hidden" style={{ height: "48%" }}>
+{/* <div className="absolute bottom-0 -left-5 w-[120%] z-20 overflow-hidden" style={{ height: "48%" }}>
 
   <style>{`
     @keyframes wave1 {
@@ -76,7 +71,6 @@ export default function Ripple() {
     }
   `}</style>
 
-  {/* Wave layer 1 — back, slow */}
   <svg viewBox="0 0 1440 120" preserveAspectRatio="none"
     className="absolute bottom-0 -left-5 w-[120%]"
     style={{ height: "120%", animation: "wave1 6s ease-in-out infinite" }}
@@ -87,7 +81,6 @@ export default function Ripple() {
     />
   </svg>
 
-  {/* Wave layer 2 */}
   <svg viewBox="0 0 1440 120" preserveAspectRatio="none"
     className="absolute bottom-0 -left-5 w-[120%]"
     style={{ height: "90%", animation: "wave2 5s ease-in-out infinite" }}
@@ -98,7 +91,6 @@ export default function Ripple() {
     />
   </svg>
 
-  {/* Wave layer 3 */}
   <svg viewBox="0 0 1440 120" preserveAspectRatio="none"
     className="absolute bottom-0 -left-5 w-[120%]"
     style={{ height: "68%", animation: "wave3 4s ease-in-out infinite" }}
@@ -109,7 +101,6 @@ export default function Ripple() {
     />
   </svg>
 
-  {/* Wave layer 4 */}
   <svg viewBox="0 0 1440 120" preserveAspectRatio="none"
     className="absolute bottom-0 -left-7 w-[120%]"
     style={{ height: "42%", animation: "wave4 3.5s ease-in-out infinite" }}
@@ -120,7 +111,6 @@ export default function Ripple() {
     />
   </svg>
 
-  {/* Wave layer 5 — front foam, light blue-white */}
   <svg viewBox="0 0 1440 80" preserveAspectRatio="none"
     className="absolute -bottom-3 -left-7 w-[120%]"
     style={{ height: "30%", animation: "wave2 4.5s ease-in-out infinite reverse" }}
@@ -131,7 +121,7 @@ export default function Ripple() {
     />
   </svg>
 
-</div>
+</div> */}
       </div>
     </motion.div>
   );

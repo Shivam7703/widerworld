@@ -36,7 +36,7 @@ export default function FaqSection() {
         </h2>
 
         {data?.para1 && (
-          <p className="text-zinc-800 md:text-lg">{data?.para1}</p>
+          <p className="text-zinc-800">{data?.para1}</p>
         )}
         <Faqs data={data?.faqs} />
 

@@ -36,7 +36,7 @@ function Faq({ data }: { data: { que: string; ans: string }[] }) {
             >
              
                 <h3
-                  className={`text-base sm:text-xl font-semibold transition-colors duration-300 leading-snug
+                  className={`text-sm sm:text-base font-semibold transition-colors duration-300 leading-snug
                     ${isOpen ? "text-color2" : "text-color3"}`}
                 >
                   {item.que}
@@ -58,7 +58,7 @@ function Faq({ data }: { data: { que: string; ans: string }[] }) {
             >
               <div className="overflow-hidden">
                 <div className="px-6 pb-6">
-                  <p className="text-zinc-500 text-sm md:text-base font-medium !leading-relaxed">
+                  <p className="text-zinc-500 text-sm font-medium !leading-relaxed">
                     {item.ans}
                   </p>
                 </div>
