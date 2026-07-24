@@ -18,6 +18,7 @@ import mission from "@/assets/home/mission.png";
 import vision from "@/assets/home/vision.png";
 import arrow from "@/assets/home/arrow.png";
 import planebg from "@/assets/home/planebg2.jpg";
+import planebg2 from "@/assets/home/planebg.jpg";
 
 // partners
 import p1 from "@/assets/home/logo1.png";
@@ -186,7 +187,7 @@ import newflag from "@/assets/flag/new.png";
 import newimg from "@/assets/flag/new-img.jpg";
 
 
-export {planebg,plane2,faq2,step,step1,step2,step3,step4,step5,step6,step7,newflag,newimg,usa,usaimg,canada,canimg,aus,ausimg,euro,euroimg,gcc,gccimg,uk,p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12,
+export {planebg,planebg2,plane2,faq2,step,step1,step2,step3,step4,step5,step6,step7,newflag,newimg,usa,usaimg,canada,canimg,aus,ausimg,euro,euroimg,gcc,gccimg,uk,p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12,
 shape1,mission, vision, logo , logo2, logo3, banner,banner2,banner3 ,back,blog_bg, box1, box2, box3,visa1,process1, arrow, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,famvisa, prvisa, business,touristvisa,
  plane, patta, atlanticImmigration, 
   faq,ceo,

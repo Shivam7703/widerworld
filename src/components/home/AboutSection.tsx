@@ -29,7 +29,7 @@ export default function AboutSection({ data }:any) {
             )}
 
             {/* Heading */}
-            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold  text-color3 mb-5 !leading-tight">
+            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold  text-color3 mb-5 !leading-tight">
               {data?.title2}{" "}
               <span className="text-color1 ">
                 {data?.title3}

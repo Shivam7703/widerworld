@@ -4,12 +4,12 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import { FaQuoteLeft } from "react-icons/fa6";
 import { testimonialData as data } from "@/data/homeData";
-import { blog_bg } from "@/assets";
+import { arrow, patta} from "@/assets";
 
 // Reusable card component to keep the code clean
 const TestimonialCard = ({ cards }: { cards: any }) => (
-  <div className="relative group h-full w-[320px] sm:w-[400px] md:w-[450px] mx-4 shrink-0 ">
-    <div className="relative bg-white rounded-lg overflow-hidden shadow-xl p-6 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full">
+  <div className="relative group h-full w-[320px] sm:w-[400px] md:w-[450px] mx-4 shrink-0">
+    <div className="relative bg-white rounded-lg overflow-hidden shadow-md p-6 hover:shadow-lg transition-all duration-500 hover:-translate-y-2 h-full">
     
         {/* Decorative Quote Icon */}
         <div className="absolute top-6 right-6 text-blue-200 opacity-20">
@@ -62,13 +62,15 @@ const TestimonialCard = ({ cards }: { cards: any }) => (
 
 export default function Testimonials() {
   return (
-    <section className="py-12 sm:py-20 relative flex flex-col items-center overflow-hidden">
+    <section className="py-8 sm:py-12 relative flex flex-col bg-zinc-100 items-center overflow-hidden">
       {/* Background Image */}
       <Image
-        src={blog_bg}
+        src={arrow}
         alt="Background"
-        className="absolute top-0 w-full left-0 h-full object-cover z-0 opacity-50 pointer-events-none"
+        className="absolute -top-10  left-0 h-full object-contain z-0 pointer-events-none"
       />
+
+       
 
       {/* Header Section */}
       <div className="w-full text-center flex flex-col items-center gap-y-3 mb-12 relative z-10 px-6">

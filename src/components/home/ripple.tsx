@@ -21,7 +21,7 @@ export default function Ripple() {
         <motion.div
           animate={{ y: [0, -12, 0] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-12 -right-6 w-48 sm:w-64 z-20 pointer-events-none drop-shadow-xl"
+          className="absolute top-12 right-6 md:right-0 w-48 sm:w-64 z-20 pointer-events-none drop-shadow-xl p-2"
         >
           <Image
             src={plane2}

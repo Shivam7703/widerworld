@@ -76,7 +76,7 @@ export default function Greenbox() {
 
               {/* TITLE */}
               <h2
-                className="text-[24px] font-bold text-color3 mb-3"
+                className="text-xl sm:text-2xl font-bold text-color3 mb-3"
               
               >
                 {card.heading}

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { HiArrowUpRight } from "react-icons/hi2";
 import { FaCheck } from "react-icons/fa6";
 import Buttonmain from "../global/button";
-import { bann, banner2, cl1, cl2, cl4 } from "@/assets";
+import { banner2, cl1, cl2, cl4, planebg2 } from "@/assets";
 
 const checkpoints = [
   "Customer-Focused Approach",
@@ -24,7 +24,14 @@ export default function Award() {
   return (
     <section className="relative w-full bg-white p-6 md:p-16">
 
-<div className="absolute bottom-0 w-full bg-color2 left-0 h-1/2" />
+<div className="absolute bottom-0 w-full bg-color2 left-0 h-2/3" >
+ <Image
+          src={planebg2}
+          alt="background"
+          fill
+          className="object-cover object-right-bottom opacity-70"
+        />
+</div>
       {/* ── OUTER ROUNDED DARK CONTAINER ── */}
       <div className="relative w-full max-w-7xl mx-auto bg-white  rounded-3xl overflow-hidden shadow-xl shadow-black/70 p-8  md:p-12 lg:p-14">
 

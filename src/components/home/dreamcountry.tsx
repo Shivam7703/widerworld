@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import Countryslider from './countryslider'
 import { offercountry } from "@/data/homeData";
-import { blog_bg } from '@/assets';
+import { blog_bg, planebg, planebg2 } from '@/assets';
 import Image from 'next/image';
 
 
@@ -19,13 +19,13 @@ const filterData = {
 };
   return (
     <section className="bg-color2 relative overflow-hidden md:py-7 ">
-      <Image src={blog_bg} alt={"img"} className='absolute top-0 left-0 w-full object-contain h-auto z-0 opacity-45' />
+      <Image src={planebg} alt={"img"} className='absolute top-0 left-0 w-full object-cover object-right-top  scale-x-[-1]  h-full z-0 opacity-45' />
       {/* ── HEADER ── */}
       <div className="p-6 relative z-10 text-center ">
         <p className="text-xs tracking-[0.22em] font-bold uppercase  text-gray-200 mb-4">
           {offercountry.title1}
         </p>
-        <h2 className="text-white font-bold text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto">
+        <h2 className="text-white font-bold text-2xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto">
           {offercountry.title2}
         </h2>
 
@@ -38,7 +38,7 @@ const filterData = {
             <button
               key={categ.value}
               onClick={() => setCat(categ.value)}
-              className={`px-6 py-2 rounded-full text-sm font-semibold uppercase tracking-wide border transition-all duration-300
+              className={`px-6 py-2 rounded-full sm:text-sm font-semibold text-xs uppercase tracking-wide border transition-all duration-300
                 ${cat === categ.value
                   ? "bg-color1 text-white border-color1 shadow-lg"
                   : "bg-transparent border-white/30 hover:border-white/60 text-white"

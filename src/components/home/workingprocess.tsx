@@ -71,7 +71,7 @@ const data = [
 
 export default function WorkProcessSlider() {
   return (
-    <div className="w-full px-6 py-16 md:px-12 lg:px-20 xl:px-24 bg-white">
+    <div className="w-full p-6  md:p-12 lg:px-20 xl:px-24 bg-white">
       <motion.div
         initial={{ opacity: 0, y: 25 }}
         whileInView={{ opacity: 1, y: 0 }}

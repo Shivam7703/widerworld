@@ -15,7 +15,7 @@ export default function FaqSection() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
-      className="xl:px-32 lg:px-28 md:px-20 sm:p-12 px-7 py-11 max-w-[1530px] mx-auto flex flex-wrap items-stretch justify-between gap-y-7 bg-zinc-100 relative"
+      className="xl:px-32 lg:px-28 md:px-20 sm:p-12 px-7 py-11 overflow-hidden mx-auto flex flex-wrap items-stretch justify-between gap-y-7 bg-zinc-100 relative"
     >
       <motion.div
         variants={fadeIn("right", "tween", 0.3, 1)}

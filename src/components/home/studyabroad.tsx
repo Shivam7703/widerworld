@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { box1, box2, box3 } from "@/assets"; 
+import { box1, box2, box3, patta } from "@/assets"; 
 import { div } from "motion/react-client";
 import Buttonmain from "../global/button";
+import { DiJava } from "react-icons/di";
 
 const imgs=[
     box1,box2,box3
@@ -16,20 +17,15 @@ const features = [
 
 export default function Studyabrod() {
   return (
-    <section className="relative xl:px-28 lg:px-20 md:p-16 sm:p-12 p-6  flex flex-wrap items-stretch gap-12  justify-between bg-gradient-to-br from-[#f0f4fb] via-[#e8eef8] to-[#f5f0e8] overflow-hidden">
+    <div className="relative xl:px-28 lg:px-20 md:p-16 sm:p-12 p-6  flex flex-wrap items-stretch gap-12 justify-between bg-white">
 
-      {/* Background pattern */}
-      <div
-        className="absolute inset-0 opacity-[0.06] pointer-events-none"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(0,64,148,1) 1px,transparent 1px),linear-gradient(90deg,rgba(0,64,148,1) 1px,transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
+  <Image
+        src={patta}
+        alt="Background"
+        height={300}
+        width={318}
+        className="absolute -top-32 animate-y right-2 md:h-72 h-28 w-auto object-contain z-0 pointer-events-none opacity-60"
       />
-
-      {/* Top accent line */}
-      <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-color2 to-color1" />
 
       {/* Blobs */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-color2/10 rounded-full blur-[120px] pointer-events-none" />
@@ -118,6 +114,6 @@ export default function Studyabrod() {
         {/* CTA Button */}
 
       </div>
-    </section>
+    </div>
   );
 }
