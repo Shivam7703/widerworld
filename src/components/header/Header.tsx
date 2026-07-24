@@ -60,7 +60,7 @@ const Header = ({ header }: any) => {
       <div className="h-20 md:h-36 bg-white" />
 
       <header
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        className={`fixed top-0 shadow-lg left-0 w-full z-50 transition-all duration-300 ${
           isVisible ? "translate-y-0" : "-translate-y-full"
         } ${isAtTop ? " top-0" : "md:-top-12 -top-1"}`}
       >
@@ -207,7 +207,7 @@ const Header = ({ header }: any) => {
                 <PaymentButton />
               </div>
             </div>
-               <div className=" bg-white w-full -mt-4 z-[60] sticky px-10 shadow-lg ">
+               <div className=" bg-white w-full -mt-4 z-[60] sticky px-10 ">
             <Menu
               navItemsArray={navItems}
               Items={navigationMenu.secondaryMenu}

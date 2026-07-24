@@ -1,59 +1,68 @@
 "use client";
 import { motion } from "motion/react";
 import React from "react";
-import { FaWpforms } from "react-icons/fa";
-import { LuHandshake } from "react-icons/lu";
+import { FaHandshake, FaStamp, FaWpforms } from "react-icons/fa";
+import { LuHandshake, LuListTodo } from "react-icons/lu";
 import { MdOutlineEngineering, MdOutlineSettings } from "react-icons/md";
 import Buttonmain from "../global/button";
 import { step,step1,step2,step3,step4,step5,step6,step7 } from "@/assets"; // apni illustration imgs import karo
 import Image from "next/image";
+import { BsPersonFillGear, BsPersonBoundingBox } from "react-icons/bs";
+import { IoDocumentTextSharp } from "react-icons/io5";
 
 const data = [
   {
     img: step1,
-    icon: <FaWpforms />,
+    icon: <BsPersonFillGear />
+,
     heading: "Initial Consultation",
     text: "Understanding your profile and goals, and discussing suitable visa options clearly",
     bg: "text-violet-700",
   },
   {
     img: step2,
-    icon: <MdOutlineSettings />,
+    icon: <BsPersonBoundingBox />
+,
     heading: "Profile Evaluation",
     text: "Assessing eligibility and suggesting the best pathways based on your background",
     bg: "text-emerald-700",
   },
   {
     img: step3,
-    icon: <MdOutlineEngineering />,
+    icon: <IoDocumentTextSharp />
+,
     heading: "Documentation Guidance",
     text: "Providing support to prepare and organize all required documents correctly",
     bg: "text-teal-700",
   },
   {
     img: step4,
-    icon: <LuHandshake />,
+    icon: <FaWpforms />
+,
     heading: "Application Preparation",
     text: "Filling and reviewing your application with accuracy and attention to detail",
     bg: "text-rose-700",
   },
   {
     img: step5,
-    icon: <FaWpforms />,
+    icon: <FaStamp />
+,
     heading: "Submission Process",
     text: "Timely submission of the application with proper checks and compliance standards",
     bg: "text-violet-700",
   },
   {
     img: step6,
-    icon: <MdOutlineSettings />,
+    icon: <LuListTodo />
+,
     heading: "Follow-Up & Updates",
     text: "Tracking application status and providing regular updates throughout the process",
     bg: "text-emerald-700",
   },
   {
     img: step7,
-    icon: <MdOutlineEngineering />,
+    icon: <FaHandshake />
+,
     heading: "Final Outcome Support",
     text: "Assisting you after approval with the next steps and travel guidance",
     bg: "text-teal-700",
@@ -73,10 +82,10 @@ export default function WorkProcessSlider() {
   
           {/* LEFT */}
           <div className="sticky top-20 md:w-[46%] h-full  w-full">
-            <h4 className="flex items-center text-xs tracking-[0.22em]font-bold uppercase  text-color1 mb-5">
+            <p className="text-xs tracking-[0.22em] font-bold uppercase  text-color1 mb-5">
        
               Work Process
-            </h4>
+            </p>
             <h2 className=" text-3xl md:text-4xl xl:text-5xl font-bold !leading-tight text-color3 capitalize mb-5">
               Simple steps ensuring smooth{" "}
               <span className="text-color1 ">visa processing</span>

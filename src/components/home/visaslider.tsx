@@ -9,7 +9,7 @@ import { useState } from "react";
 import { visaSliderdata as data } from "@/data/homeData";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { HiArrowUpRight } from "react-icons/hi2";
-import { plane } from "@/assets";
+import { planebg } from "@/assets";
 
 
 export default function VisaSlider() {
@@ -26,39 +26,46 @@ export default function VisaSlider() {
     loop: true,
     modules: [Autoplay, Navigation],
     breakpoints: {
-      140:  { slidesPerView: 1 },
-      560:  { slidesPerView: 2 },
-      924:  { slidesPerView: 3 },
+      140: { slidesPerView: 1 },
+      560: { slidesPerView: 2 },
+      924: { slidesPerView: 3 },
       // 1200: { slidesPerView: 4 },
     },
   };
 
   return (
-    <section className="bg-color3 relative overflow-hidden p-6 md:p-14 lg:px-20">
+    <section className=" relative overflow-hidden ">
 
-      <Image
-      src={plane}
-      alt="immigration"
-      className="z-0 absolute top-[15%] right-[2%] opacity-50 object-contain w-max sm:h-64 h-16  animate-y"
-    />
+      {/* ══════════════════════════════
+          TOP — Dark bg with city image
+      ══════════════════════════════ */}
+      <div className="relative p-6  md:p-14 lg:px-20 md:h-[450px] overflow-hidden h-64 md:rounded-b-[250px]  bg-color2 w-full">
 
-      {/* ── HEADER ── */}
-      <div className="relative z-10 text-center mb-12">
-        {data?.title1 && (
-          <p className="text-xs font-bold uppercase text-gray-200 mb-4">
-            {data?.title1}
-          </p>
-        )}
-        <h2 className="text-white font-bold text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto">
-          {data?.title2}
-        </h2>
+        {/* Background image — darkened */}
+        <Image
+          src={planebg}
+          alt="background"
+          fill
+          className="object-cover object-right-bottom opacity-30"
+        />
+        {/* ── HEADER ── */}
+        <div className="relative z-10 text-center mb-12">
+          {data?.title1 && (
+            <p className="text-xs font-bold uppercase text-gray-200 mb-4">
+              {data?.title1}
+            </p>
+          )}
+          <h2 className="text-white font-bold text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto">
+            {data?.title2}
+          </h2>
 
-        {/* thin line */}
-        <div className="w-24 h-px bg-white/50 mx-auto sm:mb-8 mb-5" />
+          {/* thin line */}
+          <div className="w-24 h-[2px] bg-white mx-auto " />
+        </div>
       </div>
 
       {/* ── SWIPER ── */}
-      <div className="relative z-10">
+      <div className="relative z-10 md:-mt-52  -mt-20 px-10 md:p-14 lg:px-20 xl:px-28">
         <Swiper {...swiperOptions} className={`${uniqueId}`}>
           {data?.cards.map((card: any, index: number) => (
             <SwiperSlide key={card.id} className="group !h-auto">
@@ -67,14 +74,14 @@ export default function VisaSlider() {
               <div className="flex flex-col group relative h-full rounded-xl overflow-hidden shadow-2xl">
 
                 {/* ── TOP: IMAGE ── */}
-                <div className="relative w-full overflow-hidden h-72 md:h-80" >
+                <div className="relative w-full overflow-hidden h-64 md:h-[350px]" >
                   <Image
                     alt={card?.heading}
                     src={card?.img}
                     fill
                     className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute top-0 left-0 bg-gradient-to-t from-black/80 via-black/60 to-white/20 w-full h-full"/>
+                  <div className="absolute top-0 left-0 bg-gradient-to-t from-black/80 via-black/60 to-white/20 w-full h-full" />
                 </div>
 
                 {/* ── BOTTOM: CONTENT PANEL ── */}
@@ -88,11 +95,11 @@ export default function VisaSlider() {
                   </h3>
 
                   {/* Description — only first card shows it */}
-                    <p className=" text-zinc-200 line-clamp-2">
-                      {card?.text}
-                    </p>
+                  <p className=" text-zinc-200 line-clamp-2">
+                    {card?.text}
+                  </p>
 
-              
+
 
                   {/* Read More */}
                   <Link
@@ -114,16 +121,16 @@ export default function VisaSlider() {
 
       {/* ── NAV ARROWS ── */}
       <button
-        className={`${uniqueId}-next absolute z-30 right-2 md:right-6 top-[62%] -translate-y-1/2
-          w-12 h-12 border border-white/80 rounded-full bg-color2/70 hover:bg-color1
+        className={`${uniqueId}-next absolute z-30 right-2 md:right-6 top-[68%] -translate-y-1/2
+          w-12 h-12 border border-white/80 rounded-full bg-color2 hover:bg-color1
           flex items-center justify-center text-white shadow-xl
           transition-all duration-300 hover:scale-110`}
       >
         <FaArrowRightLong className="text-sm" />
       </button>
       <button
-        className={`${uniqueId}-prev absolute z-30 left-2 md:left-6 top-[62%] -translate-y-1/2
-          w-12 h-12 border border-white/80 rounded-full bg-color2/70 hover:bg-color1
+        className={`${uniqueId}-prev absolute z-30 left-2 md:left-6 top-[68%] -translate-y-1/2
+          w-12 h-12 border border-white/80 rounded-full bg-color2 hover:bg-color1
           flex items-center justify-center text-white shadow-xl
           transition-all duration-300 hover:scale-110`}
       >

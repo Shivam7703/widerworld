@@ -10,8 +10,7 @@ export default function Partners() {
     <section className="relative bg-gradient-to-br from-[#f0f4fb] via-[#e8eef8] to-[#f5f0e8] md:py-12 p-6 md:px-14 lg:px-20 overflow-hidden">
     
 
-      {/* Top accent line */}
-      <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-color2 to-color1" />
+     
 
       {/* Blobs */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-color2/10 rounded-full blur-[120px] pointer-events-none" />
@@ -19,7 +18,7 @@ export default function Partners() {
 
       {/* Heading */}
       <div className="relative text-center mb-7 sm:mb-12">
-        <p className="text-xs font-bold uppercase tracking-[0.22em] text-color2 mb-3">
+        <p className="text-xs tracking-[0.22em] font-bold uppercase  text-color2 mb-3">
           Our Network
         </p>
         <h2 className="font-bold text-color3 text-3xl md:text-5xl tracking-tight">
@@ -51,7 +50,7 @@ export default function Partners() {
                 `}
               >
                 {/* Logo */}
-                <div className="relative w-full max-w-36 h-14 sm:h-20 transition-all duration-300 group-hover:scale-105 sm:filter grayscale group-hover:grayscale-0 opacity-60 group-hover:opacity-100">
+                <div className="relative w-full max-w-36 h-14 sm:h-20 transition-all duration-300 group-hover:scale-105 ">
                   <Image
                     src={partner}
                     alt={`partner-${index}`}

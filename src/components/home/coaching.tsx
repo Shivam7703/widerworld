@@ -69,7 +69,7 @@ export default function Coaching() {
 
       {/* ── HEADER ── */}
       <div className="relative z-10 text-center mb-7 sm:mb-12">
-        <h4 className="text-color2 text-xs font-bold tracking-[0.2em] uppercase mb-4">
+        <h4 className="text-color2 text-xs tracking-[0.22em] font-bold uppercase  mb-4">
           Coaching We Offer
         </h4>
         <h2

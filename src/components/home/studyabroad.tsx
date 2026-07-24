@@ -70,7 +70,7 @@ export default function Studyabrod() {
       <div className="relative md:w-[47%] w-full">
 
         {/* Label */}
-        <span className="block text-color2 font-bold uppercase text-xs tracking-[0.22em] mb-4">
+        <span className="block text-color2 text-xs tracking-[0.22em] font-bold uppercase  mb-4">
           Who We Are
         </span>
 

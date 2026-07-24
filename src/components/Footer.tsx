@@ -8,7 +8,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 import { navigationMenu } from "@/data/homeData";
 import Marquee from "react-fast-marquee";
-import { footerImage, plane } from "@/assets";
+import {  plane } from "@/assets";
 import { FormatHref } from "./header/Menu";
 
 export default function Footer({ footer }: any) {
@@ -117,7 +117,7 @@ export default function Footer({ footer }: any) {
               <strong>Phone: </strong>&nbsp;0679513203,0677066361
             </p>
             <p className=" transition:all text-base text-zinc-200 duration-300 hover: hover:text-main ">
-              <strong>E-mail: </strong>&nbsp;info@WiderWorldcoreoverseas.com
+              <strong>E-mail: </strong>&nbsp;info@WiderWorld.com
             </p>
             <p className=" transition:all text-base text-zinc-200 duration-300 hover: hover:text-main ">
               <strong>Address: </strong>&nbsp;Lorem ipsum dolor, sit amet
@@ -187,28 +187,3 @@ export default function Footer({ footer }: any) {
   );
 }
 
-const Footplane = () => {
-  return (
-    <div className="bg-white pt-8 w-full relative">
-      <Marquee
-        speed={100}
-        gradient={false}
-        className="flex w-full flex-1 "
-        pauseOnHover={false} // Prevent pausing on hover
-        autoFill={true} // Automatically fill the space with repeated items
-      >
-        <Image
-          src={footerImage}
-          alt="logo"
-          className="md:w-[900px] w-80 object-contain !-mx-6" // Added horizontal margin for spacing
-        />
-      </Marquee>
-
-      <Image
-        src={plane}
-        alt="logo"
-        className="md:w-56 w-24 object-contain mx-4 rotate-12 absolute top-4 left-[40vw]" // Added horizontal margin for spacing
-      />
-    </div>
-  );
-};

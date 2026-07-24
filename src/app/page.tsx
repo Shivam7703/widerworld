@@ -38,7 +38,6 @@ export default function Home() {
 <Coaching/>
 <Team/>
 <Blogs isHome={true} />
-
   </div>
   );
 }

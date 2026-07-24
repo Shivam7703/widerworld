@@ -32,7 +32,7 @@ function Faq({ data }: { data: { que: string; ans: string }[] }) {
             {/* Question row */}
             <button
               onClick={() => toggle(index)}
-              className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
+              className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left"
             >
              
                 <h3
@@ -57,7 +57,7 @@ function Faq({ data }: { data: { que: string; ans: string }[] }) {
                 ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
             >
               <div className="overflow-hidden">
-                <div className="px-6 pb-6">
+                <div className="px-6 pb-4">
                   <p className="text-zinc-500 text-sm font-medium !leading-relaxed">
                     {item.ans}
                   </p>

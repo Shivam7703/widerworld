@@ -7,17 +7,17 @@ import box2 from "@/assets/home/box2.jpg";
 import box3 from "@/assets/home/box3.jpg";
 import visa1 from "@/assets/home/visa1.jpg";
 import process1 from "@/assets/home/process1.png";
-import footerImage from "@/assets/home/toronto.png";
 import plane from "@/assets/home/plane.png";
 import plane2 from "@/assets/home/plane2.png";
 import patta from "@/assets/home/patta.png";
-import kangaroo from "@/assets/home/kangaroo.png";
 import faq from "@/assets/home/faq.png";
-import faq2 from "@/assets/home/faq2.png";
+import faq2 from "@/assets/home/faq3.png";
 import blog_bg from "@/assets/home/blog_bg.png";
 import shape1 from "@/assets/home/shape1.png";
 import mission from "@/assets/home/mission.png";
 import vision from "@/assets/home/vision.png";
+import arrow from "@/assets/home/arrow.png";
+import planebg from "@/assets/home/planebg2.jpg";
 
 // partners
 import p1 from "@/assets/home/logo1.png";
@@ -39,38 +39,15 @@ import prvisa from "@/assets/home/prvisa.jpg";
 import business from "@/assets/home/business.jpeg";
 import touristvisa from "@/assets/home/touristvisa.jpg";
 
-
-import heade from "@/assets/home/header.webp";
-import count from "@/assets/home/count.webp";
-import susbanner from "@/assets/home/sustainability.webp";
-import sus1 from "@/assets/home/sustain1.jpg";
-import sus3 from "@/assets/home/sustain3.jpg";
-import sus4 from "@/assets/home/sustain4.jpg";
-import choose1 from "@/assets/home/whychoose.jpg";
 import back from "@/assets/home/background-1.webp";
 
-
-
-import sus2 from "@/assets/home/sus2.jpg";
-
-import aboutb from "@/assets/home/aboutb.jpg";
-import careerb from "@/assets/home/careerb.jpg";
-import contactb from "@/assets/home/cantactb.jpg";
-
-import bene2 from "@/assets/home/bene2.jpg";
-import bene3 from "@/assets/home/bene3.jpg";
-import bene4 from "@/assets/home/bene4.jpg";
 import banner from "@/assets/home/Bannner1.jpg";
 import banner2 from "@/assets/home/banner2.jpg";
 import banner3 from "@/assets/home/Banner3.jpeg";
-import prob from "@/assets/home/probanner.jpg";
 import bann from "@/assets/home/bann.webp";
 import about from "@/assets/home/about.jpeg";
 import about2 from "@/assets/home/about2.jpg";
 import contat from "@/assets/home/contact.webp";
-import blog1 from "@/assets/home/blog1.jpg";
-import blog2 from "@/assets/home/blog2.jpg";
-import blog3 from "@/assets/home/blog3.jpg";
 
 import ceo from "@/assets/home/ceo.jpg";
 import cl1 from "@/assets/home/cl1.jpg";
@@ -209,9 +186,9 @@ import newflag from "@/assets/flag/new.png";
 import newimg from "@/assets/flag/new-img.jpg";
 
 
-export {plane2,faq2,step,step1,step2,step3,step4,step5,step6,step7,newflag,newimg,usa,usaimg,canada,canimg,aus,ausimg,euro,euroimg,gcc,gccimg,uk,p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12,
-shape1,mission, vision, logo , logo2, logo3, banner,banner2,banner3 ,back,blog_bg, box1, box2, box3,visa1,process1,  bene2,bene3, bene4,contactb, susbanner,prob,aboutb,careerb, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,heade, count, famvisa, prvisa, business,touristvisa
- , sus1,sus2, sus3, sus4, choose1, blog1, blog2, blog3, footerImage, plane, patta, kangaroo, atlanticImmigration, 
+export {planebg,plane2,faq2,step,step1,step2,step3,step4,step5,step6,step7,newflag,newimg,usa,usaimg,canada,canimg,aus,ausimg,euro,euroimg,gcc,gccimg,uk,p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12,
+shape1,mission, vision, logo , logo2, logo3, banner,banner2,banner3 ,back,blog_bg, box1, box2, box3,visa1,process1, arrow, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,famvisa, prvisa, business,touristvisa,
+ plane, patta, atlanticImmigration, 
   faq,ceo,
   alberta, immigration, Career, ielts,toefl,celpip,oet, jobAssist, PostLanding ,profile, pte ,visaDocument, Resume,
   hotel, bank, documentation,orientation, australiaPR,

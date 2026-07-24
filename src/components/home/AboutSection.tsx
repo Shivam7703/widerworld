@@ -23,7 +23,7 @@ export default function AboutSection({ data }:any) {
 
             {/* Badge */}
             {data?.title1 && (
-              <p className=" font-bold text-xs tracking-[0.22em] uppercase text-color1 mb-4">
+              <p className="text-xs tracking-[0.22em] font-bold uppercase text-color1 mb-4">
                 {data?.title1}
               </p>
             )}

@@ -66,12 +66,12 @@ const Menu = ({ Isprimary, Items }: any) => {
           {item.subNav && (
             <div
               className="absolute w-max -left-2 top-[100%] z-[70] hidden flex-col
-              rounded-xl bg-[#1e2d36] border border-white/10
+              rounded-xl bg-zinc-100 border border-black/10
               py-2 shadow-[0_16px_40px_rgba(0,0,0,0.4)]
               transition-all group-hover:flex
               before:absolute before:-top-2 before:left-6 before:w-4 before:h-4
-              before:bg-[#1e2d36] before:rotate-45 before:border-l before:border-t
-              before:border-white/10"
+              before:bg-zinc-100 before:rotate-45 before:border-l before:border-t
+              before:border-black/10"
             >
               {item.subNav.map((nav: any) => (
                 <div key={nav.id} className="group/subnav relative">
@@ -81,15 +81,15 @@ const Menu = ({ Isprimary, Items }: any) => {
                     className={`group/navlink relative flex w-full items-center justify-between
                       gap-6 py-2.5 pl-4 pr-5 text-[13.5px] font-medium
                       transition-all duration-200 cursor-pointer
-                      hover:bg-[#CB0000]/80 hover:text-white rounded-lg mx-1 
+                      hover:bg-color1/80 hover:text-white rounded-lg mx-1 
                       ${
                         activeItem ===
                         (FormatHref(nav.href)
                           .split("/")
                           .filter(Boolean)
                           .pop() || "home")
-                          ? "bg-[#CB0000] text-white rounded-lg mx-1"
-                          : "text-white/80"
+                          ? "bg-color1 text-white rounded-lg mx-1"
+                          : "text-zinc-800"
                       }`}
                     style={{ width: "calc(100% - 8px)" }}
                   >
@@ -109,7 +109,7 @@ const Menu = ({ Isprimary, Items }: any) => {
                   {nav.subNav && (
                     <div
                       className="absolute left-[calc(100%)] top-0 z-[70] hidden flex-col
-                      w-auto rounded-xl bg-[#243340] border border-white/10
+                      w-auto rounded-xl bg-zinc-100 border border-black/10
                       py-2 shadow-[0_16px_40px_rgba(0,0,0,0.4)]
                       transition-all group-hover/subnav:flex max-h-[500px]"
                     >
@@ -124,15 +124,15 @@ const Menu = ({ Isprimary, Items }: any) => {
                             className={`group/sublink relative flex w-full items-center justify-between
                               gap-6 py-2.5 pl-4 pr-5 text-[13.5px] font-medium
                               transition-all duration-200 cursor-pointer
-                              hover:bg-[#CB0000]/80 hover:text-white rounded-lg mx-1
+                              hover:bg-color1/80 hover:text-white rounded-lg mx-1
                               ${
                                 activeItem ===
                                 (FormatHref(subNav.href)
                                   .split("/")
                                   .filter(Boolean)
                                   .pop() || "home")
-                                  ? "bg-[#CB0000] text-white rounded-lg mx-1"
-                                  : "text-white/80"
+                                  ? "bg-color1 text-white rounded-lg mx-1"
+                                  : "text-zinc-800"
                               }`}
                             style={{ width: "calc(100% - 8px)" }}
                           >
@@ -153,7 +153,7 @@ const Menu = ({ Isprimary, Items }: any) => {
                           {subNav.subNavv && subNav.subNavv.length > 0 && (
                             <div
                               className="absolute left-[calc(100% - 8px)] top-0 z-[70] hidden flex-col
-                              w-auto rounded-xl bg-[#2B3944] border border-white/10
+                              w-auto rounded-xl bg-zinc-100 border border-black/10
                               py-2 shadow-[0_16px_40px_rgba(0,0,0,0.4)]
                               transition-all group-hover/subsubnav:flex
                               max-h-[500px] overflow-y-auto min-w-[200px]"
@@ -166,15 +166,15 @@ const Menu = ({ Isprimary, Items }: any) => {
                                   className={`group/deeplink relative flex w-full items-center
                                     gap-3 py-2.5 pl-4 pr-5 text-[13.5px] font-medium
                                     transition-all duration-200 cursor-pointer
-                                    hover:bg-[#CB0000]/80 hover:text-white rounded-lg mx-1
+                                    hover:bg-color1/80 hover:text-white rounded-lg mx-1
                                     ${
                                       activeItem ===
                                       (FormatHref(subSubNav.href)
                                         .split("/")
                                         .filter(Boolean)
                                         .pop() || "home")
-                                        ? "bg-[#CB0000] text-white rounded-lg mx-1"
-                                        : "text-white/80"
+                                        ? "bg-color1 text-white rounded-lg mx-1"
+                                        : "text-zinc-800"
                                     }`}
                                   style={{ width: "calc(100% - 8px)" }}
                                 >

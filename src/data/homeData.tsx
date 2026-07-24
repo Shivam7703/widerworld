@@ -2,18 +2,17 @@ import {
   about2,
   banner,
   banner2,
-  bene2,
   box1,
   box2,
   box3,
   cl1,
 
- 
+
   famvisa,
   prvisa,
   business,
   touristvisa,
-  contactb,
+  
   logo2,
   process1,
   ontario,
@@ -39,11 +38,11 @@ import {
   usa,
   uk,
 } from "@/assets";
-import { FaGlobeAmericas, FaPlaneDeparture } from "react-icons/fa";
+import { FaGlobeAmericas, FaPlaneDeparture, FaUserTie } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { HiOutlineFlag, HiOutlineLightBulb } from "react-icons/hi";
 import { IoSearch, IoSettingsOutline } from "react-icons/io5";
-import { MdAttachEmail, MdWifiCalling3 } from "react-icons/md";
+import { MdAttachEmail, MdSupportAgent, MdWifiCalling3 } from "react-icons/md";
 import { RiUserFollowLine } from "react-icons/ri";
 
 // homepage
@@ -102,105 +101,105 @@ export const navigationMenu = {
   ],
 
   secondaryMenu: [
-   
+
+    {
+      id: 1,
+      label: "Canada",
+      href: "#",
+      subNav: [
+        { id: 1, label: "PR Visa", href: "/visa/canada-pr-visa" },
+        { id: 2, label: "Work", href: "/visa/canada-work-visa" },
+        { id: 3, label: "Study", href: "/visa/canada-study-visa" },
+        { id: 4, label: "Tourist Visa", href: "/visa/canada-tourist-visa" },
+        { id: 5, label: "Business Visa", href: "/visa/canada-business-visa" },
+        { id: 6, label: "Startup Visa", href: "/visa/canada-startup-visa" },
+        { id: 7, label: "Spouse Visa", href: "/visa/canada-spouse-visa" },
+        { id: 8, label: "Super Visa", href: "/visa/canada-super-visa" },
+      ],
+    },
+
+    {
+      id: 2,
+      label: "Australia",
+      href: "#",
+      subNav: [
+        { id: 1, label: "PR Visa", href: "/visa/australia-pr" },
+        { id: 2, label: "Work Visa", href: "/visa/australia-work-visa" },
+        { id: 3, label: "Study Visa", href: "/visa/australia-study-visa" },
+        { id: 4, label: "Tourist Visa", href: "/visa/Australia Tourist Visa" },
+        { id: 5, label: "Business Visa", href: "/visa/australia-business-visa" },
+        { id: 6, label: "Startup Visa", href: "/visa/australia-startup-visa" },
+        { id: 7, label: "Spouse Visa", href: "/visa/australia-spouse-visa" },
+      ],
+    },
+
+    {
+      id: 3,
+      label: "New Zealand",
+      href: "#",
+      subNav: [
+        { id: 1, label: "PR Visa", href: "/visa/new-zealand-Permanent Residency" },
+        { id: 2, label: "Work Visa", href: "/visa/new-zealand-work-visa" },
+        { id: 3, label: "Study Visa", href: "/visa/new-zealand-study-visa" },
+        { id: 4, label: "Tourist Visa", href: "/visa/New Zealand Tourist Visa" },
+      ],
+    },
+
+    {
+      id: 4,
+      label: "Europe",
+      href: "#",
+      subNav: [
         {
           id: 1,
-          label: "Canada",
+          label: "Work Visa",
           href: "#",
           subNav: [
-            { id: 1, label: "PR Visa", href: "/visa/canada-pr-visa" },
-            { id: 2, label: "Work", href: "/visa/canada-work-visa" },
-            { id: 3, label: "Study", href: "/visa/canada-study-visa" },
-            { id: 4, label: "Tourist Visa", href: "/visa/canada-tourist-visa" },
-            { id: 5, label: "Business Visa", href: "/visa/canada-business-visa" },
-            { id: 6, label: "Startup Visa", href: "/visa/canada-startup-visa" },
-            { id: 7, label: "Spouse Visa", href: "/visa/canada-spouse-visa" },
-            { id: 8, label: "Super Visa", href: "/visa/canada-super-visa" },
+            { id: 1, label: "Ireland", href: "/visa/ireland-work-visa" },
+            { id: 2, label: "Luxembourg", href: "/visa/luxembourg-work-visa" },
+            { id: 3, label: "Malta", href: "/visa/malta-work-visa" },
+            { id: 4, label: "Poland", href: "/visa/poland-work-visa" },
+            { id: 5, label: "Netherlands", href: "/visa/netherlands-work-visa" },
+            { id: 6, label: "Germany", href: "/visa/germany-work-visa" },
+            { id: 7, label: "Sweden", href: "/visa/Sweden Job Seeker Visa" },
+            { id: 8, label: "Finland", href: "/visa/finland-work-visa" },
+            { id: 9, label: "Italy", href: "/visa/italy-work-visa" },
+            { id: 10, label: "Denmark", href: "/visa/denmark-work-visa" },
           ],
         },
+      ],
+    },
 
+    {
+      id: 5,
+      label: "GCC",
+      href: "#",
+      subNav: [
         {
-          id: 2,
-          label: "Australia",
+          id: 1,
+          label: "Work Visa",
           href: "#",
           subNav: [
-            { id: 1, label: "PR Visa", href: "/visa/australia-pr" },
-            { id: 2, label: "Work Visa", href: "/visa/australia-work-visa" },
-            { id: 3, label: "Study Visa", href: "/visa/australia-study-visa" },
-            { id: 4, label: "Tourist Visa", href: "/visa/Australia Tourist Visa" },
-            { id: 5, label: "Business Visa", href: "/visa/australia-business-visa" },
-            { id: 6, label: "Startup Visa", href: "/visa/australia-startup-visa" },
-            { id: 7, label: "Spouse Visa", href: "/visa/australia-spouse-visa" },
+            { id: 1, label: "UAE", href: "/visa/uae-work-visa" },
+            { id: 2, label: "Oman", href: "/visa/oman-work-visa" },
+            { id: 3, label: "Kuwait", href: "/visa/kuwait-work-visa" },
+            { id: 4, label: "Qatar", href: "/visa/qatar-work-visa" },
+            { id: 5, label: "Saudi Arabia", href: "/visa/Saudi Arabia Work Visa" },
           ],
         },
+      ],
+    },
 
-        {
-          id: 3,
-          label: "New Zealand",
-          href: "#",
-          subNav: [
-            { id: 1, label: "PR Visa", href: "/visa/new-zealand-Permanent Residency" },
-            { id: 2, label: "Work Visa", href: "/visa/new-zealand-work-visa" },
-            { id: 3, label: "Study Visa", href: "/visa/new-zealand-study-visa" },
-            { id: 4, label: "Tourist Visa", href: "/visa/New Zealand Tourist Visa" },
-          ],
-        },
-
-        {
-          id: 4,
-          label: "Europe",
-          href: "#",
-          subNav: [
-            {
-              id: 1,
-              label: "Work Visa",
-              href: "#",
-              subNav: [
-                { id: 1, label: "Ireland", href: "/visa/ireland-work-visa" },
-                { id: 2, label: "Luxembourg", href: "/visa/luxembourg-work-visa" },
-                { id: 3, label: "Malta", href: "/visa/malta-work-visa" },
-                { id: 4, label: "Poland", href: "/visa/poland-work-visa" },
-                { id: 5, label: "Netherlands", href: "/visa/netherlands-work-visa" },
-                { id: 6, label: "Germany", href: "/visa/germany-work-visa" },
-                { id: 7, label: "Sweden", href: "/visa/Sweden Job Seeker Visa" },
-                { id: 8, label: "Finland", href: "/visa/finland-work-visa" },
-                { id: 9, label: "Italy", href: "/visa/italy-work-visa" },
-                { id: 10, label: "Denmark", href: "/visa/denmark-work-visa" },
-              ],
-            },
-          ],
-        },
-
-        {
-          id: 5,
-          label: "GCC",
-          href: "#",
-          subNav: [
-            {
-              id: 1,
-              label: "Work Visa",
-              href: "#",
-              subNav: [
-                { id: 1, label: "UAE", href: "/visa/uae-work-visa" },
-                { id: 2, label: "Oman", href: "/visa/oman-work-visa" },
-                { id: 3, label: "Kuwait", href: "/visa/kuwait-work-visa" },
-                { id: 4, label: "Qatar", href: "/visa/qatar-work-visa" },
-                { id: 5, label: "Saudi Arabia", href: "/visa/Saudi Arabia Work Visa" },
-              ],
-            },
-          ],
-        },
-
-        {
-          id: 6,
-          label: "USA",
-          href: "#",
-          subNav: [
-            { id: 1, label: "Tourist Visa", href: "/visa/USA Visit Visa" },
-            { id: 2, label: "Investor Visa", href: "/visa/USA Investor Visa (EB-5)" },
-            { id: 3, label: "Business Visa", href: "/visa/USA Business Visa (B1)" },
-          ],
-        },
+    {
+      id: 6,
+      label: "USA",
+      href: "#",
+      subNav: [
+        { id: 1, label: "Tourist Visa", href: "/visa/USA Visit Visa" },
+        { id: 2, label: "Investor Visa", href: "/visa/USA Investor Visa (EB-5)" },
+        { id: 3, label: "Business Visa", href: "/visa/USA Business Visa (B1)" },
+      ],
+    },
 
     {
       id: 12,
@@ -265,7 +264,7 @@ export const navigationMenu = {
 };
 
 export const sliderContent = [
- 
+
   {
     id: 1, // Fix duplicate id issue by using unique ids
     img: banner2,
@@ -292,7 +291,7 @@ export const sliderContent = [
 
 export const aboutdata = {
   img1: about2,
-  img2:about,
+  img2: about,
   title1: "ABOUT US",
   title2: "Professional & Trusted Visa",
   title3: "Consultants in Delhi",
@@ -310,17 +309,19 @@ export const aboutdata = {
       heading: "Client Satisfaction",
       text: "Focused on trust, real results, and delivering a smooth experience for every client.",
       icon: <RiUserFollowLine />,
-    },     {
+    }, {
       id: 3,
       heading: "Expert Guidance",
       text: "Professional support from experienced consultants to help you make informed and confident immigration decisions.",
-      icon: <IoSearch />,
+      icon: <FaUserTie />
+,
     },
     {
       id: 4,
       heading: "End-to-End Support",
       text: "Complete assistance at every stage, from initial consultation to final approval, ensuring a seamless and stress-free process.",
-      icon: <RiUserFollowLine />,
+      icon: <MdSupportAgent />
+,
     },
   ],
 };
@@ -433,7 +434,7 @@ export const countrytomigrate = {
     },
     {
       id: 4,
-      img:uk,
+      img: uk,
       heading: "Australia",
       link: "country/australia",
       points: [
@@ -487,7 +488,6 @@ export const workingprocess = {
 };
 
 export const canadapnp = {
-  bgImg:back,
   title1: "Countries We Serve",
   title2:
     "Connecting You to Global Opportunities",
@@ -601,7 +601,7 @@ export const Whychoose = {
 };
 
 export const testimonialData = {
- 
+
   testimonials: [
     {
       title: "Suresh Dixit",
@@ -634,7 +634,7 @@ export const offercountry = {
   title1: "Countries We Offer",
   title2:
     "Top destinations with career and immigration opportunities",
-   cards: [
+  cards: [
     {
       id: 1,
       img: ontario,
@@ -745,7 +745,7 @@ export const offercountry = {
       text: "World-class education with strong industry connections and career opportunities",
       link: "/canada-pnp",
     },
-        {
+    {
       id: 1,
       img: ontario,
       flag: canada,
@@ -906,7 +906,7 @@ export const HomefaqData = {
 
   para1:
     "Find clear answers to your most common queries about visas, eligibility, processing time, and required documents—all in one place.",
-faqs: [
+  faqs: [
     {
       que: "Which country is best for PR in 2026?",
       ans:
@@ -1062,7 +1062,7 @@ export const mission = {
 
 export const whychooseus = {
   title1: "Why Choose Us",
-  img: bene2,
+  // img: bene2,
   points: [
     {
       icon: <FaGlobeAmericas />,
@@ -1097,7 +1097,7 @@ export const contactBanner = {
   para:
     "Connect With WiderWorld For Reliable Crop Protection & Farming Support. We're Here to Help Your Agriculture Thrive With Expert Solutions.",
   slug: "contact-us",
-  img: contactb,
+  // img: contactb,
 };
 
 export const contactdetail = [
@@ -1110,8 +1110,8 @@ export const contactdetail = [
   {
     icon: <MdAttachEmail />,
     title: "Email Us",
-    text: "info@WiderWorldcoreoverseas.com",
-    slug: "mailto:info@WiderWorldcoreoverseas.com",
+    text: "info@WiderWorld.com",
+    slug: "mailto:info@WiderWorld.com",
   },
   {
     icon: <FaMapLocationDot />,

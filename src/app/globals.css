@@ -42,11 +42,6 @@ h2, h1, h3, a, li{
   background-repeat: no-repeat;
 }
 
-.bg-award{
-    background: linear-gradient(0deg, #2b3944d4, #1e3343cc), url(../assets/home/toronto.png);
-background-repeat: repeat;
-background-size: contain;
-}
 
 @keyframes slideX {
   0%, 100% {
@@ -88,11 +83,11 @@ background-size: contain;
 
   0%,
   100% {
-    transform: translatey(-30%);
+    transform: translatey(-5%);
   }
 
   50% {
-    transform: translatey(48%);
+    transform: translatey(5%);
   }
 }
 

@@ -31,7 +31,7 @@ export default function Team() {
     <section className="relative w-full bg-blue-50 overflow-hidden py-16">
       
       {/* ── Background Header Banner with Sweeping Curve ── */}
-      <div className="absolute top-0 left-0 right-0 h-[480px] md:h-[550px] bg-gradient-to-b from-[#021330] to-[#07275B] z-0 overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-[480px] md:h-[550px] bg-color2 z-0 overflow-hidden">
         
         {/* ── NEW: 3D Cubic Room Wireframe Grid ── */}
         <div 
@@ -77,7 +77,7 @@ export default function Team() {
 
         {/* ── Header Section ── */}
         <motion.div
-          className="text-center flex flex-col items-center mb-14 md:mb-20"
+          className="text-center flex flex-col items-center mb-4 md:mb-6"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -94,7 +94,7 @@ export default function Team() {
           </h2>
 
           {/* Core Red Accent Line */}
-          <div className="w-24 h-[2px] bg-gradient-to-r from-color2 to-color1 rounded-full" />
+          <div className="w-24 h-[2px] bg-white/80 rounded-full" />
         </motion.div>
 
         {/* ── Team Cards Grid ── */}

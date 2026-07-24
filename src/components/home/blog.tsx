@@ -86,7 +86,7 @@ export default function Blogs({ isHome, page = 1 }: Props) {
 
       {isHome && (
         <div className="text-center mb-8 sm:mb-12 relative z-10">
-          <span className="text-color2 font-bold uppercase text-xs tracking-[0.22em] mb-4">
+          <span className="text-color2 text-xs tracking-[0.22em] font-bold uppercase  mb-4">
             Latest Blogs
           </span>
            <h2

@@ -1,127 +1,79 @@
 "use client";
+
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
 import Image from "next/image";
-import { faq, faq2 } from "@/assets";
+import { faq2, plane2 } from "@/assets";
 
 export default function Ripple() {
   return (
     <motion.div
       variants={fadeIn("left", "tween", 0.3, 1)}
-      className="md:w-[46%] w-full min-h-[450px] relative group"
+      className="md:w-[46%] w-full min-h-[500px] relative group flex items-center justify-center"
     >
-      <div className="relative w-full h-full min-h-[570px] max-sm:!pb-5 rounded-2xl overflow-hidden">
+      {/* Background Soft Glow Effect */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl pointer-events-none" />
 
-        {/* Gradient background */}
-        {/* <div className="absolute inset-0 z-0"
-          style={{ background: "linear-gradient(135deg, #e8f0fb 0%, #f0e8f8 50%, #fbe8e8 100%)" }} />
-        <div className="absolute top-0 left-0 w-64 h-64 rounded-full z-0"
-          style={{ background: "radial-gradient(circle, rgba(0,64,148,0.12) 0%, transparent 70%)" }} />
-        <div className="absolute bottom-1/3 right-0 w-56 h-56 rounded-full z-0"
-          style={{ background: "radial-gradient(circle, rgba(203,0,0,0.08) 0%, transparent 70%)" }} />
-        <div className="absolute top-6 right-10 w-32 h-32 rounded-full z-0"
-          style={{ background: "radial-gradient(circle, rgba(255,206,91,0.15) 0%, transparent 70%)" }} /> */}
+      {/* Main Container */}
+      <div className="relative w-full h-full min-h-[550px] rounded-3xl border border-white/10 bg-gradient-to-b from-white/5 to-transparent backdrop-blur-sm p-6 overflow-hidden flex items-end justify-center">
+        
+        {/* Decorative Floating Plane Image */}
+        <motion.div
+          animate={{ y: [0, -12, 0] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-12 -right-6 w-48 sm:w-64 z-20 pointer-events-none drop-shadow-xl"
+        >
+          <Image
+            src={plane2}
+            alt="Widerworld Immigration"
+            className="w-full h-auto object-contain"
+          />
+        </motion.div>
 
-        {/* Floating badges */}
-        <div className="absolute bottom-5 right-5 z-30 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg border border-color2/15 flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-color4" />
-          <span className="text-xs font-bold text-color2">⭐ 10K+ Clients</span>
+        {/* Main Character / FAQ Image Container */}
+        <div className="relative w-full z-10 md:min-h-[550px] min-h-96">
+          <Image
+            src={faq2}
+            alt="FAQ Expert"
+            fill
+            priority
+            className="object-contain object-bottom drop-shadow-2xl"
+          />
         </div>
-        <div className="absolute top-1/3 sm:top-5 right-5 z-30 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg border border-color1/15">
-          <span className="text-xs font-bold text-color1">95% Success Rate</span>
-        </div>
 
-        {/* Image with webkit reflect */}
-        <div className="relative z-10 w-full  max-sm:p-6 flex items-end justify-center h-full">
-          <div >
-            <Image
-              src={faq2}
-              alt="FAQ Expert"
-              fill
-              className="object-contain object-bottom h-full "
-            
-            />
+        {/* Floating Trust Badge (Bottom Left) */}
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+          className="absolute bottom-8 left-4 sm:left-8 z-30 bg-white/80 backdrop-blur-md border border-black/20 p-3 sm:p-4 rounded-2xl shadow-lg flex items-center gap-3"
+        >
+          <div className="w-10 h-10 rounded-xl text-blue-600 flex items-center justify-center font-bold text-lg">
+            99%
           </div>
-        </div>
+          <div>
+            <p className="text-xs font-semibold text-gray-900 ">
+              Success Rate
+            </p>
+            <p className="text-[10px] text-gray-500 ">
+              Verified Visas
+            </p>
+          </div>
+        </motion.div>
 
-        {/* Animated Waves */}
-     {/* Animated Waves */}
-{/* <div className="absolute bottom-0 -left-5 w-[120%] z-20 overflow-hidden" style={{ height: "48%" }}>
+        {/* Floating Support Badge (Top Left) */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7, duration: 0.8 }}
+          className="absolute top-8 left-4 sm:left-8 z-30 bg-white/80  backdrop-blur-md border border-black/20 px-4 py-2 rounded-full shadow-md flex items-center gap-2"
+        >
+          <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
+          <span className="text-xs font-medium text-gray-800">
+            24/7 Expert Support
+          </span>
+        </motion.div>
 
-  <style>{`
-    @keyframes wave1 {
-      0% { transform: translateX(0) translateY(0); }
-      50% { transform: translateX(-6%) translateY(-6px); }
-      100% { transform: translateX(0) translateY(0); }
-    }
-    @keyframes wave2 {
-      0% { transform: translateX(0) translateY(0); }
-      50% { transform: translateX(5%) translateY(-10px); }
-      100% { transform: translateX(0) translateY(0); }
-    }
-    @keyframes wave3 {
-      0% { transform: translateX(0) translateY(0); }
-      50% { transform: translateX(-4%) translateY(-7px); }
-      100% { transform: translateX(0) translateY(0); }
-    }
-    @keyframes wave4 {
-      0% { transform: translateX(0) translateY(0); }
-      50% { transform: translateX(6%) translateY(-4px); }
-      100% { transform: translateX(0) translateY(0); }
-    }
-  `}</style>
-
-  <svg viewBox="0 0 1440 120" preserveAspectRatio="none"
-    className="absolute bottom-0 -left-5 w-[120%]"
-    style={{ height: "120%", animation: "wave1 6s ease-in-out infinite" }}
-  >
-    <path
-      d="M0,60 C180,100 360,20 540,60 C720,100 900,20 1080,60 C1260,100 1380,40 1440,60 L1440,120 L0,120 Z"
-       className="fill-rose-600/20"
-    />
-  </svg>
-
-  <svg viewBox="0 0 1440 120" preserveAspectRatio="none"
-    className="absolute bottom-0 -left-5 w-[120%]"
-    style={{ height: "90%", animation: "wave2 5s ease-in-out infinite" }}
-  >
-    <path
-      d="M0,40 C200,80 400,10 600,50 C800,90 1000,15 1200,50 C1320,72 1400,35 1440,50 L1440,120 L0,120 Z"
-       className="fill-rose-400/80"
-    />
-  </svg>
-
-  <svg viewBox="0 0 1440 120" preserveAspectRatio="none"
-    className="absolute bottom-0 -left-5 w-[120%]"
-    style={{ height: "68%", animation: "wave3 4s ease-in-out infinite" }}
-  >
-    <path
-      d="M0,50 C160,20 320,80 480,50 C640,20 800,80 960,50 C1120,20 1280,75 1440,50 L1440,120 L0,120 Z"
-       className="fill-rose-300/80"
-    />
-  </svg>
-
-  <svg viewBox="0 0 1440 120" preserveAspectRatio="none"
-    className="absolute bottom-0 -left-7 w-[120%]"
-    style={{ height: "42%", animation: "wave4 3.5s ease-in-out infinite" }}
-  >
-    <path
-      d="M0,45 C120,15 240,70 360,45 C480,20 600,70 720,45 C840,20 960,70 1080,45 C1200,20 1340,65 1440,45 L1440,120 L0,120 Z"
-       className="fill-rose-100/30"
-    />
-  </svg>
-
-  <svg viewBox="0 0 1440 80" preserveAspectRatio="none"
-    className="absolute -bottom-3 -left-7 w-[120%]"
-    style={{ height: "30%", animation: "wave2 4.5s ease-in-out infinite reverse" }}
-  >
-    <path
-      d="M0,40 C100,10 200,60 300,40 C400,20 500,55 600,40 C700,25 800,55 900,40 C1000,25 1100,55 1200,40 C1300,25 1380,50 1440,40 L1440,80 L0,80 Z"
-       className="fill-white/80"
-    />
-  </svg>
-
-</div> */}
       </div>
     </motion.div>
   );
