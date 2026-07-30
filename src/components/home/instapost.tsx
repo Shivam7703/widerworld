@@ -49,14 +49,14 @@ const getCleanReelUrl = (url: string) => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-white pb-7 sm:pb-14">
+    <section className="relative overflow-hidden bg-white py-7 sm:py-14">
       {/* HEADER */}
-      <div className="relative p-6 md:p-10 lg:px-20 w-full ">
+      <div className="relative lg:px-20 w-full ">
         <div className="relative z-10 text-center mb-12">
           <h2 className="text-color3 font-bold text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto">
             Reels of the <span className="text-color1">Day</span>
           </h2>
-          <div className="w-24 h-[2px] bg-color1 mx-auto" />
+          <div className="w-24 h-[2px] md:mb-9 mb-5 bg-color1 mx-auto" />
         </div>
       </div>
 

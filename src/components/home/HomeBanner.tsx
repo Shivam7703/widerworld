@@ -35,7 +35,7 @@ export default function HomeBanner() {
 
   return (
     <section
-      className="relative w-full overflow-hidden h-[70vh] md:h-screen max-h-[700px]"
+      className="relative w-full overflow-hidden h-[60vh] md:h-screen min-h-[600px] max-h-[700px]"
     >
       {/* ── Swiper ── */}
       <Swiper {...swiperOptions} className="w-full h-full">
@@ -58,7 +58,7 @@ export default function HomeBanner() {
 
             {/* ── Text Content ── */}
             <div className="relative z-10 h-full flex items-center">
-              <div className="max-w-7xl mx-auto p-6 md:p-12 lg:px-20 pb-10 md:!pb-20 lg:!pb-32 w-full">
+              <div className="max-w-7xl mx-auto p-4 md:p-12 lg:px-20 pb-10 md:!pb-20 lg:!pb-32 w-full">
                 <AnimatePresence mode="wait">
                   {currentSlide === index && (
                     <motion.div

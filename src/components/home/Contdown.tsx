@@ -89,9 +89,9 @@ function CountDown() {
 </div>
 
     {/* Number */}
-    <div className="md:text-[45px] text-2xl font-bold text-gray-900 leading-none">
+    <div className="md:text-[45px] text-3xl font-bold text-gray-900 leading-none">
       {inView ? <CountUp start={0} end={item.Value} duration={2.8} separator="," /> : "0"}
-      <span className="text-blue-600 ml-0.5 text-3xl">{item.suffix}</span>
+      <span className="text-blue-600 ml-0.5 text-2xl">{item.suffix}</span>
     </div>
   </div>
 

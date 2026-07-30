@@ -54,7 +54,7 @@ const TestimonialCard = ({ cards }: { cards: any }) => (
               <BsPatchCheckFill className="mt-[2px] text-blue-500" />
             </div>
         {/* Testimonial Text */}
-        <p className="text-zinc-600 text-left leading-relaxed text-sm">
+        <p className="text-zinc-600 text-left leading-relaxed text-sm line-clamp-7">
           "{cards.text}"
         </p>
     </div>
@@ -68,13 +68,11 @@ export default function Testimonials() {
       <Image
         src={arrow}
         alt="Background"
-        className="absolute top-10  left-0 h-full object-contain z-0 pointer-events-none"
+        className="absolute top-20 opacity-70 left-0 h-full object-contain z-0 pointer-events-none"
       />
 
-       
-
       {/* Header Section */}
-      <div className="w-full text-center flex flex-col items-center gap-y-3 mb-12 relative z-10 px-6">
+      <div className="w-full text-center flex flex-col items-center gap-y-3 mb-6 sm:mb-12 relative z-10 px-6">
         <p className="text-sm mx-auto font-bold uppercase tracking-[0.22em] text-color3 relative">
           testimonials
         </p>
@@ -98,19 +96,6 @@ export default function Testimonials() {
             <TestimonialCard key={`row1-${cards.id}`} cards={cards} />
           ))}
         </Marquee>
-
-        {/* Row 2: Right to Left */}
-        {/* <Marquee 
-          direction="left" 
-          speed={45} 
-          pauseOnHover={true} 
-          autoFill={true} 
-          className="py-4"
-        >
-          {[...(data?.testimonials || [])].reverse().map((cards: any) => (
-            <TestimonialCard key={`row2-${cards.id}`} cards={cards} />
-          ))}
-        </Marquee> */}
 
       </div>
     </section>

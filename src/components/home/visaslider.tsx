@@ -34,7 +34,7 @@ export default function VisaSlider() {
   };
 
   return (
-    <section className=" relative overflow-hidden ">
+    <section className="pb-6 relative overflow-hidden ">
 
       {/* ══════════════════════════════
           TOP — Dark bg with city image
@@ -51,11 +51,11 @@ export default function VisaSlider() {
         {/* ── HEADER ── */}
         <div className="relative z-10 text-center mb-12">
           {data?.title1 && (
-            <p className="text-xs font-bold uppercase text-gray-200 mb-4">
+            <p className="text-xs font-bold uppercase text-gray-200 mb-2 sm:mb-4">
               {data?.title1}
             </p>
           )}
-          <h2 className="text-white font-bold text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto">
+          <h2 className="text-white font-bold text-2xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto">
             {data?.title2}
           </h2>
 
@@ -65,7 +65,7 @@ export default function VisaSlider() {
       </div>
 
       {/* ── SWIPER ── */}
-      <div className="relative z-10 md:-mt-52  -mt-20 px-10 md:p-14 lg:px-20 xl:px-28">
+      <div className="relative z-10 md:-mt-52  -mt-24 px-10 md:p-14 lg:px-20 xl:px-28">
         <Swiper {...swiperOptions} className={`${uniqueId}`}>
           {data?.cards.map((card: any, index: number) => (
             <SwiperSlide key={card.id} className="group !h-auto">

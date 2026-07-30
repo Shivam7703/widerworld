@@ -32,11 +32,11 @@ export default function Canadapnp() {
         {/* Header text */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
           {data?.title1 && (
-            <p className="text-xs tracking-[0.22em] font-bold uppercase text-color1 mb-5">
+            <p className="text-xs tracking-[0.22em] font-bold uppercase text-color1 mb-2 sm:mb-5">
               {data.title1}
             </p>
           )}
-          <h2 className="text-color3 font-bold text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto">
+          <h2 className="text-color3 font-bold text-2xl md:text-5xl !leading-tight sm:mb-6 mb-2 max-w-3xl mx-auto">
             {data?.title2}
           </h2>
         </div>

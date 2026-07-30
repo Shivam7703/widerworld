@@ -89,7 +89,7 @@ export default function Team() {
           </span>
 
           {/* Main Title */}
-          <h2 className="text-white font-bold text-3xl md:text-5xl !leading-tight mb-6 max-w-2xl mx-auto">
+          <h2 className="text-white font-bold text-2xl md:text-5xl !leading-tight mb-6 max-w-2xl mx-auto">
             {data.title2} {data.title3}
           </h2>
 

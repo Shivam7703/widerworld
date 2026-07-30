@@ -22,7 +22,7 @@ const avatars = [
 
 export default function Award() {
   return (
-    <section className="relative w-full bg-white p-6 md:p-16">
+    <section className="relative w-full bg-white p-3 py-6 md:p-16">
 
 <div className="absolute bottom-0 w-full bg-color2 left-0 h-2/3" >
  <Image
@@ -33,7 +33,7 @@ export default function Award() {
         />
 </div>
       {/* ── OUTER ROUNDED DARK CONTAINER ── */}
-      <div className="relative w-full max-w-7xl mx-auto bg-white  rounded-3xl overflow-hidden shadow-xl shadow-black/70 p-8  md:p-12 lg:p-14">
+      <div className="relative w-full max-w-7xl mx-auto bg-white  rounded-3xl overflow-hidden shadow-xl shadow-black/70 p-6  md:p-12 lg:p-14">
 
         <div className="relative z-10 flex flex-col lg:flex-row items-stretch gap-10 lg:gap-16">
 
@@ -48,22 +48,22 @@ export default function Award() {
             className="flex-1 min-w-0"
           >
             {/* Label */}
-            <p className="text-sm font-bold uppercase tracking-[0.22em] text-zinc-800 md:mb-4 mb-2">
+            <p className="sm:text-sm font-bold uppercase text-xs !leading-[1.25] tracking-[0.22em] text-zinc-800 md:mb-4 mb-3">
              INDIA’S NO.1 Certified Immigration & Visa Experts
             </p>
 
             {/* Heading */}
-            <h2 className="text-color2 font-bold text-3xl md:text-4xl !leading-tight mb-6">
+            <h2 className="text-color2 font-bold text-3xl md:text-4xl !leading-tight mb-3 sm:mb-6">
             Secure your future abroad with the best immigration consultants in Delhi today.
             </h2>
 
             {/* Paragraph */}
-            <p className="text-zinc-700  md:text-base leading-relaxed mb-8 max-w-lg">
+            <p className="text-zinc-700  md:text-base sm:leading-relaxed mb-4 sm:mb-8 max-w-lg">
              We are a reliable immigration service provider with proven experience, helping individuals and families achieve their global goals with the right visa pathways
             </p>
 
             {/* 2×2 Checkpoints Grid */}
-            <div className="grid grid-cols-2 gap-x-6 gap-y-4 mb-10">
+            <div className="grid  sm:grid-cols-2 gap-x-6 gap-y-4 sm:mb-10 mb-6">
               {checkpoints.map((item: string, i: number) => (
                   <motion.div
                   key={i}

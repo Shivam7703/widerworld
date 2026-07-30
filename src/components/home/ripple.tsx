@@ -31,7 +31,7 @@ export default function Ripple() {
         </motion.div>
 
         {/* Main Character / FAQ Image Container */}
-        <div className="relative w-full h-full z-10 md:min-h-[550px] min-h-96">
+        <div className="relative w-full h-full z-10 md:min-h-[550px] min-h-80">
           <Image
             src={faq2}
             alt="FAQ Expert"
@@ -73,7 +73,6 @@ export default function Ripple() {
             24/7 Expert Support
           </span> </p>
         </motion.div>
-
       </div>
     </motion.div>
   );
