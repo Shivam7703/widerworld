@@ -28,11 +28,7 @@ export default function RootLayout({
         className={` relative`}
        
       >
-        {/* <Image
-          src={patta}
-          alt="immigration"
-          className="fixed -left-7 animate-y opacity-40 -bottom-10 sm:w-[24vw] w-44 z-[-1]"
-        /> */}
+     
         <Header />
         {children}
         <Footer footer={footer} />

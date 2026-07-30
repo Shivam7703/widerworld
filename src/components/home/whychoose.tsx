@@ -11,7 +11,7 @@ import { shape1 } from "@/assets";
 export default function WhychooseSection() {
   return (
     <section className="w-full relative overflow-hidden bg-white">
-<Image
+   <Image
               src={shape1}
               alt="img"
               className="absolute opacity-60 top-12 max-w-[400px] scale-x-[-1] left-1 object-contain z-0"

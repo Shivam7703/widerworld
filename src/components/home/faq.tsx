@@ -10,12 +10,13 @@ import { plane2 } from "@/assets";
 
 export default function FaqSection() {
   return (
+    <section className="xl:px-32 lg:px-28 md:px-20 sm:p-12 px-7 py-11 overflow-hidden bg-zinc-100 relative">
     <motion.div
       variants={staggerContainer(0.1, 0)} // Adjusted stagger settings
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
-      className="xl:px-32 lg:px-28 md:px-20 sm:p-12 px-7 py-11 overflow-hidden mx-auto flex flex-wrap items-stretch justify-between gap-y-7 bg-zinc-100 relative"
+      className=" mx-auto flex flex-wrap items-stretch justify-between gap-y-7 max-w-[1460px]"
     >
       <motion.div
         variants={fadeIn("right", "tween", 0.3, 1)}
@@ -39,6 +40,7 @@ export default function FaqSection() {
      
 <Ripple/>     
     </motion.div>
+    </section>
   );
 }
 

@@ -1,12 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { box1, box2, box3, patta } from "@/assets"; 
-import { div } from "motion/react-client";
-import Buttonmain from "../global/button";
-import { DiJava } from "react-icons/di";
+import { about, box3} from "@/assets"; 
+
 
 const imgs=[
-    box1,box2,box3
+  box3, about
 ]
 const features = [
   "Experienced Immigration Consultants",
@@ -17,15 +15,8 @@ const features = [
 
 export default function Studyabrod() {
   return (
-    <div className="relative xl:px-28 lg:px-20 md:p-16 sm:p-12 p-6  flex flex-wrap items-stretch gap-12 justify-between bg-white">
-
-  <Image
-        src={patta}
-        alt="Background"
-        height={300}
-        width={318}
-        className="absolute -top-32 animate-y right-2 md:h-72 h-28 w-auto object-contain z-0 pointer-events-none opacity-60"
-      />
+    <section className="bg-white relative xl:px-28 lg:px-20 md:p-16 sm:p-12 p-6 overflow-hidden">
+    <div className=" flex flex-wrap max-w-[1460px] mx-auto items-stretch gap-12 justify-between  ">
 
       {/* Blobs */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-color2/10 rounded-full blur-[120px] pointer-events-none" />
@@ -47,18 +38,13 @@ export default function Studyabrod() {
   <div className="absolute top-[22px] left-[60px] right-[-26px] bottom-[-26px] border-2 border-dashed border-color2/20 rounded-2xl pointer-events-none " />
 
   {/* Card Back — box3, rotated right */}
-  <div className="absolute w-[49%] h-[86%] right-[3%] top-[12%] rotate-[8deg] z-[1] rounded-2xl duration-300 ease-in-out  hover:!z-10 overflow-hidden border-[3px] border-white shadow-xl">
+  <div className="absolute w-[49%] h-[96%] right-[3%] top-[3%] rotate-[8deg] z-[1] rounded-2xl duration-300 ease-in-out  hover:rotate-[2deg] overflow-hidden border-[3px] border-white shadow-xl">
     <Image src={imgs[0]} alt="img" fill className="object-cover object-center" />
   </div>
 
-  {/* Card Mid — box2, slight left tilt */}
-  <div className="absolute w-[50%] h-[90%] left-[24%] top-[6%] -rotate-[3deg] z-[2] rounded-2xl duration-300 ease-in-out  hover:!z-10 overflow-hidden border-[3px] border-white shadow-xl">
-    <Image src={imgs[1]} alt="img" fill className="object-cover object-center" />
-  </div>
-
   {/* Card Front — box1, straight, red border */}
-  <div className="absolute w-[50%] h-[86%] left-[7%] top-[12%] -rotate-[10deg] z-[3] rounded-2xl duration-300 ease-in-out  overflow-hidden border-[3px] border-white shadow-2xl">
-    <Image src={imgs[2]} alt="img" fill className="object-cover object-center" />
+  <div className="absolute w-[50%] h-[96%] left-[7%] top-[3%] -rotate-[10deg] z-[3] hover:rotate-0 rounded-2xl duration-300 ease-in-out  overflow-hidden border-[3px] border-white shadow-2xl">
+    <Image src={imgs[1]} alt="img" fill className="object-cover object-center" />
   </div>
 </div>
 
@@ -115,5 +101,6 @@ export default function Studyabrod() {
 
       </div>
     </div>
+    </section>
   );
 }

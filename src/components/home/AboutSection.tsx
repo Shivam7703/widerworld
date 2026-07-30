@@ -16,7 +16,7 @@ export default function AboutSection({ data }:any) {
         className="bg-white "
       >
 
-        <div className="flex flex-col md:flex-row justify-between gap-y-5">
+        <div className="flex max-w-[1460px] mx-auto flex-col md:flex-row justify-between gap-y-5">
 
           {/* LEFT CONTENT */}
           <div className="lg:w-[48%] md:order-1 order-2 bg-white ">

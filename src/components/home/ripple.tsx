@@ -23,21 +23,21 @@ export default function Ripple() {
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
           className="absolute top-12 right-6 md:right-0 w-48 sm:w-64 z-20 pointer-events-none drop-shadow-xl p-2"
         >
-          <Image
+          {/* <Image
             src={plane2}
             alt="Widerworld Immigration"
             className="w-full h-auto object-contain"
-          />
+          /> */}
         </motion.div>
 
         {/* Main Character / FAQ Image Container */}
-        <div className="relative w-full z-10 md:min-h-[550px] min-h-96">
+        <div className="relative w-full h-full z-10 md:min-h-[550px] min-h-96">
           <Image
             src={faq2}
             alt="FAQ Expert"
             fill
             priority
-            className="object-contain object-bottom drop-shadow-2xl"
+            className="object-contain h-full object-bottom drop-shadow-2xl"
           />
         </div>
 
@@ -46,16 +46,16 @@ export default function Ripple() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="absolute bottom-8 left-4 sm:left-8 z-30 bg-white/80 backdrop-blur-md border border-black/20 p-3 sm:p-4 rounded-2xl shadow-lg flex items-center gap-3"
+          className="absolute bottom-8 left-4 sm:left-8 z-30 bg-white/80 backdrop-blur-md border border-black/20 p-3 rounded-2xl shadow-lg flex items-center gap-3"
         >
-          <div className="w-10 h-10 rounded-xl text-blue-600 flex items-center justify-center font-bold text-lg">
+          <div className="py-3 px-1 rounded-xl bg-color1 text-white flex items-center justify-center font-bold text-lg">
             99%
           </div>
           <div>
-            <p className="text-xs font-semibold text-gray-900 ">
+            <p className=" font-semibold  text-gray-900 ">
               Success Rate
             </p>
-            <p className="text-[10px] text-gray-500 ">
+            <p className=" text-sm text-gray-600">
               Verified Visas
             </p>
           </div>
@@ -66,12 +66,12 @@ export default function Ripple() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.8 }}
-          className="absolute top-8 left-4 sm:left-8 z-30 bg-white/80  backdrop-blur-md border border-black/20 px-4 py-2 rounded-full shadow-md flex items-center gap-2"
-        >
+          className="absolute top-8 left-4 sm:left-8 z-30 bg-white/80  backdrop-blur-md border border-black/20 px-4 py-2 rounded-3xl shadow-md "
+        ><p className="flex items-center gap-2">
           <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
-          <span className="text-xs font-medium text-gray-800">
+          <span className="text-sm font-medium text-gray-800">
             24/7 Expert Support
-          </span>
+          </span> </p>
         </motion.div>
 
       </div>

@@ -16,7 +16,7 @@ export default function Footer({ footer }: any) {
     <>
       <footer className="">
         {/* Footer links section  */}
-        <div className="grid sm:p-8 p-6 md:px-24  w-full text-white bg-color5  grid-cols-3 sm:grid-cols-6 gap-6 lg:gap-10 lg:grid-cols-12">
+        <div className="grid sm:p-8 p-6 md:px-24  w-full text-white bg-zinc-800   grid-cols-3 sm:grid-cols-6 gap-6 lg:gap-10 lg:grid-cols-12">
           <div className="col-span-3 flex flex-col gap-y-2">
             <Image
               src={footer?.logo}
@@ -126,7 +126,7 @@ export default function Footer({ footer }: any) {
             </p>
           </div>
         </div>
-        <div className="text-black space-y-7 bg-white py-6 px-6 md:px-24 ">
+        <div className="text-black space-y-4 bg-white  p-6 md:px-24 ">
           {navigationMenu?.secondaryMenu?.map((item: any) => (
             <div key={item.id}>
               <span className="font-bold">{item?.label}: </span>
@@ -169,10 +169,8 @@ export default function Footer({ footer }: any) {
             </div>
           ))}
         </div>
-        {/* footplane */}
-        {/* <Footplane /> */}
-        {/* copyright  */}
-        <div className="flex items-center justify-center border-t text-white bg-color5 py-5 max-md:flex-col">
+       
+        <div className="flex items-center justify-center border-t text-white bg-zinc-800 py-5 max-md:flex-col">
           <p className="text-center text-sm">
             {footer?.copyrightText}{" "}
             <span className="hover:text-main transition-all font-semibold cursor-pointer">

@@ -4,7 +4,8 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import { FaQuoteLeft } from "react-icons/fa6";
 import { testimonialData as data } from "@/data/homeData";
-import { arrow, patta} from "@/assets";
+import { arrow} from "@/assets";
+import { BsPatchCheckFill } from "react-icons/bs";
 
 // Reusable card component to keep the code clean
 const TestimonialCard = ({ cards }: { cards: any }) => (
@@ -17,9 +18,9 @@ const TestimonialCard = ({ cards }: { cards: any }) => (
         </div>
 
         {/* Profile Section with Premium Design */}
-        <div className="flex flex-col sm:flex-row gap-6 items-center mb-3">
+        <div className="flex gap-6 items-center mb-3">
             {/* Animated Ring */}
-            <div className="relative w-10 h-10 sm:w-14 sm:h-14 rounded-full overflow-hidden shadow-xl">
+            <div className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden shadow-xl">
               <Image
                 src={cards.img}
                 alt={cards.title}
@@ -30,27 +31,27 @@ const TestimonialCard = ({ cards }: { cards: any }) => (
             </div>
         
 
-          <div className="text-center sm:text-left">
+          <div className="text-left">
             <h3 className="text-base text-zinc-800 sm:text-lg font-bold ">
               {cards.title}
             </h3>
-            <p className="text-blue-500 font-medium text-xs  mt-1 flex items-center gap-2 justify-center">
-              <span className="w-2 h-2 bg-blue-500 rounded-full" />
-              Verified Customer
+            <p className="text-zinc-500 font-medium text-xs  mt-1 ">
+              12/07/2025
             </p>
           </div>
         </div>
  {/* Star Rating */}
-            <div className="flex gap-1 mb-3 justify-center sm:justify-start">
+            <div className="flex gap-1 mb-3 justify-start">
               {[...Array(5)].map((_, i) => (
                 <svg
                   key={i}
-                  className="w-4 h-4 sm:w-5 sm:h-5 fill-yellow-500 drop-shadow-md"
+                  className="w-5 h-5 fill-yellow-500 drop-shadow-md"
                   viewBox="0 0 20 20"
                 >
                   <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                 </svg>
-              ))}
+              ))} 
+              <BsPatchCheckFill className="mt-[2px] text-blue-500" />
             </div>
         {/* Testimonial Text */}
         <p className="text-zinc-600 text-left leading-relaxed text-sm">
@@ -67,7 +68,7 @@ export default function Testimonials() {
       <Image
         src={arrow}
         alt="Background"
-        className="absolute -top-10  left-0 h-full object-contain z-0 pointer-events-none"
+        className="absolute top-10  left-0 h-full object-contain z-0 pointer-events-none"
       />
 
        
@@ -83,7 +84,7 @@ export default function Testimonials() {
       </div>
 
       {/* Sliders Container */}
-      <div className="w-full flex flex-col gap-6 relative z-10">
+      <div className="w-full  relative z-10">
         
         {/* Row 1: Left to Right */}
         <Marquee 
@@ -99,18 +100,17 @@ export default function Testimonials() {
         </Marquee>
 
         {/* Row 2: Right to Left */}
-        <Marquee 
+        {/* <Marquee 
           direction="left" 
           speed={45} 
           pauseOnHover={true} 
           autoFill={true} 
           className="py-4"
         >
-          {/* Optional: You can reverse the array here so row 2 looks slightly different initially */}
           {[...(data?.testimonials || [])].reverse().map((cards: any) => (
             <TestimonialCard key={`row2-${cards.id}`} cards={cards} />
           ))}
-        </Marquee>
+        </Marquee> */}
 
       </div>
     </section>

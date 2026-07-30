@@ -192,7 +192,7 @@ const Header = ({ header }: any) => {
             
 
             {/* NAV BAR */}
-            <div className="flex bg-color2 justify-between items-center w-full px-10 pt-4 pb-7 relative">
+            <div className="flex bg-zinc-800 justify-between items-center w-full px-10 pt-4 pb-7 relative">
               {/* MENU */}
               <div className="flex items-center">
                 <Menu

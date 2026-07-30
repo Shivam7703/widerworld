@@ -17,6 +17,7 @@ import Dreamcountry from "@/components/home/dreamcountry";
 import Partners from "@/components/home/partner";
 import Coaching from "@/components/home/coaching";
 import Team from "@/components/global/team";
+import InstaPost from "@/components/home/instapost";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
 <WorkProcessSlider/>
 <Testimonials/>
 <Studyabrod/>
+<InstaPost/>
 <Dreamcountry/>
 <Partners/>
 <WhychooseSection/>
