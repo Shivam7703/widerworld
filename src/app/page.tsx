@@ -23,22 +23,22 @@ export default function Home() {
   return (
     <div className="">
 <BannerSlider/>
-<Greenbox/>
+{/* <Greenbox/> */}
 <AboutSection  data ={aboutdata} />
-<VisaSlider/>
+{/* <VisaSlider/>
 <Canadapnp/>
-<CountDown />
+<CountDown /> */}
 <Award/>
-<WorkProcessSlider/>
-<Testimonials/>
+{/* <WorkProcessSlider/>
+<Testimonials/> */}
 <Studyabrod/>
 <InstaPost/>
 <Dreamcountry/>
-<Partners/>
+{/* <Partners/> */}
 <WhychooseSection/>
-<FaqSection/>
+{/* <FaqSection/>
 <Coaching/>
-<Team/>
+<Team/> */}
 <Blogs isHome={true} />
   </div>
   );

@@ -38,14 +38,14 @@ export default function Studyabrod() {
   <div className="absolute top-[22px] left-[60px] right-[-26px] bottom-[-26px] border-2 border-dashed border-color2/20 rounded-2xl pointer-events-none " />
 
   {/* Card Back — box3, rotated right */}
-  <div className="absolute w-[49%] h-[96%] right-[3%] top-[3%] rotate-[8deg] z-[1] rounded-2xl duration-300 ease-in-out  hover:rotate-[2deg] overflow-hidden border-[3px] border-white shadow-xl">
-    <Image src={imgs[0]} alt="img" fill className="object-cover object-center" />
+  <div className="absolute w-[92%]       h-[92%] left-[8%] top-[7%] z-[1] rounded-2xl duration-300 ease-in-out  hover:rotate-[2deg] overflow-hidden border-[3px] border-white shadow-xl">
+    <Image src={imgs[1]} alt="img" fill className="object-cover object-center" />
   </div>
 
   {/* Card Front — box1, straight, red border */}
-  <div className="absolute w-[50%] h-[96%] left-[7%] top-[3%] -rotate-[10deg] z-[3] hover:rotate-0 rounded-2xl duration-300 ease-in-out  overflow-hidden border-[3px] border-white shadow-2xl">
-    <Image src={imgs[1]} alt="img" fill className="object-cover object-center" />
-  </div>
+  {/* <div className="absolute w-[50%] h-[96%] left-[7%] top-[3%] -rotate-[10deg] z-[3] hover:rotate-0 rounded-2xl duration-300 ease-in-out  overflow-hidden border-[3px] border-white shadow-2xl">
+    <Image src={imgs[0]} alt="img" fill className="object-cover object-center" />
+  </div> */}
 </div>
 
       {/* ── RIGHT: Content ── */}

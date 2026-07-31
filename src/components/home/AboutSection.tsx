@@ -16,10 +16,10 @@ export default function AboutSection({ data }:any) {
         className="bg-white "
       >
 
-        <div className="flex max-w-[1460px] mx-auto flex-col md:flex-row justify-between gap-y-5">
+        <div className="flex max-w-[1360px] mx-auto flex-col md:flex-row justify-between gap-y-5">
 
           {/* LEFT CONTENT */}
-          <div className="lg:w-[48%] md:order-1 order-2 bg-white ">
+          <div className="lg:w-[49%] md:order-1 order-2 bg-white ">
 
             {/* Badge */}
             {data?.title1 && (
@@ -87,61 +87,16 @@ export default function AboutSection({ data }:any) {
 
 
          {/* RIGHT SIDE IMAGES */}
-<div className="lg:w-[50%] relative md:order-2 bg-white order-1">
-  <div className="relative group w-full h-auto md:h-full min-h-96">
+<div className="lg:w-[45%] relative md:order-2 bg-white md:p-7 order-1">
+  <div className="relative rounded-2xl border-2 shadow-lg hover14 group w-full h-auto md:h-full min-h-96 overflow-hidden">
 
-{/* MAIN IMAGE - Slight left tilt, hover pe seedha aata hai */}
 {data?.img1 && (
-  <motion.div
-    initial={{ opacity: 0, scale: 0.95 }}
-    whileInView={{ opacity: 1, scale: 1 }}
-    transition={{ delay: 0.2 }}
-    whileHover={{ rotate: 0, scale: 1.04, zIndex: 10 }}
-    className="absolute top-[8%] left-[2%] w-[54%] h-[88%] rounded-xl overflow-hidden border-[3px] border-white cursor-pointer "
-    style={{
-      rotate: '-3deg',
-      boxShadow: '0 8px 32px rgba(0,0,0,0.18)',
-      zIndex: 2,
-      transition: 'box-shadow 0.45s',
-    }}
-  >
-    <Image
-      src={data?.img2}
-      alt="immigration"
-      fill
-      className="object-cover transition-transform duration-500 hover:scale-[1.07]"
-    />
-    <div className="absolute bottom-4 left-4 bg-white/90 text-sm font-medium px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        Consultants
-    </div>
-  </motion.div>
-)}
-
-
-{/* SECOND IMAGE - Slight right tilt, hover pe seedha aata hai */}
-{data?.img2 && (
-  <motion.div
-    initial={{ opacity: 0, scale: 0.95 }}
-    whileInView={{ opacity: 1, scale: 1 }}
-    transition={{ delay: 0.4 }}
-    whileHover={{ rotate: 0, scale: 1.04, zIndex: 10 }}
-    className="absolute bottom-[6%] right-[2%] w-[54%] h-[88%] rounded-xl overflow-hidden border-[3px] border-white cursor-pointer"
-    style={{
-      rotate: '4deg',
-      boxShadow: '0 8px 32px rgba(0,0,0,0.18)',
-      zIndex: 1,
-      transition: 'box-shadow 0.45s',
-    }}
-  >
     <Image
       src={data?.img1}
       alt="consultants"
       fill
-      className="object-cover transition-transform duration-500 hover:scale-[1.07]"
+      className="object-cover object-top transition-transform duration-500 hover:scale-[1.07]"
     />
-    <div className="absolute bottom-4 left-4 bg-white/90 text-sm font-medium px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-   Immigration </div>
-  </motion.div>
 )}
  
   </div>

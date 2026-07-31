@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { HiArrowUpRight } from "react-icons/hi2";
 import { FaCheck } from "react-icons/fa6";
 import Buttonmain from "../global/button";
-import { banner2, cl1, cl2, cl4, planebg2 } from "@/assets";
+import { banner2, box2, cl1, cl2, cl4, planebg2 } from "@/assets";
 
 const checkpoints = [
   "Customer-Focused Approach",
@@ -100,7 +100,7 @@ export default function Award() {
             <div className="relative h-72 sm:h-[400px] shadow-lg w-full rounded-xl overflow-hidden"
               >
               <Image
-                src={ banner2}
+                src={ box2}
                 alt="insurance"
                 fill
                 className="object-cover object-center h-full w-full "

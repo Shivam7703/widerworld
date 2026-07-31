@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { footer } from "@/data/homeData";
 import { patta } from "@/assets";
 import Image from "next/image";
+import Popups from "@/components/global/pop";
 
 /**
  * Cormorant Garamond — editorial serif for headings
@@ -32,6 +33,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer footer={footer} />
+        <Popups/>
       </body>
     </html>
   );

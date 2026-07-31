@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useId } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -22,14 +22,13 @@ const data = [
   "https://www.instagram.com/reel/DAu1aR_h-WM/",
 ];
 
-export default function InstaPost() {
-  const uniqueId = "insta123";
-
- // Function to format URL for clean iframe embed
 const getCleanReelUrl = (url: string) => {
   const cleanUrl = url.split("?")[0].replace(/\/$/, "");
   return `${cleanUrl}/embed/`;
 };
+
+export default function InstaPost() {
+  const uniqueId = useId().replace(/:/g, "");
 
   const swiperOptions = {
     slidesPerView: 1,
@@ -51,7 +50,7 @@ const getCleanReelUrl = (url: string) => {
   return (
     <section className="relative overflow-hidden bg-white py-7 sm:py-14">
       {/* HEADER */}
-      <div className="relative lg:px-20 w-full ">
+      <div className="relative lg:px-20 w-full">
         <div className="relative z-10 text-center mb-12">
           <h2 className="text-color3 font-bold text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto">
             Reels of the <span className="text-color1">Day</span>
@@ -61,25 +60,31 @@ const getCleanReelUrl = (url: string) => {
       </div>
 
       {/* SWIPER */}
-<div className="relative z-10 px-6 md:px-14 lg:px-20 xl:px-28">
-        <Swiper {...swiperOptions} className={`${uniqueId}`}>
-          {data?.map((url: string, index: number) => (
+      <div className="relative z-10 px-6 md:px-14 lg:px-20 xl:px-28">
+        <Swiper {...swiperOptions} className={uniqueId}>
+          {data.map((url, index) => (
             <SwiperSlide key={index} className="py-3">
-                
-                {/* ── REEL VIDEO WRAPPER (Cropping Header & Comments) ── */}
-                <div className="relative w-full md:h-[400px] h-[350px] rounded-2xl overflow-hidden shadow-xl bg-gray-100">
+              {/* ── REEL CARD: aspect-ratio matched to video, no black bars ── */}
+              <div className="relative w-full aspect-[9/16] rounded-2xl overflow-hidden shadow-xl bg-black">
+                {/* inner crop wrapper: scales the iframe up slightly and
+                    shifts it so Instagram's own header strip is trimmed */}
+                <div className="absolute inset-0 overflow-hidden">
                   <iframe
                     src={getCleanReelUrl(url)}
-                    className="w-full h-full border-0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  title={`Video`}
-                  loading="lazy"
-                  // Tailwind se scroll bar hatane ke liye scrolling="no" aur style attribute
-                  scrolling="no"
+                    className="absolute left-1/2 top-1/2 border-0"
+                    style={{
+                      width: "140%",
+                      height: "140%",
+                      transform: "translate(-50%, -52%) scale(1.05)",
+                    }}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title={`Instagram reel ${index + 1}`}
+                    loading="lazy"
+                    scrolling="no"
                   />
                 </div>
-
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>

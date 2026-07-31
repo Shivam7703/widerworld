@@ -10,7 +10,7 @@ import process1 from "@/assets/home/process1.png";
 import plane from "@/assets/home/plane.png";
 import plane2 from "@/assets/home/plane2.png";
 import patta from "@/assets/home/patta.png";
-import faq from "@/assets/home/faq.png";
+import pop from "@/assets/home/faq2.png";
 import faq2 from "@/assets/home/faq3.png";
 import blog_bg from "@/assets/home/blog_bg.png";
 import shape1 from "@/assets/home/shape1.png";
@@ -190,7 +190,7 @@ import newimg from "@/assets/flag/new-img.jpg";
 export {planebg,planebg2,plane2,faq2,step,step1,step2,step3,step4,step5,step6,step7,newflag,newimg,usa,usaimg,canada,canimg,aus,ausimg,euro,euroimg,gcc,gccimg,uk,p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12,
 shape1,mission, vision, logo , logo2, logo3, banner,banner2,banner3 ,back,blog_bg, box1, box2, box3,visa1,process1, arrow, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,famvisa, prvisa, business,touristvisa,
  plane, patta, atlanticImmigration, 
-  faq,ceo,
+  pop,ceo,
   alberta, immigration, Career, ielts,toefl,celpip,oet, jobAssist, PostLanding ,profile, pte ,visaDocument, Resume,
   hotel, bank, documentation,orientation, australiaPR,
   australiaSpouseVisa,
