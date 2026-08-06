@@ -24,14 +24,11 @@ export default function About() {
       />
       <AboutSection data ={aboutdata2} />
             <Mission /> 
-<OurHistory/>
+{/* <OurHistory/> */}
 <CEOMessage/>
 <CountDown />
 <Award/>
 <WhychooseSection/>
-
-      
-      
     </>
   );
 }

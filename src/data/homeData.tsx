@@ -1,43 +1,19 @@
-import {
-  about2,
-  banner,
-  banner2,
-  box1,
-  box2,
-  box3,
-  cl1,
-
-
-  famvisa,
-  prvisa,
-  business,
-  touristvisa,
-  
-  logo2,
-  process1,
-  ontario,
-  bcPnpProgram,
-  alberta,
-  novaScotia,
-  manitoba,
-  saskatchewanPnp,
-  about,
-  back,
-  workVisa,
-  canada,
-  canimg,
-  ausimg,
-  aus,
-  newflag,
-  newimg,
-  euro,
-  euroimg,
-  gcc,
-  gccimg,
-  usaimg,
-  usa,
-  uk,
-} from "@/assets";
+import {armenia,  bangladesh,  belarus,  china,  germany,  kazakhstan,  kyrgyzstan,  malaysia,  mauritius,  nepal,  philippines,  poland, russia, uzbekistan,  armeniaimg, bangladeshimg, belarusimg, chinaimg, germanyimg, kazakhstanimg, kyrgyzstanimg, malaysiaimg, mauritiusimg, nepalimg, philippinesimg, polandimg, russiaimg, uzbekistanimg,  about2,  banner,  banner2,  box1,  box2,  box3,  cl1,  famvisa,  prvisa,  business, touristvisa,  logo2,  process1,  ontario,  bcPnpProgram,  alberta,  novaScotia,  manitoba,  saskatchewanPnp,
+  about,  back,  workVisa,  canada,  canimg,  ausimg,  aus,  newflag,  newimg,  euro,  euroimg,  gcc,  gccimg,
+  usaimg,  usa,  uk,
+  dubai,
+  dubaiimg,
+  italy,
+  italyimg,
+  france,
+  franceimg,
+  ireimg,
+  ireland,
+  ukTouristVisa,
+  singa,
+  singaimg,
+  georg,
+  georgimg,} from "@/assets";
 import { FaGlobeAmericas, FaPlaneDeparture, FaUserTie } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { HiOutlineFlag, HiOutlineLightBulb } from "react-icons/hi";
@@ -309,7 +285,8 @@ export const aboutdata = {
       heading: "Client Satisfaction",
       text: "Focused on trust, real results, and delivering a smooth experience for every client.",
       icon: <RiUserFollowLine />,
-    }, {
+    }, 
+    {
       id: 3,
       heading: "Expert Guidance",
       text: "Professional support from experienced consultants to help you make informed and confident immigration decisions.",
@@ -334,7 +311,6 @@ export const aboutdata2 = {
   title3: "Delhi",
   para:
     "Focused on accuracy and transparency, we are among the leading immigration consultants in Delhi, offering profile-based immigration guidance and complete visa support. Our expert team follows ethical practices and structured processes to help individuals and families achieve global opportunities with confidence.",
-
   pointer: [
     {
       id: 1,
@@ -350,13 +326,24 @@ export const aboutdata2 = {
         "Structured processes to help you move abroad with clarity and confidence.",
       icon: <IoSettingsOutline />,
     },
+    {
+      id: 3,
+      heading: "Expert Guidance",
+      text: "Professional support from experienced consultants to help you make informed and confident immigration decisions.",
+      icon: <FaUserTie />,
+    },
+    {
+      id: 4,
+      heading: "End-to-End Support",
+      text: "Complete assistance at every stage, from initial consultation to final approval, ensuring a seamless and stress-free process.",
+      icon: <MdSupportAgent />,
+    },
   ],
 };
 
 export const visaSliderdata = {
   title1: "Diverse Range Of Visa Opportunities",
   title2: "Well-Planned Services for PR & Citizenship",
-
   cards: [
     {
       id: 1,
@@ -446,10 +433,6 @@ export const countrytomigrate = {
     },
   ],
 };
-
-
-import { FiSettings } from "react-icons/fi";
-
 
 export const workingprocess = {
   title1: "Our Working Process",
@@ -594,14 +577,13 @@ export const Whychoose = {
     "Wider World, the best immigration consultants in Delhi, offers reliable and result-driven immigration solutions backed by experienced professionals and transparent processes. We focus on profile-based guidance, accurate documentation, and legal compliance to ensure smooth visa applications. With a client-first approach and personalized support, we help individuals and families achieve their global immigration goals with confidence and clarity.",
 
   success: [
-    { id: 1, value: "100%", text: "Visa Success Rate" },
-    { id: 2, value: "100%", text: "Clients Satisfaction" },
+    { id: 1, value: "90%", text: "Visa Success Rate" },
+    { id: 2, value: "95%", text: "Clients Satisfaction" },
     { id: 3, value: "100%", text: "Transparency" },
   ],
 };
 
 export const testimonialData = {
-
   testimonials: [
     {
       title: "Suresh Dixit",
@@ -647,8 +629,8 @@ export const offercountry = {
     },
     {
       id: 2,
-      img: bcPnpProgram,
-      flag: canada,
+      img: usaimg,
+      flag: usa,
       cat: "abroad",
       heading: "Study in USA",
       points: ["• Top Universities", "• Diverse Courses", "• Global Career Opportunities"],
@@ -657,8 +639,8 @@ export const offercountry = {
     },
     {
       id: 3,
-      img: alberta,
-      flag: canada,
+      img: ausimg,
+      flag: aus,
       cat: "abroad",
       heading: "Study in Australia",
       points: ["• Quality Education", "• Work Opportunities", "• Student-Friendly Environment"],
@@ -667,8 +649,8 @@ export const offercountry = {
     },
     {
       id: 4,
-      img: saskatchewanPnp,
-      flag: canada,
+      img: dubaiimg,
+      flag: dubai,
       cat: "abroad",
       heading: "Study in Dubai",
       points: ["• Modern Education Hub", "• Global Exposure", "• Tax-Free Benefits"],
@@ -677,8 +659,8 @@ export const offercountry = {
     },
     {
       id: 5,
-      img: manitoba,
-      flag: canada,
+      img: italyimg,
+      flag: italy,
       cat: "abroad",
       heading: "Study in Italy",
       points: ["• Affordable Education", "• Rich Culture", "• European Degree"],
@@ -687,8 +669,8 @@ export const offercountry = {
     },
     {
       id: 6,
-      img: novaScotia,
-      flag: canada,
+      img: franceimg,
+      flag: france,
       cat: "abroad",
       heading: "Study in France",
       points: ["• Quality Education", "• Low Fees", "• Global Opportunities"],
@@ -697,8 +679,8 @@ export const offercountry = {
     },
     {
       id: 7,
-      img: manitoba,
-      flag: canada,
+      img: malaysiaimg,
+      flag: malaysia,
       cat: "abroad",
       heading: "Study in Malaysia",
       points: ["• Affordable", "• International Universities", "• Modern Infrastructure"],
@@ -707,8 +689,8 @@ export const offercountry = {
     },
     {
       id: 8,
-      img: novaScotia,
-      flag: canada,
+      img: newimg,
+      flag: newflag,
       cat: "abroad",
       heading: "Study in New Zealand",
       points: ["• Safe Country", "• Quality Education", "• Post-Study Work"],
@@ -717,8 +699,8 @@ export const offercountry = {
     },
     {
       id: 9,
-      img: manitoba,
-      flag: canada,
+      img: ireimg,
+      flag: ireland,
       cat: "abroad",
       heading: "Study in Ireland",
       points: ["• Strong Job Market", "• Excellent Education", "• Career Growth"],
@@ -727,8 +709,8 @@ export const offercountry = {
     },
     {
       id: 10,
-      img: novaScotia,
-      flag: canada,
+      img: ukTouristVisa,
+      flag: uk,
       cat: "abroad",
       heading: "Study in UK",
       points: ["• Globally Recognized", "• Short Duration", "• Flexible Courses"],
@@ -737,8 +719,8 @@ export const offercountry = {
     },
     {
       id: 11,
-      img: manitoba,
-      flag: canada,
+      img: singaimg,
+      flag: singa,
       cat: "abroad",
       heading: "Study in Singapore",
       points: ["• World-Class Education", "• Industry Connections", "• Career Opportunities"],
@@ -747,8 +729,8 @@ export const offercountry = {
     },
     {
       id: 1,
-      img: ontario,
-      flag: canada,
+      img: philippinesimg,
+      flag: philippines,
       cat: "mbbs",
       heading: "MBBS in Philippines",
       points: ["• Affordable Fees", "• English Medium", "• Good Clinical Exposure"],
@@ -757,8 +739,8 @@ export const offercountry = {
     },
     {
       id: 2,
-      img: bcPnpProgram,
-      flag: canada,
+      img: russiaimg,
+      flag: russia,
       cat: "mbbs",
       heading: "MBBS in Russia",
       points: ["• Globally Recognized", "• Affordable Fees", "• Quality Education"],
@@ -767,8 +749,8 @@ export const offercountry = {
     },
     {
       id: 3,
-      img: alberta,
-      flag: canada,
+      img: bangladeshimg,
+      flag: bangladesh,
       cat: "mbbs",
       heading: "MBBS in Bangladesh",
       points: ["• Indian Syllabus", "• High FMGE Rate", "• Affordable Option"],
@@ -777,8 +759,8 @@ export const offercountry = {
     },
     {
       id: 4,
-      img: saskatchewanPnp,
-      flag: canada,
+      img: mauritiusimg,
+      flag: mauritius,
       cat: "mbbs",
       heading: "MBBS in Mauritius",
       points: ["• Safe Country", "• Multicultural Environment", "• Quality Education"],
@@ -787,8 +769,8 @@ export const offercountry = {
     },
     {
       id: 5,
-      img: manitoba,
-      flag: canada,
+      img: nepalimg,
+      flag: nepal,
       cat: "mbbs",
       heading: "MBBS in Nepal",
       points: ["• Indian Curriculum", "• Easy Travel", "• Cultural Similarity"],
@@ -797,8 +779,8 @@ export const offercountry = {
     },
     {
       id: 6,
-      img: novaScotia,
-      flag: canada,
+      img: uzbekistanimg,
+      flag: uzbekistan,
       cat: "mbbs",
       heading: "MBBS in Uzbekistan",
       points: ["• Affordable Fees", "• Modern Infrastructure", "• Experienced Faculty"],
@@ -807,8 +789,8 @@ export const offercountry = {
     },
     {
       id: 7,
-      img: manitoba,
-      flag: canada,
+      img: kazakhstanimg,
+      flag: kazakhstan,
       cat: "mbbs",
       heading: "MBBS in Kazakhstan",
       points: ["• Recognized Universities", "• Affordable", "• Good Facilities"],
@@ -817,8 +799,8 @@ export const offercountry = {
     },
     {
       id: 8,
-      img: novaScotia,
-      flag: canada,
+      img: belarusimg,
+      flag: belarus,
       cat: "mbbs",
       heading: "MBBS in Belarus",
       points: ["• High Quality Education", "• Advanced Labs", "• Strong Infrastructure"],
@@ -827,8 +809,8 @@ export const offercountry = {
     },
     {
       id: 9,
-      img: manitoba,
-      flag: canada,
+      img: georgimg,
+      flag: georg,
       cat: "mbbs",
       heading: "MBBS in Georgia",
       points: ["• European Standard", "• English Medium", "• Recognized Degree"],
@@ -837,8 +819,8 @@ export const offercountry = {
     },
     {
       id: 10,
-      img: novaScotia,
-      flag: canada,
+      img: armeniaimg,
+      flag: armenia,
       cat: "mbbs",
       heading: "MBBS in Armenia",
       points: ["• Affordable", "• Safe Country", "• Quality Education"],
@@ -847,8 +829,8 @@ export const offercountry = {
     },
     {
       id: 11,
-      img: manitoba,
-      flag: canada,
+      img: chinaimg,
+      flag: china,
       cat: "mbbs",
       heading: "MBBS in China",
       points: ["• Top Universities", "• Advanced Technology", "• Global Recognition"],
@@ -857,8 +839,8 @@ export const offercountry = {
     },
     {
       id: 12,
-      img: novaScotia,
-      flag: canada,
+      img: polandimg,
+      flag: poland,
       cat: "mbbs",
       heading: "MBBS in Poland",
       points: ["• European Degree", "• High Standards", "• Global Opportunities"],
@@ -867,8 +849,8 @@ export const offercountry = {
     },
     {
       id: 13,
-      img: manitoba,
-      flag: canada,
+      img: germanyimg,
+      flag: germany,
       cat: "mbbs",
       heading: "MBBS in Germany",
       points: ["• Low Tuition Fees", "• Excellent Education", "• High Exposure"],
@@ -877,8 +859,8 @@ export const offercountry = {
     },
     {
       id: 14,
-      img: novaScotia,
-      flag: canada,
+      img: malaysiaimg,
+      flag: malaysia,
       cat: "mbbs",
       heading: "MBBS in Malaysia",
       points: ["• Affordable", "• Modern Campus", "• International Recognition"],
@@ -887,8 +869,8 @@ export const offercountry = {
     },
     {
       id: 15,
-      img: manitoba,
-      flag: canada,
+      img: kyrgyzstanimg,
+      flag: kyrgyzstan,
       cat: "mbbs",
       heading: "MBBS in Kyrgyzstan",
       points: ["• Budget Friendly", "• Easy Admission", "• Good Training"],
@@ -897,7 +879,6 @@ export const offercountry = {
     },
   ],
 };
-
 
 export const HomefaqData = {
   title1: "FAQs",
@@ -1062,7 +1043,6 @@ export const mission = {
 
 export const whychooseus = {
   title1: "Why Choose Us",
-  // img: bene2,
   points: [
     {
       icon: <FaGlobeAmericas />,
@@ -1120,8 +1100,6 @@ export const contactdetail = [
     slug: "#",
   },
 ];
-
-
 
 export const servicechoose = {
   img: box1,

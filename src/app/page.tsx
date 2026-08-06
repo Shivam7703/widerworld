@@ -22,24 +22,24 @@ import InstaPost from "@/components/home/instapost";
 export default function Home() {
   return (
     <div className="">
-<BannerSlider/>
-{/* <Greenbox/> */}
+ <BannerSlider/> 
+ <Greenbox/> 
 <AboutSection  data ={aboutdata} />
-{/* <VisaSlider/>
+ <VisaSlider/> 
 <Canadapnp/>
-<CountDown /> */}
-<Award/>
-{/* <WorkProcessSlider/>
-<Testimonials/> */}
-<Studyabrod/>
-<InstaPost/>
+<CountDown />
+ <Award/> 
+ <WorkProcessSlider/>
+<Testimonials/> 
+ <Studyabrod/> 
+ <InstaPost/> 
 <Dreamcountry/>
-{/* <Partners/> */}
-<WhychooseSection/>
-{/* <FaqSection/>
+ <Partners/> 
+ <WhychooseSection/> 
+ <FaqSection/>
 <Coaching/>
-<Team/> */}
-<Blogs isHome={true} />
+<Team/> 
+ <Blogs isHome={true} /> 
   </div>
   );
 }

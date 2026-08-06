@@ -1,12 +1,37 @@
 "use client";
 
-import { useId } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
-
+import Image from "next/image";
+import {
+  insta1,
+  insta2,
+  insta3,
+  insta4,
+  insta5,
+  insta6,
+  insta7,
+  insta8,
+  insta9,
+  insta10,
+} from "@/assets";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
+import { IoPlaySharp } from "react-icons/io5";
+
+const img = [
+  insta1,
+  insta2,
+  insta3,
+  insta4,
+  insta5,
+  insta6,
+  insta7,
+  insta8,
+  insta9,
+  insta10,
+];
 
 const data = [
   "https://www.instagram.com/reel/DUnWLdCAc2J/",
@@ -19,16 +44,12 @@ const data = [
   "https://www.instagram.com/reel/C4SsS4Vpuwk/",
   "https://www.instagram.com/reel/C4_ajZwySHN/",
   "https://www.instagram.com/reel/C6GtoHBhaDD/",
-  "https://www.instagram.com/reel/DAu1aR_h-WM/",
 ];
 
-const getCleanReelUrl = (url: string) => {
-  const cleanUrl = url.split("?")[0].replace(/\/$/, "");
-  return `${cleanUrl}/embed/`;
-};
+// getCleanReelUrl function is removed as it's not needed for direct links
 
 export default function InstaPost() {
-  const uniqueId = useId().replace(/:/g, "");
+  const uniqueId = "insta1234";
 
   const swiperOptions = {
     slidesPerView: 1,
@@ -64,27 +85,29 @@ export default function InstaPost() {
         <Swiper {...swiperOptions} className={uniqueId}>
           {data.map((url, index) => (
             <SwiperSlide key={index} className="py-3">
-              {/* ── REEL CARD: aspect-ratio matched to video, no black bars ── */}
-              <div className="relative w-full aspect-[9/16] rounded-2xl overflow-hidden shadow-xl bg-black">
-                {/* inner crop wrapper: scales the iframe up slightly and
-                    shifts it so Instagram's own header strip is trimmed */}
-                <div className="absolute inset-0 overflow-hidden">
-                  <iframe
-                    src={getCleanReelUrl(url)}
-                    className="absolute left-1/2 top-1/2 border-0"
-                    style={{
-                      width: "140%",
-                      height: "140%",
-                      transform: "translate(-50%, -52%) scale(1.05)",
-                    }}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    title={`Instagram reel ${index + 1}`}
-                    loading="lazy"
-                    scrolling="no"
-                  />
+              {/* The entire card is now a link */}
+              <a
+                href={url} // Direct link to the Instagram reel
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block relative w-full aspect-[2/3] rounded-2xl overflow-hidden shadow-xl bg-black group" // Added 'group' for hover effects
+              >
+                {/* Image */}
+                <Image
+                  src={img[index]}
+                  alt={`Instagram reel ${index + 1}`}
+                  layout="fill"
+                  objectFit="cover"
+                  className="transition-transform duration-300 group-hover:scale-105" // Subtle zoom on hover
+                />
+                
+                {/* Play Button Overlay */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/50 transition-colors duration-300">
+                  <div className="w-16 h-16 flex items-center justify-center bg-white/20 rounded-full border-2 border-white/80 backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
+                    <IoPlaySharp className="w-8 h-8 text-white fill-white ml-1" /> {/* Play icon */}
+                  </div>
                 </div>
-              </div>
+              </a>
             </SwiperSlide>
           ))}
         </Swiper>

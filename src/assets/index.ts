@@ -2,6 +2,20 @@ import logo from "@/assets/logo.png";
 import logo2 from "@/assets/logo-white.png";
 import logo3 from "@/assets/logo3.webp";
 
+
+// insta
+import insta1 from "@/assets/home/insta1.jpeg";
+import insta2 from "@/assets/home/insta2.jpeg";
+import insta3 from "@/assets/home/insta3.jpeg";
+import insta4 from "@/assets/home/insta4.jpeg";
+import insta5 from "@/assets/home/insta5.jpeg";
+import insta6 from "@/assets/home/insta6.jpeg";
+import insta7 from "@/assets/home/insta7.jpeg";
+import insta8 from "@/assets/home/insta8.jpeg";
+import insta9 from "@/assets/home/insta9.jpeg";
+import insta10 from "@/assets/home/insta10.jpeg";
+
+
 import box1 from "@/assets/home/box1.jpg";
 import box2 from "@/assets/home/box2.jpg";
 import box3 from "@/assets/home/box3.jpg";
@@ -185,15 +199,59 @@ import gcc from "@/assets/flag/GCC.jpg";
 import gccimg from "@/assets/flag/gcc-img.jpg";
 import newflag from "@/assets/flag/new.png";
 import newimg from "@/assets/flag/new-img.jpg";
+import dubai from "@/assets/flag/dubai.png";
+import dubaiimg from "@/assets/flag/dubai-img.webp";
+import italy from "@/assets/flag/italy.webp";
+import italyimg from "@/assets/flag/italy-img.webp";
+
+import armenia from "@/assets/flag/armenia.webp";
+import bangladesh from "@/assets/flag/bangladesh.webp";
+import belarus from "@/assets/flag/belarus.webp";
+import china from "@/assets/flag/china.webp";
+import germany from "@/assets/flag/germany.webp";
+import kazakhstan from "@/assets/flag/kazakhstan.webp";
+import kyrgyzstan from "@/assets/flag/kyrgysthan.webp";
+import malaysia from "@/assets/flag/malaysia.webp";
+import mauritius from "@/assets/flag/maritius.webp";
+import nepal from "@/assets/flag/nepal.webp";
+import philippines from "@/assets/flag/philipins.webp";
+import poland from "@/assets/flag/poland.webp";
+import russia from "@/assets/flag/russia.webp";
+import uzbekistan from "@/assets/flag/uzbekistan.webp";
+import france from "@/assets/flag/france.png";
+import ireland from "@/assets/flag/ireland.png";
+import singa from "@/assets/flag/singa.png";
+import singaimg from "@/assets/flag/sing-img.webp";
+import georg from "@/assets/flag/Georgia.png";
+import georgimg from "@/assets/flag/Georgia-img.jpg";
 
 
-export {planebg,planebg2,plane2,faq2,step,step1,step2,step3,step4,step5,step6,step7,newflag,newimg,usa,usaimg,canada,canimg,aus,ausimg,euro,euroimg,gcc,gccimg,uk,p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12,
-shape1,mission, vision, logo , logo2, logo3, banner,banner2,banner3 ,back,blog_bg, box1, box2, box3,visa1,process1, arrow, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,famvisa, prvisa, business,touristvisa,
- plane, patta, atlanticImmigration, 
+import armeniaimg from "@/assets/flag/arm-img.webp";
+import bangladeshimg from "@/assets/flag/bangl-img.webp";
+import belarusimg from "@/assets/flag/belarus-img.webp";
+import chinaimg from "@/assets/flag/china-img.webp";
+import germanyimg from "@/assets/flag/ger-img.webp";
+import kazakhstanimg from "@/assets/flag/kaza-img.webp";
+import kyrgyzstanimg from "@/assets/flag/kry-img.webp";
+import malaysiaimg from "@/assets/flag/malay-img.webp";
+import mauritiusimg from "@/assets/flag/mari-img.webp";
+import nepalimg from "@/assets/flag/nepa-img.webp";
+import philippinesimg from "@/assets/flag/phili-img.webp";
+import polandimg from "@/assets/flag/pol-img.webp";
+import russiaimg from "@/assets/flag/russia-img.webp";
+import uzbekistanimg from "@/assets/flag/uzbe-img.webp";
+import franceimg from "@/assets/flag/franc-img.webp";
+import ireimg from "@/assets/flag/ire-img.jpg";
+
+
+export {insta1,  insta2,  insta3,  insta4,  insta5,  insta6,  insta7,  insta8,  insta9,  insta10, planebg, planebg2,plane2,faq2,step,step1,step2,step3,step4,step5,step6,step7,newflag,newimg,usa,usaimg,canada,canimg,aus,ausimg,euro,euroimg,gcc,gccimg,uk,p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, armenia,  bangladesh,  belarus,  china,  germany,  kazakhstan,  kyrgyzstan,  malaysia,  mauritius,  nepal,  philippines,  poland, russia, uzbekistan,dubai,italy,  armeniaimg, bangladeshimg, belarusimg, chinaimg, germanyimg, kazakhstanimg, kyrgyzstanimg, malaysiaimg, mauritiusimg, nepalimg, philippinesimg, polandimg, russiaimg, uzbekistanimg,dubaiimg,italyimg,franceimg,france, ireland,ireimg,singa,singaimg, georg,georgimg,
+    
+    shape1,mission, vision, logo , logo2, logo3, banner,banner2,banner3 ,back,blog_bg, box1, box2, box3,visa1,process1, arrow, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,famvisa, prvisa, business,touristvisa,
+ plane, patta, atlanticImmigration,      
   pop,ceo,
   alberta, immigration, Career, ielts,toefl,celpip,oet, jobAssist, PostLanding ,profile, pte ,visaDocument, Resume,
   hotel, bank, documentation,orientation, australiaPR,
-  australiaSpouseVisa,
+  australiaSpouseVisa, 
   australiaPointSystem,
   australiaSubclass491,
   australiaSubclass600,
@@ -226,7 +284,6 @@ shape1,mission, vision, logo , logo2, logo3, banner,banner2,banner3 ,back,blog_b
   germanyTouristVisa,
   portugalWorkPermit,
   ukTouristVisa,
-  
    andhraPradesh,
   australiaStudyVisa,
   canadaStartupVisa,

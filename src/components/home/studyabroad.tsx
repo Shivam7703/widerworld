@@ -81,7 +81,7 @@ export default function Studyabrod() {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              20+
+              8+
             </p>
             <p className="text-color3 font-semibold text-base mt-1">Years Of Experience</p>
           </div>

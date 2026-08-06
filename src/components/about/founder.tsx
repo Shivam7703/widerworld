@@ -53,25 +53,19 @@ export default function CEOMessage() {
             </div>
 
             {/* Bottom: Name + Socials */}
-            <div className="absolute bottom-[4%] left-[5%] right-0 p-10 bg-black/50 border border-white backdrop-blur-sm w-[90%] rounded-2xl z-10">
+            <div className="absolute bottom-[4%] left-[5%] right-0 px-10 py-7 bg-black/50 border border-white backdrop-blur-sm w-[90%] rounded-2xl z-10">
               {/* Quote icon */}
-              <div className="w-11 h-11 rounded-[14px] bg-color2 flex items-center justify-center mb-5 shadow-lg shadow-color2/30">
-                <FaQuoteLeft className="text-white text-base" />
-              </div>
+          
 
               <h3
                 className="text-white font-black text-2xl leading-tight mb-1"
               >
                 Jonathan A. Mercer
               </h3>
-              <p className="text-white/70 text-[10px] font-semibold uppercase tracking-[0.18em] mb-5">
+              <p className="text-white/70 text-[10px] border-b border-white/50 pb-2    font-semibold uppercase tracking-[0.18em] mb-5">
                 Founder & Chairman
               </p>
-
-              {/* Gradient line */}
-              <div className="w-10 h-[2px] bg-gradient-to-r from-color2 to-color1 rounded-full mb-5" />
-
-              {/* Socials */}
+           {/* Socials */}
               <div className="flex gap-2.5">
                 {[
                   { icon: <FaLinkedin />,    href: "#" },
@@ -100,25 +94,25 @@ export default function CEOMessage() {
             {/* Label */}
             <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase
               tracking-[0.22em] text-color2 border-2 border-color2/20 bg-color2/5
-              px-4 py-2 rounded-full w-fit mb-7">
+              px-4 py-2 rounded-full w-fit mb-4">
               <span className="w-1.5 h-1.5 rounded-full bg-color2 animate-pulse" />
               Message from Our Founder
             </span>
 
             {/* Main quote */}
             <p
-              className="text-xl md:text-[22px] font-bold text-color3 leading-[1.5] mb-6 relative z-10"
-              style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic" }}
+              className="text-base md:text-lg font-extrabold text-color2 italic leading-[1.5] mb-4 relative z-10"
+              style={{ fontFamily: "'Playfair Display', serif" }}
             >
               "From the very beginning, our vision was clear — to make immigration simple, transparent, and truly dependable for every individual. Built on trust and driven by consistency, we focus on doing things the right way, every single day."
             </p>
 
             {/* Body */}
-            <p className="text-gray-500 text-sm leading-relaxed mb-8">
+            <p className="text-gray-500 text-sm leading-relaxed mb-4">
 Our aim goes beyond just processing applications. We believe in building long-term trust through honest guidance and structured support. With a focus on continuous improvement and responsible growth, we are committed to creating meaningful global opportunities while maintaining the highest standards of integrity and service.            </p>
 
             {/* ── Stats — unique bar style ── */}
-            <div className="flex flex-col gap-4 mb-8">
+            {/* <div className="flex flex-col gap-4 mb-8">
               {stats.map((s, i) => (
                 <div key={i}>
                   <div className="flex items-baseline justify-between mb-1.5">
@@ -139,10 +133,10 @@ Our aim goes beyond just processing applications. We believe in building long-te
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             {/* Pull quote */}
-            <div className="border-l-[3px] border-color1 pl-5 py-2 bg-color1/4 rounded-r-xl mb-8"
+            <div className="border-l-[3px] border-color1 pl-5 py-2 bg-color1/4 rounded-r-xl mb-6"
               style={{ borderRadius: "0 12px 12px 0" }}>
               <p className="text-gray-500 text-sm italic leading-relaxed">
                 "Helping people move forward with clear guidance, genuine support, and a commitment to doing things right in every immigration journey."

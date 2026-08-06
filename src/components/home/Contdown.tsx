@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer, zoomIn } from "@/utils/motion";
 import { BiTime } from "react-icons/bi";
-import { FaUsers, FaGlobe } from "react-icons/fa";
+import { FaUsers, FaGlobe, FaPassport } from "react-icons/fa";
 import { MdVerified } from "react-icons/md";
 import { shape1 } from "@/assets";
 import Image from "next/image";
@@ -22,7 +22,7 @@ const stats = [
     icon: <FaUsers />,
     suffix: "+",
     title: "Clients Served",
-    Value: 1000,
+    Value: 10000,
     desc: "Families and professionals guided through complex immigration processes worldwide.",
   },
   {
@@ -35,10 +35,10 @@ const stats = [
   },
   {
     id: 3,
-    icon: <BiTime  />,
-    suffix: "hrs",
-    title: "Avg. Approval Time",
-    Value: 42,
+    icon: <FaPassport />,
+    suffix: "+",
+    title: "Visa Categories",
+    Value: 40,
     desc: "Fastest processing in the industry with our streamlined documentation system.",
   },
   {
@@ -46,7 +46,7 @@ const stats = [
     icon: <FaGlobe />,
     suffix: "+",
     title: "Countries Operations",
-    Value: 60,
+    Value: 25,
     desc: "Active presence across 6 continents serving clients in over 60 destination countries.",
   },
 ];
