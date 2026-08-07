@@ -15,7 +15,7 @@ const inputFields = [
 ];
 
 const pointers = [
-  "20+ years of experience as leading Immigration Consultants in India",
+  "8+ years of experience as leading Immigration Consultants in India",
   "High visa success rate across multiple categories and countries",
   "Expert consultation for 150+ global destinations",
   "End-to-end support from application to final decision",

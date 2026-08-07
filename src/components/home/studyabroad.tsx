@@ -71,7 +71,7 @@ export default function Studyabrod() {
           {/* Experience + Features */}
           <div className="flex flex-wrap items-start gap-6 sm:gap-10">
 
-            {/* 20+ Years */}
+            {/* 8+ Years */}
             <div>
               <p
                 className="font-black text-8xl leading-none"
