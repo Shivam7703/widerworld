@@ -1,7 +1,6 @@
 "use client";
-import { box1, box2, box3, mission, plane,  vision } from "@/assets";
+import { mission, plane, vision } from "@/assets";
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { BsPassportFill } from "react-icons/bs";
 import { RiSpeedMiniFill, RiUserCommunityFill } from "react-icons/ri";
@@ -12,7 +11,6 @@ export default function Greenbox() {
   const data = [
     {
       id: 1,
-      img: mission,
       heading: "Visa Application Support",
       para: "Complete assistance with visa filing, ensuring every step is handled accurately for better approval chances",
       icon: <BsPassportFill />,
@@ -20,7 +18,6 @@ export default function Greenbox() {
     },
     {
       id: 2,
-      img: plane,
       heading: "Documentation Assistance",
       para: "Proper guidance for preparing and verifying all required documents to avoid errors and delays.",
       icon: <RiSpeedMiniFill />,
@@ -28,7 +25,6 @@ export default function Greenbox() {
     },
     {
       id: 3,
-      img: vision,
       heading: "Client Support Services",
       para: "Dedicated support for every client with clear communication and guidance throughout the entire process.",
       icon: <RiUserCommunityFill />,
@@ -54,22 +50,22 @@ export default function Greenbox() {
             hover:shadow-[0_35px_80px_rgba(0,0,0,0.35)]`}
           >
 
-             <div className="h-56 w-56 group-hover:opacity-40  bg-gradient-to-tr from-red-500 to-red-700 rotate-45 z-0 absolute -top-32 -right-32 object-contain"/>
-             <div className="h-56 w-56 bg-gradient-to-tr from-red-500 to-red-700 opacity-30 rotate-45 z-0 absolute -top-4 -right-44 group-hover:-top-16 duration-700 group-hover:-right-32 object-contain"/>
+            <div className="h-56 w-56 group-hover:opacity-40  bg-gradient-to-tr from-red-500 to-red-700 rotate-45 z-0 absolute -top-32 -right-32 object-contain" />
+            <div className="h-56 w-56 bg-gradient-to-tr from-red-500 to-red-700 opacity-30 rotate-45 z-0 absolute -top-4 -right-44 group-hover:-top-16 duration-700 group-hover:-right-32 object-contain" />
 
             {/* BODY */}
             <div className="sm:px-7 sm:!pt-11 p-6 text-white">
-            {/* ICON */}
-            <div
-              className=" w-[60px] h-[60px] mb-5 
+              {/* ICON */}
+              <div
+                className=" w-[60px] h-[60px] mb-5 
               rounded-xl bg-color5 
               flex items-center justify-center text-[24px] text-white
                transition-all duration-400 shadow-md shadow-black/35
               group-hover:scale-110 group-hover:-rotate-6"
-             
-            >
-              {card.icon}
-            </div>
+
+              >
+                {card.icon}
+              </div>
               {/* GOLD LINE */}
               <div className="h-[3px] bg-color1 rounded-full mb-4
               w-10 transition-all duration-400 group-hover:w-24" />
@@ -77,7 +73,7 @@ export default function Greenbox() {
               {/* TITLE */}
               <h2
                 className="text-xl sm:text-2xl font-bold text-color3 mb-3"
-              
+
               >
                 {card.heading}
               </h2>

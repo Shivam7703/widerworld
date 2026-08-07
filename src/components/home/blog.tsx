@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight, FaUser } from "react-icons/fa6";
-import { box3 } from "@/assets";
+import { box1 } from "@/assets";
 import { getBlogs } from "@/lib/api"; // Import kiya
 
 interface Blog {
@@ -32,12 +32,12 @@ export default function Blogs({ isHome, page = 1 }: Props) {
         // limit logic wahi rakhi hai
         const limit = isHome ? 4 : 12;
         const currentPage = isHome ? 1 : page;
-        
+
         // perpage
         const perPage = isHome ? 4 : 12;
 
         // Centralized API function use kiya
-       const data = await getBlogs(currentPage, perPage);     
+        const data = await getBlogs(currentPage, perPage);
         // Agar aapki API ka response structure alag hai, to yaha adjust kar sakte hain.
         // Assuming data.data holds the array based on your previous code.
         setBlogs(data.data || []);
@@ -51,7 +51,7 @@ export default function Blogs({ isHome, page = 1 }: Props) {
   }, [isHome, page]);
 
   // ... baaki functions aur JSX waisa hi rahega jaisa aapka tha
-  
+
   function formatDate(dateStr: string) {
     const d = new Date(dateStr);
     return d.toLocaleDateString("en-IN", { day: "2-digit", month: "short" });
@@ -76,9 +76,8 @@ export default function Blogs({ isHome, page = 1 }: Props) {
   // ... (JSX return block same rahega jo aapne diya tha)
   return (
     <section
-      className={`${
-        isHome ? "lg:px-20 xl:px-28 md:px-16 sm:p-12 p-6" : "px-3 pb-5"
-      } relative w-full overflow-hidden bg-blue-50`}
+      className={`${isHome ? "lg:px-20 xl:px-28 md:px-16 sm:p-12 p-6" : "px-3 pb-5"
+        } relative w-full overflow-hidden bg-blue-50`}
     >
       {/* Blobs, Header, Grid etc. remain unchanged */}
       <div className="absolute top-20 right-0 w-[400px] h-[400px] bg-color2/10 rounded-full blur-[120px] pointer-events-none" />
@@ -89,20 +88,19 @@ export default function Blogs({ isHome, page = 1 }: Props) {
           <span className="text-color2 text-xs tracking-[0.22em] font-bold uppercase  mb-4">
             Latest Blogs
           </span>
-           <h2
-          className="text-color3 font-bold text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto"
-        >
-          Latest Insight and{" "}
-          <span className="text-color1">Updated Blogs</span>
-        </h2>
-        <div className="w-24 h-[2px] bg-gradient-to-r from-color2 to-color1 mx-auto rounded-full" />
+          <h2
+            className="text-color3 font-bold text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto"
+          >
+            Latest Insight and{" "}
+            <span className="text-color1">Updated Blogs</span>
+          </h2>
+          <div className="w-24 h-[2px] bg-gradient-to-r from-color2 to-color1 mx-auto rounded-full" />
         </div>
       )}
 
       <div
-        className={`grid ${
-          isHome ? "lg:grid-cols-4" : "lg:grid-cols-3"
-        } sm:grid-cols-2 gap-8 mx-auto relative z-10`}
+        className={`grid ${isHome ? "lg:grid-cols-4" : "lg:grid-cols-3"
+          } sm:grid-cols-2 gap-8 mx-auto relative z-10`}
       >
         {blogs.map((blog) => {
           const imageUrl = getImageUrl(blog.images);
@@ -115,7 +113,7 @@ export default function Blogs({ isHome, page = 1 }: Props) {
             >
               <div className="relative h-56 sm:h-64 overflow-hidden">
                 <Image
-                  src={imageUrl || box3}
+                  src={imageUrl || box1}
                   alt={blog.post_title}
                   width={500}
                   height={350}
