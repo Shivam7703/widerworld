@@ -1,5 +1,5 @@
 "use client";
-import { ceo, mohini, shahvez, shahvez, vivek, vivek } from "@/assets";
+import { ceo, mohini, shahvez, vivek } from "@/assets";
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
