@@ -15,6 +15,9 @@ import {
   singaimg,
   georg,
   georgimg,
+  cl9,
+  cl2,
+  cl3,
 } from "@/assets";
 import { FaGlobeAmericas, FaPlaneDeparture, FaUserTie } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
@@ -597,19 +600,19 @@ export const testimonialData = {
       title: "Mohan Rane",
       text:
         "The team at Wider World Immigration is very supportive and easy to communicate with. They explained each step clearly and kept me informed throughout the process. Their guidance helped me avoid mistakes and complete my application without confusion. They are the best visa consultants in Delhi.",
-      img: cl1,
+      img: cl2,
     },
     {
       title: "Manoj Saini",
       text:
         "I was quite confused in the beginning, but Wider World Immigration provided clear and practical guidance. They helped me choose the right visa option and handled my documentation carefully. The entire experience was smooth, and I felt confident throughout the process.",
-      img: cl1,
+      img: cl3,
     },
     {
       title: "Sam Goyal",
       text:
         "Wider World Immigration has a very professional and reliable team. They managed my application from start to finish with proper attention to detail. Everything was done on time, and I am fully satisfied with their service and overall support.",
-      img: cl1,
+      img: cl9,
     },
   ],
 };

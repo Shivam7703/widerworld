@@ -48,7 +48,7 @@ export default function CEOMessage() {
               <span
                 className="text-white font-black text-xl leading-none"
                 style={{ fontFamily: "'Playfair Display', serif" }}
-              >30+</span>
+              >8+</span>
               <span className="text-white/70 text-[9px] font-semibold uppercase tracking-wider mt-0.5">Yrs</span>
             </div>
 

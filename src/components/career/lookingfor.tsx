@@ -264,7 +264,7 @@ export default function WhoWeAreLooking() {
             </div>
 
             <FloatingBadge
-              value="10+"
+              value="8+"
               label="Years in Immigration"
               pos="-bottom-5 -right-5"
             />

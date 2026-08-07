@@ -1,5 +1,5 @@
 "use client";
-import { ceo } from "@/assets";
+import { ceo, mohini, shahvez, shahvez, vivek, vivek } from "@/assets";
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -10,10 +10,10 @@ const data = {
   title2: "Our Team is Our",
   title3: "Strength and Success",
   members: [
-    { img: ceo, name: "Raman Kartik",   designation: "Graphic Designer"   },
-    { img: ceo, name: "Priya Sharma",   designation: "Lead Engineer"       },
-    { img: ceo, name: "Arjun Mehta",    designation: "Aviation Specialist" },
-    { img: ceo, name: "Neha Kapoor",    designation: "Operations Head"     },
+    { img: ceo, name: "Rohan Kumar",   designation: "Founder & CEO"   },
+    { img: mohini, name: "Mohini  Sharma",   designation: "Senior Immigration Expert"       },
+    { img: vivek, name: "Vivek Kumar",    designation: "Immigration Expert" },
+    { img: shahvez, name: "Shahvez Saifi", designation: "Sr. Marketer"     },
   ],
 };
 
