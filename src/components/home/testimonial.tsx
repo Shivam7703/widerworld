@@ -36,7 +36,7 @@ const TestimonialCard = ({ cards }: { cards: any }) => (
               {cards.title}
             </h3>
             <p className="text-zinc-500 font-medium text-xs  mt-1 ">
-              12/07/2025
+              Happy Client
             </p>
           </div>
         </div>
