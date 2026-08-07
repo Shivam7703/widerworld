@@ -10,7 +10,7 @@ import { usePathname } from "next/navigation";
 import { GrVisa } from "react-icons/gr";
 import { BsNewspaper } from "react-icons/bs";
 import Image from "next/image";
-import { box3 } from "@/assets";
+import { box1 } from "@/assets";
 import { getBlogs } from "@/lib/api";
 import { servicedata } from "@/data/servicedata";
 
@@ -24,10 +24,10 @@ interface Blog {
 
 const visaList = [
   { id: 1, title: "Canada PR Visa", href: "/visa/canada-pr-visa" },
-  { id: 2, title: "Australia PR Visa", href: "/visa/australia-pr-visa" },
-  { id: 3, title: "Dubai Work Visa", href: "/visa/dubai-work-visa" },
-  { id: 4, title: "Qatar Tourist Visa", href: "/visa/qatar-tourist-visa" },
-  { id: 5, title: "Croatia Work Visa", href: "/visa/croatia-work-visa" },
+  { id: 2, title: "Australia Work Visa", href: "/visa/australia-work-visa" },
+  { id: 3, title: "Dubai Golden Visa", href: "/visa/dubai-golden-visa" },
+  { id: 4, title: "Germany Work Visa", href: "/visa/germany-work-visa" },
+  { id: 5, title: "Qatar Work Visa", href: "/visa/qatar-work-visa" },
   { id: 6, title: "Luxembourg Work Visa", href: "/visa/luxembourg-work-visa" },
 ];
 
@@ -278,7 +278,7 @@ export default function BlogAside() {
 
                     <Image
 
-                      src={imageUrl || box3}
+                      src={imageUrl || box1}
 
                       alt={blog.post_title}
 

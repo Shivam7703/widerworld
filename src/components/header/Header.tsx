@@ -15,7 +15,7 @@ import {
   FaLinkedinIn,
   FaSquarePhone,
 } from "react-icons/fa6";
-import {  AiFillInstagram } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 
 import { logo, logo2, logo3 } from "@/assets";
@@ -60,172 +60,170 @@ const Header = ({ header }: any) => {
       <div className="h-20 md:h-36 bg-white" />
 
       <header
-        className={`fixed top-0 shadow-lg left-0 w-full z-50 transition-all duration-300 ${
-          isVisible ? "translate-y-0" : "-translate-y-full"
-        } ${isAtTop ? " top-0" : "md:-top-12 -top-1"}`}
+        className={`fixed top-0 shadow-lg left-0 w-full z-50 transition-all duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"
+          } ${isAtTop ? " top-0" : "md:-top-12 -top-1"}`}
       >
         {/* ================= DESKTOP HEADER ================= */}
         <div className="max-md:hidden w-full">
           {/* TOP BAR */}
-            <div
-              className="flex justify-between items-center px-8 py-2 w-full text-sm font-medium text-white
+          <div
+            className="flex justify-between items-center px-8 py-2 w-full text-sm font-medium text-white
       bg-color1 shadow-lg"
-            >
-              <div className="flex gap-8 font-bold">
-                <a href="" className="flex items-center gap-2 hover:text-yellow-300 transition">
-                  <FaSquarePhone className="text-yellow-400" />
-                  <span className="">+919311936564</span>
-                </a>
+          >
+            <div className="flex gap-8 font-bold">
+              <a href="" className="flex items-center gap-2 hover:text-yellow-300 transition">
+                <FaSquarePhone className="text-yellow-400" />
+                <span className="">+91 9999624998</span>
+              </a>
 
-                <a href="" className="flex items-center gap-2 hover:text-yellow-300 transition">
-                  <MdEmail className="text-yellow-400" />
-                  <span className="">info@widerworld.com</span>
-                </a>
-              </div>
+              <a href="" className="flex items-center gap-2 hover:text-yellow-300 transition">
+                <MdEmail className="text-yellow-400" />
+                <span className="">info@widerworld.in</span>
+              </a>
+            </div>
 
-              {/* SOCIAL ICONS */}
-              <div className="flex gap-3.5 text-lg">
-                {/* Facebook */}
-                <div
-                  className="group relative w-8 h-8 rounded-xl bg-white/90 backdrop-blur-sm
+            {/* SOCIAL ICONS */}
+            <div className="flex gap-3.5 text-lg">
+              {/* Facebook */}
+              <div
+                className="group relative w-8 h-8 rounded-xl bg-white/90 backdrop-blur-sm
                       border-[1.5px] border-white flex items-center justify-center cursor-pointer
                         overflow-hidden transition-all duration-300
                         hover:-translate-y-1 hover:scale-110 hover:border-transparent
                         hover:shadow-[0_10px_28px_rgba(0,0,0,0.25)]"
-                  onClick={() =>
-                    window.open(
-                      "https://www.facebook.com/globeswayimmigration",
-                      "_blank"
-                    )
-                  }
-                >
-                  <span
-                    className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300
+                onClick={() =>
+                  window.open(
+                    "https://www.facebook.com/WiderWorldImmigration",
+                    "_blank"
+                  )
+                }
+              >
+                <span
+                  className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300
       bg-gradient-to-br from-[#1877F2] to-[#0a5bb5]"
-                  />
-                  <FaFacebook className="text-base text-[#1877F2] group-hover:text-white relative z-10 transition-colors duration-300" />
-                </div>
+                />
+                <FaFacebook className="text-base text-[#1877F2] group-hover:text-white relative z-10 transition-colors duration-300" />
+              </div>
 
-                {/* Instagram */}
-                <div
-                  className="group relative w-8 h-8 rounded-xl bg-white/90 backdrop-blur-sm
+              {/* Instagram */}
+              <div
+                className="group relative w-8 h-8 rounded-xl bg-white/90 backdrop-blur-sm
       border-[1.5px] border-white flex items-center justify-center cursor-pointer
       overflow-hidden transition-all duration-300
       hover:-translate-y-1 hover:scale-110 hover:border-transparent
       hover:shadow-[0_10px_28px_rgba(0,0,0,0.25)]"
-                  onClick={() =>
-                    window.open(
-                      "https://www.instagram.com/globeswayimmigration/",
-                      "_blank"
-                    )
-                  }
-                >
-                  <span
-                    className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    style={{
-                      background:
-                        "linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)",
-                    }}
-                  />
-                  <AiFillInstagram className="text-lg text-rose-600 group-hover:text-white relative z-10 transition-colors duration-300" />
-                </div>
+                onClick={() =>
+                  window.open(
+                    "https://www.instagram.com/wider_world_immigration/",
+                    "_blank"
+                  )
+                }
+              >
+                <span
+                  className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  style={{
+                    background:
+                      "linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)",
+                  }}
+                />
+                <AiFillInstagram className="text-lg text-rose-600 group-hover:text-white relative z-10 transition-colors duration-300" />
+              </div>
 
-                {/* LinkedIn */}
-                <div
-                  className="group relative w-8 h-8 rounded-xl bg-white/90 backdrop-blur-sm
+              {/* LinkedIn */}
+              <div
+                className="group relative w-8 h-8 rounded-xl bg-white/90 backdrop-blur-sm
       border-[1.5px] border-white flex items-center justify-center cursor-pointer
       overflow-hidden transition-all duration-300
       hover:-translate-y-1 hover:scale-110 hover:border-transparent
       hover:shadow-[0_10px_28px_rgba(0,0,0,0.25)]"
-                  onClick={() =>
-                    window.open(
-                      "https://www.linkedin.com/company/globesway-immigration/",
-                      "_blank"
-                    )
-                  }
-                >
-                  <span
-                    className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/company/widerworldimmigration",
+                    "_blank"
+                  )
+                }
+              >
+                <span
+                  className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300
       bg-gradient-to-br from-[#0A66C2] to-[#004182]"
-                  />
-                  <FaLinkedinIn className="text-lg text-[#0A66C2] group-hover:text-white relative z-10 transition-colors duration-300" />
-                </div>
+                />
+                <FaLinkedinIn className="text-lg text-[#0A66C2] group-hover:text-white relative z-10 transition-colors duration-300" />
+              </div>
 
-                {/* YouTube */}
-                <div
-                  className="group relative w-8 h-8 rounded-xl bg-white/90 backdrop-blur-sm
+              {/* YouTube */}
+              <div
+                className="group relative w-8 h-8 rounded-xl bg-white/90 backdrop-blur-sm
       border-[1.5px] border-white flex items-center justify-center cursor-pointer
       overflow-hidden transition-all duration-300
       hover:-translate-y-1 hover:scale-110 hover:border-transparent
       hover:shadow-[0_10px_28px_rgba(0,0,0,0.25)]"
-                  onClick={() =>
-                    window.open(
-                      "https://www.youtube.com/@GlobeswayImmigration",
-                      "_blank"
-                    )
-                  }
-                >
-                  <span
-                    className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300
+                onClick={() =>
+                  window.open(
+                    "https://www.youtube.com/@wider_world_immigration",
+                    "_blank"
+                  )
+                }
+              >
+                <span
+                  className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300
       bg-gradient-to-br from-[#FF0000] to-[#cc0000]"
-                  />
-                  <TbBrandYoutubeFilled className="text-lg text-[#FF0000] group-hover:text-white relative z-10 transition-colors duration-300" />
-                </div>
+                />
+                <TbBrandYoutubeFilled className="text-lg text-[#FF0000] group-hover:text-white relative z-10 transition-colors duration-300" />
               </div>
             </div>
-        <div className="w-full flex relative items-stretch  ">
-          {/* decorative gradient shapes */}
+          </div>
+          <div className="w-full flex relative items-stretch  ">
+            {/* decorative gradient shapes */}
 
-          {/* LOGO */}
-          <Link
-            href={header?.href || "/"}
-            className="w-72 py-3 relative flex justify-center items-center bg-white z-10"
-          >
-            <Image
-              src={logo3}
-              alt="Globesway Immigration"
-              className="w-[85%] mx-auto object-contain hover:scale-105 transition"
-            />
-          </Link>
+            {/* LOGO */}
+            <Link
+              href={header?.href || "/"}
+              className="w-72 py-3 relative flex justify-center items-center bg-white z-10"
+            >
+              <Image
+                src={logo3}
+                alt="Globesway Immigration"
+                className="w-[85%] mx-auto object-contain hover:scale-105 transition"
+              />
+            </Link>
 
-          <div className="w-full relative z-10">
-            
+            <div className="w-full relative z-10">
 
-            {/* NAV BAR */}
-            <div className="flex bg-zinc-800 justify-between items-center w-full px-10 pt-4 pb-7 relative">
-              {/* MENU */}
-              <div className="flex items-center">
+
+              {/* NAV BAR */}
+              <div className="flex bg-zinc-800 justify-between items-center w-full px-10 pt-4 pb-7 relative">
+                {/* MENU */}
+                <div className="flex items-center">
+                  <Menu
+                    navItemsArray={navItems}
+                    Items={navigationMenu.primaryMenu}
+                    Isprimary
+                  />
+                </div>
+
+                {/* BUTTONS WRAPPER */}
+                <div className="flex items-center gap-5">
+                  <PaymentButton />
+                </div>
+              </div>
+              <div className=" bg-white w-full -mt-4 z-[60] sticky px-10 ">
                 <Menu
                   navItemsArray={navItems}
-                  Items={navigationMenu.primaryMenu}
-                  Isprimary
+                  Items={navigationMenu.secondaryMenu}
+                  Isprimary={false}
+                  onTop={isAtTop}
                 />
               </div>
-
-              {/* BUTTONS WRAPPER */}
-              <div className="flex items-center gap-5">
-                <PaymentButton />
-              </div>
             </div>
-               <div className=" bg-white w-full -mt-4 z-[60] sticky px-10 ">
-            <Menu
-              navItemsArray={navItems}
-              Items={navigationMenu.secondaryMenu}
-              Isprimary={false}
-              onTop={isAtTop}
-            /> 
+
           </div>
-          </div>
-          
-        </div>
-     
+
         </div>
 
         {/* ================= MOBILE HEADER ================= */}
         <div
-          className={`flex md:hidden items-center justify-between px-4 h-20 transition ${
-            isAtTop ? "bg-color1" : "bg-white shadow-md"
-          }`}
+          className={`flex md:hidden items-center justify-between px-4 h-20 transition ${isAtTop ? "bg-color1" : "bg-white shadow-md"
+            }`}
         >
           <Link href={header?.href || "/"}>
             <Image
@@ -250,9 +248,8 @@ const Header = ({ header }: any) => {
 
         {/* MOBILE MENU */}
         <div
-          className={`fixed top-20 left-0 h-screen w-full md:hidden transition-all duration-300 ${
-            isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-          } ${isAtTop ? "bg-black" : "bg-white"}`}
+          className={`fixed top-20 left-0 h-screen w-full md:hidden transition-all duration-300 ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+            } ${isAtTop ? "bg-black" : "bg-white"}`}
         >
           <MenuMobile
             onTop={isAtTop}
@@ -327,7 +324,7 @@ function PaymentButton() {
   return (
     <div className="flex items-center gap-4 flex-shrink-0">
       {/* ── GET FREE QUOTE ── */}
-    <Buttonmain href={"/contact-us"} text2={"Get Support"} text1={"Contact Now"}/>
+      <Buttonmain href={"/contact-us"} text2={"Get Support"} text1={"Contact Now"} />
 
       {/* ── PAY NOW ── */}
       <Link
@@ -346,7 +343,7 @@ function PaymentButton() {
               animation: "spinBorder 4s linear infinite",
             }}
           />
-            
+
           {/* inner mask */}
           <span className="absolute inset-[2px] rounded-full bg-[#27528e]" />
         </span>

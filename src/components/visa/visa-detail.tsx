@@ -52,7 +52,7 @@ export default function Visadetails({ data }: any) {
                   {/* Subheading */}
                   {item?.subheading && (
                     <p
-                      className="text-xl sm:text-2xl font-semibold text-color2 mt-4"
+                      className="text-xl sm:text-2xl text-color2 mt-4"
                       dangerouslySetInnerHTML={{ __html: item.subheading }}
                     />
                   )}

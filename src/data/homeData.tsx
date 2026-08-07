@@ -1,6 +1,7 @@
-import {armenia,  bangladesh,  belarus,  china,  germany,  kazakhstan,  kyrgyzstan,  malaysia,  mauritius,  nepal,  philippines,  poland, russia, uzbekistan,  armeniaimg, bangladeshimg, belarusimg, chinaimg, germanyimg, kazakhstanimg, kyrgyzstanimg, malaysiaimg, mauritiusimg, nepalimg, philippinesimg, polandimg, russiaimg, uzbekistanimg,  about2,  banner,  banner2,  box1,  box2,  box3,  cl1,  famvisa,  prvisa,  business, touristvisa,  logo2,  process1,  ontario,  bcPnpProgram,  alberta,  novaScotia,  manitoba,  saskatchewanPnp,
-  about,  back,  workVisa,  canada,  canimg,  ausimg,  aus,  newflag,  newimg,  euro,  euroimg,  gcc,  gccimg,
-  usaimg,  usa,  uk,
+import {
+  armenia, bangladesh, belarus, china, germany, kazakhstan, kyrgyzstan, malaysia, mauritius, nepal, philippines, poland, russia, uzbekistan, armeniaimg, bangladeshimg, belarusimg, chinaimg, germanyimg, kazakhstanimg, kyrgyzstanimg, malaysiaimg, mauritiusimg, nepalimg, philippinesimg, polandimg, russiaimg, uzbekistanimg, about2, banner, banner2, box1, box2, cl1, famvisa, prvisa, business, touristvisa, logo2, process1, ontario, bcPnpProgram, alberta, novaScotia, manitoba, saskatchewanPnp,
+  about, back, workVisa, canada, canimg, ausimg, aus, newflag, newimg, euro, euroimg, gcc, gccimg,
+  usaimg, usa, uk,
   dubai,
   dubaiimg,
   italy,
@@ -13,7 +14,8 @@ import {armenia,  bangladesh,  belarus,  china,  germany,  kazakhstan,  kyrgyzst
   singa,
   singaimg,
   georg,
-  georgimg,} from "@/assets";
+  georgimg,
+} from "@/assets";
 import { FaGlobeAmericas, FaPlaneDeparture, FaUserTie } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { HiOutlineFlag, HiOutlineLightBulb } from "react-icons/hi";
@@ -285,20 +287,20 @@ export const aboutdata = {
       heading: "Client Satisfaction",
       text: "Focused on trust, real results, and delivering a smooth experience for every client.",
       icon: <RiUserFollowLine />,
-    }, 
+    },
     {
       id: 3,
       heading: "Expert Guidance",
       text: "Professional support from experienced consultants to help you make informed and confident immigration decisions.",
       icon: <FaUserTie />
-,
+      ,
     },
     {
       id: 4,
       heading: "End-to-End Support",
       text: "Complete assistance at every stage, from initial consultation to final approval, ensuring a seamless and stress-free process.",
       icon: <MdSupportAgent />
-,
+      ,
     },
   ],
 };
@@ -615,7 +617,7 @@ export const testimonialData = {
 export const offercountry = {
   title1: "Countries We Offer",
   title2:
-    "Top destinations with career and immigration opportunities",
+    "Explore Top Destinations for Career & Immigration Success",
   cards: [
     {
       id: 1,
@@ -919,51 +921,45 @@ export const HomefaqData = {
 export const footer = {
   logo: logo2,
   text:
-    "WiderWorldcore is a trusted consulting firm delivering reliable immigration and visa solutions through expert guidance, transparent processes, and personalized support, helping individuals and families achieve their global aspirations with confidence.",
+    "We at Wider World immigration are your one-stop solution for immigration and visa procedures in countries like Canada, Australia, Hong Kong, and many others.",
 
   socials: {
-    facebook: "https://www.facebook.com/",
-    twitter: "https://twitter.com/",
-    instagram: "https://www.instagram.com//",
-    linkedin: "https://www.linkedin.com/school//",
-    youtube: "https://www.youtube.com/c/",
+    facebook: "https://www.facebook.com/WiderWorldImmigration",
+    twitter: "https://x.com/wider_world_in",
+    instagram: "https://www.instagram.com/wider_world_immigration/",
+    linkedin: "https://www.linkedin.com/company/widerworldimmigration",
+    youtube: "https://www.youtube.com/@wider_world_immigration",
   },
   copyrightText: "Copyrights © 2026 . Designed and Manage by ",
-  list1: {
-    title: "Our Services",
-    links: [
-      { id: 1, label: "IELTS", href: "/services/ielts-coaching-preparation" },
-      {
-        id: 2,
-        label: "PTE Exam",
-        href: "/services/pte-exam-coaching-preparation",
-      },
-      {
-        id: 3,
-        label: "Post Landing Assistance",
-        href: "/services/post-landing-assistance",
-      },
-      {
-        id: 4,
-        label: "Job Assistance",
-        href: "/services/job-assistance",
-      },
-      {
-        id: 5,
-        label: "Immigration Services",
-        href: "/services/immigration",
-      },
-    ],
-  },
-
   list2: {
     title: "Our Services",
     links: [
-      { id: 1, label: "IELTS", href: "about" },
-      { id: 2, label: "PTE Exam", href: "career" },
-      { id: 3, label: "Post Landing Assistance", href: "sustainability" },
-      { id: 4, label: "Job Assistance", href: "blogs" },
-      { id: 5, label: "Immigration Services", href: "contact-us" },
+      { id: 1, label: "Visa Services", href: "/services/visa-services" },
+        { id: 2, label: "Career Counselling", href: "/services/career-counselling" },
+        { id: 3, label: "Profile Marketing", href: "/services/profile-marketing" },
+        { id: 4, label: "Resume Writing", href: "/services/resume-writing" },
+         { id: 5, label: "Pre Hotel / PG", href: "/services/pre-hotel-pg" },
+            { id: 6, label: "Bank Account", href: "/services/bank-account" },
+            { id: 7, label: "Documentation", href: "/services/documentation" },
+            { id: 8, label: "Orientation", href: "/services/orientation" },
+    ],
+  },
+
+  list1: {
+    title: "Other Links",
+    links: [
+        { id: 1, label: "Canada PR Visa", href: "/visa/canada-pr-visa" },
+        { id: 2, label: "Canada Work Visa", href: "/visa/canada-work-visa" },
+       { id: 4, label: "Australia Tourist Visa", href: "/visa/Australia Tourist Visa" },
+        { id: 5, label: "Australia Business Visa", href: "/visa/australia-business-visa" },
+           { id: 7, label: "Sweden Job Seeker Visa", href: "/visa/Sweden Job Seeker Visa" },
+            { id: 8, label: "Finland Work Visa", href: "/visa/finland-work-visa" },
+            { id: 9, label: "Italy Work Visa", href: "/visa/italy-work-visa" },
+            { id: 10, label: "Denmark", href: "/visa/denmark-work-visa" },
+              { id: 12, label: "Oman", href: "/visa/oman-work-visa" },
+            { id: 13, label: "Kuwait", href: "/visa/kuwait-work-visa" },
+            { id: 14, label: "Qatar", href: "/visa/qatar-work-visa" },
+            { id: 15, label: "Saudi Arabia", href: "/visa/Saudi Arabia Work Visa" },
     ],
   },
 
@@ -975,48 +971,6 @@ export const footer = {
 export let blogData = {
   title1: "Latest Blogs",
   title2: "Get Updated With Our Recent Articles",
-  blog: [
-    {
-      img: box3,
-      date: "20 June 2024",
-      tag: "immigration",
-      heading: "Top 10 Tips for a Successful Visa Name",
-      para:
-        "Navigating the visa application process can be daunting. Here are ten essential tips to help ensure your application is successful.",
-    },
-    {
-      img: box3,
-      date: "20 June 2024",
-      tag: "immigration",
-      heading: "Top 10 Tips for a Successful Visa Category",
-      para:
-        "Navigating the visa application process can be daunting. Here are ten essential tips to help ensure your application is successful.",
-    },
-    {
-      img: box3,
-      date: "20 June 2024",
-      tag: "immigration",
-      heading: "Top 10 Tips for a Successful Visa Section",
-      para:
-        "Navigating the visa application process can be daunting. Here are ten essential tips to help ensure your application is successful.",
-    },
-    {
-      img: box3,
-      date: "20 June 2024",
-      tag: "immigration",
-      heading: "Top 10 Tips for a Successful Visa Application",
-      para:
-        "Navigating the visa application process can be daunting. Here are ten essential tips to help ensure your application is successful.",
-    },
-    {
-      img: box3,
-      date: "20 June 2024",
-      tag: "immigration",
-      heading: "Top 10 Tips for a Successful Visa Country",
-      para:
-        "Navigating the visa application process can be daunting. Here are ten essential tips to help ensure your application is successful.",
-    },
-  ],
 };
 
 // about us
@@ -1084,19 +1038,19 @@ export const contactdetail = [
   {
     icon: <MdWifiCalling3 />,
     title: "Call Us",
-    text: "+919311936564",
-    slug: "tel:+919311936564",
+    text: "+91 9999624998",
+    slug: "tel:+91 9999624998",
   },
   {
     icon: <MdAttachEmail />,
     title: "Email Us",
-    text: "info@WiderWorld.com",
-    slug: "mailto:info@WiderWorld.com",
+    text: "info@widerworld.in",
+    slug: "mailto:info@widerworld.in",
   },
   {
     icon: <FaMapLocationDot />,
     title: "Location",
-    text: "lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    text: "Office No. 806, 8th Floor, Chiranjiv Tower -43, Nehru Place, New Delhi-110019",
     slug: "#",
   },
 ];

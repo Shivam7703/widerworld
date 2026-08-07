@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-
 import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/Footer";
 import { footer } from "@/data/homeData";
-import { patta } from "@/assets";
-import Image from "next/image";
 import Popups from "@/components/global/pop";
 
 /**
@@ -25,13 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={` relative`}
-       
-      >
-     
+      <body className={` relative`}>
         <Header />
-        {children}
+            {children}
         <Footer footer={footer} />
         <Popups/>
       </body>

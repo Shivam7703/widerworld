@@ -424,11 +424,11 @@ export default function WhoWeAreLooking() {
 
             <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
               <a
-                href="mailto:info@WiderWorld.com"
+                href="mailto:info@widerworld.in"
                 className="inline-flex items-center gap-2 bg-white text-blue-700 font-bold px-7 py-4 rounded-full text-sm lg:text-base shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
               >
                 <BiEnvelope size={20} />
-                info@WiderWorld.com
+                info@widerworld.in
               </a>
 
               <Link

@@ -7,8 +7,6 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 import { navigationMenu } from "@/data/homeData";
-import Marquee from "react-fast-marquee";
-import {  plane } from "@/assets";
 import { FormatHref } from "./header/Menu";
 
 export default function Footer({ footer }: any) {
@@ -16,19 +14,19 @@ export default function Footer({ footer }: any) {
     <>
       <footer className="">
         {/* Footer links section  */}
-        <div className="grid sm:p-8 p-6 md:px-24  w-full text-white bg-zinc-800   grid-cols-3 sm:grid-cols-6 gap-6 lg:gap-10 lg:grid-cols-12">
-          <div className="col-span-3 flex flex-col gap-y-2">
+        <div className="flex flex-wrap sm:p-8 p-6 md:px-24  w-full text-white bg-zinc-800  gap-y-6 lg:gap-y-10 justify-between">
+          <div className="lg:w-[27%] sm:w-[48%] w-full flex flex-col gap-y-2">
             <Image
               src={footer?.logo}
               alt="logo"
-              className="max-w-64 w-[80vw] object-contain"
+              className="max-w-64 w-[80vw]  object-contain"
             />
-            {/* <p className=" w-full text-base mt-3  max-sm:mt-3">
-              {footer?.text}
-            </p> */}
+             <p className="w-full text-zinc-300  text-sm mt-3   max-sm:mt-3"> 
+             {footer?.text}
+             </p>
             {/* Socials  */}
             {footer?.socials && (
-              <div className="flex gap-2 md:gap-x-3 mt-3  text-4xl text-white">
+              <div className="flex gap-2 md:gap-x-3 mt-3 text-4xl text-white">
                 {footer?.socials?.facebook && (
                   <FaFacebook
                     className=" hover:text-color1 p-2 bg-[#ffffff19] rounded-full duration-300 "
@@ -72,17 +70,16 @@ export default function Footer({ footer }: any) {
               </div>
             )}
           </div>
-          <div className="col-span-1 flex flex-col gap-y-2 max-md:hidden"></div>
-          <div className="col-span-2 flex flex-col gap-y-2 max-sm:mt-5">
+          <div className="lg:w-[16%] sm:w-[48%] w-full flex flex-col gap-y-2 max-sm:mt-5">
             <h4 className="my-2 text-xl font-semibold">
               {footer?.list2?.title}
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {footer?.list2?.links?.map((d: any, i: number) => (
                 <li key={i}>
                   <Link
                     href={d?.href}
-                    className=" transition:all text-base text-zinc-200 duration-300 hover:text-green2 "
+                    className=" transition:all text-base text-zinc-200 duration-300 hover:text-red-500"
                   >
                     {"-"} {d?.label}
                   </Link>
@@ -90,16 +87,16 @@ export default function Footer({ footer }: any) {
               ))}
             </ul>
           </div>
-          <div className="col-span-2 flex flex-col gap-y-2  max-sm:mt-5">
+          <div className="lg:w-[18%] sm:w-[48%] w-full flex flex-col gap-y-2  max-sm:mt-5">
             <h4 className="my-2 text-xl font-semibold">
               {footer?.list1?.title}
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {footer?.list1?.links?.map((d: any, i: number) => (
                 <li key={i}>
                   <Link
                     href={d?.href}
-                    className=" transition:all text-base text-zinc-200 duration-300 hover:text-green2 "
+                    className=" transition:all text-base text-zinc-200 duration-300 hover:text-red-500"
                   >
                     {"-"} {d?.label}
                   </Link>
@@ -107,22 +104,20 @@ export default function Footer({ footer }: any) {
               ))}
             </ul>
           </div>
-          <div className="col-span-1 flex flex-col gap-y-2 max-md:hidden"></div>
+    
 
-          <div className=" flex flex-col max-sm:mt-5 space-y-2  col-span-3">
+          <div className="lg:w-[26%] sm:w-[48%] w-full flex flex-col max-sm:mt-5 space-y-2  col-span-3">
             <h4 className="my-2  text-xl font-semibold">
               {footer?.newLetter?.title}
             </h4>
             <p className=" transition:all text-base text-zinc-200 duration-300 hover: hover:text-main ">
-              <strong>Phone: </strong>&nbsp;0679513203,0677066361
+             <a href="tel:+919999624998"> <strong>Phone: </strong>&nbsp;+91 9999624998</a>
             </p>
             <p className=" transition:all text-base text-zinc-200 duration-300 hover: hover:text-main ">
-              <strong>E-mail: </strong>&nbsp;info@WiderWorld.com
-            </p>
+             <a href="mailto:info@widerworld.in" target="_blank" rel="noopener noreferrer"> <strong>E-mail: </strong>&nbsp;info@widerworld.in
+           </a> </p>
             <p className=" transition:all text-base text-zinc-200 duration-300 hover: hover:text-main ">
-              <strong>Address: </strong>&nbsp;Lorem ipsum dolor, sit amet
-              consectetur adipisicing elit. Cum voluptate necessitatibus quod
-              beatae.
+              <strong>Address: </strong>&nbsp;Office No. 806, 8th Floor, Chiranjiv Tower -43, Nehru Place, New Delhi-110019
             </p>
           </div>
         </div>
@@ -169,7 +164,7 @@ export default function Footer({ footer }: any) {
             </div>
           ))}
         </div>
-       
+
         <div className="flex items-center justify-center border-t text-white bg-zinc-800 py-5 max-md:flex-col">
           <p className="text-center text-sm">
             {footer?.copyrightText}{" "}

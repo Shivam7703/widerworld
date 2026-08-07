@@ -16,7 +16,7 @@ import {
 } from "react-icons/fa"
 import { BiLike } from "react-icons/bi"
 import { HiOutlineBookmark } from "react-icons/hi"
-import { box3 } from "@/assets"
+import { box1 } from "@/assets"
 
 interface BlogData {
   ID: string
@@ -139,7 +139,7 @@ export default function Blogdetails({ data }: { data: BlogData }) {
               <Image
                width={800}
                height={500}
-                src={imageUrl || box3}
+                src={imageUrl || box1}
                 alt={data?.post_title}
                 className="object-contain w-full h-full min-h-fit transform group-hover:scale-105 transition-transform duration-700 ease-out"
               />
