@@ -4,7 +4,7 @@ import { FaWhatsapp, FaTimes } from 'react-icons/fa';
 import Image from "next/image";
 import { logo, pop } from '@/assets';
 
-const WHATSAPP_NUMBER = '911234567890';
+const WHATSAPP_NUMBER = '919999624998';
 const WHATSAPP_MESSAGE = "Hi WiderWorld! I'd like to know more about your Services.";
 
 export default function Popups() {
@@ -45,9 +45,9 @@ export default function Popups() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with us on WhatsApp"
-        className="fixed bottom-6 right-2 w-[40px] h-[40px] rounded-full bg-[#25D366] hover:bg-[#1ebd5a] text-white flex items-center justify-center shadow-lg hover:shadow-[0_8px_24px_rgba(37,211,102,0.55)] transition-all z-[60]"
+        className="fixed bottom-6 right-2 sm:w-16 sm:h-16 w-12 h-12 rounded-full bg-[#25D366] hover:bg-[#1ebd5a] text-white flex items-center justify-center shadow-lg hover:shadow-[0_8px_24px_rgba(37,211,102,0.55)] transition-all z-[60]"
       >
-        <FaWhatsapp size={28} />
+        <FaWhatsapp size={30} />
       </a>
 
       {/* Side tab trigger */}
