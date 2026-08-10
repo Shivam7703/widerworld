@@ -363,27 +363,7 @@ function PaymentButton() {
         <FaCreditCard className="text-[15px] text-color4 transition-all duration-300 group-hover:translate-x-1" />
       </Link>
 
-      {/* ── SEARCH ── */}
-      <button
-        className="group relative w-[48px] h-[48px] rounded-full
-        bg-white/10 border border-white/25 flex items-center justify-center
-        overflow-hidden transition-all duration-300
-        hover:-translate-y-[2px] hover:border-transparent
-        hover:shadow-[0_10px_25px_rgba(203,0,0,0.45)]"
-      >
-        <span
-          className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100
-          transition-opacity duration-300"
-          style={{
-            background: "linear-gradient(135deg,#CB0000,#8B0000)",
-          }}
-        />
-
-        <FaSearch
-          className="text-[17px] text-white/80 group-hover:text-white
-          relative z-10 transition-transform duration-300 group-hover:scale-110"
-        />
-      </button>
+      
     </div>
   );
 }

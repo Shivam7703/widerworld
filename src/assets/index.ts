@@ -32,6 +32,7 @@ import vision from "@/assets/home/vision.png";
 import arrow from "@/assets/home/arrow.png";
 import planebg from "@/assets/home/planebg2.jpg";
 import planebg2 from "@/assets/home/planebg.jpg";
+import formimg from "@/assets/home/form.png";
 
 // partners
 import p1 from "@/assets/home/logo1.png";
@@ -248,7 +249,7 @@ import ireimg from "@/assets/flag/ire-img.jpg";
 
 
 export {insta1,  insta2,  insta3,  insta4,  insta5,  insta6,  insta7,  insta8,  insta9,  insta10, planebg, planebg2,plane2,faq2,step,step1,step2,step3,step4,step5,step6,step7,newflag,newimg,usa,usaimg,canada,canimg,aus,ausimg,euro,euroimg,gcc,gccimg,uk,p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, armenia,  bangladesh,  belarus,  china,  germany,  kazakhstan,  kyrgyzstan,  malaysia,  mauritius,  nepal,  philippines,  poland, russia, uzbekistan,dubai,italy,  armeniaimg, bangladeshimg, belarusimg, chinaimg, germanyimg, kazakhstanimg, kyrgyzstanimg, malaysiaimg, mauritiusimg, nepalimg, philippinesimg, polandimg, russiaimg, uzbekistanimg,dubaiimg,italyimg,franceimg,france, ireland,ireimg,singa,singaimg, georg,georgimg, mohini, vivek, shahvez,    
-    shape1,mission, vision, logo , logo2, logo3, banner,banner2,banner3 ,back,blog_bg, box1, box2, visa1,process1, arrow, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,famvisa, prvisa, business,touristvisa,
+    shape1,mission, vision, logo , logo2, logo3, banner,banner2,banner3 ,back,blog_bg, box1, box2, visa1,process1, arrow, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,famvisa, prvisa, business,touristvisa, formimg,
  plane, patta, atlanticImmigration,      
   pop,ceo,
   alberta, immigration, Career, ielts,toefl,celpip,oet, jobAssist, PostLanding ,profile, pte ,visaDocument, Resume,
