@@ -937,34 +937,24 @@ export const footer = {
   },
   copyrightText: "Copyrights © 2026 . Designed and Manage by ",
   list2: {
-    title: "Our Services",
+    title: "Important Links",
     links: [
-      { id: 1, label: "Visa Services", href: "/services/visa-services" },
-        { id: 2, label: "Career Counselling", href: "/services/career-counselling" },
-        { id: 3, label: "Profile Marketing", href: "/services/profile-marketing" },
-        { id: 4, label: "Resume Writing", href: "/services/resume-writing" },
-         { id: 5, label: "Pre Hotel / PG", href: "/services/pre-hotel-pg" },
-            { id: 6, label: "Bank Account", href: "/services/bank-account" },
-            { id: 7, label: "Documentation", href: "/services/documentation" },
-            { id: 8, label: "Orientation", href: "/services/orientation" },
+      { id: 1, label: "Evaluation Form", href: "/evaluation-form" },
+        { id: 3, label: "About Us", href: "/about-us" },
+        { id: 4, label: "Privacy Policy", href: "/privacy-policy" },
+         { id: 5, label: "Term & Condition", href: "/terms-condition" },
+            
     ],
   },
 
   list1: {
-    title: "Other Links",
+    title: "Resources",
     links: [
-        { id: 1, label: "Canada PR Visa", href: "/visa/canada-pr-visa" },
-        { id: 2, label: "Canada Work Visa", href: "/visa/canada-work-visa" },
-       { id: 4, label: "Australia Tourist Visa", href: "/visa/Australia Tourist Visa" },
-        { id: 5, label: "Australia Business Visa", href: "/visa/australia-business-visa" },
-           { id: 7, label: "Sweden Job Seeker Visa", href: "/visa/Sweden Job Seeker Visa" },
-            { id: 8, label: "Finland Work Visa", href: "/visa/finland-work-visa" },
-            { id: 9, label: "Italy Work Visa", href: "/visa/italy-work-visa" },
-            { id: 10, label: "Denmark", href: "/visa/denmark-work-visa" },
-              { id: 12, label: "Oman", href: "/visa/oman-work-visa" },
-            { id: 13, label: "Kuwait", href: "/visa/kuwait-work-visa" },
-            { id: 14, label: "Qatar", href: "/visa/qatar-work-visa" },
-            { id: 15, label: "Saudi Arabia", href: "/visa/Saudi Arabia Work Visa" },
+        { id: 1, label: "Blogs", href: "/blogs" },
+        { id: 2, label: "News", href: "/news" },
+       { id: 4, label: "Canada Calculator", href: "/visa/canada-67-points-calculator" },
+        { id: 5, label: "Australia Calulator", href: "/visa/australia-points-calculator" },
+
     ],
   },
 

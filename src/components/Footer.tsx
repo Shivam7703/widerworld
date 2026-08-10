@@ -117,7 +117,7 @@ export default function Footer({ footer }: any) {
              <a href="mailto:info@widerworld.in" target="_blank" rel="noopener noreferrer"> <strong>E-mail: </strong>&nbsp;info@widerworld.in
            </a> </p>
             <p className=" transition:all text-base text-zinc-200 duration-300 hover: hover:text-main ">
-              <strong>Address: </strong>&nbsp;Office No. 806, 8th Floor, Chiranjiv Tower -43, Nehru Place, New Delhi-110019
+           <a href="https://www.google.com/maps/dir//Best+Immigration+Consultants+In+Delhi+%7C+Wider+World+Immigration+CHIRANJIV+TOWER+Office+No.+806+8th+Floor+Nehru+Place,+New+Delhi,+Delhi+110019/@28.5497144,77.2500794,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390ce3a36d1028b1:0xc372007dd192dd5b!2m2!1d77.2500794!2d28.5497144" target="_blank" rel="noopener noreferrer">   <strong>Address: </strong>&nbsp;Office No. 806, 8th Floor, Chiranjiv Tower -43, Nehru Place, New Delhi-110019</a>
             </p>
           </div>
         </div>
