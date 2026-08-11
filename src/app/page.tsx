@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <div className="">
  <BannerSlider/> 
- {/* <Greenbox/> 
+ <Greenbox/> 
 <AboutSection  data ={aboutdata} />
  <VisaSlider/> 
 <Canadapnp/>
@@ -38,7 +38,7 @@ export default function Home() {
  <Partners/> 
  <WhychooseSection/> 
  <FaqSection/>
-<Coaching/> */}
+<Coaching/>
 <Team/> 
  <NewsSection isHome={true} /> 
   </div>
