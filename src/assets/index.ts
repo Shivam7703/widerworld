@@ -47,6 +47,11 @@ import p9 from "@/assets/home/logo9.jpg";
 import p10 from "@/assets/home/logo10.png";
 import p11 from "@/assets/home/logo11.png";
 import p12 from "@/assets/home/logo12.png";
+import news1 from "@/assets/home/news1.jpg";
+import news2 from "@/assets/home/news2.jpg";
+import news3 from "@/assets/home/news3.jpg";
+import news4 from "@/assets/home/news4.jpg";
+
 
 // visa
 import famvisa from "@/assets/home/family visa.jpg";
@@ -318,6 +323,6 @@ export {insta1,  insta2,  insta3,  insta4,  insta5,  insta6,  insta7,  insta8,  
   spainTouristVisa,
   swedenTouristVisa,
   usaInvestorVisa,
-  usaVisitVisa, workVisa
+  usaVisitVisa, workVisa, news1, news2, news3, news4
  }
 

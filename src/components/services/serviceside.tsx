@@ -13,6 +13,7 @@ import Image from "next/image";
 import { box1 } from "@/assets";
 import { getBlogs } from "@/lib/api";
 import { servicedata } from "@/data/servicedata";
+import { createSlug } from "@/app/coaching/[slug]/page";
 
 interface Blog {
   ID: number;
@@ -47,8 +48,6 @@ const inputFields = [
   { name: "subject", label: "Subject", type: "text", icon: IoChatboxEllipsesOutline, placeholder: "How can we help?" },
 ];
 
-const createSlug = (title: string) =>
-  title.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 
 export default function BlogAside() {
   const [activeSegment, setActiveSegment] = useState<string | null>(null);

@@ -18,12 +18,13 @@ import Partners from "@/components/home/partner";
 import Coaching from "@/components/home/coaching";
 import Team from "@/components/global/team";
 import InstaPost from "@/components/home/instapost";
+import NewsSection from "@/components/home/news";
 
 export default function Home() {
   return (
     <div className="">
  <BannerSlider/> 
- <Greenbox/> 
+ {/* <Greenbox/> 
 <AboutSection  data ={aboutdata} />
  <VisaSlider/> 
 <Canadapnp/>
@@ -37,9 +38,9 @@ export default function Home() {
  <Partners/> 
  <WhychooseSection/> 
  <FaqSection/>
-<Coaching/>
+<Coaching/> */}
 <Team/> 
- <Blogs isHome={true} /> 
+ <NewsSection isHome={true} /> 
   </div>
   );
 }

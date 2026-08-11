@@ -14,7 +14,7 @@ interface Pageprops {
 }
 
 
-const createSlug = (title: string) => {
+export const createSlug = (title: string) => {
 return title.trim()
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")

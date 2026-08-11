@@ -31,10 +31,12 @@ body {
  
 h2, h1, h3, a, li{
     font-family: "Pliant", sans-serif!important;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   line-height: 1.2!important;
 }
-
+h2, h1, h3{
+    text-transform: capitalize;
+}
 .bg-back {
   background: url(../assets/home/background-1.webp);
    background-attachment: fixed;
@@ -397,4 +399,76 @@ h6 {margin-top: 30px!important;
 }
 .blog-content tr:nth-child(even) {
   background-color: #fafafa; /* zinc-50 */
+}
+
+
+
+
+
+/* Header */
+.blog-header {
+  margin-bottom: 24px;
+}
+
+.blog-post{
+  p{
+    color:rgb(43, 43, 43);
+     margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  }
+}
+
+.blog-header h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1a202c;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.blog-meta {
+  font-size: 0.875rem;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+/* Lead paragraph */
+.lead-text {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #0e0e0e;
+}
+
+/* Sections & Typography */
+.blog-section {
+  margin-top: 32px;
+}
+
+.blog-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2b6cb0;
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-bottom: 6px;
+}
+
+
+/* Visual Divider */
+.divider {
+  border: 0;
+  height: 1px;
+  background: #e2e8f0;
+  margin: 32px 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 640px) {
+ 
+  .blog-header h1 {
+    font-size: 1.75rem;
+  }
 }

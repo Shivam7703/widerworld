@@ -5,6 +5,7 @@ import { servicedata } from "@/data/servicedata";
 import { bann } from "@/assets";
 import Banner from "@/components/global/banner";
 import Servicedetails from "@/components/services/servicedetail";
+import { createSlug } from "@/app/coaching/[slug]/page";
 
 interface PageProps {
   params: {
@@ -12,13 +13,7 @@ interface PageProps {
   };
 }
 
-// Helper function to create consistent slugs
-const createSlug = (title: string): string => {
-  return title.trim()
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-};
+
 
 // Generate static paths for blogs - removed Promise return type
 // export function generateStaticParams() {

@@ -19,11 +19,11 @@ export default function Footer({ footer }: any) {
             <Image
               src={footer?.logo}
               alt="logo"
-              className="max-w-64 w-[80vw]  object-contain"
+              className="max-w-44 w-[80vw]  object-contain"
             />
-             <p className="w-full text-zinc-300  text-sm mt-3   max-sm:mt-3"> 
+             {/* <p className="w-full text-zinc-300  text-sm mt-3   max-sm:mt-3"> 
              {footer?.text}
-             </p>
+             </p> */}
             {/* Socials  */}
             {footer?.socials && (
               <div className="flex gap-2 md:gap-x-3 mt-3 text-4xl text-white">
@@ -110,13 +110,13 @@ export default function Footer({ footer }: any) {
             <h4 className="my-2  text-xl font-semibold">
               {footer?.newLetter?.title}
             </h4>
-            <p className=" transition:all text-base text-zinc-200 duration-300 hover: hover:text-main ">
+            <p className=" transition:all text-base text-zinc-200 duration-300 hover:  ">
              <a href="tel:+919999624998"> <strong>Phone: </strong>&nbsp;+91 9999624998</a>
             </p>
-            <p className=" transition:all text-base text-zinc-200 duration-300 hover: hover:text-main ">
+            <p className=" transition:all text-base text-zinc-200 duration-300 hover:  ">
              <a href="mailto:info@widerworld.in" target="_blank" rel="noopener noreferrer"> <strong>E-mail: </strong>&nbsp;info@widerworld.in
            </a> </p>
-            <p className=" transition:all text-base text-zinc-200 duration-300 hover: hover:text-main ">
+            <p className=" transition:all text-base text-zinc-200 duration-300 hover:  ">
            <a href="https://www.google.com/maps/dir//Best+Immigration+Consultants+In+Delhi+%7C+Wider+World+Immigration+CHIRANJIV+TOWER+Office+No.+806+8th+Floor+Nehru+Place,+New+Delhi,+Delhi+110019/@28.5497144,77.2500794,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390ce3a36d1028b1:0xc372007dd192dd5b!2m2!1d77.2500794!2d28.5497144" target="_blank" rel="noopener noreferrer">   <strong>Address: </strong>&nbsp;Office No. 806, 8th Floor, Chiranjiv Tower -43, Nehru Place, New Delhi-110019</a>
             </p>
           </div>
@@ -168,7 +168,7 @@ export default function Footer({ footer }: any) {
         <div className="flex items-center justify-center border-t text-white bg-zinc-800 py-5 max-md:flex-col">
           <p className="text-center text-sm">
             {footer?.copyrightText}{" "}
-            <span className="hover:text-main transition-all font-semibold cursor-pointer">
+            <span className=" transition-all font-semibold cursor-pointer">
               <a href="https://skywarddigitalsolutions.com">
                 Skyward Digital Solutions
               </a>

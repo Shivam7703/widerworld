@@ -5,6 +5,7 @@ import { visaData } from "@/data/visadata";
 import { bann } from "@/assets";
 import Banner from "@/components/global/banner";
 import Visadetails from "@/components/visa/visa-detail";
+import { createSlug } from "@/app/coaching/[slug]/page";
 
 
 interface Pageprops{
@@ -13,13 +14,6 @@ interface Pageprops{
     }
 }
 
-// Helper function to create consistent slugs
-const createSlug = (title: string): string => {
-  return title.trim()
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-};
 
 // export function generateStaticParams(){
 //     return visaData.map((visas:any) => ({
