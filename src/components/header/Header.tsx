@@ -222,7 +222,7 @@ const Header = ({ header }: any) => {
 
         {/* ================= MOBILE HEADER ================= */}
         <div
-          className={`flex md:hidden items-center justify-between px-4 h-20 transition ${isAtTop ? "bg-color1" : "bg-white shadow-md"
+          className={`flex md:hidden items-center justify-between px-4 h-20 transition ${isAtTop ? "bg-zinc-800" : "bg-white shadow-md"
             }`}
         >
           <Link href={header?.href || "/"}>
@@ -249,7 +249,7 @@ const Header = ({ header }: any) => {
         {/* MOBILE MENU */}
         <div
           className={`fixed top-20 left-0 h-screen w-full md:hidden transition-all duration-300 ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-            } ${isAtTop ? "bg-black" : "bg-white"}`}
+            } ${isAtTop ? "bg-zinc-800" : "bg-white"}`}
         >
           <MenuMobile
             onTop={isAtTop}
@@ -263,62 +263,6 @@ const Header = ({ header }: any) => {
 };
 
 export default Header;
-
-// function Latestupdate() {
-//   return (
-//     <section className="flex font-semibold items-center text-sm text-white relative">
-//       {/* Latest Update Label with arrow shape */}
-//       <div className="relative shrink-0">
-//         <div className="relative px-4 py-3  bg-gradient-to-r from-yellow-500 to-yellow-600">
-//           <span className="relative z-10 font-bold flex gap-x-1 tracking-wide items-center">
-//             Latest Update <FaCaretRight />
-//           </span>
-//         </div>
-//       </div>
-
-//       {/* Marquee Section */}
-//       <div className="flex-1 bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-500 relative overflow-hidden">
-//         {/* Animated shine effect */}
-//         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shimmer"></div>
-
-//         <Marquee speed={50} pauseOnHover gradient={false} className="py-3">
-//           <a
-//             className="mx-6 hover:text-blue-100 transition-colors duration-200 flex items-center gap-2 group"
-//             href="#"
-//           >
-//             <span className="inline-block w-2 h-2 bg-white rounded-full group-hover:scale-125 transition-transform duration-200"></span>
-//             <span className="group-hover:underline">
-//               New medical exam requirements for Express Entry PR applications
-//             </span>
-//           </a>
-//           <a
-//             className="mx-6 hover:text-blue-100 transition-colors duration-200 flex items-center gap-2 group"
-//             href="#"
-//           >
-//             <span className="inline-block w-2 h-2 bg-white rounded-full group-hover:scale-125 transition-transform duration-200"></span>
-//             <span className="group-hover:underline">
-//               Canada issues thousands of invitations in major Healthcare draw
-//             </span>
-//           </a>
-//           <a
-//             className="mx-6 hover:text-blue-100 transition-colors duration-200 flex items-center gap-2 group"
-//             href="#"
-//           >
-//             <span className="inline-block w-2 h-2 bg-white rounded-full group-hover:scale-125 transition-transform duration-200"></span>
-//             <span className="group-hover:underline">
-//               IRCC invites more PNP candidates in latest Express Entry draw
-//             </span>
-//           </a>
-//         </Marquee>
-//       </div>
-//     </section>
-//   );
-// }
-
-// globals.css mein add karo
-/*
-
-*/
 
 function PaymentButton() {
   return (
