@@ -109,11 +109,10 @@ export default function Team() {
               whileInView="visible"
               viewport={{ once: true, amount: 0.15 }}
               variants={cardVariant}
-              whileHover={{ y: -6 }}
-              className="bg-white rounded-[24px] shadow-[0_12px_36px_rgba(2,19,48,0.08)] border border-zinc-400  overflow-hidden flex flex-col transition-all duration-300"
+              className="bg-white rounded-[24px] hover:-translate-y-3 shadow-[0_12px_36px_rgba(2,19,48,0.08)] border border-zinc-400  overflow-hidden flex flex-col transition-all duration-150"
             >
               {/* Profile Image Frame Area */}
-              <div className="relative  aspect-[4/5]   flex items-end justify-center">
+              <div className="relative aspect-[4/5] flex items-end justify-center">
                 
                 <div className="relative w-full h-full rounded-b-[45px] border-b-4 border-red-500 mx-auto overflow-hidden">
                   <Image
