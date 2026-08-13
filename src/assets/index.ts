@@ -79,9 +79,11 @@ import cl6 from "@/assets/home/cl6.jpg";
 import cl7 from "@/assets/home/cl7.jpg";
 import cl8 from "@/assets/home/cl8.jpg";
 import cl9 from "@/assets/home/cl9.jpg";
-import mohini from "@/assets/home/mohini.webp";
-import vivek from "@/assets/home/vivek.png";
-import shahvez from "@/assets/home/shahvez.webp";
+import mohini from "@/assets/home/Mohini.png";
+import vishal from "@/assets/home/Vishal.png";
+import rahul from "@/assets/home/Rahul.png";
+import meenakshi from "@/assets/home/Meenakshi.png";
+import tanya from "@/assets/home/tanya.jpeg";
 
 import step1 from "@/assets/home/step1.webp"
 import step2 from "@/assets/home/step2.webp"
@@ -253,7 +255,7 @@ import franceimg from "@/assets/flag/franc-img.webp";
 import ireimg from "@/assets/flag/ire-img.jpg";
 
 
-export {insta1,  insta2,  insta3,  insta4,  insta5,  insta6,  insta7,  insta8,  insta9,  insta10, planebg, planebg2,plane2,faq2,step,step1,step2,step3,step4,step5,step6,step7,newflag,newimg,usa,usaimg,canada,canimg,aus,ausimg,euro,euroimg,gcc,gccimg,uk,p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, armenia,  bangladesh,  belarus,  china,  germany,  kazakhstan,  kyrgyzstan,  malaysia,  mauritius,  nepal,  philippines,  poland, russia, uzbekistan,dubai,italy,  armeniaimg, bangladeshimg, belarusimg, chinaimg, germanyimg, kazakhstanimg, kyrgyzstanimg, malaysiaimg, mauritiusimg, nepalimg, philippinesimg, polandimg, russiaimg, uzbekistanimg,dubaiimg,italyimg,franceimg,france, ireland,ireimg,singa,singaimg, georg,georgimg, mohini, vivek, shahvez,    
+export {insta1,  insta2,  insta3,  insta4,  insta5,  insta6,  insta7,  insta8,  insta9,  insta10, planebg, planebg2,plane2,faq2,step,step1,step2,step3,step4,step5,step6,step7,newflag,newimg,usa,usaimg,canada,canimg,aus,ausimg,euro,euroimg,gcc,gccimg,uk,p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, armenia,  bangladesh,  belarus,  china,  germany,  kazakhstan,  kyrgyzstan,  malaysia,  mauritius,  nepal,  philippines,  poland, russia, uzbekistan,dubai,italy,  armeniaimg, bangladeshimg, belarusimg, chinaimg, germanyimg, kazakhstanimg, kyrgyzstanimg, malaysiaimg, mauritiusimg, nepalimg, philippinesimg, polandimg, russiaimg, uzbekistanimg,dubaiimg,italyimg,franceimg,france, ireland,ireimg,singa,singaimg, georg,georgimg, mohini, vishal,rahul,tanya,meenakshi,    
     shape1,mission, vision, logo , logo2, logo3, banner,banner2,banner3 ,back,blog_bg, box1, box2, visa1,process1, arrow, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,famvisa, prvisa, business,touristvisa, formimg,
  plane, patta, atlanticImmigration,      
   pop,ceo,

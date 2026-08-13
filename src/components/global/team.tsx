@@ -1,5 +1,5 @@
 "use client";
-import { ceo, mohini, shahvez, vivek } from "@/assets";
+import { mohini, tanya,meenakshi,rahul, vishal} from "@/assets";
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -10,10 +10,12 @@ const data = {
   title2: "Our Team is Our",
   title3: "Strength and Success",
   members: [
-    { img: ceo, name: "Rohan Kumar",   designation: "Founder & CEO"   },
-    { img: mohini, name: "Mohini  Sharma",   designation: "Senior Immigration Expert"       },
-    { img: vivek, name: "Vivek Kumar",    designation: "Immigration Expert" },
-    { img: shahvez, name: "Shahvez Saifi", designation: "Sr. Marketer"     },
+    { img: meenakshi, name: "Meenakshi Shankar",   designation: "Documentation Specialist"   },
+    { img: mohini, name: "Mohini  Sharma",   designation: "Branch Manager"       },
+    { img: rahul, name: "Rahul Solanki",    designation: "Study Visa Counsellor" },
+    { img: tanya, name: "Tanya kaur", designation: "Senior Visa Counsellor"     },
+    { img: vishal, name: "Vishal Kumar", designation: "Operations Head"     },
+
   ],
 };
 
@@ -73,7 +75,7 @@ export default function Team() {
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-blue-50 rounded-t-[100%_40px] md:rounded-t-[100%_70px] translate-y-1" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* ── Header Section ── */}
         <motion.div
@@ -98,7 +100,7 @@ export default function Team() {
         </motion.div>
 
         {/* ── Team Cards Grid ── */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8 px-2">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5  sm:gap-6 gap-2 gap-y-5">
           {data.members.map((member, i) => (
             <motion.div
               key={i}
@@ -125,7 +127,7 @@ export default function Team() {
 
                 {/* Floating Profile Designation Pill */}
                 <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white px-5 py-1.5 rounded-full shadow-[0_4px_10px_rgba(0,0,0,0.08)] border border-gray-100 text-center z-10 whitespace-nowrap min-w-[70%]">
-                  <p className="text-[#0B409C] text-[11px] font-extrabold uppercase tracking-wider">
+                  <p className="text-[#0B409C] sm:text-xs text-[8px] font-extrabold uppercase tracking-wider">
                     {member.designation}
                   </p>
                 </div>
