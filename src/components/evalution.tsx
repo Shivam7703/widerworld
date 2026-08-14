@@ -151,11 +151,12 @@ function Page() {
                 required
               >
                 <option value="">Select a country</option>
-                <option value="Canada">Canada</option>
-                <option value="Australia">Australia</option>
-                <option value="Germany">Germany</option>
-                <option value="Singapore">Singapore</option>
-                <option value="UAE">UAE</option>
+                <option value="canada" className="text-zinc-500">Canada</option>
+                        <option value="australia" className="text-zinc-500">Australia</option>
+                        <option value="uk" className="text-zinc-500">UK</option>
+                        <option value="europe" className="text-zinc-500">Europe</option>
+                        <option value="uae" className="text-zinc-500">UAE</option>
+                        <option value="other" className="text-zinc-500">Other</option>
               </select>
             </Field>
 
