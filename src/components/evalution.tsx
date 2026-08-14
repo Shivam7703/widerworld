@@ -18,6 +18,7 @@ import {
   FaHistory,
   FaBuilding,
   FaPaperPlane,
+  FaCommentAlt,
 } from 'react-icons/fa';
 import Image from 'next/image';
 import { formimg } from '@/assets';
@@ -40,9 +41,10 @@ const initialState = {
   currentDesignation: '',
   previousDesignation: '',
   previousCompany: '',
+  message: '',
 }
 
-function Field({ label, icon, children }:any) {
+function Field({ label, icon, children }: any) {
   return (
     <label className="block">
       <span className="mb-2 flex items-center gap-2 text-sm font-medium tracking-wide text-slate-600">
@@ -61,12 +63,12 @@ function Page() {
   const [form, setForm] = useState(initialState)
   const [submitted, setSubmitted] = useState(false)
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target
     setForm((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault()
     setSubmitted(true)
     // TODO: wire this up to your API / email endpoint
@@ -75,7 +77,7 @@ function Page() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 px-4 pt-14 pb-28 sm:px-6 lg:px-8 relative">
-        <Image src={formimg} alt="form" className="absolute bottom-0 right-0 h-44 md:h-96 z-10 object-contain w-max  pointer-events-none" />
+      <Image src={formimg} alt="form" className="absolute bottom-0 right-0 h-44 md:h-96 z-10 object-contain w-max pointer-events-none" />
       <div className="mx-auto max-w-4xl relative z-20">
         {/* Header */}
         <div className="mb-10 text-center">
@@ -92,9 +94,8 @@ function Page() {
 
         {/* Card */}
         <div className="overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-xl shadow-zinc-300">
-
           <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6 p-6 sm:grid-cols-2 sm:p-10">
-            <Field label="Name" icon={<FaUser />}>
+            <Field label="Name*" icon={<FaUser />}>
               <input
                 type="text"
                 name="name"
@@ -106,18 +107,7 @@ function Page() {
               />
             </Field>
 
-            <Field label="Date Of Birth" icon={<FaCalendarAlt />}>
-              <input
-                type="date"
-                name="dob"
-                value={form.dob}
-                onChange={handleChange}
-                className={inputClass}
-                required
-              />
-            </Field>
-
-            <Field label="Email" icon={<FaEnvelope />}>
+            <Field label="Email*" icon={<FaEnvelope />}>
               <input
                 type="email"
                 name="email"
@@ -129,7 +119,7 @@ function Page() {
               />
             </Field>
 
-            <Field label="Contact Number" icon={<FaPhoneAlt />}>
+            <Field label="Contact Number*" icon={<FaPhoneAlt />}>
               <input
                 type="tel"
                 name="contact"
@@ -141,18 +131,7 @@ function Page() {
               />
             </Field>
 
-            <Field label="Total Experience" icon={<FaBriefcase />}>
-              <input
-                type="text"
-                name="experience"
-                value={form.experience}
-                onChange={handleChange}
-                placeholder="e.g. 3 years"
-                className={inputClass}
-              />
-            </Field>
-
-            <Field label="Annual Salary" icon={<FaRupeeSign />}>
+            <Field label="Annual Salary*" icon={<FaRupeeSign />}>
               <input
                 type="text"
                 name="salary"
@@ -163,7 +142,7 @@ function Page() {
               />
             </Field>
 
-            <Field label="Preferred Country" icon={<FaGlobeAmericas />}>
+            <Field label="Preferred Country*" icon={<FaGlobeAmericas />}>
               <select
                 name="country"
                 value={form.country}
@@ -180,29 +159,7 @@ function Page() {
               </select>
             </Field>
 
-            {/* <Field label="Fathers' Name" icon={<FaUserTie />}>
-              <input
-                type="text"
-                name="fatherName"
-                value={form.fatherName}
-                onChange={handleChange}
-                placeholder="Father's name"
-                className={inputClass}
-              />
-            </Field>
-
-            <Field label="Fathers' Occupation" icon={<FaBuilding />}>
-              <input
-                type="text"
-                name="fatherOccupation"
-                value={form.fatherOccupation}
-                onChange={handleChange}
-                placeholder="Father's occupation"
-                className={inputClass}
-              />
-            </Field> */}
-
-            <Field label="Marital Status" icon={<FaHeart />}>
+            <Field label="Marital Status*" icon={<FaHeart />}>
               <select
                 name="maritalStatus"
                 value={form.maritalStatus}
@@ -216,7 +173,7 @@ function Page() {
               </select>
             </Field>
 
-            <Field label="Highest Qualification" icon={<FaGraduationCap />}>
+            <Field label="Highest Qualification*" icon={<FaGraduationCap />}>
               <select
                 name="qualification"
                 value={form.qualification}
@@ -233,40 +190,7 @@ function Page() {
               </select>
             </Field>
 
-            <Field label="Passing Year" icon={<FaClock />}>
-              <input
-                type="text"
-                name="passingYear"
-                value={form.passingYear}
-                onChange={handleChange}
-                placeholder="e.g. 2022"
-                className={inputClass}
-              />
-            </Field>
-
-            {/* <Field label="Marks Obtained in Class 12" icon={<FaPercentage />}>
-              <input
-                type="text"
-                name="marks12"
-                value={form.marks12}
-                onChange={handleChange}
-                placeholder="e.g. 85%"
-                className={inputClass}
-              />
-            </Field>
-
-            <Field label="Marks Obtained in Class 10" icon={<FaPercentage />}>
-              <input
-                type="text"
-                name="marks10"
-                value={form.marks10}
-                onChange={handleChange}
-                placeholder="e.g. 90%"
-                className={inputClass}
-              />
-            </Field> */}
-
-            <Field label="Current Designation" icon={<FaIdBadge />}>
+            <Field label="Current Designation*" icon={<FaIdBadge />}>
               <input
                 type="text"
                 name="currentDesignation"
@@ -277,27 +201,20 @@ function Page() {
               />
             </Field>
 
-            {/* <Field label="Previous Designation" icon={<FaHistory />}>
-              <input
-                type="text"
-                name="previousDesignation"
-                value={form.previousDesignation}
-                onChange={handleChange}
-                placeholder="Your previous role"
-                className={inputClass}
-              />
-            </Field> */}
-
-            <Field label=" Company Name" icon={<FaBuilding />}>
-              <input
-                type="text"
-                name="previousCompany"
-                value={form.previousCompany}
-                onChange={handleChange}
-                placeholder="Current employer"
-                className={inputClass}
-              />
-            </Field>
+            {/* Full-width Textarea Field */}
+            <div className="sm:col-span-2">
+              <Field label="Message*" icon={<FaCommentAlt />}>
+                <textarea
+                  name="message"
+                  rows={4}
+                  value={form.message}
+                  onChange={handleChange}
+                  placeholder="Enter your message"
+                  className={inputClass}
+                  required
+                />
+              </Field>
+            </div>
 
             {/* Submit */}
             <div className="sm:col-span-2 mt-2 flex flex-col items-center gap-3">
@@ -310,7 +227,7 @@ function Page() {
 
               {submitted && (
                 <p className="text-sm font-medium text-emerald-600">
-                  Thank you! Your evaluation form has been submitted.
+                  Thank you! Your evaluation form has been submitted, You will receive a callback within 24 hours.
                 </p>
               )}
             </div>

@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState, ChangeEvent, FormEvent } from 'react';
+import { usePathname } from 'next/navigation'; // Pathname hook import kiya
 import { FaWhatsapp, FaTimes } from 'react-icons/fa';
 import Image from "next/image";
 import { logo, pop } from '@/assets';
@@ -14,11 +15,18 @@ export default function Popups() {
     name: '', phone: '', email: '', country: 'canada', message: ''
   });
 
+  const pathname = usePathname(); // Current route track karne ke liye
+
   useEffect(() => {
-    // Timer set to 5000ms (5 seconds)
-    const t = setTimeout(() => setIsFormOpen(true), 5000);
+    // Har baar page/path change hone par form close hoga aur 5 sec baad wapas open hoga
+    setIsFormOpen(false);
+    
+    const t = setTimeout(() => {
+      setIsFormOpen(true);
+    }, 5000);
+
     return () => clearTimeout(t);
-  }, []);
+  }, [pathname]); // 'pathname' ko dependency array me add kiya
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
