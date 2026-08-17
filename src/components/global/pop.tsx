@@ -20,7 +20,7 @@ export default function Popups() {
   useEffect(() => {
     // Har baar page/path change hone par form close hoga aur 5 sec baad wapas open hoga
     setIsFormOpen(false);
-    
+
     const t = setTimeout(() => {
       setIsFormOpen(true);
     }, 5000);
@@ -103,7 +103,7 @@ export default function Popups() {
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-3 md:space-y-4">
                   <div className="flex justify-between items-center">
-                    <h2 className="sm:text-2xl font-medium text-xl text-gray-800">Talk to our <br/>Immigration Expert</h2>
+                    <h2 className="sm:text-2xl font-medium text-xl text-gray-800">Talk to our <br />Immigration Expert</h2>
                     <Image src={logo} alt="logo" className="sm:w-28 w-16" />
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -115,7 +115,7 @@ export default function Popups() {
                         required
                         onChange={handleChange}
                         className="text-sm w-full p-3 rounded-lg border border-gray-200 outline-none focus:ring-2 focus:ring-sky-200"
-                        placeholder="John Doe"
+                        placeholder="Your Name"
                       />
                     </div>
                     <div className="space-y-1">
@@ -141,7 +141,7 @@ export default function Popups() {
                         type="email"
                         onChange={handleChange}
                         className="text-sm w-full p-3 rounded-lg border border-gray-200 outline-none focus:ring-2 focus:ring-sky-200"
-                        placeholder="john@example.com"
+                        placeholder="Your Email"
                       />
                     </div>
                     <div className="space-y-1">

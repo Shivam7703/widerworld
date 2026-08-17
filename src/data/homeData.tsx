@@ -1046,7 +1046,7 @@ export const contactdetail = [
     icon: <FaMapLocationDot />,
     title: "Location",
     text: "Office No. 806, 8th Floor, Chiranjiv Tower -43, Nehru Place, New Delhi-110019",
-    slug: "#",
+    slug: "https://www.google.com/maps/place/Wider+World+Immigration/@28.5497191,77.2475045,17z/data=!3m2!4b1!5s0x390ce231b2405593:0x7adb3aaa07d01d0d!4m6!3m5!1s0x390ce3a36d1028b1:0xc372007dd192dd5b!8m2!3d28.5497144!4d77.2500794!16s%2Fg%2F11j1zvgjcw?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
   },
 ];
 

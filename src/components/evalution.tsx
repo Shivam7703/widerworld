@@ -113,7 +113,7 @@ function Page() {
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                placeholder="you@example.com"
+                placeholder="Your Email"
                 className={inputClass}
                 required
               />
@@ -152,11 +152,11 @@ function Page() {
               >
                 <option value="">Select a country</option>
                 <option value="canada" className="text-zinc-500">Canada</option>
-                        <option value="australia" className="text-zinc-500">Australia</option>
-                        <option value="uk" className="text-zinc-500">UK</option>
-                        <option value="europe" className="text-zinc-500">Europe</option>
-                        <option value="uae" className="text-zinc-500">UAE</option>
-                        <option value="other" className="text-zinc-500">Other</option>
+                <option value="australia" className="text-zinc-500">Australia</option>
+                <option value="uk" className="text-zinc-500">UK</option>
+                <option value="europe" className="text-zinc-500">Europe</option>
+                <option value="uae" className="text-zinc-500">UAE</option>
+                <option value="other" className="text-zinc-500">Other</option>
               </select>
             </Field>
 

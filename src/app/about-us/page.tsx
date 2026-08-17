@@ -18,7 +18,7 @@ export default function About() {
         img={bann}
         title={"About Us"}
         para={
-          "Helping individuals and families achieve their global dreams with expert guidance, reliable visa solutions, and personalized support at every step."
+          "Wider World Immigration is your trusted Visa Consultants in navigating the huge opportunities and possibilities that exist beyond boundaries."
         }
         slug={"about-us"}
       />

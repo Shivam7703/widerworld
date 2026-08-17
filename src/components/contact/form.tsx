@@ -7,11 +7,11 @@ import { MdOutlineChat } from "react-icons/md";
 import { BiRightArrowAlt } from "react-icons/bi";
 
 const inputFields = [
-  { name: "name",     label: "Full Name", type: "text",  icon: FaRegUserCircle,        placeholder: "John Doe"           },
-  { name: "phone",    label: "Phone",     type: "tel",   icon: FiPhone,                placeholder: "+1 (555) 000-0000"  },
-  { name: "email",    label: "Email",     type: "email", icon: FiMail,                 placeholder: "john@example.com"   },
-  { name: "location", label: "Location",  type: "text",  icon: FaLocationArrow,        placeholder: "City, Country"      },
-  { name: "subject",  label: "Subject",   type: "text",  icon: IoChatboxEllipsesOutline, placeholder: "How can we help?" },
+  { name: "name", label: "Full Name", type: "text", icon: FaRegUserCircle, placeholder: "Your Name" },
+  { name: "phone", label: "Phone", type: "tel", icon: FiPhone, placeholder: "+91 00000 00000" },
+  { name: "email", label: "Email", type: "email", icon: FiMail, placeholder: "Your Email" },
+  { name: "location", label: "Location", type: "text", icon: FaLocationArrow, placeholder: " Country to Migrate" },
+  { name: "subject", label: "Subject", type: "text", icon: IoChatboxEllipsesOutline, placeholder: "How can we help?" },
 ];
 
 const pointers = [
@@ -62,26 +62,26 @@ function Form() {
 
             <div className="relative z-10">
               {/* Label */}
-              <h4 className="text-white font-bold uppercase text-sm tracking-[0.22em] mb-4 sm:mb-6">
+              <h4 className="text-white font-bold uppercase text-xs tracking-[0.22em] mb-4 sm:mb-6">
                 Contact Us
               </h4>
 
               {/* Heading */}
               <h2
-                className="text-white font-black text-3xl md:text-4xl !leading-tight mb-5"
+                className="text-white font-bold  text-2xl md:text-4xl !leading-tight mb-5"
               >
-               Simplifying Your Visa Journey with Trusted Experts
+                Simplifying Your Visa Journey with Trusted Experts
               </h2>
 
-              <p className="text-white/80 leading-relaxed mb-10">
-Get personalized assistance from experienced Immigration Consultants in India who guide you at every step. From profile evaluation to final approval, we make your immigration process smooth, transparent, and stress-free.
+              <p className="text-white/80 leading-relaxed mb-4 text-sm">
+                Get personalized assistance from experienced Immigration Consultants in India who guide you at every step. From profile evaluation to final approval, we make your immigration process smooth, transparent, and stress-free.
               </p>
 
               {/* Divider */}
-              <div className="w-12 h-[2px] bg-gradient-to-r from-color2 to-color1 rounded-full mb-8" />
+              <div className="w-12 h-[2px] bg-gradient-to-r from-color2 to-color1 rounded-full mb-6" />
 
               {/* Pointers */}
-              <ul className="flex flex-col gap-4">
+              <ul className="flex flex-col gap-3">
                 {pointers.map((pt, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-gradient-to-br from-color2 to-color1 flex items-center justify-center">
@@ -96,7 +96,7 @@ Get personalized assistance from experienced Immigration Consultants in India wh
             </div>
 
             {/* Bottom stat strip */}
-          
+
           </div>
 
           {/* ── RIGHT: Form Panel ── */}
@@ -129,7 +129,7 @@ Get personalized assistance from experienced Immigration Consultants in India wh
                           name={field.name}
                           placeholder={field.placeholder}
                           className="w-full pl-10 pr-4 py-3 bg-zinc-100 rounded-xl text-color3
-                            placeholder-gray-600 text-sm
+                            placeholder:text-zinc-400 text-sm
                             border border-color2/50
                             focus:outline-none focus:border-color2/35 focus:bg-white
                             transition-all duration-200"
@@ -158,7 +158,7 @@ Get personalized assistance from experienced Immigration Consultants in India wh
                         name={field.name}
                         placeholder={field.placeholder}
                         className="w-full pl-10 pr-4 py-3 bg-zinc-100 rounded-xl text-color3
-                          placeholder-gray-600 text-sm
+                          placeholder:text-zinc-400 text-sm
                           border border-color2/50
                           focus:outline-none focus:border-color2/35 focus:bg-white
                           transition-all duration-200"
@@ -181,9 +181,9 @@ Get personalized assistance from experienced Immigration Consultants in India wh
                   <textarea
                     name="message"
                     rows={4}
-                    placeholder="Tell us more about your visa inquiry..."
+                    placeholder="Tell us more about your inquiry..."
                     className="w-full pl-10 pr-4 py-3 bg-zinc-100 rounded-xl text-color3
-                      placeholder-gray-600 text-sm
+                      placeholder:text-zinc-400 text-sm
                       border border-color2/50
                       focus:outline-none focus:border-color2/35 focus:bg-white
                       transition-all duration-200 resize-none"

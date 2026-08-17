@@ -41,9 +41,9 @@ const coachingData = [
 ];
 
 const inputFields = [
-  { name: "name", label: "Name", type: "text", icon: FaRegUserCircle, placeholder: "John Doe" },
+  { name: "name", label: "Name", type: "text", icon: FaRegUserCircle, placeholder: "Your Name" },
   { name: "phone", label: "Phone", type: "tel", icon: FiPhone, placeholder: "+1 (555) 000-0000" },
-  { name: "email", label: "Email", type: "email", icon: FiMail, placeholder: "john@example.com" },
+  { name: "email", label: "Email", type: "email", icon: FiMail, placeholder: "Your Email" },
   { name: "location", label: "Location", type: "text", icon: FaLocationArrow, placeholder: "City, Country" },
   { name: "subject", label: "Subject", type: "text", icon: IoChatboxEllipsesOutline, placeholder: "How can we help?" },
 ];
@@ -60,8 +60,8 @@ export default function BlogAside() {
 
   // Helper to check if a path or title matches current URL
   const isActive = (pathOrTitle: string) => {
-    const slug = pathOrTitle.includes("/") 
-      ? pathOrTitle.split("/").filter(Boolean).pop() 
+    const slug = pathOrTitle.includes("/")
+      ? pathOrTitle.split("/").filter(Boolean).pop()
       : createSlug(pathOrTitle);
     return slug === activeSegment;
   };
@@ -100,9 +100,9 @@ export default function BlogAside() {
   }
   return (
     <div className="flex flex-col gap-4 md:gap-7">
-      
+
       {/* 1. Inquiry Form */}
-        <SideCard title="Quick Inquiry" icon={<MdStickyNote2 size={14} />}>
+      <SideCard title="Quick Inquiry" icon={<MdStickyNote2 size={14} />}>
 
         <form className="p-4 flex flex-col gap-3">
 
@@ -245,7 +245,7 @@ export default function BlogAside() {
 
 
       {/* 2. Latest Blogs */}
-       <SideCard title="Latest Blogs" icon={<BsNewspaper size={14} />}>
+      <SideCard title="Latest Blogs" icon={<BsNewspaper size={14} />}>
 
         <div className="p-3 flex flex-col gap-3">
 
@@ -376,7 +376,7 @@ export default function BlogAside() {
       </SideCard>
 
       {/* 6. Download & 7. CTA remain same... */}
-       {/* ── 6. Download Brochure ── */}
+      {/* ── 6. Download Brochure ── */}
 
       <button type="button"
 
