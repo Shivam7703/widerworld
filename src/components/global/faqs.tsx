@@ -37,11 +37,9 @@ function Faq({ data }: { data: { que: string; ans: string }[] }) {
              
                 <h3
                   className={`text-sm sm:text-base font-semibold transition-colors duration-300 leading-snug
-                    ${isOpen ? "text-color2" : "text-color3"}`}
-                >
-                  {item.que}
-                </h3>
-
+                    ${isOpen ? "text-color2" : "text-color3"}`} dangerouslySetInnerHTML={{ __html: item.que}} 
+                />
+                
               <BsArrowUpRightCircleFill
                 className={`text-xl shrink-0 transition-all duration-300
                   ${isOpen
@@ -58,9 +56,8 @@ function Faq({ data }: { data: { que: string; ans: string }[] }) {
             >
               <div className="overflow-hidden">
                 <div className="px-6 pb-4">
-                  <p className="text-zinc-500 text-sm font-medium !leading-relaxed">
-                    {item.ans}
-                  </p>
+                  <p className="text-zinc-500 text-sm font-medium !leading-relaxed"  dangerouslySetInnerHTML={{ __html: item.ans}} />
+
                 </div>
               </div>
             </div>

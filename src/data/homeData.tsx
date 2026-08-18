@@ -935,7 +935,7 @@ export const footer = {
     linkedin: "https://www.linkedin.com/company/widerworldimmigration",
     youtube: "https://www.youtube.com/@wider_world_immigration",
   },
-  copyrightText: "Copyrights © 2026 . Designed and Manage by ",
+  copyrightText: "Copyright © 2026 . Designed and Managed by ",
   list2: {
     title: "Important Links",
     links: [
@@ -943,7 +943,6 @@ export const footer = {
         { id: 3, label: "About Us", href: "/about-us" },
         { id: 4, label: "Privacy Policy", href: "/privacy-policy" },
          { id: 5, label: "Term & Condition", href: "/terms-condition" },
-            
     ],
   },
 
