@@ -60,10 +60,10 @@ export default function CEOMessage() {
               <h3
                 className="text-white font-black text-2xl leading-tight mb-1"
               >
-                Jonathan A. Mercer
+                Rohan Kumar
               </h3>
               <p className="text-white/70 text-[10px] border-b border-white/50 pb-2    font-semibold uppercase tracking-[0.18em] mb-5">
-                Founder & Chairman
+                Founder & CEO
               </p>
            {/* Socials */}
               <div className="flex gap-2.5">
@@ -150,8 +150,8 @@ Our aim goes beyond just processing applications. We believe in building long-te
                 <p
                   className="text-color3 font-bold text-lg leading-tight"
                   style={{ fontFamily: "'Playfair Display', serif" }}
-                >Jonathan A. Mercer</p>
-                <p className="text-gray-400 text-[10px] uppercase tracking-[0.2em] mt-0.5">Founder & Chairman</p>
+                >Rohan Kumar</p>
+                <p className="text-gray-400 text-[10px] uppercase tracking-[0.2em] mt-0.5">Founder & CEO</p>
               </div>
             </div>
           </div>
