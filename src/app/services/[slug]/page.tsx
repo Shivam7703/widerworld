@@ -1,4 +1,4 @@
-// app/service/[slug]/page.tsx
+// app/services/[slug]/page.tsx
 import { notFound } from "next/navigation";
 import React from "react";
 import { servicedata } from "@/data/servicedata";

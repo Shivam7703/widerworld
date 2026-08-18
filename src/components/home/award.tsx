@@ -140,7 +140,7 @@ export default function Award() {
 
                 {/* Contact link */}
                 <Link
-                  href={ "/contact"}
+                  href={ "/evaluation-form"}
                   className="text-white font-bold text-base underline underline-offset-2
                     hover:text-white/80 transition-colors duration-200 leading-snug"
                 >

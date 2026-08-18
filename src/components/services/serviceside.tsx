@@ -42,9 +42,9 @@ const coachingData = [
 
 const inputFields = [
   { name: "name", label: "Name", type: "text", icon: FaRegUserCircle, placeholder: "Your Name" },
-  { name: "phone", label: "Phone", type: "tel", icon: FiPhone, placeholder: "+1 (555) 000-0000" },
+  { name: "phone", label: "Phone", type: "tel", icon: FiPhone, placeholder: "Contact no." },
   { name: "email", label: "Email", type: "email", icon: FiMail, placeholder: "Your Email" },
-  { name: "location", label: "Location", type: "text", icon: FaLocationArrow, placeholder: "City, Country" },
+  { name: "location", label: "Location", type: "text", icon: FaLocationArrow, placeholder: "Country" },
   { name: "subject", label: "Subject", type: "text", icon: IoChatboxEllipsesOutline, placeholder: "How can we help?" },
 ];
 

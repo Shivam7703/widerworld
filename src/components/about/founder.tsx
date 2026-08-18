@@ -69,8 +69,8 @@ export default function CEOMessage() {
               <div className="flex gap-2.5">
                 {[
                   { icon: <FaLinkedin />,    href: "https://www.linkedin.com/company/widerworldimmigration" },
-                  { icon: <FaInstagram />,   href: "#https://www.instagram.com/wider_world_immigration/" },
-                  { icon: <HiOutlineMail />, href: "#" },
+                  { icon: <FaInstagram />,   href: "https://www.instagram.com/wider_world_immigration/" },
+                  { icon: <HiOutlineMail />, href: "mailto:info@widerworld.in" },
                 ].map((s, i) => (
                   
                   <a  key={i} href={s.href}

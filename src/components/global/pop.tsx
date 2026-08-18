@@ -126,7 +126,7 @@ export default function Popups() {
                         required
                         onChange={handleChange}
                         className="text-sm w-full p-3 rounded-lg border border-gray-200 outline-none focus:ring-2 focus:ring-sky-200"
-                        placeholder="+91 00000 00000"
+                        placeholder="Contact No."
                       />
                     </div>
                   </div>

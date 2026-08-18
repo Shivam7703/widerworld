@@ -125,7 +125,7 @@ function Page() {
                 name="contact"
                 value={form.contact}
                 onChange={handleChange}
-                placeholder="+91 00000 00000"
+                placeholder="Contact No."
                 className={inputClass}
                 required
               />

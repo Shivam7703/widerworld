@@ -71,12 +71,12 @@ const Header = ({ header }: any) => {
       bg-color1 shadow-lg"
           >
             <div className="flex gap-8 font-bold">
-              <a href="" className="flex items-center gap-2 hover:text-yellow-300 transition">
+              <a href="tel:+91 9999624998" className="flex items-center gap-2 hover:text-yellow-300 transition">
                 <FaSquarePhone className="text-yellow-400" />
                 <span className="">+91 9999624998</span>
               </a>
 
-              <a href="" className="flex items-center gap-2 hover:text-yellow-300 transition">
+              <a href="mailto:info@widerworld.in" className="flex items-center gap-2 hover:text-yellow-300 transition">
                 <MdEmail className="text-yellow-400" />
                 <span className="">info@widerworld.in</span>
               </a>
