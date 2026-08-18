@@ -68,7 +68,6 @@ export default function BlogAside() {
         </div>
       </div>
 
-      {/* ... (Baaki Visas, Coaching, Tags aur Brochure sections same rahenge) */}
     </div>
   );
 }

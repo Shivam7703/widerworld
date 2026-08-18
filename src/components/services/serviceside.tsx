@@ -375,30 +375,7 @@ export default function BlogAside() {
         </div>
       </SideCard>
 
-      {/* 6. Download & 7. CTA remain same... */}
-      {/* ── 6. Download Brochure ── */}
-
-      <button type="button"
-
-        className="flex items-center gap-3 bg-color3 hover:bg-[color5] rounded-2xl px-4 py-3.5 w-full text-left transition-all duration-200 hover:-translate-y-0.5 active:scale-[.98]"
-
-      >
-
-        <div className="w-9 h-9 rounded-[9px] bg-color4 flex items-center justify-center flex-shrink-0">
-
-          <FaDownload size={16} className="text-color3" />
-
-        </div>
-
-        <div className="flex flex-col">
-
-          <span className="text-xs font-semibold uppercase tracking-[.12em] text-white/45 mb-0.5">Free Resource</span>
-
-          <span className="text-sm font-bold text-white">Download Brochure</span>
-
-        </div>
-
-      </button>
+     
 
 
 
@@ -414,7 +391,7 @@ export default function BlogAside() {
 
         </p>
 
-        <a href="tel:123456667"
+        <Link href="/evaluation-form"
 
           className="w-full flex items-center justify-center gap-2 bg-color4 text-color3 text-xs font-bold uppercase tracking-[.08em] py-2.5 rounded-[9px] hover:bg-[#ffd96e] transition-colors"
 
@@ -424,7 +401,7 @@ export default function BlogAside() {
 
           Book a Call →
 
-        </a>
+        </Link>
 
       </div>
 
