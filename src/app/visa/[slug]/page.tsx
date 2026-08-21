@@ -4,7 +4,8 @@ import { visaData } from "@/data/visadata";
 import { bann } from "@/assets";
 import Banner from "@/components/global/banner";
 import Visadetails from "@/components/visa/visa-detail";
-import { createSlug } from "@/app/coaching/[slug]/page";
+import { createSlug } from "@/utils/slug";
+
 import { Metadata } from "next";
 
 interface Pageprops {

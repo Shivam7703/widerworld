@@ -4,7 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { newsData } from "@/data/newsData";
 import { box1 } from "@/assets";
-import { createSlug } from "@/app/coaching/[slug]/page";
+import { createSlug } from "@/utils/slug";
+
 
 interface PageProps {
   params: Promise<{
@@ -36,7 +37,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
   return (
     <main className="lg:p-20 md:p-16 sm:p-12 py-8 px-6 max-w-[1400px] mx-auto bg-white min-h-screen">
       <div className="flex flex-col md:flex-row gap-10 lg:gap-14 justify-between">
-        
+
         {/* Main Content Area (60%) */}
         <div className="md:w-[62%] w-full space-y-6">
           {/* Main Hero Image */}
@@ -90,7 +91,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
                       <h4 className="text-sm md:text-base font-bold text-slate-900 group-hover:text-blue-600 line-clamp-2 leading-snug transition-colors">
                         {news.title}
                       </h4>
-                      
+
                       <div className="flex items-center gap-2">
                         <span className="inline-block bg-slate-100 text-slate-600 text-xs font-semibold px-2.5 py-0.5 rounded-full">
                           Updates

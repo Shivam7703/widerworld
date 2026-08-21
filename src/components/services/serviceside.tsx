@@ -13,7 +13,8 @@ import Image from "next/image";
 import { box1 } from "@/assets";
 import { getBlogs } from "@/lib/api";
 import { servicedata } from "@/data/servicedata";
-import { createSlug } from "@/app/coaching/[slug]/page";
+import { createSlug } from "@/utils/slug";
+
 
 interface Blog {
   ID: number;
@@ -375,7 +376,7 @@ export default function BlogAside() {
         </div>
       </SideCard>
 
-     
+
 
 
 

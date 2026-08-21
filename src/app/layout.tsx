@@ -12,7 +12,7 @@ import Popups from "@/components/global/pop";
 
 export const metadata: Metadata = {
   title: "Wider World",
-  description: "Premium Immigration & Visa Consultancy Services",
+  description: "Immigration & Visa Consultancy Services",
 };
 
 export default function RootLayout({

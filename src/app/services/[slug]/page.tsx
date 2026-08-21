@@ -4,7 +4,8 @@ import { servicedata } from "@/data/servicedata";
 import { bann } from "@/assets";
 import Banner from "@/components/global/banner";
 import Servicedetails from "@/components/services/servicedetail";
-import { createSlug } from "@/app/coaching/[slug]/page";
+import { createSlug } from "@/utils/slug";
+
 import { Metadata } from "next";
 
 interface PageProps {
