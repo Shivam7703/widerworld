@@ -1,11 +1,11 @@
-// app/blogs/[slug]/page.tsx
+// app/[slug]/page.tsx
 
 import { notFound } from "next/navigation";
 import { bann } from "@/assets";
 import Banner from "@/components/global/banner";
 import Blogdetails from "@/components/blog/blog-detail";
 // API functions import karein
-import { getBlog } from "@/lib/api"; 
+import { getBlog } from "@/lib/api";
 
 interface PageProps {
   params: {
@@ -17,14 +17,14 @@ interface PageProps {
 export async function generateMetadata({ params }: PageProps) {
   // Yaha hum imported getBlog use kar rahe hain
   const blog = await getBlog({ slug: params.slug });
-  
+
   if (!blog || blog.error) return { title: "Blog Not Found" };
 
   return {
     title: blog.post_title,
     description: blog.description || "",
     alternates: {
-      canonical: `https://www.widerworld.in/blogs/${blog.post_name}`,
+      canonical: `https://www.widerworld.in/${blog.post_name}`,
     },
   };
 }

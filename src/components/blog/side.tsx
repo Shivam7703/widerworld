@@ -39,7 +39,7 @@ export default function BlogAside() {
           {blogs.map((blog: any) => (
             <Link
               key={blog.ID}
-              href={`/blogs/${blog.post_name}`}
+              href={`/${blog.post_name}`}
               className="group block"
             >
               <div className="relative bg-white rounded-2xl border border-zinc-200 transition-all duration-300 hover:border-blue-500 hover:shadow-xl p-2 flex gap-4 items-stretch">

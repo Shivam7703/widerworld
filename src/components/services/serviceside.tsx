@@ -266,7 +266,7 @@ export default function BlogAside() {
 
                   key={blog.ID}
 
-                  href={`/blogs/${blog.post_name}`}
+                  href={`/${blog.post_name}`}
 
                   className="group flex items-center gap-3 p-2 rounded-xl border border-slate-200 hover:border-color2 hover:bg-blue-50 transition-all duration-200"
 
