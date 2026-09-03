@@ -432,7 +432,7 @@ export default function WhoWeAreLooking() {
               </a>
 
               <Link
-                href="/contact-us"
+                href="/contact-us/"
                 className="group inline-flex items-center gap-2 border-2 border-white/70 text-white font-bold px-7 py-4 rounded-full text-sm lg:text-base hover:bg-white hover:text-indigo-700 transition-all duration-300"
               >
                 Connect with HR

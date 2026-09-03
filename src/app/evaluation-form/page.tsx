@@ -13,12 +13,12 @@ export const metadata = {
     "Wider World Immigration"
   ],
   alternates: {
-    canonical: "https://www.widerworld.in/evaluation-form/",
+    canonical: "https://www.widerworld.in/evaluation-form//",
   },
   openGraph: {
     title: "Free Eligibility Evaluation Form | Wider World Immigration",
     description: "Fill out our free eligibility evaluation form to assess your chances for Canada PR, work permits, study visas, and overseas immigration.",
-    url: "https://www.widerworld.in/evaluation-form/",
+    url: "https://www.widerworld.in/evaluation-form//",
     siteName: "Wider World Immigration",
     type: "website",
   },
@@ -34,7 +34,7 @@ function page() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Free Eligibility Evaluation Form",
-    "url": "https://www.widerworld.in/evaluation-form/",
+    "url": "https://www.widerworld.in/evaluation-form//",
     "description": "Fill out our free eligibility evaluation form to assess your chances for Canada PR, work permits, study visas, and overseas immigration.",
     "publisher": {
       "@type": "Organization",

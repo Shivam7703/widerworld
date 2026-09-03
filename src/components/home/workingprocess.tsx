@@ -5,7 +5,7 @@ import { FaHandshake, FaStamp, FaWpforms } from "react-icons/fa";
 import { LuHandshake, LuListTodo } from "react-icons/lu";
 import { MdOutlineEngineering, MdOutlineSettings } from "react-icons/md";
 import Buttonmain from "../global/button";
-import { step,step1,step2,step3,step4,step5,step6,step7 } from "@/assets"; // apni illustration imgs import karo
+import { step, step1, step2, step3, step4, step5, step6, step7 } from "@/assets"; // apni illustration imgs import karo
 import Image from "next/image";
 import { BsPersonFillGear, BsPersonBoundingBox } from "react-icons/bs";
 import { IoDocumentTextSharp } from "react-icons/io5";
@@ -14,7 +14,7 @@ const data = [
   {
     img: step1,
     icon: <BsPersonFillGear />
-,
+    ,
     heading: "Initial Consultation",
     text: "Understanding your profile and goals, and discussing suitable visa options clearly",
     bg: "text-violet-700",
@@ -22,7 +22,7 @@ const data = [
   {
     img: step2,
     icon: <BsPersonBoundingBox />
-,
+    ,
     heading: "Profile Evaluation",
     text: "Assessing eligibility and suggesting the best pathways based on your background",
     bg: "text-emerald-700",
@@ -30,7 +30,7 @@ const data = [
   {
     img: step3,
     icon: <IoDocumentTextSharp />
-,
+    ,
     heading: "Documentation Guidance",
     text: "Providing support to prepare and organize all required documents correctly",
     bg: "text-teal-700",
@@ -38,7 +38,7 @@ const data = [
   {
     img: step4,
     icon: <FaWpforms />
-,
+    ,
     heading: "Application Preparation",
     text: "Filling and reviewing your application with accuracy and attention to detail",
     bg: "text-rose-700",
@@ -46,7 +46,7 @@ const data = [
   {
     img: step5,
     icon: <FaStamp />
-,
+    ,
     heading: "Submission Process",
     text: "Timely submission of the application with proper checks and compliance standards",
     bg: "text-violet-700",
@@ -54,7 +54,7 @@ const data = [
   {
     img: step6,
     icon: <LuListTodo />
-,
+    ,
     heading: "Follow-Up & Updates",
     text: "Tracking application status and providing regular updates throughout the process",
     bg: "text-emerald-700",
@@ -62,7 +62,7 @@ const data = [
   {
     img: step7,
     icon: <FaHandshake />
-,
+    ,
     heading: "Final Outcome Support",
     text: "Assisting you after approval with the next steps and travel guidance",
     bg: "text-teal-700",
@@ -79,11 +79,11 @@ export default function WorkProcessSlider() {
         viewport={{ once: true }}
       >
         <div className="flex  flex-wrap justify-between relative items-start">
-  
+
           {/* LEFT */}
           <div className="sticky top-20 md:w-[46%] h-full  w-full">
             <p className="text-xs tracking-[0.22em] font-bold uppercase  text-color1 mb-5">
-       
+
               Work Process
             </p>
             <h2 className=" text-3xl md:text-4xl xl:text-5xl font-bold !leading-tight text-color3 capitalize mb-5">
@@ -93,91 +93,90 @@ export default function WorkProcessSlider() {
             <p className="text-zinc-700 text-sm md:text-base leading-relaxed mb-8 ">
               A well-defined and structured approach ensures that every stage of your visa process is handled with clarity and precision. From initial profile evaluation and documentation preparation to application submission and tracking, each step is carefully managed to avoid errors or delays. This systematic process not only simplifies complex procedures but also enhances accuracy and efficiency, ultimately improving your chances of a successful outcome while giving you confidence throughout your immigration journey.
             </p>
-            
-            <Buttonmain href="/contact-us" text1="Know More" text2="Contact Now" />
-            <Image src={step} alt="img" className="md:h-64 h-44 object-contain"/>
+
+            <Buttonmain href="/contact-us/" text1="Know More" text2="Contact Now" />
+            <Image src={step} alt="img" className="md:h-64 h-44 object-contain" />
           </div>
 
           {/* RIGHT — sticky cards stacked */}
           <div className="relative h-full pb-10 md:w-[50%] w-full">
-{data.map((card, index) => (
-  <div
-    key={index}
-    style={{ top: `${80 + 18 * index}px`, zIndex: 10 + index }}
-    className="sticky mb-10"
-  >
-    <div className="group relative rounded-3xl overflow-hidden border border-black/10 bg-white shadow-[0_10px_30px_rgba(0,0,0,0.12)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.18)] transition-all duration-500">
+            {data.map((card, index) => (
+              <div
+                key={index}
+                style={{ top: `${80 + 18 * index}px`, zIndex: 10 + index }}
+                className="sticky mb-10"
+              >
+                <div className="group relative rounded-3xl overflow-hidden border border-black/10 bg-white shadow-[0_10px_30px_rgba(0,0,0,0.12)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.18)] transition-all duration-500">
 
-      {/* 🔷 Background Gradient (unique per index) */}
-      <div
-        className={`absolute inset-0 opacity-40 ${
-          index === 0 || 4
-            ? "bg-gradient-to-br from-blue-100 via-white to-rose-100"
-            : index === 1 || 5
-            ? "bg-gradient-to-br from-emerald-100 via-white to-red-100"
-            : index === 2 || 6
-            ? "bg-gradient-to-br from-orange-100 via-white to-indigo-100"
-            : "bg-gradient-to-br from-zinc-100 via-white to-teal-100"
-        }`}
-      />
+                  {/* 🔷 Background Gradient (unique per index) */}
+                  <div
+                    className={`absolute inset-0 opacity-40 ${index === 0 || 4
+                        ? "bg-gradient-to-br from-blue-100 via-white to-rose-100"
+                        : index === 1 || 5
+                          ? "bg-gradient-to-br from-emerald-100 via-white to-red-100"
+                          : index === 2 || 6
+                            ? "bg-gradient-to-br from-orange-100 via-white to-indigo-100"
+                            : "bg-gradient-to-br from-zinc-100 via-white to-teal-100"
+                      }`}
+                  />
 
-      {/* 🔶 Decorative Lines */}
-     
+                  {/* 🔶 Decorative Lines */}
 
-      {/* 🌟 Big Faded Icon (background) */}
-      <div className={`absolute left-4 bottom-4 text-[80px] opacity-5 group-hover:opacity-10 transition {card.bg}`}>
-        {card.icon}
-      </div>
 
-      {/* CONTENT */}
-      <div className="relative flex flex-col md:flex-row items-center gap-6 p-6 md:p-10">
+                  {/* 🌟 Big Faded Icon (background) */}
+                  <div className={`absolute left-4 bottom-4 text-[80px] opacity-5 group-hover:opacity-10 transition {card.bg}`}>
+                    {card.icon}
+                  </div>
 
-        {/* LEFT */}
-        <div className="flex-1">
-          
-          {/* Icon + Step */}
-          <div className="flex items-center gap-3 mb-4">
-            <div className={`w-12 h-12 flex items-center justify-center rounded-xl bg-black/5 text-gray-700 text-xl shadow-sm group-hover:scale-110 ${card.bg} transition`}>
-              {card.icon}
-            </div>
+                  {/* CONTENT */}
+                  <div className="relative flex flex-col md:flex-row items-center gap-6 p-6 md:p-10">
 
-            <span className="text-[11px] font-semibold uppercase tracking-widest px-3 py-1 rounded-full bg-black/5 text-gray-600">
-              Step 0{index + 1}
-            </span>
-          </div>
+                    {/* LEFT */}
+                    <div className="flex-1">
 
-          {/* Title */}
-          <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
-            {card.heading}
-          </h3>
+                      {/* Icon + Step */}
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className={`w-12 h-12 flex items-center justify-center rounded-xl bg-black/5 text-gray-700 text-xl shadow-sm group-hover:scale-110 ${card.bg} transition`}>
+                          {card.icon}
+                        </div>
 
-          {/* Text */}
-          <p className={`text-sm md:text-base text-gray-600 leading-relaxed max-w-md`}>
-            {card.text}
-          </p>
-        </div>
+                        <span className="text-[11px] font-semibold uppercase tracking-widest px-3 py-1 rounded-full bg-black/5 text-gray-600">
+                          Step 0{index + 1}
+                        </span>
+                      </div>
 
-        {/* RIGHT IMAGE */}
-        <div className="flex-1 relative flex justify-center md:justify-end">
-          <div className="relative">
+                      {/* Title */}
+                      <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
+                        {card.heading}
+                      </h3>
 
-            {/* Glow */}
-            <div className="absolute inset-0 blur-2xl bg-black/5 rounded-full" />
+                      {/* Text */}
+                      <p className={`text-sm md:text-base text-gray-600 leading-relaxed max-w-md`}>
+                        {card.text}
+                      </p>
+                    </div>
 
-            <Image
-              src={card.img}
-              alt={card.heading}
-              className="relative h-32 sm:h-40 md:h-52 object-contain drop-shadow-xl group-hover:scale-105 transition duration-500"
-            />
-          </div>
-        </div>
-      </div>
+                    {/* RIGHT IMAGE */}
+                    <div className="flex-1 relative flex justify-center md:justify-end">
+                      <div className="relative">
 
-      {/* Bottom Accent */}
-      <div className="h-[3px] w-0 group-hover:w-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 transition-all duration-500" />
-    </div>
-  </div>
-))} 
+                        {/* Glow */}
+                        <div className="absolute inset-0 blur-2xl bg-black/5 rounded-full" />
+
+                        <Image
+                          src={card.img}
+                          alt={card.heading}
+                          className="relative h-32 sm:h-40 md:h-52 object-contain drop-shadow-xl group-hover:scale-105 transition duration-500"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Bottom Accent */}
+                  <div className="h-[3px] w-0 group-hover:w-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 transition-all duration-500" />
+                </div>
+              </div>
+            ))}
           </div>
 
         </div>

@@ -68,7 +68,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
 
             <div className="space-y-6">
               {newsData.slice(0, 6).map((news: any) => {
-                const newsUrl = `/news/${createSlug(news.title)}`;
+                const newsUrl = `/news/${createSlug(news.title)}/`;
 
                 return (
                   <Link

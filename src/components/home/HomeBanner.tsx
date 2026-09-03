@@ -87,7 +87,7 @@ export default function HomeBanner() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.25 }}
                         className="text-white font-bold lg:text-5xl md:text-3xl text-2xl !leading-tight capitalize mb-5"
-                       
+
                       >
                         {item.title1}
                         <span className="text-color4 "> {item.title2}</span>
@@ -109,7 +109,7 @@ export default function HomeBanner() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.55 }}
                       >
-    <Buttonmain href={"/contact-us"} text2={"Get Support"} text1={"Contact Now"}/>
+                        <Buttonmain href={"/contact-us/"} text2={"Get Support"} text1={"Contact Now"} />
 
                       </motion.div>
                     </motion.div>
@@ -121,7 +121,7 @@ export default function HomeBanner() {
         ))}
       </Swiper>
 
-    
+
 
       {/* ── Navigation arrows ── */}
       <button

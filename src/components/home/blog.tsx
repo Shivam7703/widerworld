@@ -138,7 +138,7 @@ export default function Blogs({ isHome, page = 1 }: Props) {
                   </div>
                 </div>
                 <div className="h-px bg-color2/10 !mb-2" />
-                <Link href={`/${blog.post_name}`}>
+                <Link href={`/${blog.post_name}/`}>
                   <h2 className="text-lg sm:text-xl font-bold leading-snug text-color3 group-hover:text-color1 transition-colors duration-300 line-clamp-2 cursor-pointer">
                     {blog.post_title}
                   </h2>
@@ -148,7 +148,7 @@ export default function Blogs({ isHome, page = 1 }: Props) {
                 </p>
                 <div className="h-px bg-color2/10" />
                 <Link
-                  href={`/${blog.post_name}`}
+                  href={`/${blog.post_name}/`}
                   className="inline-flex items-center gap-2 text-sm font-semibold text-color2 group-hover:text-color1 transition-all duration-300 hover:gap-3"
                 >
                   Read More

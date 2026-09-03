@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Buttonmain from "../global/button";
 
-export default function AboutSection({ data }:any) {
+export default function AboutSection({ data }: any) {
   return (
     <section className="w-full p-4 py-7 md:p-12 lg:px-20 xl:px-24">
 
@@ -46,7 +46,7 @@ export default function AboutSection({ data }:any) {
             {/* POINTERS */}
             <div className="gap-y-5 mb-8 flex justify-between flex-wrap">
 
-              {data?.pointer?.map((item:any, index:number) => (
+              {data?.pointer?.map((item: any, index: number) => (
                 <motion.div
                   key={item?.id}
                   initial={{ opacity: 0, x: -20 }}
@@ -80,27 +80,27 @@ export default function AboutSection({ data }:any) {
             </div>
 
             {/* CTA */}
-               <Buttonmain href={"/contact-us"} text1={"Know More"} text2={"About Us"}/>
+            <Buttonmain href={"/contact-us/"} text1={"Know More"} text2={"About Us"} />
 
 
           </div>
 
 
-         {/* RIGHT SIDE IMAGES */}
-<div className="lg:w-[45%] relative md:order-2 bg-white md:p-7 order-1">
-  <div className="relative rounded-2xl border-2 shadow-lg hover14 group w-full h-auto md:h-full min-h-96 overflow-hidden">
+          {/* RIGHT SIDE IMAGES */}
+          <div className="lg:w-[45%] relative md:order-2 bg-white md:p-7 order-1">
+            <div className="relative rounded-2xl border-2 shadow-lg hover14 group w-full h-auto md:h-full min-h-96 overflow-hidden">
 
-{data?.img1 && (
-    <Image
-      src={data?.img1}
-      alt="consultants"
-      fill
-      className="object-cover object-top transition-transform duration-500 hover:scale-[1.07]"
-    />
-)}
- 
-  </div>
-</div>
+              {data?.img1 && (
+                <Image
+                  src={data?.img1}
+                  alt="consultants"
+                  fill
+                  className="object-cover object-top transition-transform duration-500 hover:scale-[1.07]"
+                />
+              )}
+
+            </div>
+          </div>
 
         </div>
       </motion.div>
@@ -111,4 +111,3 @@ export default function AboutSection({ data }:any) {
 
 
 
- 

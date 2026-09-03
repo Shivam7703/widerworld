@@ -78,7 +78,7 @@ export default function Footer({ footer }: any) {
               {footer?.list2?.links?.map((d: any, i: number) => (
                 <li key={i}>
                   <Link
-                    href={d?.href}
+                    href={`${d?.href}/`}
                     className=" transition:all text-base text-zinc-200 duration-300 hover:text-red-500"
                   >
                     {"-"} {d?.label}
@@ -95,7 +95,7 @@ export default function Footer({ footer }: any) {
               {footer?.list1?.links?.map((d: any, i: number) => (
                 <li key={i}>
                   <Link
-                    href={d?.href}
+                    href={`${d?.href}/`}
                     className=" transition:all text-base text-zinc-200 duration-300 hover:text-red-500"
                   >
                     {"-"} {d?.label}
@@ -130,7 +130,7 @@ export default function Footer({ footer }: any) {
                   <Link
                     title={navitem?.label}
                     className="text-zinc-700"
-                    href={FormatHref(navitem.href)}
+                    href={`${FormatHref(navitem.href)}/`}
                   >
                     {navitem?.label}
                     {"  "}&nbsp; | {"  "}&nbsp;
@@ -141,7 +141,7 @@ export default function Footer({ footer }: any) {
                         title={subNavItem?.label}
                         className="text-zinc-700"
                         key={subNavItem?.id}
-                        href={FormatHref(subNavItem.href)}
+                        href={`${FormatHref(subNavItem.href)}/`}
                       >
                         {subNavItem?.label}
                         {"  "}&nbsp; | {"  "}&nbsp;
@@ -151,7 +151,7 @@ export default function Footer({ footer }: any) {
                           title={data?.label}
                           className="text-zinc-700"
                           key={data?.id}
-                          href={FormatHref(data.href)}
+                          href={`${FormatHref(data.href)}/`}
                         >
                           {data?.label}
                           {"  "}&nbsp; | {"  "}&nbsp;

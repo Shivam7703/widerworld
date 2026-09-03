@@ -37,12 +37,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: singleService.metadesc,
     keywords: keywordsList,
     alternates: {
-      canonical: `https://www.widerworld.in/services/${decodedSlug}/`,
+      canonical: `https://www.widerworld.in/ourservices/${decodedSlug}/`,
     },
     openGraph: {
       title: singleService.metatitle || singleService.title,
       description: singleService.metadesc,
-      url: `https://www.widerworld.in/services/${decodedSlug}/`,
+      url: `https://www.widerworld.in/ourservices/${decodedSlug}/`,
       siteName: "Wider World Immigration",
       type: "article",
     },

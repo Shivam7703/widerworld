@@ -268,7 +268,7 @@ function PaymentButton() {
   return (
     <div className="flex items-center gap-4 flex-shrink-0">
       {/* ── GET FREE QUOTE ── */}
-      <Buttonmain href={"/contact-us"} text2={"Get Support"} text1={"Contact Now"} />
+      <Buttonmain href={"/contact-us/"} text2={"Get Support"} text1={"Contact Now"} />
 
       {/* ── PAY NOW ── */}
       <Link
@@ -307,7 +307,7 @@ function PaymentButton() {
         <FaCreditCard className="text-[15px] text-color4 transition-all duration-300 group-hover:translate-x-1" />
       </Link>
 
-      
+
     </div>
   );
 }

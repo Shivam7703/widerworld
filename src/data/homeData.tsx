@@ -37,19 +37,19 @@ export const navigationMenu = {
       label: "Our Services",
       href: "/services",
       subNav: [
-        { id: 1, label: "Visa Services", href: "/services/visa-services" },
-        { id: 2, label: "Career Counselling", href: "/services/career-counselling" },
-        { id: 3, label: "Profile Marketing", href: "/services/profile-marketing" },
-        { id: 4, label: "Resume Writing", href: "/services/resume-writing" },
+        { id: 1, label: "Visa Services", href: "/ourservices/visa-services" },
+        { id: 2, label: "Career Counselling", href: "/ourservices/career-counselling" },
+        { id: 3, label: "Profile Marketing", href: "/ourservices/profile-marketing" },
+        { id: 4, label: "Resume Writing", href: "/ourservices/resume-writing" },
         {
           id: 5,
           label: "Post Landing Services",
-          href: "/services/post-landing-services",
+          href: "/ourservices/post-landing-services",
           subNav: [
-            { id: 1, label: "Pre Hotel / PG", href: "/services/pre-hotel-pg" },
-            { id: 2, label: "Bank Account", href: "/services/bank-account" },
-            { id: 3, label: "Documentation", href: "/services/documentation" },
-            { id: 4, label: "Orientation", href: "/services/orientation" },
+            { id: 1, label: "Pre Hotel / PG", href: "/ourservices/pre-hotel-pg" },
+            { id: 2, label: "Bank Account", href: "/ourservices/bank-account" },
+            { id: 3, label: "Documentation", href: "/ourservices/documentation" },
+            { id: 4, label: "Orientation", href: "/ourservices/orientation" },
           ],
         },
       ],
@@ -79,7 +79,7 @@ export const navigationMenu = {
     },
 
     { id: 6, label: "Contact Us", href: "/contact-us" },
-        { id: 7, label: "Evaluation Form", href: "/evaluation-form" },
+    { id: 7, label: "Evaluation Form", href: "/evaluation-form" },
 
   ],
 
@@ -257,7 +257,7 @@ export const sliderContent = [
     para:
       "Get step-by-step assistance, accurate documentation, and reliable guidance to make your visa process smooth, secure, and successful.",
     btntext: "Contact Us",
-    href: "/contact-us",
+    href: "/contact-us/",
   },
   {
     id: 2, // Fix duplicate id issue by using unique ids
@@ -268,7 +268,7 @@ export const sliderContent = [
     para:
       "We connect you with verified opportunities, strong profiles, and complete processing support to help you build a stable career and long-term settlement overseas.",
     btntext: "Contact Us",
-    href: "/contact-us",
+    href: "/contact-us/",
   },
 ];
 
@@ -940,19 +940,19 @@ export const footer = {
     title: "Important Links",
     links: [
       { id: 1, label: "Evaluation Form", href: "/evaluation-form" },
-        { id: 3, label: "About Us", href: "/about-us" },
-        { id: 4, label: "Privacy Policy", href: "/privacy-policy" },
-         { id: 5, label: "Term & Condition", href: "/terms-condition" },
+      { id: 3, label: "About Us", href: "/about-us" },
+      { id: 4, label: "Privacy Policy", href: "/privacy-policy" },
+      { id: 5, label: "Term & Condition", href: "/terms-condition" },
     ],
   },
 
   list1: {
     title: "Resources",
     links: [
-        { id: 1, label: "Blogs", href: "/blogs" },
-        { id: 2, label: "News", href: "/news" },
-       { id: 4, label: "Canada Calculator", href: "/visa/canada-67-points-calculator" },
-        { id: 5, label: "Australia Calulator", href: "/visa/australia-points-calculator" },
+      { id: 1, label: "Blogs", href: "/blogs" },
+      { id: 2, label: "News", href: "/news" },
+      { id: 4, label: "Canada Calculator", href: "/visa/canada-67-points-calculator" },
+      { id: 5, label: "Australia Calulator", href: "/visa/australia-points-calculator" },
 
     ],
   },

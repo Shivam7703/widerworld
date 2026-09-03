@@ -10,12 +10,12 @@ export default function ServiceSection() {
 
       {/* Header */}
       <div className="text-center mb-14">
-       <h4 className="text-color2 text-xs font-bold tracking-[0.2em] uppercase mb-4">
-Our Services    </h4>
+        <h4 className="text-color2 text-xs font-bold tracking-[0.2em] uppercase mb-4">
+          Our Services    </h4>
         <h2
           className="text-color3 font-bold capitalize text-3xl md:text-5xl !leading-tight mb-6 max-w-3xl mx-auto"
         >
-Smart solutions for{" "}<span className="text-color1">global immigration </span>
+          Smart solutions for{" "}<span className="text-color1">global immigration </span>
         </h2>
         <div className="w-16 h-[2px] bg-color4 mx-auto mt-4 rounded-full" />
       </div>
@@ -52,7 +52,7 @@ Smart solutions for{" "}<span className="text-color1">global immigration </span>
 
             {/* Content */}
             <Link
-              href={`/services/${pro.title
+              href={`/ourservices/${pro.title
                 .trim()
                 .toLowerCase()
                 .replace(/[^a-z0-9]+/g, "-")}`}
@@ -64,7 +64,7 @@ Smart solutions for{" "}<span className="text-color1">global immigration </span>
                               bg-color4/10 border border-color4/40 text-color4
                               mb-3 transition-all duration-300
                               group-hover:bg-color4/20 group-hover:shadow-[0_0_20px_rgba(198,164,92,0.35)]">
-<FiSettings />              </div>
+                <FiSettings />              </div>
 
               {/* Title */}
               <h3
@@ -84,7 +84,7 @@ Smart solutions for{" "}<span className="text-color1">global immigration </span>
                             max-h-0 opacity-0 overflow-hidden
                             group-hover:max-h-24 group-hover:opacity-100
                             transition-all duration-500">
-{pro?.metadesc}              </p>
+                {pro?.metadesc}              </p>
 
               {/* CTA */}
               <span className="inline-flex items-center gap-1 mt-3 text-sm sm:text-base hover:border-b

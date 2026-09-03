@@ -74,7 +74,7 @@ export const visaData = [
     {
         "img": alberta,
         "title": "Alberta PNP",
-        "metatitle": "Alberta PNP",
+        "metatitle": "Alberta PNP Program | Immigrate To Canada",
         "metakey": "Alberta PNP, AAIP, Alberta Advantage Immigration Program, Alberta PNP draws, Alberta Express Entry, Alberta PR visa",
         "metadesc": "Apply through the Alberta Advantage Immigration Program (AAIP) with expert guidance. Check eligibility and start your Canada PR journey.",
         "content": [
@@ -246,7 +246,7 @@ export const visaData = [
     {
         "img": bcPnpProgram,
         "title": "British Columbia PNP",
-        "metatitle": "British Columbia PNP",
+        "metatitle": "Apply Canada PR With BC PNP Program",
         "metakey": "BC PNP, British Columbia PNP, BC PNP draws, BC PNP points calculator, Skills Immigration BC, BC Tech draw",
         "metadesc": "Immigrate to British Columbia through the BC PNP. Get expert assistance with eligibility, documentation, and Canada PR application.",
         "content": [
@@ -298,22 +298,22 @@ export const visaData = [
                     },
                 ]
             },
-                    {
-                        "heading": "<h4>Key Streams of British Columbia PNP</h4>",
-                      "subcontent":[{
-                           "table": {
-                            "theading": ["Immigration Stream", "Target Applicants", "Key Requirement"],
-                            "rows": [
-                                { "colum": ["Skills Immigration", "Skilled workers & graduates", "Job offer from BC employer"] },
-                                { "colum": ["Express Entry BC", "Express Entry candidates", "Active Express Entry profile"] },
-                                { "colum": ["BC PNP Tech", "Technology professionals", "Job offer in a tech occupation"] },
-                                { "colum": ["Entrepreneur Immigration", "Business investors", "Business investment and experience"] }
-                            ]
-                        }
-                    },
-                    {
-                        "para": "This structured system allows the British Columbia PNP to attract talent across different sectors."
+            {
+                "heading": "<h4>Key Streams of British Columbia PNP</h4>",
+                "subcontent": [{
+                    "table": {
+                        "theading": ["Immigration Stream", "Target Applicants", "Key Requirement"],
+                        "rows": [
+                            { "colum": ["Skills Immigration", "Skilled workers & graduates", "Job offer from BC employer"] },
+                            { "colum": ["Express Entry BC", "Express Entry candidates", "Active Express Entry profile"] },
+                            { "colum": ["BC PNP Tech", "Technology professionals", "Job offer in a tech occupation"] },
+                            { "colum": ["Entrepreneur Immigration", "Business investors", "Business investment and experience"] }
+                        ]
                     }
+                },
+                {
+                    "para": "This structured system allows the British Columbia PNP to attract talent across different sectors."
+                }
                 ]
             },
             {
@@ -411,7 +411,7 @@ export const visaData = [
     {
         "img": manitoba,
         "title": "Manitoba PNP",
-        "metatitle": "Manitoba PNP",
+        "metatitle": "Manitoba PNP Program: Find Your Best Path to Canada PR",
         "metakey": "Manitoba PNP, MPNP, Manitoba PNP draws, MPNP EOI points, Manitoba skilled worker, Manitoba PR",
         "metadesc": "Apply for the Manitoba Provincial Nominee Program (MPNP). Receive expert guidance for a smooth and successful Canada PR process.",
         "content": [
@@ -464,9 +464,11 @@ export const visaData = [
                         "subheading": "Business Investor Stream",
                         "para": "The Business Investor stream targets entrepreneurs and investors who want to establish or purchase businesses in Manitoba.\nApplicants must demonstrate:\nBusiness management experience\n\nInvestment capacity\n\nA business plan that supports economic development\n\nThis stream under the Manitoba PNP helps attract entrepreneurs who can create jobs and support local businesses."
                     },
-                ]},
-                    { "heading":"<h3>Key Streams of Manitoba PNP</h3>",
-                         "subcontent": [
+                ]
+            },
+            {
+                "heading": "<h3>Key Streams of Manitoba PNP</h3>",
+                "subcontent": [
                     {
                         "table": {
                             "theading": ["Immigration Stream", "Target Applicants", "Key Requirement"],
@@ -606,7 +608,7 @@ export const visaData = [
     {
         "img": newBrunswickPnp,
         "title": "New Brunswick PNP",
-        "metatitle": "New Brunswick PNP",
+        "metatitle": "New Brunswick PNP | Eligibility and Application Tips",
         "metakey": "New Brunswick PNP, NBPNP, New Brunswick Express Entry, New Brunswick skilled worker, NB PNP requirements",
         "metadesc": "Start your New Brunswick PNP application with professional support. Explore eligibility and pathways to Canada permanent residency.",
         "content": [
@@ -659,9 +661,10 @@ export const visaData = [
                         "subheading": "Business Immigration Stream",
                         "para": "The Business Immigration stream under the New Brunswick PNP targets entrepreneurs who want to establish or purchase businesses in the province.\nApplicants must demonstrate business management experience and the ability to invest in a business that contributes to economic development. This stream helps create employment opportunities and supports local economic growth."
                     },
-                ]},
-                    {
-                        "heading": "<h3>Key Streams of New Brunswick PNP</h3>",
+                ]
+            },
+            {
+                "heading": "<h3>Key Streams of New Brunswick PNP</h3>",
                 "subcontent": [
                     {
                         "table": {
@@ -775,7 +778,7 @@ export const visaData = [
                     {
                         "para": "Professionals working in these sectors may have better chances of receiving invitations through the New Brunswick PNP."
                     },
-                
+
                     {
                         "para": "Canada continues to increase immigration targets to support economic growth and address workforce shortages. Provinces like New Brunswick rely heavily on immigration to maintain population growth and fill labor market gaps."
                     },
@@ -807,7 +810,7 @@ export const visaData = [
     {
         "img": nlPnp,
         "title": "Newfoundland and Labrador PNP",
-        "metatitle": "Newfoundland and Labrador PNP",
+        "metatitle": "Move to Canada: Newfoundland Labrador PNP Application Tips",
         "metakey": "Newfoundland and Labrador PNP, NLPNP, NL PNP streams, Newfoundland priority skills, NL skilled worker visa",
         "metadesc": "Apply for the Newfoundland and Labrador PNP with expert guidance. Discover your pathway to Canada PR with ease and confidence.",
         "content": [
@@ -1036,7 +1039,7 @@ export const visaData = [
     {
         "img": nwtnp,
         "title": "Northwest Territories Nominee Program (NWTNP)",
-        "metatitle": "Northwest Territories Nominee Program (NWTNP)",
+        "metatitle": "Northwest Territories PNP: Fast Track Your PR Application",
         "metakey": "Northwest Territories Nominee Program, NTNP, Northwest Territories PNP, NTNP employer driven, Northwest Territories PR",
         "metadesc": "Explore the Northwest Territories Nominee Program (NWTNP). Get expert assistance for your Canada PR application and eligibility.",
         "content": [
@@ -1276,7 +1279,7 @@ export const visaData = [
     {
         "img": novaScotia,
         "title": "Nova Scotia PNP",
-        "metatitle": "Nova Scotia PNP",
+        "metatitle": "Nova Scotia PNP : NSNP Eligibility, Streams & Process",
         "metakey": "Nova Scotia Nominee Program, NSNP, Nova Scotia PNP draws, Nova Scotia labour market priorities, Nova Scotia demand occupations",
         "metadesc": "Apply through the Nova Scotia Nominee Program (NSNP). Expert support for eligibility, documentation, and Canada PR processing.",
         "content": [
@@ -1527,7 +1530,7 @@ export const visaData = [
     {
         "img": atlanticImmigration,
         "title": "Atlantic Immigration Program (AIP)",
-        "metatitle": "Atlantic Immigration Program (AIP)",
+        "metatitle": "Atlantic Immigration Pilot Program - Apply for AIPP 2026",
         "metakey": "Atlantic Immigration Program, AIP Canada, Atlantic Immigration Pilot, AIP requirements, Atlantic Canada PR visa",
         "metadesc": "Immigrate to Atlantic Canada through the Atlantic Immigration Program (AIP). Get expert guidance for a successful PR application.",
         "content": [
@@ -1762,7 +1765,7 @@ export const visaData = [
     {
         "img": ontario,
         "title": "Ontario PNP",
-        "metatitle": "Ontario PNP",
+        "metatitle": "OINP - Ontario Immigrant Nominee Program",
         "metakey": "OINP, Ontario Immigrant Nominee Program, OINP draws, Ontario Human Capital Priorities, OINP Express Entry points, Ontario PR",
         "metadesc": "Apply for the Ontario Immigrant Nominee Program (OINP). Expert assistance for eligibility, documentation, and Canada PR success.",
         "content": [
@@ -2005,7 +2008,7 @@ export const visaData = [
     {
         "img": peiPnpProgram,
         "title": "Prince Edward Island PNP",
-        "metatitle": "Prince Edward Island PNP",
+        "metatitle": "Prince Edward Island PNP Pathways for Skilled Workers",
         "metakey": "PEI PNP, Prince Edward Island PNP, PEI PNP draws, PEI Express Entry, PEI PNP EOI system",
         "metadesc": "Explore Prince Edward Island PNP opportunities. Get expert guidance for a smooth Canada permanent residency application process.",
         "content": [
@@ -2248,7 +2251,7 @@ export const visaData = [
     {
         "img": saskatchewanPnp,
         "title": "Saskatchewan PNP",
-        "metatitle": "Saskatchewan PNP",
+        "metatitle": "Apply for the Saskatchewan Immigration Nominee Program (SINP)",
         "metakey": "SINP, Saskatchewan Immigrant Nominee Program, SINP points calculator,",
         "metadesc": "Apply through the Saskatchewan Immigrant Nominee Program (SINP). Expert support for Canada PR with fast and reliable guidance.",
         "content": [
@@ -2498,7 +2501,7 @@ export const visaData = [
     {
         "img": yukonPnp,
         "title": "Yukon PNP",
-        "metatitle": "Yukon PNP",
+        "metatitle": "Apply Yukon Nominee Program and Work In Canada",
         "metakey": "Yukon Nominee Program, YNP, Yukon PNP, Yukon skilled worker, Yukon PR visa requirements",
         "metadesc": "Start your Yukon Nominee Program (YNP) application with expert guidance. Explore eligibility and secure your pathway to Canada PR.",
         "content": [
@@ -2748,7 +2751,7 @@ export const visaData = [
     {
         "img": crsPointsCalculator,
         "title": "Canada 67 Points Calculator",
-        "metatitle": "Canada 67 Points Calculator",
+        "metatitle": "Canada 67 Points Calculator for Federal Skilled Workers",
         "metakey": "Canada 67 Points Calculator",
         "metadesc": "Use our Canada 67 Points Calculator to check your FSW eligibility. Calculate your score and plan your Canada PR journey today.",
         "content": [
@@ -3031,7 +3034,7 @@ export const visaData = [
     {
         "img": australiaPointSystem,
         "title": "Australia Points Calculator",
-        "metatitle": "Australia Points Calculator",
+        "metatitle": "Check Your Australia Eligibility Here - Australia Points Calculator",
         "metakey": "Australia Points Calculator",
         "metadesc": "Check your Australia PR eligibility with our Australia Points Calculator. Calculate your score quickly and accurately online.",
         "content": [
@@ -3311,7 +3314,7 @@ export const visaData = [
     {
         "img": newZealandPointsCalculator,
         "title": "New Zealand Points Calculator",
-        "metatitle": "New Zealand Points Calculator",
+        "metatitle": "New Zealand Points Calculator for Skilled Migrants 2026",
         "metakey": "New Zealand PR Points Calculator",
         "metadesc": "Calculate your New Zealand immigration points online. Check your PR eligibility with our fast and easy points calculator.",
         "content": [
@@ -3569,7 +3572,7 @@ export const visaData = [
     {
         "img": uaeWorkVisa,
         "title": "UAE Work Visa",
-        "metatitle": "UAE Work Visa",
+        "metatitle": "UAE Work Visa Options: Requirements & Application",
         "metakey": "uae work visa, uae work permit, Best Immigration Consultant For UAE Work Visa",
         "metadesc": "Apply for a UAE visa with expert guidance. Fast processing for tourist, business, investor, and work visas with complete documentation support.",
 
@@ -3854,7 +3857,7 @@ export const visaData = [
     {
         "img": omanWorkVisa,
         "title": "Oman Work Visa",
-        "metatitle": "Oman Work Visa",
+        "metatitle": "Apply for an Oman Work Visa | Employment & Permit Options",
         "metakey": "oman work visa, oman employment visa, Best Immigration Consultants For Work Visa",
         "metadesc": "Get your Oman visa hassle-free with expert assistance. We offer quick processing for tourist, business, investor, and work visas.",
 
@@ -4151,7 +4154,7 @@ export const visaData = [
     {
         "img": kuwaitWorkVisa,
         "title": "Kuwait Work Visa",
-        "metatitle": "Kuwait Work Visa",
+        "metatitle": "Kuwait Work Visa Requirements: NOC, Fees & Process",
         "metakey": "kuwait work visa, employment visa for kuwait, Best Immigration Consultants In Delhi",
         "metadesc": "Secure your Kuwait visa with trusted immigration experts. Fast, reliable support for tourist, business, investor, and work visas.",
 
@@ -4440,7 +4443,7 @@ export const visaData = [
     {
         "img": qatarWorkVisa,
         "title": "Qatar Work Visa",
-        "metatitle": "Qatar Work Visa",
+        "metatitle": "Qatar Work Visa Process 2026: Documents, Fees & Timeline",
         "metakey": "qatar work visa, qatar work permit, Best Visa Consultants In Delhi",
         "metadesc": "Apply for a Qatar visa with confidence. Expert assistance for tourist, business, investor, and work visas with smooth processing.",
         "content": [
@@ -4728,7 +4731,7 @@ export const visaData = [
     {
         "img": saudiArabiaWorkVisa,
         "title": "Saudi Arabia Work Visa",
-        "metatitle": "Saudi Arabia Work Visa",
+        "metatitle": "Saudi Arabia Work Visa - Price, Requirements and Application",
         "metakey": "saudi arabia work visa, saudi multiple entry visa, saudi work permit",
         "metadesc": "Start your Saudi Arabia visa application today. Professional support for tourist, business, investor, and work visas with fast approval.",
         "content": [
@@ -5022,7 +5025,7 @@ export const visaData = [
     {
         "img": usaVisitVisa,
         "title": "USA Visit Visa",
-        "metatitle": "USA Visit Visa (B1/B2)",
+        "metatitle": "US Tourist Visa for Indians and How to Apply in 2026",
         "metakey": "america tourist visa, united states tourist visa, us visa cost for indian, us tourist visa from india",
         "metadesc": "Explore the world with our tourist visa services. Get expert assistance, fast processing, and hassle-free documentation for your trip.",
         "content": [
@@ -5355,7 +5358,7 @@ export const visaData = [
     {
         "img": usaInvestorVisa,
         "title": "USA Investor Visa (EB-5)",
-        "metatitle": "USA Investor Visa (EB-5)",
+        "metatitle": "Apply For US Investment Visa : EB-5 & E-2 Requirements",
         "metakey": "US investment visa, USA Visa Consultants In India",
         "metadesc": "Expand your global business opportunities with an investor visa. Expert guidance for eligibility, documentation, and smooth processing.",
 
@@ -5666,375 +5669,375 @@ export const visaData = [
         ]
     },
     {
-    "img": canadaStartupVisa,
-    "title": "USA Business Visa (B1)",
-    "metatitle": "USA Business Visa (B1)",
-    "metakey": "usa business visa, usa b1 visa, USA Visa Consultants In India",
-    "metadesc": "Travel for business with confidence. Get fast, reliable business visa assistance with expert support and seamless documentation.",
-    "content": [
-        {
-            "subcontent": [
-                {
-                    "para": "The United States continues to be a global hub for business, innovation, and international collaboration. Whether you are attending high-level meetings, exploring partnerships, negotiating contracts, or participating in global conferences, the USA Business Visa (B1 Visa) is the official route for short-term professional travel."
-                },
-                {
-                    "para": "Unlike long-term work visas, the USA Business Visa is designed specifically for temporary business activities. It allows professionals, entrepreneurs, and company representatives to enter the U.S. for legitimate commercial purposes without engaging in direct employment. Understanding how this visa works—and how to position your application strategically—can significantly improve your chances of approval for a USA Visa."
-                }
-            ]
-        },
-        {
-            "heading": "<h1>What Is the USA Business Visa (B1)?</h1>",
-            "subcontent": [
-                {
-                    "para": "The USA Business Visa, commonly referred to as the USA B1 Visa, is a non-immigrant visa issued to individuals traveling to the United States for short-term business purposes."
-                },
-                {
-                    "para": "Typical activities permitted under a USA B1 Visa include:"
-                },
-                {
-                    "list": [
-                        "Attending business meetings or conferences",
-                        "Negotiating contracts or agreements",
-                        "Participating in training programs",
-                        "Exploring investment or partnership opportunities",
-                        "Attending trade shows or corporate events"
-                    ]
-                },
-                {
-                    "para": "The key condition is that you cannot engage in employment or receive payment from a U.S. employer. Visa strictly supports temporary business engagements."
-                },
-                {
-                    "para": "In most cases, visa is issued along with the B2 category as a combined B1/B2 visa, allowing both business and tourism activities."
-                }
-            ]
-        },
-        {
-            "heading": "<h2>Key Features of USA Business Visa</h2>",
-            "subcontent": [
-                {
-                    "table": {
-                        "theading": ["Feature", "Details"],
-                        "rows": [
-                            { "colum": ["Visa Type", "Non-immigrant (temporary)"] },
-                            { "colum": ["Purpose", "Business-related visits"] },
-                            { "colum": ["Validity", "Up to 10 years (multiple entry)"] },
-                            { "colum": ["Stay Duration", "Typically up to 6 months per visit"] },
-                            { "colum": ["Work Permission", "Not allowed"] }
-                        ]
+        "img": canadaStartupVisa,
+        "title": "USA Business Visa (B1)",
+        "metatitle": "How to Get a USA Business Visa: Types & Requirements",
+        "metakey": "usa business visa, usa b1 visa, USA Visa Consultants In India",
+        "metadesc": "Travel for business with confidence. Get fast, reliable business visa assistance with expert support and seamless documentation.",
+        "content": [
+            {
+                "subcontent": [
+                    {
+                        "para": "The United States continues to be a global hub for business, innovation, and international collaboration. Whether you are attending high-level meetings, exploring partnerships, negotiating contracts, or participating in global conferences, the USA Business Visa (B1 Visa) is the official route for short-term professional travel."
+                    },
+                    {
+                        "para": "Unlike long-term work visas, the USA Business Visa is designed specifically for temporary business activities. It allows professionals, entrepreneurs, and company representatives to enter the U.S. for legitimate commercial purposes without engaging in direct employment. Understanding how this visa works—and how to position your application strategically—can significantly improve your chances of approval for a USA Visa."
                     }
-                },
-                {
-                    "para": "The USA Business Visa validity may extend up to 10 years, but the duration of stay is decided by the immigration officer at the port of entry."
-                }
-            ]
-        },
-        {
-            "heading": "<p>Who Should Apply for a B1 Visa?</p>",
-            "subcontent": [
-                {
-                    "para": "The B1 Visa is ideal for professionals and business individuals who need to travel temporarily for work-related purposes."
-                },
-                {
-                    "para": "This includes:"
-                },
-                {
-                    "list": [
-                        "Business owners and entrepreneurs",
-                        "Corporate employees attending meetings or training",
-                        "Consultants and advisors",
-                        "Investors exploring opportunities",
-                        "Representatives of foreign companies"
-                    ]
-                },
-                {
-                    "para": "Applicants must demonstrate that their visit is temporary and directly related to business activities under the USA Visa."
-                }
-            ]
-        },
-        {
-            "heading": "<h3>USA Business Visa Requirements</h3>",
-            "subcontent": [
-                {
-                    "para": "To apply for a USA Business Visa, applicants must meet specific eligibility criteria set by U.S. immigration authorities. Many applicants also seek guidance from USA Visa Consultants in India to ensure proper documentation."
-                },
-                {
-                    "subheading": "Core Requirements",
-                    "para": ""
-                },
-                {
-                    "table": {
-                        "theading": ["Requirement", "Explanation"],
-                        "rows": [
-                            { "colum": ["Valid Passport", "Minimum 6 months' validity"] },
-                            { "colum": ["DS-160 Form", "Online visa application"] },
-                            { "colum": ["Visa Fee", "Mandatory payment (~$185)"] },
-                            { "colum": ["Business Purpose Proof", "Invitation, meeting details"] },
-                            { "colum": ["Financial Stability", "Ability to cover expenses"] },
-                            { "colum": ["Home Country Ties", "Proof of return intention"] }
+                ]
+            },
+            {
+                "heading": "<h1>What Is the USA Business Visa (B1)?</h1>",
+                "subcontent": [
+                    {
+                        "para": "The USA Business Visa, commonly referred to as the USA B1 Visa, is a non-immigrant visa issued to individuals traveling to the United States for short-term business purposes."
+                    },
+                    {
+                        "para": "Typical activities permitted under a USA B1 Visa include:"
+                    },
+                    {
+                        "list": [
+                            "Attending business meetings or conferences",
+                            "Negotiating contracts or agreements",
+                            "Participating in training programs",
+                            "Exploring investment or partnership opportunities",
+                            "Attending trade shows or corporate events"
                         ]
+                    },
+                    {
+                        "para": "The key condition is that you cannot engage in employment or receive payment from a U.S. employer. Visa strictly supports temporary business engagements."
+                    },
+                    {
+                        "para": "In most cases, visa is issued along with the B2 category as a combined B1/B2 visa, allowing both business and tourism activities."
                     }
-                },
-                {
-                    "para": "The most important factor is proving non-immigrant intent—you must clearly show that you will return to your home country after your visit on a USA Visa."
-                }
-            ]
-        },
-        {
-            "heading": "<h4>Step-by-Step USA Business Visa Process</h4>",
-            "subcontent": [
-                {
-                    "para": "The visa application process is structured but requires accuracy and clarity."
-                },
-                {
-                    "subheading": "Steps:",
-                    "para": ""
-                },
-                {
-                    "subheading": "Fill out the DS-160 Form",
-                    "para": "Complete the online application form with accurate personal and professional details."
-                },
-                {
-                    "subheading": "Pay Visa Fee",
-                    "para": "The standard fee is approximately $185, which is non-refundable."
-                },
-                {
-                    "subheading": "Schedule Appointments",
-                    "para": "Book <a href='https://in.usembassy.gov/scheduling-immigrant-visas-appointments/'>Biometrics (VAC)</a> and Visa interview."
-                },
-                {
-                    "subheading": "Attend Biometrics",
-                    "para": "Submit fingerprints and a photograph."
-                },
-                {
-                    "subheading": "Attend a Visa Interview",
-                    "para": "This is the most critical stage where the decision is made."
-                },
-                {
-                    "subheading": "Receive Decision",
-                    "para": "In most cases, the decision is given immediately after the interview."
-                },
-                {
-                    "para": "Many applicants prefer consulting USA Visa Consultants in India to avoid errors in this process."
-                }
-            ]
-        },
-        {
-            "heading": "<p>Documents Required for a USA Business Visa</p>",
-            "subcontent": [
-                {
-                    "para": "Although the process is interview-focused, carrying proper documents strengthens your USA profile."
-                },
-                {
-                    "para": "Essential Documents:"
-                },
-                {
-                    "list": [
-                        "Valid passport",
-                        "DS-160 confirmation page",
-                        "Appointment confirmation",
-                        "Visa fee receipt",
-                        "Business invitation letter",
-                        "Company letter stating the purpose of the visit",
-                        "Financial documents",
-                        "Employment or business proof"
-                    ]
-                },
-                {
-                    "para": "Visa officers may not always ask for documents, but they must be ready if required for your Business Visa interview."
-                }
-            ]
-        },
-        {
-            "heading": "<p>Visa Interview: The Deciding Factor</p>",
-            "subcontent": [
-                {
-                    "para": "The visa interview is the most important step in the USA Visa process. Decisions are often made within minutes."
-                },
-                {
-                    "subheading": "What Officers Evaluate:",
-                    "para": "Purpose of visit\nProfessional background\nFinancial capability\nTies to home country"
-                },
-                {
-                    "subheading": "Common Questions:",
-                    "para": "Why are you visiting the U.S.?\nWho is sponsoring your trip?\nWhat does your company do?\nHow long will you stay?"
-                },
-                {
-                    "para": "Your answers should be clear, concise, and consistent with your USA B1 Visa application."
-                }
-            ]
-        },
-        {
-            "heading": "<h4>Financial Planning and Cost Breakdown</h4>",
-            "subcontent": [
-                {
-                    "para": "Applying for a Business Visa involves certain costs."
-                },
-                {
-                    "table": {
-                        "theading": ["Expense", "Estimated Cost"],
-                        "rows": [
-                            { "colum": ["Visa Fee", "$185 (~₹15,000+)"] },
-                            { "colum": ["Travel Expenses", "Varies"] },
-                            { "colum": ["Accommodation", "Depends on the stay."] },
-                            { "colum": ["Miscellaneous", "Documentation, travel"] }
+                ]
+            },
+            {
+                "heading": "<h2>Key Features of USA Business Visa</h2>",
+                "subcontent": [
+                    {
+                        "table": {
+                            "theading": ["Feature", "Details"],
+                            "rows": [
+                                { "colum": ["Visa Type", "Non-immigrant (temporary)"] },
+                                { "colum": ["Purpose", "Business-related visits"] },
+                                { "colum": ["Validity", "Up to 10 years (multiple entry)"] },
+                                { "colum": ["Stay Duration", "Typically up to 6 months per visit"] },
+                                { "colum": ["Work Permission", "Not allowed"] }
+                            ]
+                        }
+                    },
+                    {
+                        "para": "The USA Business Visa validity may extend up to 10 years, but the duration of stay is decided by the immigration officer at the port of entry."
+                    }
+                ]
+            },
+            {
+                "heading": "<p>Who Should Apply for a B1 Visa?</p>",
+                "subcontent": [
+                    {
+                        "para": "The B1 Visa is ideal for professionals and business individuals who need to travel temporarily for work-related purposes."
+                    },
+                    {
+                        "para": "This includes:"
+                    },
+                    {
+                        "list": [
+                            "Business owners and entrepreneurs",
+                            "Corporate employees attending meetings or training",
+                            "Consultants and advisors",
+                            "Investors exploring opportunities",
+                            "Representatives of foreign companies"
                         ]
+                    },
+                    {
+                        "para": "Applicants must demonstrate that their visit is temporary and directly related to business activities under the USA Visa."
                     }
-                },
-                {
-                    "para": "The visa fee is non-refundable, regardless of the outcome of your USA Visa application."
-                }
-            ]
-        },
-        {
-            "heading": "<p>Processing Time and Validity</p>",
-            "subcontent": [
-                {
-                    "table": {
-                        "theading": ["Stage", "Timeline"],
-                        "rows": [
-                            { "colum": ["DS-160 Submission", "Immediate"] },
-                            { "colum": ["Appointment Wait Time", "Weeks to months"] },
-                            { "colum": ["Interview Decision", "Same day"] },
-                            { "colum": ["Passport Delivery", "3–7 days"] }
+                ]
+            },
+            {
+                "heading": "<h3>USA Business Visa Requirements</h3>",
+                "subcontent": [
+                    {
+                        "para": "To apply for a USA Business Visa, applicants must meet specific eligibility criteria set by U.S. immigration authorities. Many applicants also seek guidance from USA Visa Consultants in India to ensure proper documentation."
+                    },
+                    {
+                        "subheading": "Core Requirements",
+                        "para": ""
+                    },
+                    {
+                        "table": {
+                            "theading": ["Requirement", "Explanation"],
+                            "rows": [
+                                { "colum": ["Valid Passport", "Minimum 6 months' validity"] },
+                                { "colum": ["DS-160 Form", "Online visa application"] },
+                                { "colum": ["Visa Fee", "Mandatory payment (~$185)"] },
+                                { "colum": ["Business Purpose Proof", "Invitation, meeting details"] },
+                                { "colum": ["Financial Stability", "Ability to cover expenses"] },
+                                { "colum": ["Home Country Ties", "Proof of return intention"] }
+                            ]
+                        }
+                    },
+                    {
+                        "para": "The most important factor is proving non-immigrant intent—you must clearly show that you will return to your home country after your visit on a USA Visa."
+                    }
+                ]
+            },
+            {
+                "heading": "<h4>Step-by-Step USA Business Visa Process</h4>",
+                "subcontent": [
+                    {
+                        "para": "The visa application process is structured but requires accuracy and clarity."
+                    },
+                    {
+                        "subheading": "Steps:",
+                        "para": ""
+                    },
+                    {
+                        "subheading": "Fill out the DS-160 Form",
+                        "para": "Complete the online application form with accurate personal and professional details."
+                    },
+                    {
+                        "subheading": "Pay Visa Fee",
+                        "para": "The standard fee is approximately $185, which is non-refundable."
+                    },
+                    {
+                        "subheading": "Schedule Appointments",
+                        "para": "Book <a href='https://in.usembassy.gov/scheduling-immigrant-visas-appointments/'>Biometrics (VAC)</a> and Visa interview."
+                    },
+                    {
+                        "subheading": "Attend Biometrics",
+                        "para": "Submit fingerprints and a photograph."
+                    },
+                    {
+                        "subheading": "Attend a Visa Interview",
+                        "para": "This is the most critical stage where the decision is made."
+                    },
+                    {
+                        "subheading": "Receive Decision",
+                        "para": "In most cases, the decision is given immediately after the interview."
+                    },
+                    {
+                        "para": "Many applicants prefer consulting USA Visa Consultants in India to avoid errors in this process."
+                    }
+                ]
+            },
+            {
+                "heading": "<p>Documents Required for a USA Business Visa</p>",
+                "subcontent": [
+                    {
+                        "para": "Although the process is interview-focused, carrying proper documents strengthens your USA profile."
+                    },
+                    {
+                        "para": "Essential Documents:"
+                    },
+                    {
+                        "list": [
+                            "Valid passport",
+                            "DS-160 confirmation page",
+                            "Appointment confirmation",
+                            "Visa fee receipt",
+                            "Business invitation letter",
+                            "Company letter stating the purpose of the visit",
+                            "Financial documents",
+                            "Employment or business proof"
                         ]
+                    },
+                    {
+                        "para": "Visa officers may not always ask for documents, but they must be ready if required for your Business Visa interview."
                     }
-                },
-                {
-                    "para": "The USA Visa is typically valid for up to 10 years, allowing multiple entries."
-                }
-            ]
-        },
-        {
-            "heading": "<p>Common Reasons for Rejection</p>",
-            "subcontent": [
-                {
-                    "para": "Many Business Visa applications are refused under Section 214(b), mainly due to weak profile presentation."
-                },
-                {
-                    "subheading": "Common Mistakes:",
-                    "para": "Unclear business purpose\nWeak ties to the home country\nInconsistent answers\nLack of proper documentation\nOverconfidence or rehearsed responses"
-                },
-                {
-                    "para": "Rejections are not permanent, but reapplication requires profile improvement. Guidance from USA Visa Consultants in India can help avoid these mistakes."
-                }
-            ]
-        },
-        {
-            "heading": "<h5>Key Differences: B1 Visa vs Work Visa</h5>",
-            "subcontent": [
-                {
-                    "table": {
-                        "theading": ["Factor", "B1 Visa", "Work Visa"],
-                        "rows": [
-                            { "colum": ["Purpose", "Business visit", "Employment"] },
-                            { "colum": ["Duration", "Short-term", "Long-term"] },
-                            { "colum": ["Salary in the U.S.", "Not allowed", "Allowed"] },
-                            { "colum": ["Sponsorship", "Not required", "Required"] }
+                ]
+            },
+            {
+                "heading": "<p>Visa Interview: The Deciding Factor</p>",
+                "subcontent": [
+                    {
+                        "para": "The visa interview is the most important step in the USA Visa process. Decisions are often made within minutes."
+                    },
+                    {
+                        "subheading": "What Officers Evaluate:",
+                        "para": "Purpose of visit\nProfessional background\nFinancial capability\nTies to home country"
+                    },
+                    {
+                        "subheading": "Common Questions:",
+                        "para": "Why are you visiting the U.S.?\nWho is sponsoring your trip?\nWhat does your company do?\nHow long will you stay?"
+                    },
+                    {
+                        "para": "Your answers should be clear, concise, and consistent with your USA B1 Visa application."
+                    }
+                ]
+            },
+            {
+                "heading": "<h4>Financial Planning and Cost Breakdown</h4>",
+                "subcontent": [
+                    {
+                        "para": "Applying for a Business Visa involves certain costs."
+                    },
+                    {
+                        "table": {
+                            "theading": ["Expense", "Estimated Cost"],
+                            "rows": [
+                                { "colum": ["Visa Fee", "$185 (~₹15,000+)"] },
+                                { "colum": ["Travel Expenses", "Varies"] },
+                                { "colum": ["Accommodation", "Depends on the stay."] },
+                                { "colum": ["Miscellaneous", "Documentation, travel"] }
+                            ]
+                        }
+                    },
+                    {
+                        "para": "The visa fee is non-refundable, regardless of the outcome of your USA Visa application."
+                    }
+                ]
+            },
+            {
+                "heading": "<p>Processing Time and Validity</p>",
+                "subcontent": [
+                    {
+                        "table": {
+                            "theading": ["Stage", "Timeline"],
+                            "rows": [
+                                { "colum": ["DS-160 Submission", "Immediate"] },
+                                { "colum": ["Appointment Wait Time", "Weeks to months"] },
+                                { "colum": ["Interview Decision", "Same day"] },
+                                { "colum": ["Passport Delivery", "3–7 days"] }
+                            ]
+                        }
+                    },
+                    {
+                        "para": "The USA Visa is typically valid for up to 10 years, allowing multiple entries."
+                    }
+                ]
+            },
+            {
+                "heading": "<p>Common Reasons for Rejection</p>",
+                "subcontent": [
+                    {
+                        "para": "Many Business Visa applications are refused under Section 214(b), mainly due to weak profile presentation."
+                    },
+                    {
+                        "subheading": "Common Mistakes:",
+                        "para": "Unclear business purpose\nWeak ties to the home country\nInconsistent answers\nLack of proper documentation\nOverconfidence or rehearsed responses"
+                    },
+                    {
+                        "para": "Rejections are not permanent, but reapplication requires profile improvement. Guidance from USA Visa Consultants in India can help avoid these mistakes."
+                    }
+                ]
+            },
+            {
+                "heading": "<h5>Key Differences: B1 Visa vs Work Visa</h5>",
+                "subcontent": [
+                    {
+                        "table": {
+                            "theading": ["Factor", "B1 Visa", "Work Visa"],
+                            "rows": [
+                                { "colum": ["Purpose", "Business visit", "Employment"] },
+                                { "colum": ["Duration", "Short-term", "Long-term"] },
+                                { "colum": ["Salary in the U.S.", "Not allowed", "Allowed"] },
+                                { "colum": ["Sponsorship", "Not required", "Required"] }
+                            ]
+                        }
+                    },
+                    {
+                        "para": "Understanding this distinction is critical when applying for a USA B1 Visa."
+                    }
+                ]
+            },
+            {
+                "heading": "<p>Smart Strategies for Approval</p>",
+                "subcontent": [
+                    {
+                        "para": "Getting a USA Business Visa depends on how well you present your profile."
+                    },
+                    {
+                        "subheading": "What Works:",
+                        "para": "Strong professional background\nClear business purpose\nProper invitation documentation\nConsistent and honest answers\nDemonstrating return intent"
+                    },
+                    {
+                        "para": "A structured and genuine application always performs better. Many applicants rely on USA Visa Consultants in India for proper guidance."
+                    }
+                ]
+            },
+            {
+                "heading": "<p>Long-Term Value of USA Business Visa</p>",
+                "subcontent": [
+                    {
+                        "para": "A Business Visa offers benefits beyond immediate travel."
+                    },
+                    {
+                        "list": [
+                            "Access to global business opportunities",
+                            "Networking with international companies",
+                            "Exposure to global markets",
+                            "Strengthened future visa applications"
                         ]
+                    },
+                    {
+                        "para": "Having a USA Visa also improves credibility for other international visas."
                     }
-                },
-                {
-                    "para": "Understanding this distinction is critical when applying for a USA B1 Visa."
-                }
-            ]
-        },
-        {
-            "heading": "<p>Smart Strategies for Approval</p>",
-            "subcontent": [
-                {
-                    "para": "Getting a USA Business Visa depends on how well you present your profile."
-                },
-                {
-                    "subheading": "What Works:",
-                    "para": "Strong professional background\nClear business purpose\nProper invitation documentation\nConsistent and honest answers\nDemonstrating return intent"
-                },
-                {
-                    "para": "A structured and genuine application always performs better. Many applicants rely on USA Visa Consultants in India for proper guidance."
-                }
-            ]
-        },
-        {
-            "heading": "<p>Long-Term Value of USA Business Visa</p>",
-            "subcontent": [
-                {
-                    "para": "A Business Visa offers benefits beyond immediate travel."
-                },
-                {
-                    "list": [
-                        "Access to global business opportunities",
-                        "Networking with international companies",
-                        "Exposure to global markets",
-                        "Strengthened future visa applications"
-                    ]
-                },
-                {
-                    "para": "Having a USA Visa also improves credibility for other international visas."
-                }
-            ]
-        },
-        {
-            "heading": "<h4>Compliance and Important Rules</h4>",
-            "subcontent": [
-                {
-                    "para": "It is essential to follow USA Business Visa conditions strictly."
-                },
-                {
-                    "list": [
-                        "No employment allowed",
-                        "No long-term stay beyond permitted duration",
-                        "No misuse of visa category"
-                    ]
-                },
-                {
-                    "para": "Violating visa rules can lead to bans or future rejections of your USA Visa."
-                }
-            ]
-        },
-        {
-            "heading": "<p>Professional Travel Made Simple</p>",
-            "subcontent": [
-                {
-                    "para": "The USA Business Visa (B1) is a powerful tool for professionals looking to expand their global reach. While the process may seem strict, it is straightforward when approached with clarity and preparation."
-                },
-                {
-                    "para": "Success depends on:"
-                },
-                {
-                    "list": [
-                        "Clear purpose",
-                        "Strong profile",
-                        "Honest communication"
-                    ]
-                },
-                {
-                    "para": "With the right strategy—and support from experienced <a href='https://www.widerworld.in/'>USA Visa Consultants in India</a>—securing a USA Visa becomes a structured and achievable step toward international business growth."
-                }
-            ]
-        }
-    ],
-    "faq": [
-        {
-            "que": "1. Can I work in the USA on a Business Visa?",
-            "ans": "No, the USA Business Visa does not allow employment in the U.S. It is strictly for business activities such as meetings, conferences, and negotiations only."
-        },
-        {
-            "que": "2. How long can I stay in the USA on a B1 Visa?",
-            "ans": "Typically, you can stay up to 6 months per visit on a USA B1 Visa, depending on the immigration officer's decision at the port of entry."
-        },
-        {
-            "que": "3. Is an invitation letter mandatory for a B1 Visa?",
-            "ans": "While not always mandatory, an invitation letter strengthens your USA Business Visa application by clearly explaining the purpose of your visit."
-        },
-        {
-            "que": "4. Can I convert a B1 Visa to a work visa?",
-            "ans": "No, you cannot directly convert a USA B1 Visa into a work visa. You must apply separately through the appropriate work visa category."
-        }
-    ]
-},
+                ]
+            },
+            {
+                "heading": "<h4>Compliance and Important Rules</h4>",
+                "subcontent": [
+                    {
+                        "para": "It is essential to follow USA Business Visa conditions strictly."
+                    },
+                    {
+                        "list": [
+                            "No employment allowed",
+                            "No long-term stay beyond permitted duration",
+                            "No misuse of visa category"
+                        ]
+                    },
+                    {
+                        "para": "Violating visa rules can lead to bans or future rejections of your USA Visa."
+                    }
+                ]
+            },
+            {
+                "heading": "<p>Professional Travel Made Simple</p>",
+                "subcontent": [
+                    {
+                        "para": "The USA Business Visa (B1) is a powerful tool for professionals looking to expand their global reach. While the process may seem strict, it is straightforward when approached with clarity and preparation."
+                    },
+                    {
+                        "para": "Success depends on:"
+                    },
+                    {
+                        "list": [
+                            "Clear purpose",
+                            "Strong profile",
+                            "Honest communication"
+                        ]
+                    },
+                    {
+                        "para": "With the right strategy—and support from experienced <a href='https://www.widerworld.in/'>USA Visa Consultants in India</a>—securing a USA Visa becomes a structured and achievable step toward international business growth."
+                    }
+                ]
+            }
+        ],
+        "faq": [
+            {
+                "que": "1. Can I work in the USA on a Business Visa?",
+                "ans": "No, the USA Business Visa does not allow employment in the U.S. It is strictly for business activities such as meetings, conferences, and negotiations only."
+            },
+            {
+                "que": "2. How long can I stay in the USA on a B1 Visa?",
+                "ans": "Typically, you can stay up to 6 months per visit on a USA B1 Visa, depending on the immigration officer's decision at the port of entry."
+            },
+            {
+                "que": "3. Is an invitation letter mandatory for a B1 Visa?",
+                "ans": "While not always mandatory, an invitation letter strengthens your USA Business Visa application by clearly explaining the purpose of your visit."
+            },
+            {
+                "que": "4. Can I convert a B1 Visa to a work visa?",
+                "ans": "No, you cannot directly convert a USA B1 Visa into a work visa. You must apply separately through the appropriate work visa category."
+            }
+        ]
+    },
     {
         "img": canadaPR,
         "title": "Canada PR Visa",
-        "metatitle": "Canada PR Visa",
+        "metatitle": "Apply Canada PR Visa | Permanent Visa Canada | Wider World",
         "metakey": "permanent visa canada, canada pr visa, Apply Canada PR Visa, Best Canada Immigration Consultant",
         "metadesc": "Apply for a Canada PR Visa with professional assistance. Get expert support for eligibility, documentation, Express Entry, and successful applications.",
         "content": [
@@ -6388,7 +6391,7 @@ export const visaData = [
     {
         "img": canadaWorkVisa,
         "title": "Canada Work Visa",
-        "metatitle": "Canada Work Visa",
+        "metatitle": "Get Canada Work Visa Easily - Fees and Processing time",
         "metakey": "canada work visa, canada work permit, canada work permit from india",
         "metadesc": "Work abroad with confidence through expert work visa services. Get guidance on eligibility, documentation, employer requirements, and visa applications.",
         "content": [
@@ -6792,12 +6795,10 @@ export const visaData = [
             }
         ]
     },
-
-
     {
         "img": canadaStudyVisa,
         "title": "Canada Study Visa",
-        "metatitle": "Canada Study Visa",
+        "metatitle": "Canada Student Visa Documents Checklist & How To Apply",
         "metakey": "canada study visa, canada student visa, Study Visa Consultants",
         "metadesc": "Achieve your study abroad dream with expert study visa assistance. Get help with admissions, documentation, visa applications, and pre-departure support.",
 
@@ -7150,7 +7151,7 @@ export const visaData = [
     {
         "img": canadaTouristVisa,
         "title": "Canada Tourist Visa",
-        "metatitle": "Canada Tourist Visa",
+        "metatitle": "Easy Steps to Apply Canada Tourist Visa 2026",
         "metakey": "",
         "metadesc": "Canada tourist visa guide for travelers. Learn about eligibility, application process, financial requirements, documents, and tips to improve approval chances.",
         "content": [
@@ -7428,7 +7429,7 @@ export const visaData = [
     {
         "img": canadianExperienceClass,
         "title": "Canada Business Visa",
-        "metatitle": "Canada Business Visa",
+        "metatitle": "Apply for Canada Business & Investor Visa Programs",
         "metakey": "canada business visa, Best Immigration Consultants For Canada",
         "metadesc": "Expand your global business opportunities with expert business visa services. Receive end-to-end support for documentation and successful applications.",
         "content": [
@@ -7727,7 +7728,7 @@ export const visaData = [
     {
         "img": canadaStartupVisa,
         "title": "Canada Startup Visa",
-        "metatitle": "Canada Startup Visa",
+        "metatitle": "Canada Start-Up Visa Program 2026 Update | PR Process",
         "metakey": "canada start up visa, startup visa canada",
         "metadesc": "Launch your business abroad with a Startup Visa. Get expert guidance on eligibility, business plans, documentation, and the complete application process.",
 
@@ -8030,7 +8031,7 @@ export const visaData = [
     {
         "img": canadaSpouseVisa,
         "title": "Canada Spouse Visa",
-        "metatitle": "Canada Spouse Visa",
+        "metatitle": "Canada Spouse Visa - Family Sponsorship & PR Guide",
         "metakey": "canada spouse visa, canada partner visa, canada dependent visa",
         "metadesc": "Reunite with your loved one through expert spouse visa services. Get professional guidance on eligibility, documentation, application processing, and approvals",
         "content": [
@@ -8347,7 +8348,7 @@ export const visaData = [
     {
         "img": canadaSuperVisa,
         "title": "Canada Super Visa",
-        "metatitle": "Canada Super Visa",
+        "metatitle": "Easily Apply For Canada Super Visa - Fast Approval Way",
         "metakey": "canada super visa, Apply For canada super visa, Canada parent visa",
         "metadesc": "Visit your family in Canada for extended stays with a Super Visa. Get expert assistance with eligibility, documentation, insurance, and visa applications.",
 
@@ -8686,11 +8687,10 @@ export const visaData = [
         ]
     },
     // australia
-
     {
         "img": australiaPR,
         "title": "Australia PR",
-        "metatitle": "Australia PR",
+        "metatitle": "Australia PR Visa from India – Australia Immigration 2026",
         "metakey": "australia pr, pr for australia from india, Best Immigration Consultants For Australia",
         "metadesc": "Apply for an Australia PR Visa with expert assistance. Get complete support for skilled migration, eligibility, documentation, and application success.",
 
@@ -8895,7 +8895,7 @@ export const visaData = [
     {
         "img": austriaWorkPermit,
         "title": "Australia Work Visa",
-        "metatitle": "Australia Work Visa",
+        "metatitle": "Australia Work Visa – Opportunities for Indian Professionals",
         "metakey": "australia work visa, work and travel visa australia, australia work permit",
         "metadesc": "Work in Australia with confidence through expert work visa services. Receive end-to-end support for eligibility, documentation, and visa applications.",
 
@@ -9144,7 +9144,7 @@ export const visaData = [
     {
         "img": australiaStudyVisa,
         "title": "Australia Study Visa",
-        "metatitle": "Australia Study Visa",
+        "metatitle": "Apply for Australia Study Visa | Subclass 500 Rules",
         "metakey": "australia study visa, 485 visa australia, australian student visa for indians",
         "metadesc": "Achieve your Australian education goals with expert study visa assistance. Get guidance on admissions, documentation, and successful visa approval.",
 
@@ -9363,7 +9363,7 @@ export const visaData = [
     {
         "img": australiaTouristVisa,
         "title": "Australia Tourist Visa",
-        "metatitle": "Australia Tourist Visa",
+        "metatitle": "Australia Tourist Visa Options: Subclass 600 & eVisitor",
         "metakey": "australia tourist visa, australia visitor visa, cost of australia visa from india, Immigration Consultants For Australia",
         "metadesc": "Explore Australia with hassle-free tourist visa services. Get professional assistance with documentation, applications, and timely visa processing.",
         "content": [
@@ -9578,7 +9578,7 @@ export const visaData = [
     {
         "img": australiaSubclass491,
         "title": "Australia Business Visa",
-        "metatitle": "Australia Business Visa",
+        "metatitle": "Apply for an Australia Business Visa | Investor Pathways",
         "metakey": "australia business visa, Best Immigration Consulants In Delhi",
         "metadesc": "Expand your business opportunities in Australia with expert business visa services. Get complete guidance for documentation and visa applications.",
 
@@ -9790,7 +9790,7 @@ export const visaData = [
     {
         "img": australiaSubclass600,
         "title": "Australia Startup Visa",
-        "metatitle": "Australia Startup Visa",
+        "metatitle": "Australia Startup Visa Requirements, Costs & Eligibility",
         "metakey": "Australia Startup Visa, Best Immigration Consultants In India",
         "metadesc": "Turn your business idea into reality with Australia startup visa guidance. Get expert support for eligibility, documentation, and application success.",
 
@@ -10009,7 +10009,7 @@ export const visaData = [
     {
         "img": australiaSpouseVisa,
         "title": "Australia Spouse Visa",
-        "metatitle": "Australia Spouse Visa",
+        "metatitle": "Australia Spouse Visa Options: Rules, Fees & PR Steps",
         "metakey": "australia spouse visa, australia dependant visa, Best Immigration Consultants For Australia",
         "metadesc": "Bring your spouse to Australia with expert spouse visa assistance. Receive complete support for eligibility, documentation, and visa processing.",
 
@@ -10223,7 +10223,7 @@ export const visaData = [
     {
         "img": newZealandPermanentResidency,
         "title": "New Zealand Permanent Residency",
-        "metatitle": "New Zealand Permanent Residency",
+        "metatitle": "New Zealand PR Visa – Eligibility, Fees & Expert Guidance",
         "metakey": "new zealand permanent residency, new zealand pr visa, pr process in new zealand, PR Visa Consultants",
         "metadesc": "Secure your future with a New Zealand PR Visa. Get expert guidance on eligibility, documentation, skilled migration, and permanent residency.",
         "content": [
@@ -10453,7 +10453,7 @@ export const visaData = [
     {
         "img": newZealandWorkVisa,
         "title": "New Zealand Work Visa",
-        "metatitle": "New Zealand Work Visa",
+        "metatitle": "Get New Zealand Work Visa 2026 Apply Now",
         "metakey": "new zealand work visa, new zealand work permit visa, new zealand work visa for indians, Work Visa Consultant",
         "metadesc": "Build your career in New Zealand with professional work visa services. Get expert assistance with documentation, eligibility, and visa applications.",
 
@@ -10778,7 +10778,7 @@ export const visaData = [
     {
         "img": newZealandStudyVisa,
         "title": "New Zealand Study Visa",
-        "metatitle": "New Zealand Study Visa",
+        "metatitle": "Apply for a New Zealand Study Visa | Fees & Rules",
         "metakey": "new zealand study visa, new zealand student visa, new zealand study visa process",
         "metadesc": "Study in New Zealand with confidence through expert study visa guidance. Get complete support for admissions, documentation, and visa approval.",
         "content": [
@@ -11029,7 +11029,7 @@ export const visaData = [
     {
         "img": newZealandTouristVisa,
         "title": "New Zealand Tourist Visa",
-        "metatitle": "New Zealand Tourist Visa",
+        "metatitle": "New Zealand Travel Visa Guide: NZeTA & Visitor Visa",
         "metakey": "new zealand travel visa, new zealand visa for indians, new zealand tourist visa",
         "metadesc": "Travel the world with expert tourist visa services. Get professional assistance with documentation, applications, and timely visa approvals.",
         "content": [
@@ -11319,7 +11319,7 @@ export const visaData = [
     {
         "img": dubaiGoldenVisa,
         "title": "Dubai Golden Visa",
-        "metatitle": "Dubai Golden Visa",
+        "metatitle": "Get Your Dubai Golden Visa | India's Expert Application Services",
         "metakey": "dubai golden visa, dubai golden visa price, golden visa dubai benefits, immigration Consultants For Dubai",
         "metadesc": "Apply for a Dubai Golden Visa with expert guidance. Check eligibility, documentation, and enjoy long-term residency benefits.",
         "content": [
@@ -11526,7 +11526,7 @@ export const visaData = [
     {
         "img": schengenVisa,
         "title": "Schengen Visa",
-        "metatitle": "Schengen Visa",
+        "metatitle": "Apply for a Schengen Visa | Schengen Visa From India Guide",
         "metakey": "schengen visa, schengen travel visa, cost for schengen visa, Best Immigration Consultants In Delhi",
         "metadesc": "Apply for a Schengen Visa with expert assistance. Travel across Europe with hassle-free documentation and quick visa processing.",
         "content": [
@@ -11763,7 +11763,7 @@ export const visaData = [
     {
         "img": irelandWorkPermit,
         "title": "Ireland Work Visa",
-        "metatitle": "Ireland Work Visa",
+        "metatitle": "Get Ireland Work Visa From India - Easy & Fast Way",
         "metakey": "ireland work visa, employment permit ireland, ireland employment visa, Best Immigration Consultants For Work Visa",
         "metadesc": "Move to Ireland with confidence through expert immigration services. Get guidance for work visas, study visas, PR pathways, and career opportunities.",
         "content": [
@@ -12070,7 +12070,7 @@ export const visaData = [
     {
         "img": luxembourgWorkVisa,
         "title": "Luxembourg Work Visa",
-        "metatitle": "Luxembourg Work Visa",
+        "metatitle": "Apply Your Luxembourg Work Visa - Get Your Visa Easily",
         "metakey": "luxembourg work visa, luxembourg country work visa, luxembourg work visa for indian",
         "metadesc": "Discover career opportunities in Luxembourg with expert visa assistance. Get support for work permits, documentation, and immigration processes.",
         "content": [
@@ -12362,7 +12362,7 @@ export const visaData = [
     {
         "img": maltaWorkPermit,
         "title": "Malta Work Visa",
-        "metatitle": "Malta Work Visa",
+        "metatitle": "Apply Malta Work Permit - Visa Processing Time & Fees",
         "metakey": "malta work visa, malta work visa for indian, Immigration Consultant For Malta",
         "metadesc": "Work and build your future in Malta with expert visa services. Receive professional guidance on work permits, documentation, and application support.",
 
@@ -12712,7 +12712,7 @@ export const visaData = [
     {
         "img": polandWorkPermit,
         "title": "Poland Work Visa",
-        "metatitle": "Poland Work Visa",
+        "metatitle": "Poland Work Visa Assistance | Fast Visa Support",
         "metakey": "poland work permit, poland employment visa",
         "metadesc": "Work and build your future in Poland with expert visa assistance. Get professional guidance on work permits, documentation, and immigration support.",
 
@@ -13009,7 +13009,7 @@ export const visaData = [
     {
         "img": netherlandsWorkVisa,
         "title": "Netherlands Work Visa",
-        "metatitle": "Netherlands Work Visa",
+        "metatitle": "Netherlands Work Visa: Types And How To Apply",
         "metakey": "netherlands work visa, holland work permit, netherlands work visa for indian",
         "metadesc": "Start your career in the Netherlands with expert visa services. Receive complete assistance for work permits, documentation, and smooth immigration.",
         "content": [
@@ -13317,7 +13317,7 @@ export const visaData = [
     {
         "img": germanyJobSeekerVisa,
         "title": "Germany Work Visa",
-        "metatitle": "Germany Work Visa",
+        "metatitle": "Apply for a Germany Work Visa - Blue Card & Opportunity Card",
         "metakey": "germany work visa, germany employment visa, germany work visa from india",
         "metadesc": "Explore career opportunities in Germany with expert visa guidance. Get support for work permits, documentation, and a seamless immigration process.",
 
@@ -13616,7 +13616,7 @@ export const visaData = [
     {
         "img": swedenWorkPermit,
         "title": "Sweden Job Seeker Visa",
-        "metatitle": "Sweden Job Seeker Visa",
+        "metatitle": "How to Get a Sweden Job Seeker Visa From India",
         "metakey": "sweden job seeker visa, job search visa sweden",
         "metadesc": "Move to Sweden with confidence through expert visa services. Get assistance with work permits, documentation, and career opportunities abroad.",
 
@@ -13923,7 +13923,7 @@ export const visaData = [
     {
         "img": finlandWorkVisa,
         "title": "Finland Work Visa",
-        "metatitle": "Finland Work Visa",
+        "metatitle": "Finland Work Permit Visa - Work in Finland 2026",
         "metakey": "finland work visa, finland work visa for indian, finland work permit, Best Immigration Consultants",
         "metadesc": "Build your future in Finland with expert immigration support. Receive guidance for work visas, documentation, and successful visa applications.",
 
@@ -14233,7 +14233,7 @@ export const visaData = [
     {
         "img": italyWorkVisa,
         "title": "Italy Work Visa",
-        "metatitle": "Italy Work Visa",
+        "metatitle": "How to Apply for Italy Work Visa | Fees & Processing",
         "metakey": "italy work visa, italy employment visa, italy work visa from india",
         "metadesc": "Work and build your future in Italy with expert visa assistance. Get professional guidance on work permits, documentation, and immigration services.",
 
@@ -14534,7 +14534,7 @@ export const visaData = [
     {
         "img": denmarkWorkVisa,
         "title": "Denmark Work Visa",
-        "metatitle": "Denmark Work Visa",
+        "metatitle": "Denmark Work Visa - Application Steps & Key Requirements",
         "metakey": "denmark work visa, denmark work permit visa, Best Immigration Consultants For Work Visa",
         "metadesc": "Start your career in Denmark with expert visa services. Receive complete support for work permits, documentation, and a smooth immigration journey.",
         "content": [
@@ -14836,7 +14836,7 @@ export const visaData = [
     {
         "img": ukTouristVisa,
         "title": "UK Tourist Visa",
-        "metatitle": "UK Tourist Visa",
+        "metatitle": "UK Visit Visa – UK Tourist & Visitor Visa Guide",
         "metakey": "uk tourist visa, uk travel visa, cost for uk visa from india, uk immigration visa from india",
         "metadesc": "Apply for a UK tourist visa with expert assistance. Enjoy fast processing, accurate documentation, and a smooth visa application process.",
         "content": [
@@ -15103,7 +15103,7 @@ export const visaData = [
     {
         "img": germanyTouristVisa,
         "title": "Germany Tourist Visa",
-        "metatitle": "Germany Tourist Visa",
+        "metatitle": "Apply for Germany Tourist Visa Easily From India",
         "metakey": "germany tourist visa, germany tourist visa cost, germany tourist visa for indian, Best Immigration Consultants For Germany",
         "metadesc": "Plan your Germany trip with expert tourist visa assistance. Get fast processing, complete documentation, and reliable support.",
         "content": [
@@ -15351,7 +15351,7 @@ export const visaData = [
     {
         "img": irelandWorkPermit,
         "title": "Ireland Tourist Visa",
-        "metatitle": "Ireland Tourist Visa",
+        "metatitle": "Ireland Tourist Visa for Indians - Fast & Easy Application",
         "metakey": "ireland tourist visa, ireland visit visa, irish tourist visa, Ireland Immigration Consultants In Delhi",
         "metadesc": "Apply for an Ireland tourist visa with confidence. Expert guidance, quick processing, and hassle-free documentation support.",
         "content": [
@@ -15596,7 +15596,7 @@ export const visaData = [
     {
         "img": luxembourgTouristVisa,
         "title": "Luxembourg Tourist Visa",
-        "metatitle": "Luxembourg Tourist Visa",
+        "metatitle": "Luxembourg Tourist Visa | Visa Process Time & Fees",
         "metakey": "luxembourg tourist visa, luxembourg visit visa",
         "metadesc": "Get your Luxembourg tourist visa with expert assistance. Smooth application process, fast approvals, and complete visa support.",
         "content": [
@@ -15848,285 +15848,285 @@ export const visaData = [
         ]
     },
     {
-    "img": maltaWorkPermit,
-    "title": "Malta Tourist Visa",
-    "metatitle": "Malta Tourist Visa",
-    "metakey": "malta travel visa, Best Immigration Consultants For Malta Visa",
-    "metadesc": "Apply for a Malta tourist visa with professional guidance. Fast processing, accurate documentation, and seamless travel support.",
-    "content": [
-        {
-            "subcontent": [
-                {
-                    "para": "The Malta travel visa allows you to explore one of Europe's most scenic island nations, known for its turquoise waters, historic architecture, and relaxed lifestyle. Malta combines beach destinations with centuries-old heritage, making it a unique travel experience."
-                },
-                {
-                    "para": "With the Malta travel visa, you also gain access to the Schengen region, allowing you to explore multiple European countries in a single trip. It is ideal for travelers who want a mix of leisure, culture, and coastal beauty."
-                }
-            ]
-        },
-        {
-            "heading": "<h1>Why Malta Feels Like a Hidden Mediterranean Gem</h1>",
-            "subcontent": [
-                {
-                    "list": [
-                        "Stunning beaches and clear blue waters",
-                        "Rich history influenced by multiple civilizations",
-                        "Warm climate throughout most of the year",
-                        "Compact country, easy to explore"
-                    ]
-                },
-                {
-                    "para": "Malta stands out because it offers both relaxation and exploration in a small area. With a Malta travel visa, you can visit beaches, historic cities, and cultural landmarks without long travel times. It's perfect for travelers who want a luxurious yet peaceful European holiday."
-                }
-            ]
-        },
-        {
-            "heading": "<h2>Top Places to Visit In Malta</h2>",
-            "subcontent": [
-                {
-                    "subheading": "1. Valletta",
-                    "para": "Specialty: Historic capital, architecture\nTop spots: St. John's Co-Cathedral, Upper Barrakka Gardens\nAverage daily cost: €90–€160"
-                },
-                {
-                    "para": "Valletta is the capital of Malta and a <a href='https://en.wikipedia.org/wiki/UNESCO'>UNESCO</a> World Heritage site. It offers stunning architecture, narrow streets, and a deep cultural experience. For travelers with a Malta travel visa, Valletta is the perfect starting point."
-                },
-                {
-                    "subheading": "2. Blue Lagoon",
-                    "para": "Specialty: Crystal-clear water, beach relaxation\nAverage daily cost: €70–€140"
-                },
-                {
-                    "para": "The Blue Lagoon is one of Malta's most famous attractions. Its turquoise waters make it ideal for swimming and relaxation, offering a true Mediterranean experience."
-                },
-                {
-                    "subheading": "3. Mdina",
-                    "para": "Specialty: Silent city, medieval charm\nAverage daily cost: €70–€130"
-                },
-                {
-                    "para": "Mdina is known as the 'Silent City' due to its peaceful environment. It offers a historic atmosphere with narrow streets and ancient buildings."
-                },
-                {
-                    "subheading": "4. Gozo",
-                    "para": "Specialty: Nature, countryside, calm lifestyle\nAverage daily cost: €70–€140"
-                },
-                {
-                    "para": "Gozo is Malta's sister island, known for its natural beauty and slower pace of life. It is perfect for travelers who want a peaceful escape."
-                },
-                {
-                    "subheading": "5. St. Julian's",
-                    "para": "Specialty: Nightlife, entertainment\nAverage daily cost: €80–€150"
-                },
-                {
-                    "para": "St. Julian's is the entertainment hub of Malta. It offers nightlife, restaurants, and a lively atmosphere for travelers who enjoy social experiences."
-                }
-            ]
-        },
-        {
-            "heading": "<h3>Best Time to Visit Malta for the Perfect Experience</h3>",
-            "subcontent": [
-                {
-                    "list": [
-                        "April to June: Pleasant weather, fewer crowds",
-                        "July to August: Peak summer, ideal for beaches",
-                        "September to October: Balanced weather and budget",
-                        "November to March: Quiet travel, lower costs"
-                    ]
-                },
-                {
-                    "para": "Timing plays a big role when planning your trip with a Malta travel visa. If you prefer comfortable weather and fewer crowds, spring and early autumn are the best choices. Summer is ideal for beach lovers, but it can be crowded and slightly expensive. Off-season travel, on the other hand, gives you a peaceful experience and better pricing, especially for accommodation and flights."
-                }
-            ]
-        },
-        {
-            "heading": "<p>Visa Types</p>",
-            "subcontent": [
-                {
-                    "list": [
-                        "Short-term Schengen visa (up to 90 days)",
-                        "Single-entry visa",
-                        "Multiple-entry visa"
-                    ]
-                },
-                {
-                    "para": "The Malta travel visa is mainly issued for short stays, allowing you to explore Malta and other Schengen countries. Depending on your itinerary, you can apply for the type that suits your travel needs."
-                }
-            ]
-        },
-        {
-            "heading": "<p>Cost Breakdown</p>",
-            "subcontent": [
-                {
-                    "list": [
-                        "Visa fee: approx €80 (₹7,000–₹8,000)",
-                        "Service charges: ₹2,000–₹4,000",
-                        "Travel insurance: additional cost"
-                    ]
-                },
-                {
-                    "para": "The Malta travel visa is affordable compared to the premium experience Malta offers. Planning your expenses ensures a smooth travel experience."
-                }
-            ]
-        },
-        {
-            "heading": "<p>Documents That Build a Strong Application</p>",
-            "subcontent": [
-                {
-                    "list": [
-                        "Valid passport",
-                        "Bank statements (last 6 months)",
-                        "Travel itinerary",
-                        "Hotel bookings",
-                        "Travel insurance"
-                    ]
-                },
-                {
-                    "para": "To get your Malta travel visa approved, your documents must clearly show financial stability and genuine travel intent. A simple and well-organized application increases your chances of approval."
-                }
-            ]
-        },
-        {
-            "heading": "<h4>When Your Application May Require Extra Review</h4>",
-            "subcontent": [
-                {
-                    "para": "Not every Malta travel visa application is processed instantly. Some applications may require additional verification if there are inconsistencies in documents or travel plans."
-                },
-                {
-                    "para": "This does not mean rejection—it simply means more clarity is needed. Many applications are approved once proper verification is completed."
-                }
-            ]
-        },
-        {
-            "heading": "<p>Profiles That May Need Stronger Documentation</p>",
-            "subcontent": [
-                {
-                    "list": [
-                        "First-time travelers",
-                        "Applicants with previous refusals",
-                        "Inconsistent financial records",
-                        "Unclear travel plans"
-                    ]
-                },
-                {
-                    "para": "These situations are common and manageable. When applying for a Malta travel visa, clear documentation helps avoid delays."
-                }
-            ]
-        },
-        {
-            "heading": "<p>Common Mistakes That Can Delay Your Visa</p>",
-            "subcontent": [
-                {
-                    "list": [
-                        "Sudden large deposits in bank accounts",
-                        "Incomplete or unclear documents",
-                        "Weak financial proof",
-                        "Unrealistic travel plans",
-                        "Lack of clarity in purpose"
-                    ]
-                },
-                {
-                    "para": "If your Malta travel visa application includes these issues, it may take longer to process. However, proper planning and explanation can resolve them."
-                }
-            ]
-        },
-        {
-            "heading": "<p>Smart Tips to Improve Approval Chances</p>",
-            "subcontent": [
-                {
-                    "list": [
-                        "Maintain consistent financial records",
-                        "Provide a clear travel plan",
-                        "Avoid last-minute changes",
-                        "Keep documents genuine and simple",
-                        "Show strong ties to your home country"
-                    ]
-                },
-                {
-                    "para": "A well-prepared Malta travel visa application is always easier to process and has higher chances of approval."
-                }
-            ]
-        },
-        {
-            "heading": "<p>Quick Understanding Table</p>",
-            "subcontent": [
-                {
-                    "table": {
-                        "theading": ["Situation", "Why It Raises Questions", "What You Should Do"],
-                        "rows": [
-                            { "colum": ["No travel history", "No past visa record", "Show strong financial proof"] },
-                            { "colum": ["Large deposits", "Looks temporary", "Explain the source clearly"] },
-                            { "colum": ["Weak documents", "Lack of clarity", "Provide complete proof"] },
-                            { "colum": ["Long stay plan", "Doubtful intent", "Keep the itinerary realistic"] },
-                            { "colum": ["Previous refusals", "Credibility issue", "Address properly"] }
-                        ]
+        "img": maltaWorkPermit,
+        "title": "Malta Tourist Visa",
+        "metatitle": "Get Your Malta Tourist Visa - Process Time and Fees 2026",
+        "metakey": "malta travel visa, Best Immigration Consultants For Malta Visa",
+        "metadesc": "Apply for a Malta tourist visa with professional guidance. Fast processing, accurate documentation, and seamless travel support.",
+        "content": [
+            {
+                "subcontent": [
+                    {
+                        "para": "The Malta travel visa allows you to explore one of Europe's most scenic island nations, known for its turquoise waters, historic architecture, and relaxed lifestyle. Malta combines beach destinations with centuries-old heritage, making it a unique travel experience."
+                    },
+                    {
+                        "para": "With the Malta travel visa, you also gain access to the Schengen region, allowing you to explore multiple European countries in a single trip. It is ideal for travelers who want a mix of leisure, culture, and coastal beauty."
                     }
-                }
-            ]
-        },
-        {
-            "heading": "<h4>Processing Timeline & Travel Planning Tips</h4>",
-            "subcontent": [
-                {
-                    "list": [
-                        "Processing time: 15–20 working days",
-                        "Apply at least 3–4 weeks in advance",
-                        "Keep documents organized and clear"
-                    ]
-                },
-                {
-                    "para": "The Malta travel visa process is smooth if planned properly. Early preparation helps ensure a stress-free application experience."
-                }
-            ]
-        },
-        {
-            "heading": "<p>Why This Visa Is Worth Considering</p>",
-            "subcontent": [
-                {
-                    "list": [
-                        "Access to Schengen countries",
-                        "Scenic coastal and cultural experience",
-                        "Safe and tourist-friendly destination",
-                        "Perfect mix of relaxation and exploration"
-                    ]
-                },
-                {
-                    "para": "The Malta travel visa is ideal for travelers who want a balanced European trip with both leisure and cultural experiences."
-                }
-            ]
-        },
-        {
-            "heading": "<h4>Why choose Wider World Immigration?</h4>",
-            "subcontent": [
-                {
-                    "para": "Wider World Immigration has grown steadily by focusing on accuracy, transparency, and structured support. Their team works closely with applicants to ensure each document is properly prepared and aligned with visa requirements. They focus on simplifying complex procedures so applicants can move forward with clarity."
-                },
-                {
-                    "para": "With the support of <a href='https://www.widerworld.in/'>Best Immigration Consultants For Malta Visa</a>, applicants receive step-by-step guidance—from profile evaluation to final submission. Their approach reduces errors, improves application quality, and ensures a smoother visa journey."
-                }
-            ]
-        }
-    ],
-    "faq": [
-        {
-            "que": "1. What makes Malta different from other European tourist destinations?",
-            "ans": "Malta offers a mix of crystal-clear beaches, historic streets, island adventures, luxury experiences, and vibrant nightlife, making it a unique Mediterranean escape for international travelers."
-        },
-        {
-            "que": "2. Can first-time international travelers apply for a Malta tourist visa?",
-            "ans": "Yes, first-time travelers can apply successfully if they submit genuine documents, maintain stable finances, and present a clear and well-organized travel plan."
-        },
-        {
-            "que": "3. Why do many tourists include Malta in their Europe travel plans?",
-            "ans": "Travelers choose Malta for its scenic islands, affordable luxury, warm climate, rich culture, and the convenience of exploring Europe through the Schengen travel zone."
-        },
-        {
-            "que": "4. What can make a Malta visitor visa profile stronger?",
-            "ans": "Strong financial proof, travel history, confirmed hotel bookings, return flight reservations, and accurate documentation can help improve visa approval possibilities."
-        }
-    ]
+                ]
+            },
+            {
+                "heading": "<h1>Why Malta Feels Like a Hidden Mediterranean Gem</h1>",
+                "subcontent": [
+                    {
+                        "list": [
+                            "Stunning beaches and clear blue waters",
+                            "Rich history influenced by multiple civilizations",
+                            "Warm climate throughout most of the year",
+                            "Compact country, easy to explore"
+                        ]
+                    },
+                    {
+                        "para": "Malta stands out because it offers both relaxation and exploration in a small area. With a Malta travel visa, you can visit beaches, historic cities, and cultural landmarks without long travel times. It's perfect for travelers who want a luxurious yet peaceful European holiday."
+                    }
+                ]
+            },
+            {
+                "heading": "<h2>Top Places to Visit In Malta</h2>",
+                "subcontent": [
+                    {
+                        "subheading": "1. Valletta",
+                        "para": "Specialty: Historic capital, architecture\nTop spots: St. John's Co-Cathedral, Upper Barrakka Gardens\nAverage daily cost: €90–€160"
+                    },
+                    {
+                        "para": "Valletta is the capital of Malta and a <a href='https://en.wikipedia.org/wiki/UNESCO'>UNESCO</a> World Heritage site. It offers stunning architecture, narrow streets, and a deep cultural experience. For travelers with a Malta travel visa, Valletta is the perfect starting point."
+                    },
+                    {
+                        "subheading": "2. Blue Lagoon",
+                        "para": "Specialty: Crystal-clear water, beach relaxation\nAverage daily cost: €70–€140"
+                    },
+                    {
+                        "para": "The Blue Lagoon is one of Malta's most famous attractions. Its turquoise waters make it ideal for swimming and relaxation, offering a true Mediterranean experience."
+                    },
+                    {
+                        "subheading": "3. Mdina",
+                        "para": "Specialty: Silent city, medieval charm\nAverage daily cost: €70–€130"
+                    },
+                    {
+                        "para": "Mdina is known as the 'Silent City' due to its peaceful environment. It offers a historic atmosphere with narrow streets and ancient buildings."
+                    },
+                    {
+                        "subheading": "4. Gozo",
+                        "para": "Specialty: Nature, countryside, calm lifestyle\nAverage daily cost: €70–€140"
+                    },
+                    {
+                        "para": "Gozo is Malta's sister island, known for its natural beauty and slower pace of life. It is perfect for travelers who want a peaceful escape."
+                    },
+                    {
+                        "subheading": "5. St. Julian's",
+                        "para": "Specialty: Nightlife, entertainment\nAverage daily cost: €80–€150"
+                    },
+                    {
+                        "para": "St. Julian's is the entertainment hub of Malta. It offers nightlife, restaurants, and a lively atmosphere for travelers who enjoy social experiences."
+                    }
+                ]
+            },
+            {
+                "heading": "<h3>Best Time to Visit Malta for the Perfect Experience</h3>",
+                "subcontent": [
+                    {
+                        "list": [
+                            "April to June: Pleasant weather, fewer crowds",
+                            "July to August: Peak summer, ideal for beaches",
+                            "September to October: Balanced weather and budget",
+                            "November to March: Quiet travel, lower costs"
+                        ]
+                    },
+                    {
+                        "para": "Timing plays a big role when planning your trip with a Malta travel visa. If you prefer comfortable weather and fewer crowds, spring and early autumn are the best choices. Summer is ideal for beach lovers, but it can be crowded and slightly expensive. Off-season travel, on the other hand, gives you a peaceful experience and better pricing, especially for accommodation and flights."
+                    }
+                ]
+            },
+            {
+                "heading": "<p>Visa Types</p>",
+                "subcontent": [
+                    {
+                        "list": [
+                            "Short-term Schengen visa (up to 90 days)",
+                            "Single-entry visa",
+                            "Multiple-entry visa"
+                        ]
+                    },
+                    {
+                        "para": "The Malta travel visa is mainly issued for short stays, allowing you to explore Malta and other Schengen countries. Depending on your itinerary, you can apply for the type that suits your travel needs."
+                    }
+                ]
+            },
+            {
+                "heading": "<p>Cost Breakdown</p>",
+                "subcontent": [
+                    {
+                        "list": [
+                            "Visa fee: approx €80 (₹7,000–₹8,000)",
+                            "Service charges: ₹2,000–₹4,000",
+                            "Travel insurance: additional cost"
+                        ]
+                    },
+                    {
+                        "para": "The Malta travel visa is affordable compared to the premium experience Malta offers. Planning your expenses ensures a smooth travel experience."
+                    }
+                ]
+            },
+            {
+                "heading": "<p>Documents That Build a Strong Application</p>",
+                "subcontent": [
+                    {
+                        "list": [
+                            "Valid passport",
+                            "Bank statements (last 6 months)",
+                            "Travel itinerary",
+                            "Hotel bookings",
+                            "Travel insurance"
+                        ]
+                    },
+                    {
+                        "para": "To get your Malta travel visa approved, your documents must clearly show financial stability and genuine travel intent. A simple and well-organized application increases your chances of approval."
+                    }
+                ]
+            },
+            {
+                "heading": "<h4>When Your Application May Require Extra Review</h4>",
+                "subcontent": [
+                    {
+                        "para": "Not every Malta travel visa application is processed instantly. Some applications may require additional verification if there are inconsistencies in documents or travel plans."
+                    },
+                    {
+                        "para": "This does not mean rejection—it simply means more clarity is needed. Many applications are approved once proper verification is completed."
+                    }
+                ]
+            },
+            {
+                "heading": "<p>Profiles That May Need Stronger Documentation</p>",
+                "subcontent": [
+                    {
+                        "list": [
+                            "First-time travelers",
+                            "Applicants with previous refusals",
+                            "Inconsistent financial records",
+                            "Unclear travel plans"
+                        ]
+                    },
+                    {
+                        "para": "These situations are common and manageable. When applying for a Malta travel visa, clear documentation helps avoid delays."
+                    }
+                ]
+            },
+            {
+                "heading": "<p>Common Mistakes That Can Delay Your Visa</p>",
+                "subcontent": [
+                    {
+                        "list": [
+                            "Sudden large deposits in bank accounts",
+                            "Incomplete or unclear documents",
+                            "Weak financial proof",
+                            "Unrealistic travel plans",
+                            "Lack of clarity in purpose"
+                        ]
+                    },
+                    {
+                        "para": "If your Malta travel visa application includes these issues, it may take longer to process. However, proper planning and explanation can resolve them."
+                    }
+                ]
+            },
+            {
+                "heading": "<p>Smart Tips to Improve Approval Chances</p>",
+                "subcontent": [
+                    {
+                        "list": [
+                            "Maintain consistent financial records",
+                            "Provide a clear travel plan",
+                            "Avoid last-minute changes",
+                            "Keep documents genuine and simple",
+                            "Show strong ties to your home country"
+                        ]
+                    },
+                    {
+                        "para": "A well-prepared Malta travel visa application is always easier to process and has higher chances of approval."
+                    }
+                ]
+            },
+            {
+                "heading": "<p>Quick Understanding Table</p>",
+                "subcontent": [
+                    {
+                        "table": {
+                            "theading": ["Situation", "Why It Raises Questions", "What You Should Do"],
+                            "rows": [
+                                { "colum": ["No travel history", "No past visa record", "Show strong financial proof"] },
+                                { "colum": ["Large deposits", "Looks temporary", "Explain the source clearly"] },
+                                { "colum": ["Weak documents", "Lack of clarity", "Provide complete proof"] },
+                                { "colum": ["Long stay plan", "Doubtful intent", "Keep the itinerary realistic"] },
+                                { "colum": ["Previous refusals", "Credibility issue", "Address properly"] }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "heading": "<h4>Processing Timeline & Travel Planning Tips</h4>",
+                "subcontent": [
+                    {
+                        "list": [
+                            "Processing time: 15–20 working days",
+                            "Apply at least 3–4 weeks in advance",
+                            "Keep documents organized and clear"
+                        ]
+                    },
+                    {
+                        "para": "The Malta travel visa process is smooth if planned properly. Early preparation helps ensure a stress-free application experience."
+                    }
+                ]
+            },
+            {
+                "heading": "<p>Why This Visa Is Worth Considering</p>",
+                "subcontent": [
+                    {
+                        "list": [
+                            "Access to Schengen countries",
+                            "Scenic coastal and cultural experience",
+                            "Safe and tourist-friendly destination",
+                            "Perfect mix of relaxation and exploration"
+                        ]
+                    },
+                    {
+                        "para": "The Malta travel visa is ideal for travelers who want a balanced European trip with both leisure and cultural experiences."
+                    }
+                ]
+            },
+            {
+                "heading": "<h4>Why choose Wider World Immigration?</h4>",
+                "subcontent": [
+                    {
+                        "para": "Wider World Immigration has grown steadily by focusing on accuracy, transparency, and structured support. Their team works closely with applicants to ensure each document is properly prepared and aligned with visa requirements. They focus on simplifying complex procedures so applicants can move forward with clarity."
+                    },
+                    {
+                        "para": "With the support of <a href='https://www.widerworld.in/'>Best Immigration Consultants For Malta Visa</a>, applicants receive step-by-step guidance—from profile evaluation to final submission. Their approach reduces errors, improves application quality, and ensures a smoother visa journey."
+                    }
+                ]
+            }
+        ],
+        "faq": [
+            {
+                "que": "1. What makes Malta different from other European tourist destinations?",
+                "ans": "Malta offers a mix of crystal-clear beaches, historic streets, island adventures, luxury experiences, and vibrant nightlife, making it a unique Mediterranean escape for international travelers."
+            },
+            {
+                "que": "2. Can first-time international travelers apply for a Malta tourist visa?",
+                "ans": "Yes, first-time travelers can apply successfully if they submit genuine documents, maintain stable finances, and present a clear and well-organized travel plan."
+            },
+            {
+                "que": "3. Why do many tourists include Malta in their Europe travel plans?",
+                "ans": "Travelers choose Malta for its scenic islands, affordable luxury, warm climate, rich culture, and the convenience of exploring Europe through the Schengen travel zone."
+            },
+            {
+                "que": "4. What can make a Malta visitor visa profile stronger?",
+                "ans": "Strong financial proof, travel history, confirmed hotel bookings, return flight reservations, and accurate documentation can help improve visa approval possibilities."
+            }
+        ]
     },
     {
         "img": polandTouristVisa,
         "title": "Poland Tourist Visa",
-        "metatitle": "Poland Tourist Visa",
+        "metatitle": "Apply for a Poland Tourist Visa | Fast & Easy Visa Application",
         "metakey": "poland tourist visa, poland tourist visa application",
         "metadesc": "Visit Poland with expert tourist visa assistance. Enjoy quick processing, reliable guidance, and hassle-free documentation support.",
         "content": [
@@ -16375,7 +16375,7 @@ export const visaData = [
     {
         "img": netherlandsTouristVisa,
         "title": "Netherlands Tourist Visa",
-        "metatitle": "Netherlands Tourist Visa",
+        "metatitle": "Netherlands Visit Visa Guide: Requirements & How to Apply",
         "metakey": "holland visit visa, netherland visit visa, netherlands tourist visa for indian",
         "metadesc": "Apply for a Netherlands tourist visa with expert support. Fast processing, accurate documentation, and stress-free visa services.",
         "content": [
@@ -16637,7 +16637,7 @@ export const visaData = [
     {
         "img": portugalWorkPermit,
         "title": "Portugal Travel Visa",
-        "metatitle": "Portugal Travel Visa",
+        "metatitle": "Apply For Portugal Travel Visa - Why & How",
         "metakey": "portugal travel visa, apply visa for portugal",
         "metadesc": "Travel to Portugal with our expert tourist visa services. Get quick processing, complete documentation, and reliable guidance.",
         "content": [
@@ -16899,7 +16899,7 @@ export const visaData = [
     {
         "img": swedenTouristVisa,
         "title": "Sweden Tourist Visa",
-        "metatitle": "Sweden Tourist Visa",
+        "metatitle": "Apply for a Sweden Tourist Visa | Travel In Sweden",
         "metakey": "sweden travel visa, apply for sweden tourist visa, Best Immmigration Consultants In Delhi",
         "metadesc": "Secure your Sweden tourist visa with expert assistance. Fast processing, accurate documentation, and end-to-end visa support.",
         "content": [
@@ -17171,7 +17171,7 @@ export const visaData = [
     {
         "img": italyTouristVisa,
         "title": "Italy Tourist Visa",
-        "metatitle": "Italy Tourist Visa",
+        "metatitle": "Apply for Italy Tourist Visa | Quick & Easy Application",
         "metakey": "italy visa from india, italy tourist visa, italy tourist visa requirements from india, Best Tourist Visa Consultant",
         "metadesc": "Apply for an Italy tourist visa with confidence. Expert guidance, smooth documentation, and quick visa processing services.",
         "content": [
@@ -17463,14 +17463,14 @@ export const visaData = [
             }
         ]
     },
-// upr tk done
+    // upr tk done
 
 
 
     {
         "img": franceTouristVisa,
         "title": "France Tourist Visa",
-        "metatitle": "France Tourist Visa",
+        "metatitle": "France Tourist Visa - Requirements & How to Apply",
         "metakey": "france tourist visa, france visa application from india, france tourist visa cost",
         "metadesc": "Get your France tourist visa with professional support. Fast processing, complete documentation, and hassle-free travel assistance.",
         "content": [
@@ -17758,7 +17758,7 @@ export const visaData = [
     {
         "img": spainTouristVisa,
         "title": "Spain Tourist Visa",
-        "metatitle": "Spain Tourist Visa",
+        "metatitle": "Spain Tourist Visa from India - How to Apply & Charges",
         "metakey": "spain tourist visa, spain visit visa, spain visit visa from india, apply for spain tourist visa",
         "metadesc": "Apply for a Spain tourist visa with expert guidance. Enjoy quick processing, reliable documentation, and seamless visa services.",
         "content": [
@@ -18284,14 +18284,14 @@ export const visaData = [
                 "subcontent": [
                     {
                         "para": "Preparation plays a crucial role in the success of your application. Small mistakes can lead to delays or rejections, so it’s important to approach the process carefully.",
-                        list:["Do not rely on incomplete online information",
-"Avoid last-minute documentation changes","Keep financial records consistent","Choose the right visa category","Take professional advice early"
-]
+                        list: ["Do not rely on incomplete online information",
+                            "Avoid last-minute documentation changes", "Keep financial records consistent", "Choose the right visa category", "Take professional advice early"
+                        ]
                     },
                     {
                         "para": "The Best Immigration Consultants in Andhra Pradesh always emphasize planning and preparation over last-minute corrections."
                     },
-                    {para:"Immigration is a long-term decision that requires careful planning and the right guidance. Every step—from profile evaluation to final submission—plays an important role in your success."}
+                    { para: "Immigration is a long-term decision that requires careful planning and the right guidance. Every step—from profile evaluation to final submission—plays an important role in your success." }
                 ]
             }
         ],
@@ -18790,7 +18790,7 @@ export const visaData = [
                     },
                     {
                         "para": "This makes professional consultation a valuable investment rather than an expense."
-                    },  {
+                    }, {
                         "para": "The journey to international opportunities starts with the right decision. Choosing from the Best Immigration Consultants Karnataka ensures that your application is handled with expertise, accuracy, and strategic planning."
                     },
                     {
@@ -18798,7 +18798,7 @@ export const visaData = [
                     }
                 ]
             },
-            
+
         ],
         "faq": [
             {
@@ -19375,7 +19375,7 @@ export const visaData = [
                     }
                 ]
             },
-            
+
         ],
         "faq": [
             {

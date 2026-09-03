@@ -11,13 +11,13 @@ import { shape1 } from "@/assets";
 export default function WhychooseSection() {
   return (
     <section className="w-full relative overflow-hidden bg-white">
-   <Image
-              src={shape1}
-              alt="img"
-              className="absolute opacity-60 top-12 max-w-[400px] scale-x-[-1] left-1 object-contain z-0"
-            />
+      <Image
+        src={shape1}
+        alt="img"
+        className="absolute opacity-60 top-12 max-w-[400px] scale-x-[-1] left-1 object-contain z-0"
+      />
       {/* Background pattern */}
-    
+
 
       {/* Top accent line */}
       {/* <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-color2 to-color1" /> */}
@@ -34,7 +34,7 @@ export default function WhychooseSection() {
         className="xl:px-32 lg:px-28 md:p-20 sm:p-12 px-7 py-16 max-w-[1530px] mx-auto flex flex-wrap items-stretch justify-between gap-y-10 relative z-10"
       >
 
-      
+
         {/* ── RIGHT ── */}
         <motion.div
           variants={fadeIn("left", "tween", 0.3, 1)}
@@ -59,7 +59,7 @@ export default function WhychooseSection() {
               />
             )}
 
-          
+
 
             {/* Stat card — bottom right */}
             <motion.div
@@ -76,19 +76,19 @@ export default function WhychooseSection() {
         </motion.div>
 
 
-  {/* ── LEFT ── */}
+        {/* ── LEFT ── */}
         <motion.div
           variants={fadeIn("right", "tween", 0.3, 1)}
           className="sm:w-[47%] w-full sm:space-y-6 space-y-5"
         >
-         <span className="block text-color2 font-bold uppercase text-xs tracking-[0.22em]">
-{data?.title1}        </span>
+          <span className="block text-color2 font-bold uppercase text-xs tracking-[0.22em]">
+            {data?.title1}        </span>
 
           {/* Heading */}
           <h2 className="font-bold text-color3 text-3xl md:text-5xl " >
             {data?.title2} {" "}
             <span className=" text-color1">
-{data?.title3}             </span>
+              {data?.title3}             </span>
           </h2>
 
           {/* Para */}
@@ -145,7 +145,7 @@ export default function WhychooseSection() {
           </div>
 
           {/* CTA */}
-                               <Buttonmain href={"/contact-us"} text1={"Know More"} text2={"About Us"}/>
+          <Buttonmain href={"/contact-us/"} text1={"Know More"} text2={"About Us"} />
 
         </motion.div>
 

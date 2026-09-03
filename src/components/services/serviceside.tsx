@@ -266,7 +266,7 @@ export default function BlogAside() {
 
                   key={blog.ID}
 
-                  href={`/${blog.post_name}`}
+                  href={`/${blog.post_name}/`}
 
                   className="group flex items-center gap-3 p-2 rounded-xl border border-slate-200 hover:border-color2 hover:bg-blue-50 transition-all duration-200"
 
@@ -346,7 +346,7 @@ export default function BlogAside() {
           {servicedata.map((service: any, i: number) => {
             const active = isActive(service.title);
             return (
-              <NavLink key={i} href={`/services/${createSlug(service.title)}`} active={active}>
+              <NavLink key={i} href={`/ourservices/${createSlug(service.title)}/`} active={active}>
                 {service.title}
               </NavLink>
             );
@@ -358,7 +358,7 @@ export default function BlogAside() {
       <SideCard title="Coaching Programs" icon={<MdOutlineSchool size={14} />}>
         <div className="p-3 flex flex-col gap-1.5">
           {coachingData.map((c) => (
-            <NavLink key={c.id} href={c.href} active={isActive(c.href)}>
+            <NavLink key={c.id} href={`${c.href}/`} active={isActive(c.href)}>
               {c.title}
             </NavLink>
           ))}
@@ -369,7 +369,7 @@ export default function BlogAside() {
       <SideCard title="Visas We Offer" icon={<GrVisa size={14} />}>
         <div className="p-3 flex flex-col gap-1.5">
           {visaList.map((v) => (
-            <NavLink key={v.id} href={v.href} active={isActive(v.href)}>
+            <NavLink key={v.id} href={`${v.href}/`} active={isActive(v.href)}>
               {v.title}
             </NavLink>
           ))}
@@ -392,7 +392,7 @@ export default function BlogAside() {
 
         </p>
 
-        <Link href="/evaluation-form"
+        <Link href="/evaluation-form/"
 
           className="w-full flex items-center justify-center gap-2 bg-color4 text-color3 text-xs font-bold uppercase tracking-[.08em] py-2.5 rounded-[9px] hover:bg-[#ffd96e] transition-colors"
 

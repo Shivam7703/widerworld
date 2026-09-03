@@ -4,7 +4,7 @@ export const servicedata = [
  {
     "img": visaDocument,
     "title": "Visa Services",
-    "metatitle": "Visa Services",
+    "metatitle": "Best Visa Services: Fast & Reliable Visa Processing Agency",
     "metakey": "Visa Services, Immigration Services, Best Visa Services",
     "metadesc": "Get expert visa services for study, work, PR, and visitor visas. Enjoy hassle-free documentation, application support, and higher approval chances.",
     "content": [
@@ -191,7 +191,7 @@ export const servicedata = [
 {
     "img": Career,
     "title": "Career Counselling",
-    "metatitle": "Career Counselling",
+    "metatitle": "Professional and Personlized Career Counselling | Professional Growth & Job Shift",
     "metakey": "Career Counselling",
     "metadesc": "Receive personalized career counselling to choose the right course, country, or profession with expert guidance based on your goals and skills.",
     "content": [
@@ -376,7 +376,7 @@ export const servicedata = [
 {
     "img": profile,
     "title": "Profile Marketing",
-    "metatitle": "Profile Marketing",
+    "metatitle": "Professional Profile Marketing Services to Grow Your Network",
     "metakey": "Profile Marketing, Profile Marketing Services",
     "metadesc": "Boost your job prospects with professional profile marketing. Increase your visibility among global employers and recruiters with strategic branding.",
     "content": [
@@ -561,7 +561,7 @@ export const servicedata = [
 {
     "img": Resume,
     "title": "Resume Writing",
-    "metatitle": "Resume Writing",
+    "metatitle": "Resume Writing Service For Abroad Jobs | International Formats",
     "metakey": "Resume Writing, Abroad Resume Writing",
     "metadesc": "Stand out with ATS-friendly resume writing services. Get a professionally crafted resume that highlights your skills, achievements, and career goals.",
     "content": [
@@ -745,7 +745,7 @@ export const servicedata = [
 {
     "img": PostLanding,
     "title": "Post-Landing Services",
-    "metatitle": "Post-Landing Services",
+    "metatitle": "Post Landing Services: Smooth Settlement Guide for Immigrants",
     "metakey": "Post-Landing Services, Abroad Settlement, Immigration Support",
     "metadesc": "Settle abroad with confidence through post landing services, including local guidance, documentation support, banking assistance, and more.",
     "content": [
@@ -929,7 +929,7 @@ export const servicedata = [
 {
     "img": hotel,
     "title": "Pre-Hotel/PG",
-    "metatitle": "Pre-Hotel/PG",
+    "metatitle": "Pre Hotel / PG Services | Book Before You Arrive",
     "metakey": "Pre-Hotel/PG",
     "metadesc": "Book safe and affordable pre-arranged hotel or PG accommodation before your arrival. Start your journey with comfort, convenience, and peace of mind.",
     "content": [
@@ -1017,7 +1017,7 @@ export const servicedata = [
 {
     "img": bank,
     "title": "Bank Account",
-    "metatitle": "Bank Account",
+    "metatitle": "Open Your Bank Account In Abroad With US",
     "metakey": "Bank Account",
     "metadesc": "Open your bank account abroad with expert assistance. Get support with documentation, account setup, and a smooth financial transition.",
     "content": [
@@ -1097,7 +1097,7 @@ export const servicedata = [
 {
     "img": documentation,
     "title": "Documentation",
-    "metatitle": "Documentation Service – Complete Guide 2026",
+    "metatitle": "Documentation Services",
     "metakey": "Documentation, Visa Documentation",
     "metadesc": "Simplify your immigration journey with expert documentation services. Ensure accurate paperwork, timely submissions, and a hassle-free process.",
     "content": [
@@ -1177,7 +1177,7 @@ export const servicedata = [
 {
     "img": orientation,
     "title": "Orientation",
-    "metatitle": "Orientation Service – Complete Guide 2026",
+    "metatitle": "Orientation Services - Best Immigration Consultants",
     "metakey": "Orientation",
     "metadesc": "Prepare for your international journey with pre-departure orientation. Learn about culture, travel, accommodation, and settling in confidently.",
     "content": [

@@ -103,7 +103,7 @@ export default function VisaSlider() {
 
                   {/* Read More */}
                   <Link
-                    href="/services"
+                    href="/services/"
                     className={`inline-flex bg-white hover:bg-color1 px-4 py-2.5 w-max group/btn rounded-md  items-center gap-2 text-xs font-semibold
                       transition-all duration-300 hover:gap-3
                       text-color2 hover:text-white`}

@@ -44,7 +44,7 @@ export default function NewsSection({ isHome, page = 1 }: Props) {
           } sm:grid-cols-2 gap-8 md:gap-12 mx-auto relative z-10`}
       >
         {displayNews.map((news: any) => {
-          const blogUrl = `/news/${createSlug(news.title)}`;
+          const blogUrl = `/news/${createSlug(news.title)}/`;
 
           return (
             <div

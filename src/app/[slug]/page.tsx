@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: PageProps) {
     title: blog.post_title,
     description: blog.description || "",
     alternates: {
-      canonical: `https://www.widerworld.in/${blog.post_name}`,
+      canonical: `https://www.widerworld.in/${blog.post_name}/`,
     },
   };
 }
@@ -53,7 +53,7 @@ export default async function BlogPage({ params }: PageProps) {
         img={bann}
         title={blog.post_title}
         para={blog.description || ""}
-        slug={`blogs/${blog.post_name}`}
+        slug={`blogs/${blog.post_name}/`}
       />
       <Blogdetails data={blog} />
     </main>
