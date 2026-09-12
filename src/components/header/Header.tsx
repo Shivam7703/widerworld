@@ -247,7 +247,7 @@ const Header = ({ header }: any) => {
 
         {/* MOBILE MENU */}
         <div
-          className={`fixed top-20 left-0 h-full w-full md:hidden bg-white transition-all duration-300 ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+          className={`fixed top-20 left-0 min-h-screen h-full overflow-auto  !z-[100] w-full md:hidden bg-white transition-all duration-300 ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
             } `}
         >
           <MenuMobile
