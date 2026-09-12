@@ -492,7 +492,7 @@ export const Whychoose = {
     "Wider World, the best immigration consultants in Delhi, offers reliable and result-driven immigration solutions backed by experienced professionals and transparent processes. We focus on profile-based guidance, accurate documentation, and legal compliance to ensure smooth visa applications. With a client-first approach and personalized support, we help individuals and families achieve their global immigration goals with confidence and clarity.",
 
   success: [
-    { id: 1, value: "90%", text: "Visa Success Rate" },
+    { id: 1, value: "95%", text: "Visa Success Rate" },
     { id: 2, value: "95%", text: "Clients Satisfaction" },
     { id: 3, value: "100%", text: "Transparency" },
   ],

@@ -30,7 +30,7 @@ const stats = [
     icon: <MdVerified />,
     suffix: "%",
     title: "Success Rate",
-    Value: 96,
+    Value: 95,
     desc: "Industry-leading visa approval rate backed by expert legal review at every step.",
   },
   {

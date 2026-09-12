@@ -49,7 +49,7 @@ export default function Ripple() {
           className="absolute bottom-8 left-4 sm:left-8 z-30 bg-white/80 backdrop-blur-md border border-black/20 p-3 rounded-2xl shadow-lg flex items-center gap-3"
         >
           <div className="py-3 px-1 rounded-xl bg-color1 text-white flex items-center justify-center font-bold text-lg">
-            99%
+            95%
           </div>
           <div>
             <p className=" font-semibold  text-gray-900 ">

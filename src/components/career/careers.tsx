@@ -41,8 +41,8 @@ const data = {
 
 const stats = [
   { value: "500+", label: "Visas Processed" },
-  { value: "98%", label: "Success Rate" },
-  { value: "10+", label: "Countries" },
+  { value: "95%", label: "Success Rate" },
+  { value: "25+", label: "Countries" },
   { value: "50+", label: "Team Members" },
 ];
 

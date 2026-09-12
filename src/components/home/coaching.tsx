@@ -11,27 +11,27 @@ const data = [
   {
     title: "IELTS",
     text: "Prepare for IELTS with expert guidance and regular practice sessions",
-    href: "visa/ielts",
+    href: "coaching/ielts",
   },
   {
     title: "PTE",
     text: "Score high in PTE with structured learning and practice sessions",
-    href: "visa/pte",
+    href: "coaching/pte",
   },
   {
     title: "TOEFL",
     text: "Master the TOEFL exam with smart strategies and consistent practice daily",
-    href: "visa/toefl",
+    href: "coaching/toefl",
   },
   {
     title: "OET",
     text: "Get specialized OET training for healthcare professionals with expert guidance",
-    href: "visa/oet",
+    href: "coaching/oet",
   },
   {
     title: "CELPIP",
     text: "Achieve CELPIP success with focused coaching and regular practice sessions",
-    href: "visa/celpip",
+    href: "coaching/celpip",
   },
   
 ];
