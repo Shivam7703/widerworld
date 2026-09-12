@@ -250,25 +250,12 @@ export const sliderContent = [
 
   {
     id: 1, // Fix duplicate id issue by using unique ids
-    img: banner2,
-    welcome: "Best Immigration Consultants in Delhi",
-    title1: "Experts guiding your global career with ",
-    title2: "complete visa support",
-    para:
-      "Get step-by-step assistance, accurate documentation, and reliable guidance to make your visa process smooth, secure, and successful.",
-    btntext: "Contact Us",
-    href: "/contact-us/",
+    img: banner,    
   },
   {
     id: 2, // Fix duplicate id issue by using unique ids
-    img: banner,
-    welcome: "Build Your Future Abroad with Confidence",
-    title1: "Secure your future abroad with trusted",
-    title2: "work and PR pathways",
-    para:
-      "We connect you with verified opportunities, strong profiles, and complete processing support to help you build a stable career and long-term settlement overseas.",
-    btntext: "Contact Us",
-    href: "/contact-us/",
+    img: banner2,
+  
   },
 ];
 
@@ -390,56 +377,6 @@ export const visaSliderdata = {
   ],
 };
 
-export const countrytomigrate = {
-  title1: "Countries We Offer",
-  title2: "We Provide Expert Immigration And Destinations.",
-
-  cards: [
-    {
-      id: 1,
-      img: canada,
-      heading: "United States",
-      link: "country/us",
-      points: [
-        "4 Years Business Visa",
-        "Visa Apply Online",
-        "Student Admission Visa",
-        "24/7 Support",
-      ],
-    },
-    {
-      id: 2,
-      img: uk,
-      heading: "United Kingdom",
-      link: "country/uk",
-      points: [
-        "4 Years Business Visa",
-        "Visa Apply Online",
-        "Student Admission Visa",
-        "24/7 Support",
-      ],
-    },
-    {
-      id: 3,
-      img: canada,
-      heading: "Canada",
-      link: "country/canada",
-      points: ["PR Pathways", "Express Entry", "Student Visa", "24/7 Support"],
-    },
-    {
-      id: 4,
-      img: uk,
-      heading: "Australia",
-      link: "country/australia",
-      points: [
-        "Skilled Migration",
-        "Work Visa",
-        "Student Visa",
-        "24/7 Support",
-      ],
-    },
-  ],
-};
 
 export const workingprocess = {
   title1: "Our Working Process",
@@ -488,14 +425,9 @@ export const canadapnp = {
       flag: canada,
       cat: "abroad",
       heading: "Canada",
-      points: [
-        "• Processing: 3–6 Months",
-        "• High Nomination Quota",
-        "• Top destination for study, work, and permanent residency with strong opportunities",
-      ],
       text:
         "Top destination for study, work, and permanent residency with strong opportunities",
-      link: "/canada-pnp",
+      link: "/visa/canada-work-visa/",
     },
     {
       id: 2,
@@ -503,14 +435,9 @@ export const canadapnp = {
       flag: aus,
       cat: "mbbs",
       heading: "Australia",
-      points: [
-        "• Processing: 2–4 Months",
-        "• Regular Invitation Rounds",
-        "• Quality education, work opportunities, and clear pathways to permanent residency options",
-      ],
       text:
         "Quality education, work opportunities, and clear pathways to permanent residency options",
-      link: "/canada-pnp",
+      link: "/visa/australia-work-visa/",
     },
     {
       id: 3,
@@ -518,14 +445,9 @@ export const canadapnp = {
       flag: newflag,
       cat: "abroad",
       heading: "New Zealand",
-      points: [
-        "• Processing: 4–6 Months",
-        "• Lower CRS Possibility",
-        "• Growing destination offering quality education, work visas, and a peaceful lifestyle benefits",
-      ],
       text:
         "Growing destination offering quality education, work visas, and a peaceful lifestyle benefits",
-      link: "/canada-pnp",
+      link: "/visa/new-zealand-permanent-residency/",
     },
     {
       id: 4,
@@ -533,14 +455,9 @@ export const canadapnp = {
       flag: euro,
       cat: "abroad",
       heading: "Europe",
-      points: [
-        "• Processing: 2–5 Months",
-        "• In-Demand Occupation Stream",
-        "• Multiple countries offering work opportunities, study options, and diverse cultural experiences",
-      ],
       text:
         "Multiple countries offering work opportunities, study options, and diverse cultural experiences",
-      link: "/canada-pnp",
+      link: "/visa/germany-work-visa/",
     },
     {
       id: 5,
@@ -548,14 +465,9 @@ export const canadapnp = {
       flag: gcc,
       cat: "mbbs",
       heading: "GCC",
-      points: [
-        "• Processing: 3–5 Months",
-        "• Strong Provincial Support",
-        "• Attractive work destinations with tax-free income and growing career opportunities",
-      ],
       text:
         "Attractive work destinations with tax-free income and growing career opportunities",
-      link: "/canada-pnp",
+      link: "/visa/uae-work-visa/",
     },
     {
       id: 6,
@@ -563,14 +475,10 @@ export const canadapnp = {
       flag: usa,
       cat: "mbbs",
       heading: "USA",
-      points: [
-        "• Processing: 3–6 Months",
-        "• Express Entry Priority",
-        "• Global leader in education, innovation, and diverse career opportunities across industries",
-      ],
+     
       text:
         "Global leader in education, innovation, and diverse career opportunities across industries",
-      link: "/canada-pnp",
+      link: "/visa/usa-business-visa-b1/",
     },
   ],
 };
@@ -630,9 +538,9 @@ export const offercountry = {
       flag: canada,
       cat: "abroad",
       heading: "Study in Canada",
-      points: ["• High-Quality Education", "• Post-Study Work", "• PR Opportunities"],
+    
       text: "High-quality education with post-study work and PR opportunities",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 2,
@@ -640,9 +548,9 @@ export const offercountry = {
       flag: usa,
       cat: "abroad",
       heading: "Study in USA",
-      points: ["• Top Universities", "• Diverse Courses", "• Global Career Opportunities"],
+    
       text: "Top universities with diverse courses and global career opportunities",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 3,
@@ -650,9 +558,8 @@ export const offercountry = {
       flag: aus,
       cat: "abroad",
       heading: "Study in Australia",
-      points: ["• Quality Education", "• Work Opportunities", "• Student-Friendly Environment"],
       text: "Quality education with work opportunities and a student-friendly environment",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 4,
@@ -660,9 +567,8 @@ export const offercountry = {
       flag: dubai,
       cat: "abroad",
       heading: "Study in Dubai",
-      points: ["• Modern Education Hub", "• Global Exposure", "• Tax-Free Benefits"],
       text: "Modern education hub with global exposure and tax-free benefits",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 5,
@@ -670,9 +576,8 @@ export const offercountry = {
       flag: italy,
       cat: "abroad",
       heading: "Study in Italy",
-      points: ["• Affordable Education", "• Rich Culture", "• European Degree"],
       text: "Affordable education with rich culture and European degree recognition",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 6,
@@ -680,9 +585,8 @@ export const offercountry = {
       flag: france,
       cat: "abroad",
       heading: "Study in France",
-      points: ["• Quality Education", "• Low Fees", "• Global Opportunities"],
-      text: "Quality education with low fees and global career opportunities",
-      link: "/canada-pnp",
+       text: "Quality education with low fees and global career opportunities",
+      link: "/contact-us/",
     },
     {
       id: 7,
@@ -690,9 +594,8 @@ export const offercountry = {
       flag: malaysia,
       cat: "abroad",
       heading: "Study in Malaysia",
-      points: ["• Affordable", "• International Universities", "• Modern Infrastructure"],
       text: "Affordable education with international universities and modern infrastructure",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 8,
@@ -700,9 +603,8 @@ export const offercountry = {
       flag: newflag,
       cat: "abroad",
       heading: "Study in New Zealand",
-      points: ["• Safe Country", "• Quality Education", "• Post-Study Work"],
       text: "Safe country with quality education and post-study work options",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 9,
@@ -710,9 +612,8 @@ export const offercountry = {
       flag: ireland,
       cat: "abroad",
       heading: "Study in Ireland",
-      points: ["• Strong Job Market", "• Excellent Education", "• Career Growth"],
       text: "Strong job market with excellent education and career growth",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 10,
@@ -720,9 +621,8 @@ export const offercountry = {
       flag: uk,
       cat: "abroad",
       heading: "Study in UK",
-      points: ["• Globally Recognized", "• Short Duration", "• Flexible Courses"],
       text: "Globally recognized degrees with shorter course duration options",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 11,
@@ -730,9 +630,8 @@ export const offercountry = {
       flag: singa,
       cat: "abroad",
       heading: "Study in Singapore",
-      points: ["• World-Class Education", "• Industry Connections", "• Career Opportunities"],
       text: "World-class education with strong industry connections and career opportunities",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 1,
@@ -740,9 +639,8 @@ export const offercountry = {
       flag: philippines,
       cat: "mbbs",
       heading: "MBBS in Philippines",
-      points: ["• Affordable Fees", "• English Medium", "• Good Clinical Exposure"],
       text: "Affordable MBBS with English medium and good clinical exposure",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 2,
@@ -750,9 +648,8 @@ export const offercountry = {
       flag: russia,
       cat: "mbbs",
       heading: "MBBS in Russia",
-      points: ["• Globally Recognized", "• Affordable Fees", "• Quality Education"],
       text: "Globally recognized degrees with affordable fees and quality education",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 3,
@@ -760,9 +657,8 @@ export const offercountry = {
       flag: bangladesh,
       cat: "mbbs",
       heading: "MBBS in Bangladesh",
-      points: ["• Indian Syllabus", "• High FMGE Rate", "• Affordable Option"],
-      text: "Similar syllabus to India with high FMGE passing rates",
-      link: "/canada-pnp",
+       text: "Similar syllabus to India with high FMGE passing rates",
+      link: "/contact-us/",
     },
     {
       id: 4,
@@ -770,9 +666,8 @@ export const offercountry = {
       flag: mauritius,
       cat: "mbbs",
       heading: "MBBS in Mauritius",
-      points: ["• Safe Country", "• Multicultural Environment", "• Quality Education"],
       text: "Quality education in a safe and multicultural environment",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 5,
@@ -780,9 +675,8 @@ export const offercountry = {
       flag: nepal,
       cat: "mbbs",
       heading: "MBBS in Nepal",
-      points: ["• Indian Curriculum", "• Easy Travel", "• Cultural Similarity"],
       text: "Indian-based curriculum with easy travel and cultural similarity",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 6,
@@ -790,9 +684,8 @@ export const offercountry = {
       flag: uzbekistan,
       cat: "mbbs",
       heading: "MBBS in Uzbekistan",
-      points: ["• Affordable Fees", "• Modern Infrastructure", "• Experienced Faculty"],
       text: "Affordable fees with modern infrastructure and experienced faculty support",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 7,
@@ -800,9 +693,8 @@ export const offercountry = {
       flag: kazakhstan,
       cat: "mbbs",
       heading: "MBBS in Kazakhstan",
-      points: ["• Recognized Universities", "• Affordable", "• Good Facilities"],
       text: "Recognized universities with affordable education and good facilities",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 8,
@@ -810,9 +702,8 @@ export const offercountry = {
       flag: belarus,
       cat: "mbbs",
       heading: "MBBS in Belarus",
-      points: ["• High Quality Education", "• Advanced Labs", "• Strong Infrastructure"],
       text: "High-quality medical education with advanced labs and infrastructure",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 9,
@@ -820,9 +711,8 @@ export const offercountry = {
       flag: georg,
       cat: "mbbs",
       heading: "MBBS in Georgia",
-      points: ["• European Standard", "• English Medium", "• Recognized Degree"],
       text: "European standard education with English medium programs available",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 10,
@@ -830,9 +720,8 @@ export const offercountry = {
       flag: armenia,
       cat: "mbbs",
       heading: "MBBS in Armenia",
-      points: ["• Affordable", "• Safe Country", "• Quality Education"],
       text: "Affordable MBBS with quality education and a safe environment",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 11,
@@ -840,9 +729,8 @@ export const offercountry = {
       flag: china,
       cat: "mbbs",
       heading: "MBBS in China",
-      points: ["• Top Universities", "• Advanced Technology", "• Global Recognition"],
       text: "Top universities with advanced technology and global recognition",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 12,
@@ -850,9 +738,8 @@ export const offercountry = {
       flag: poland,
       cat: "mbbs",
       heading: "MBBS in Poland",
-      points: ["• European Degree", "• High Standards", "• Global Opportunities"],
-      text: "European degree with high education standards and global opportunities",
-      link: "/canada-pnp",
+     text: "European degree with high education standards and global opportunities",
+      link: "/contact-us/",
     },
     {
       id: 13,
@@ -860,9 +747,8 @@ export const offercountry = {
       flag: germany,
       cat: "mbbs",
       heading: "MBBS in Germany",
-      points: ["• Low Tuition Fees", "• Excellent Education", "• High Exposure"],
-      text: "Low tuition fees with excellent medical education and exposure",
-      link: "/canada-pnp",
+     text: "Low tuition fees with excellent medical education and exposure",
+      link: "/contact-us/",
     },
     {
       id: 14,
@@ -870,9 +756,8 @@ export const offercountry = {
       flag: malaysia,
       cat: "mbbs",
       heading: "MBBS in Malaysia",
-      points: ["• Affordable", "• Modern Campus", "• International Recognition"],
       text: "Affordable education with modern campuses and international recognition",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 15,
@@ -880,9 +765,8 @@ export const offercountry = {
       flag: kyrgyzstan,
       cat: "mbbs",
       heading: "MBBS in Kyrgyzstan",
-      points: ["• Budget Friendly", "• Easy Admission", "• Good Training"],
       text: "Budget-friendly MBBS with a simple admission process and good training",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
   ],
 };

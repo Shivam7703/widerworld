@@ -33,7 +33,7 @@ export default function Greenbox() {
   ];
 
   return (
-    <section className="md:pb-14 -mt-20 md:-mt-32 sticky z-40 py-8 w-full max-w-[1250px]">
+    <section className="md:p-12 md:-mt-16 sticky z-40 py-8 px-6 mx-auto w-full max-w-[1250px]">
 
       <div className="flex flex-wrap max-md:justify-center items-stretch">
 
@@ -57,9 +57,9 @@ export default function Greenbox() {
             <div className="sm:px-7 sm:!pt-11 p-6 text-white">
               {/* ICON */}
               <div
-                className=" w-[60px] h-[60px] mb-5 
+                className=" md:w-[60px] md:h-[60px] h-11 w-11  mb-5 
               rounded-xl bg-color5 
-              flex items-center justify-center text-[24px] text-white
+              flex items-center justify-center text-lg  sm:text-2xl text-white
                transition-all duration-400 shadow-md shadow-black/35
               group-hover:scale-110 group-hover:-rotate-6"
 
