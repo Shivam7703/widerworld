@@ -48,23 +48,24 @@ export default function Popups() {
   return (
     <div className="">
       {/* WhatsApp floating button */}
-      <a
-        href={whatsappHref}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Chat with us on WhatsApp"
-        className="fixed bottom-6 right-2 sm:w-16 sm:h-16 w-12 h-12 rounded-full bg-[#25D366] hover:bg-[#1ebd5a] text-white flex items-center justify-center shadow-lg hover:shadow-[0_8px_24px_rgba(37,211,102,0.55)] transition-all z-[60]"
-      >
-        <FaWhatsapp size={30} />
-      </a>
+      {/* WhatsApp floating button */}
+<a
+  href={whatsappHref}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat with us on WhatsApp"
+  className="fixed bottom-6 right-2 sm:w-16 sm:h-16 w-12 h-12 rounded-full bg-[#25D366] hover:bg-[#1ebd5a] text-white flex items-center justify-center shadow-lg hover:shadow-[0_8px_24px_rgba(37,211,102,0.55)] transition-all z-40"
+>
+  <FaWhatsapp size={30} />
+</a>
 
-      {/* Side tab trigger */}
-      <button
-        onClick={() => setIsFormOpen(true)}
-        className="fixed top-1/2 -right-[80px] -translate-y-1/2 -rotate-90 origin-center bg-red-600 text-white font-semibold text-sm tracking-wide px-5 py-3 rounded-t-lg flex items-center gap-2 z-[55] transition-all"
-      >
-        Request A Callback
-      </button>
+{/* Side tab trigger */}
+<button
+  onClick={() => setIsFormOpen(true)}
+  className="fixed top-1/2 -right-[80px] -translate-y-1/2 -rotate-90 origin-center bg-red-600 text-white font-semibold text-sm tracking-wide px-5 py-3 rounded-t-lg flex items-center gap-2 z-40 transition-all"
+>
+  Request A Callback
+</button>
 
       {/* Popup Overlay */}
       {isFormOpen && (

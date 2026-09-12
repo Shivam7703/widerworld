@@ -21,7 +21,6 @@ import { TbBrandYoutubeFilled } from "react-icons/tb";
 import { logo, logo2, logo3 } from "@/assets";
 import { navigationMenu } from "@/data/homeData";
 import { MdEmail } from "react-icons/md";
-import { FaSearch } from "react-icons/fa";
 import Buttonmain from "../global/button";
 
 const Header = ({ header }: any) => {
@@ -60,25 +59,29 @@ const Header = ({ header }: any) => {
       <div className="h-20 md:h-36 bg-white" />
 
       <header
-        className={`fixed top-0 shadow-lg left-0 w-full z-50 transition-all duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"
-          } ${isAtTop ? " top-0" : "md:-top-12 -top-1"}`}
+        className={`fixed top-0 shadow-lg left-0 w-full z-50 transition-all duration-300 ${
+          isVisible ? "translate-y-0" : "-translate-y-full"
+        } ${isAtTop ? " top-0" : "md:-top-12 -top-1"}`}
       >
         {/* ================= DESKTOP HEADER ================= */}
         <div className="max-md:hidden w-full">
           {/* TOP BAR */}
-          <div
-            className="flex justify-between items-center px-8 py-2 w-full text-sm font-medium text-white
-      bg-color1 shadow-lg"
-          >
+          <div className="flex justify-between items-center px-8 py-2 w-full text-sm font-medium text-white bg-color1 shadow-lg">
             <div className="flex gap-8 font-bold">
-              <a href="tel:+91 9999624998" className="flex items-center gap-2 hover:text-yellow-300 transition">
+              <a
+                href="tel:+91 9999624998"
+                className="flex items-center gap-2 hover:text-yellow-300 transition"
+              >
                 <FaSquarePhone className="text-yellow-400" />
-                <span className="">+91 9999624998</span>
+                <span>+91 9999624998</span>
               </a>
 
-              <a href="mailto:info@widerworld.in" className="flex items-center gap-2 hover:text-yellow-300 transition">
+              <a
+                href="mailto:info@widerworld.in"
+                className="flex items-center gap-2 hover:text-yellow-300 transition"
+              >
                 <MdEmail className="text-yellow-400" />
-                <span className="">info@widerworld.in</span>
+                <span>info@widerworld.in</span>
               </a>
             </div>
 
@@ -87,7 +90,7 @@ const Header = ({ header }: any) => {
               {/* Facebook */}
               <div
                 className="group relative w-8 h-8 rounded-xl bg-white/90 backdrop-blur-sm
-                      border-[1.5px] border-white flex items-center justify-center cursor-pointer
+                     border-[1.5px] border-white flex items-center justify-center cursor-pointer
                         overflow-hidden transition-all duration-300
                         hover:-translate-y-1 hover:scale-110 hover:border-transparent
                         hover:shadow-[0_10px_28px_rgba(0,0,0,0.25)]"
@@ -98,10 +101,7 @@ const Header = ({ header }: any) => {
                   )
                 }
               >
-                <span
-                  className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300
-      bg-gradient-to-br from-[#1877F2] to-[#0a5bb5]"
-                />
+                <span className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-[#1877F2] to-[#0a5bb5]" />
                 <FaFacebook className="text-base text-[#1877F2] group-hover:text-white relative z-10 transition-colors duration-300" />
               </div>
 
@@ -143,10 +143,7 @@ const Header = ({ header }: any) => {
                   )
                 }
               >
-                <span
-                  className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300
-      bg-gradient-to-br from-[#0A66C2] to-[#004182]"
-                />
+                <span className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-[#0A66C2] to-[#004182]" />
                 <FaLinkedinIn className="text-lg text-[#0A66C2] group-hover:text-white relative z-10 transition-colors duration-300" />
               </div>
 
@@ -164,17 +161,12 @@ const Header = ({ header }: any) => {
                   )
                 }
               >
-                <span
-                  className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300
-      bg-gradient-to-br from-[#FF0000] to-[#cc0000]"
-                />
+                <span className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-[#FF0000] to-[#cc0000]" />
                 <TbBrandYoutubeFilled className="text-lg text-[#FF0000] group-hover:text-white relative z-10 transition-colors duration-300" />
               </div>
             </div>
           </div>
-          <div className="w-full flex relative items-stretch  ">
-            {/* decorative gradient shapes */}
-
+          <div className="w-full flex relative items-stretch">
             {/* LOGO */}
             <Link
               href={header?.href || "/"}
@@ -188,8 +180,6 @@ const Header = ({ header }: any) => {
             </Link>
 
             <div className="w-full relative z-10">
-
-
               {/* NAV BAR */}
               <div className="flex bg-zinc-800 justify-between items-center w-full px-10 pt-4 pb-7 relative">
                 {/* MENU */}
@@ -215,15 +205,11 @@ const Header = ({ header }: any) => {
                 />
               </div>
             </div>
-
           </div>
-
         </div>
 
         {/* ================= MOBILE HEADER ================= */}
-        <div
-          className={`flex md:hidden items-center justify-between px-4 h-20 transition bg-white shadow-md`}
-        >
+        <div className="flex md:hidden items-center justify-between px-4 h-20 transition bg-white shadow-md relative z-[101]">
           <Link href={header?.href || "/"}>
             <Image
               src={logo}
@@ -234,21 +220,22 @@ const Header = ({ header }: any) => {
 
           {isMobileMenuOpen ? (
             <VscChromeClose
-              className={`text-3xl "text-black"`}
+              className="text-3xl text-black cursor-pointer"
               onClick={() => setIsMobileMenuOpen(false)}
             />
           ) : (
             <IoMenu
-              className={`text-3xl "text-black"`}
+              className="text-3xl text-black cursor-pointer"
               onClick={() => setIsMobileMenuOpen(true)}
             />
           )}
         </div>
 
-        {/* MOBILE MENU */}
+        {/* MOBILE MENU (FIXED COVER OVERLAY) */}
         <div
-          className={`fixed top-20 left-0 min-h-screen h-full overflow-auto !z-[60] w-[80%] md:hidden bg-white transition-all duration-300 ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-            } `}
+          className={`fixed top-20 inset-0 h-screen w-full pb-12 overflow-y-auto !z-[100] md:hidden bg-white transition-all duration-300 pt-6 ${
+            isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
         >
           <MenuMobile
             onTop={isAtTop}
@@ -266,17 +253,14 @@ export default Header;
 function PaymentButton() {
   return (
     <div className="flex items-center gap-4 flex-shrink-0">
-      {/* ── GET FREE QUOTE ── */}
       <Buttonmain href={"/contact-us/"} text2={"Get Support"} text1={"Contact Now"} />
 
-      {/* ── PAY NOW ── */}
       <Link
         href="/payment"
         className="group relative flex items-center gap-3 px-8 py-4 rounded-full
   text-white font-semibold text-[15px] tracking-wide
   transition-all duration-300 hover:-translate-y-[2px] z-0"
       >
-        {/* spinning border layer */}
         <span className="absolute inset-0 rounded-full overflow-hidden -z-10">
           <span
             className="absolute inset-[-2px] h-52 w-52"
@@ -286,27 +270,21 @@ function PaymentButton() {
               animation: "spinBorder 4s linear infinite",
             }}
           />
-
-          {/* inner mask */}
           <span className="absolute inset-[2px] rounded-full bg-[#27528e]" />
         </span>
 
-        {/* text swap */}
         <span className="relative overflow-hidden h-[1.25em] flex items-center">
           <span className="block transition-transform duration-300 group-hover:-translate-y-full whitespace-nowrap">
             Make Payment
           </span>
 
-          <span className="absolute top-0 left-0 block translate-y-full  text-center transition-transform duration-300 group-hover:translate-y-0 whitespace-nowrap">
-            {" "}
+          <span className="absolute top-0 left-0 block translate-y-full text-center transition-transform duration-300 group-hover:translate-y-0 whitespace-nowrap">
             Pay Now
           </span>
         </span>
 
         <FaCreditCard className="text-[15px] text-color4 transition-all duration-300 group-hover:translate-x-1" />
       </Link>
-
-
     </div>
   );
 }
