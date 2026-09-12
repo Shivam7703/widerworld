@@ -222,12 +222,11 @@ const Header = ({ header }: any) => {
 
         {/* ================= MOBILE HEADER ================= */}
         <div
-          className={`flex md:hidden items-center justify-between px-4 h-20 transition ${isAtTop ? "bg-zinc-800" : "bg-white shadow-md"
-            }`}
+          className={`flex md:hidden items-center justify-between px-4 h-20 transition bg-white shadow-md`}
         >
           <Link href={header?.href || "/"}>
             <Image
-              src={isAtTop ? logo2 : logo}
+              src={logo}
               alt="Globesway Immigration"
               className="h-12 w-auto object-contain"
             />
@@ -235,12 +234,12 @@ const Header = ({ header }: any) => {
 
           {isMobileMenuOpen ? (
             <VscChromeClose
-              className={`text-3xl ${isAtTop ? "text-white" : "text-black"}`}
+              className={`text-3xl "text-black"`}
               onClick={() => setIsMobileMenuOpen(false)}
             />
           ) : (
             <IoMenu
-              className={`text-3xl ${isAtTop ? "text-white" : "text-black"}`}
+              className={`text-3xl "text-black"`}
               onClick={() => setIsMobileMenuOpen(true)}
             />
           )}
@@ -248,8 +247,8 @@ const Header = ({ header }: any) => {
 
         {/* MOBILE MENU */}
         <div
-          className={`fixed top-20 left-0 h-screen w-full md:hidden transition-all duration-300 ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-            } ${isAtTop ? "bg-zinc-800" : "bg-white"}`}
+          className={`fixed top-20 left-0 h-screen w-full md:hidden bg-white transition-all duration-300 ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+            } `}
         >
           <MenuMobile
             onTop={isAtTop}

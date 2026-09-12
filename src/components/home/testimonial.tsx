@@ -68,7 +68,7 @@ export default function Testimonials() {
       <Image
         src={arrow}
         alt="Background"
-        className="absolute top-20 opacity-70 left-0 h-full object-contain z-0 pointer-events-none"
+        className="absolute max-lg:hidden top-20 opacity-70 left-0 h-full object-contain z-0 pointer-events-none"
       />
 
       {/* Header Section */}
