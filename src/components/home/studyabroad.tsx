@@ -34,13 +34,16 @@ export default function Studyabrod() {
           </svg>
 
           {/* Dashed frames behind */}
-          <div className="absolute top-[10px] left-[36px] right-[-14px] bottom-[-14px] border-2 border-dashed border-color1/30 rounded-2xl pointer-events-none z-[2]" />
-          <div className="absolute top-[22px] left-[60px] right-[-26px] bottom-[-26px] border-2 border-dashed border-color2/20 rounded-2xl pointer-events-none " />
+        {/* Dashed Border 1 */}
+<div className="absolute top-[10px] left-0 right-[-3px] md:left-[36px] md:right-[-14px] bottom-[-14px] border-2 border-dashed border-color1/30 rounded-2xl pointer-events-none z-[2]" />
 
-          {/* Card Back — box1, rotated right */}
-          <div className="absolute w-[92%]       h-[92%] left-[8%] top-[7%] z-[1] rounded-2xl duration-300 ease-in-out  hover:rotate-[2deg] overflow-hidden border-[3px] border-white shadow-xl">
-            <Image src={imgs[1]} alt="img" fill className="object-cover object-center" />
-          </div>
+{/* Dashed Border 2 */}
+<div className="absolute top-[18px] md:top-[22px] left-4 md:left-[60px] right-[-6px] md:right-[-26px] bottom-[-18px] md:bottom-[-26px] border-2 border-dashed border-color2/20 rounded-2xl pointer-events-none" />
+
+{/* Card Back — box1 */}
+<div className="absolute w-[96%] md:w-[92%] h-[96%] md:h-[92%] left-[3%] md:left-[8%] top-[4%] md:top-[7%] z-[1] rounded-2xl duration-300 ease-in-out hover:rotate-[2deg] overflow-hidden border-[3px] border-white shadow-xl">
+  <Image src={imgs[1]} alt="img" fill className="object-cover object-center" />
+</div>
 
           {/* Card Front — box1, straight, red border */}
           {/* <div className="absolute w-[50%] h-[96%] left-[7%] top-[3%] -rotate-[10deg] z-[3] hover:rotate-0 rounded-2xl duration-300 ease-in-out  overflow-hidden border-[3px] border-white shadow-2xl">
