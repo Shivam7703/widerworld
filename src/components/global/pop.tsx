@@ -46,7 +46,7 @@ export default function Popups() {
   const whatsappHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
   return (
-    <div className="relative">
+    <div className="">
       {/* WhatsApp floating button */}
       <a
         href={whatsappHref}
