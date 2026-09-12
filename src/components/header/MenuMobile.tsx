@@ -66,10 +66,9 @@ const MenuMobile: React.FC<MenuMobileProps> = ({
       const hoverText = onTop ? "hover:text-color2" : "hover:text-color1";
       const textColor =
         activeItem === item.href
-          ? "text-color1"
-          : onTop
-          ? "text-white"
-          : "text-black";
+          ? "text-color1 "
+          : "text-black"
+         ;
 
       return (
         <div key={`${level}-${id}`}>
