@@ -78,7 +78,7 @@ export const navigationMenu = {
       ],
     },
 
-    { id: 6, label: "Contact Us", href: "/contact-us" },
+    // { id: 6, label: "Contact Us", href: "/contact-us" },
     { id: 7, label: "Evaluation Form", href: "/evaluation-form" },
 
   ],

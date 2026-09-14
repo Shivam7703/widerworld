@@ -67,7 +67,7 @@ export default function Studyabrod() {
 
           {/* Description */}
           <p className="text-gray-500 text-base leading-relaxed mb-8 max-w-lg">
-            We provide professional assistance for every visa application, ensuring a smooth process, accurate documentation, and reliable support to make your journey abroad simple and stress-free.
+            We provide professional assistance for every visa application, ensuring a smooth process, accurate documentation, and reliable support to make your abroad journey  simple and stress-free.
 
           </p>
 

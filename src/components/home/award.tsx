@@ -105,7 +105,7 @@ export default function Award() {
                 src={box2}
                 alt="insurance"
                 fill
-                className="object-cover object-center h-full w-full "
+                className="object-contain object-center h-full w-full "
               />
             </div>
 

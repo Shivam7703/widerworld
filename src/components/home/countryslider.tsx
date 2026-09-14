@@ -87,7 +87,7 @@ export default function Countryslider({ data, uniqueId }: any) {
                   </h3>
 
                   <p className="text-zinc-600 text-sm sm:text-base mx-auto line-clamp-3">
-                    {card.text ?? "Lorem Ipsum Has Been The Industry's Standard"}
+                    {card.text ?? " "}
                   </p>
 
                   {/* Learn More */}

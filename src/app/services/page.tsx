@@ -63,7 +63,7 @@ function Services() {
         slug={"services"}
       />
       <ServiceSection />
-      <WhychooseSection />
+      {/* <WhychooseSection /> */}
       <Testimonials />
     </>
   );
