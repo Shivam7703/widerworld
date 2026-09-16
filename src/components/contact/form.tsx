@@ -1,18 +1,13 @@
 "use client";
 import React from "react";
-import { FaLocationArrow, FaRegUserCircle } from "react-icons/fa";
+import { FaRegUserCircle } from "react-icons/fa";
 import { FiMail, FiPhone } from "react-icons/fi";
-import { IoChatboxEllipsesOutline } from "react-icons/io5";
-import { MdOutlineChat } from "react-icons/md";
+import { MdOutlineChat, MdSubject } from "react-icons/md";
 import { BiRightArrowAlt } from "react-icons/bi";
+import InquiryForm from "../global/inquiryform";
+import { TbWorld } from "react-icons/tb";
 
-const inputFields = [
-  { name: "name", label: "Full Name", type: "text", icon: FaRegUserCircle, placeholder: "Your Name" },
-  { name: "phone", label: "Phone", type: "tel", icon: FiPhone, placeholder: "+91 00000 00000" },
-  { name: "email", label: "Email", type: "email", icon: FiMail, placeholder: "Your Email" },
-  { name: "location", label: "Location", type: "text", icon: FaLocationArrow, placeholder: " Country to Migrate" },
-  { name: "subject", label: "Subject", type: "text", icon: IoChatboxEllipsesOutline, placeholder: "How can we help?" },
-];
+
 
 const pointers = [
   "8+ years of experience as leading Immigration Consultants in India",
@@ -109,105 +104,21 @@ function Form() {
             </h3>
             <p className="text-gray-600 text-sm mb-8">Fill in the form and our team will get back to you within 24 hours.</p>
 
-            <form className="space-y-5">
-
-              {/* First 4 — 2 col grid */}
-              <div className="grid sm:grid-cols-2 gap-5">
-                {inputFields.slice(0, 4).map((field) => {
-                  const Icon = field.icon;
-                  return (
-                    <div key={field.name}>
-                      <label className="block text-color3 font-semibold text-xs uppercase tracking-[0.12em] mb-2">
-                        {field.label}
-                      </label>
-                      <div className="relative">
-                        <div className="absolute left-4 top-1/2 -translate-y-1/2 text-color2/80 z-10">
-                          <Icon size={16} />
-                        </div>
-                        <input
-                          type={field.type}
-                          name={field.name}
-                          placeholder={field.placeholder}
-                          className="w-full pl-10 pr-4 py-3 bg-zinc-100 rounded-xl text-color3
-                            placeholder:text-zinc-400 text-sm
-                            border border-color2/50
-                            focus:outline-none focus:border-color2/35 focus:bg-white
-                            transition-all duration-200"
-                          required
-                        />
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-
-              {/* Subject — full width */}
-              {inputFields.slice(4).map((field) => {
-                const Icon = field.icon;
-                return (
-                  <div key={field.name}>
-                    <label className="block text-color3 font-semibold text-xs uppercase tracking-[0.12em] mb-2">
-                      {field.label}
-                    </label>
-                    <div className="relative">
-                      <div className="absolute left-4 top-1/2 -translate-y-1/2 text-color2/80 z-10">
-                        <Icon size={16} />
-                      </div>
-                      <input
-                        type={field.type}
-                        name={field.name}
-                        placeholder={field.placeholder}
-                        className="w-full pl-10 pr-4 py-3 bg-zinc-100 rounded-xl text-color3
-                          placeholder:text-zinc-400 text-sm
-                          border border-color2/50
-                          focus:outline-none focus:border-color2/35 focus:bg-white
-                          transition-all duration-200"
-                        required
-                      />
-                    </div>
-                  </div>
-                );
-              })}
-
-              {/* Message */}
-              <div>
-                <label className="block text-color3 font-semibold text-xs uppercase tracking-[0.12em] mb-2">
-                  Message
-                </label>
-                <div className="relative">
-                  <div className="absolute left-4 top-4 text-color2/80 z-10">
-                    <MdOutlineChat size={16} />
-                  </div>
-                  <textarea
-                    name="message"
-                    rows={4}
-                    placeholder="Tell us more about your inquiry..."
-                    className="w-full pl-10 pr-4 py-3 bg-zinc-100 rounded-xl text-color3
-                      placeholder:text-zinc-400 text-sm
-                      border border-color2/50
-                      focus:outline-none focus:border-color2/35 focus:bg-white
-                      transition-all duration-200 resize-none"
-                    required
-                  />
-                </div>
-              </div>
-
-              {/* Submit */}
-              <button
-                type="submit"
-                className="group inline-flex items-center gap-0 border-2 border-color3 rounded-full overflow-hidden
-                  hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
-              >
-                <span className="px-8 py-3 text-sm font-bold uppercase tracking-[0.12em] text-color3">
-                  Submit Now
-                </span>
-                <span className="w-11 h-11 flex items-center justify-center bg-color1 text-white
-                  group-hover:bg-color2 transition-colors duration-300 rounded-full">
-                  <BiRightArrowAlt size={20} />
-                </span>
-              </button>
-
-            </form>
+            <InquiryForm
+  icons={{ name: FaRegUserCircle, phone: FiPhone, email: FiMail, country: TbWorld, subject: MdSubject, message: MdOutlineChat }}
+  buttonContent={<>Submit Now <span className="w-11 h-11 flex items-center justify-center bg-color1 text-white group-hover:bg-color2 rounded-full"><BiRightArrowAlt size={20} /></span></>}
+  classNames={{
+    form: "space-y-5",
+    grid: "grid sm:grid-cols-2 gap-5",
+    label: "block text-color3 font-semibold text-xs uppercase tracking-[0.12em] mb-2",
+    inputWrap: "relative",
+ icon: "absolute left-2.5 top-1/2 -translate-y-1/2 text-color2 opacity-60 z-10",
+  textareaIcon: "absolute left-2.5 top-4 text-color2 opacity-60 z-10", 
+      input: "w-full pl-8 pr-4 py-3 bg-zinc-100 rounded-xl text-color3 placeholder:text-zinc-400 text-sm border border-color2/50 focus:outline-none focus:border-color2/35 focus:bg-white transition-all duration-200",
+    textarea: "w-full pl-8 pr-4 py-3 bg-zinc-100 rounded-xl text-color3 placeholder:text-zinc-400 text-sm border border-color2/50 focus:outline-none focus:border-color2/35 focus:bg-white transition-all duration-200 resize-none",
+    button: "group inline-flex items-center gap-4 border-2 border-color3 py-1 pr-1 pl-4 rounded-full overflow-hidden hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300",
+  }}
+/>
           </div>
 
         </div>

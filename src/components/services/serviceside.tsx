@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { MdOutlineChat, MdStickyNote2, MdOutlineSchool } from "react-icons/md";
+import { MdOutlineChat, MdStickyNote2, MdOutlineSchool, MdSubject } from "react-icons/md";
 import { FaChevronRight, FaRegUserCircle, FaDownload, FaLocationArrow } from "react-icons/fa";
 import { FiMail, FiPhone } from "react-icons/fi";
 import { IoChatboxEllipsesOutline, IoSettings } from "react-icons/io5";
@@ -14,6 +14,8 @@ import { box1 } from "@/assets";
 import { getBlogs } from "@/lib/api";
 import { servicedata } from "@/data/servicedata";
 import { createSlug } from "@/utils/slug";
+import InquiryForm from "../global/inquiryform";
+import { TbWorld } from "react-icons/tb";
 
 
 interface Blog {
@@ -45,8 +47,6 @@ const inputFields = [
   { name: "name", label: "Name", type: "text", icon: FaRegUserCircle, placeholder: "Your Name" },
   { name: "phone", label: "Phone", type: "tel", icon: FiPhone, placeholder: "Contact no." },
   { name: "email", label: "Email", type: "email", icon: FiMail, placeholder: "Your Email" },
-  { name: "location", label: "Location", type: "text", icon: FaLocationArrow, placeholder: "Country" },
-  { name: "subject", label: "Subject", type: "text", icon: IoChatboxEllipsesOutline, placeholder: "How can we help?" },
 ];
 
 
@@ -88,15 +88,13 @@ export default function BlogAside() {
   }
   function formatDate(dateStr: string) {
 
-    return new Date(dateStr).toLocaleDateString("en-IN", {
-
+    return new Date(dateStr).toLocaleDateString("en-IN", 
+    {
       day: "2-digit",
-
       month: "short",
-
       year: "numeric",
-
-    });
+    }
+  );
 
   }
   return (
@@ -105,141 +103,22 @@ export default function BlogAside() {
       {/* 1. Inquiry Form */}
       <SideCard title="Quick Inquiry" icon={<MdStickyNote2 size={14} />}>
 
-        <form className="p-4 flex flex-col gap-3">
-
-          <div className="grid grid-cols-2 gap-2.5">
-
-            {inputFields.slice(0, 4).map((f) => {
-
-              const Icon = f.icon;
-
-              return (
-
-                <div key={f.name}>
-
-                  <label className="block text-xs font-semibold uppercase tracking-[.08em] text-color3 my-2">
-
-                    {f.label}
-
-                  </label>
-
-                  <div className="relative">
-
-                    <Icon size={13} className="absolute left-2.5 top-1/2 -translate-y-1/2 text-color2 opacity-60 z-10" />
-
-                    <input
-
-                      type={f.type}
-
-                      name={f.name}
-
-                      placeholder={f.placeholder}
-
-                      className="w-full pl-7 pr-2.5 py-2 text-xs rounded-lg shadow text-color3 placeholder:text-slate-400 outline-none focus:border-color2 border"
-
-                    />
-
-                  </div>
-
-                </div>
-
-              );
-
-            })}
-
-          </div>
-
-
-
-          {inputFields.slice(4).map((f) => {
-
-            const Icon = f.icon;
-
-            return (
-
-              <div key={f.name}>
-
-                <label className="block text-xs font-semibold uppercase tracking-[.08em] text-color3 my-2">
-
-                  {f.label}
-
-                </label>
-
-                <div className="relative">
-
-                  <Icon size={13} className="absolute left-2.5 top-1/2 -translate-y-1/2 text-color2 opacity-60 z-10" />
-
-                  <input
-
-                    type={f.type}
-
-                    name={f.name}
-
-                    placeholder={f.placeholder}
-
-                    className="w-full pl-7 pr-2.5 py-2 text-xs rounded-lg border shadow text-color3 placeholder:text-slate-400 outline-none focus:border-color2"
-
-                  />
-
-                </div>
-
-              </div>
-
-            );
-
-          })}
-
-
-
-          <div>
-
-            <label className="block text-xs font-semibold uppercase tracking-[.08em] text-color3 mb-1.5">
-
-              Message
-
-            </label>
-
-            <div className="relative">
-
-              <MdOutlineChat size={13} className="absolute left-2.5 top-3 text-color2 opacity-60 z-10" />
-
-              <textarea
-
-                name="message"
-
-                rows={2}
-
-                placeholder="Tell us more about your inquiry..."
-
-                className="w-full pl-7 pr-2.5 py-2 text-xs rounded-lg border shadow text-color3 placeholder:text-slate-400 outline-none focus:border-color2 resize-none"
-
-              />
-
-            </div>
-
-          </div>
-
-
-
-          <button
-
-            type="submit"
-
-            className="self-start flex items-center gap-2 bg-color2 hover:bg-[#003070] text-white text-[12px] font-semibold uppercase tracking-[.04em] px-5 py-2.5 rounded-full transition-all duration-200 active:scale-95"
-
-          >
-
-            Submit Now
-
-            <span className="w-[18px] h-[18px] rounded-full bg-color4 flex items-center justify-center flex-shrink-0">
-
-              <BiRightArrowAlt size={12} className="text-color3" />
-
-            </span>
-
-          </button>
-
-        </form>
+       <InquiryForm
+  icons={{ name: FaRegUserCircle, phone: FiPhone, email: FiMail,country: TbWorld, subject: MdSubject, message: MdOutlineChat }}
+  buttonContent={<>Submit Now <span className="w-[18px] h-[18px] rounded-full bg-color4 flex items-center justify-center"><BiRightArrowAlt size={12} className="text-color3" /></span></>}
+  classNames={{
+    wrapper: "",
+    form: "p-4 flex flex-col gap-3",
+    grid: "grid grid-cols-2 gap-2.5",
+    label: "block text-xs font-semibold uppercase tracking-[.08em] text-color3 my-2",
+    inputWrap: "relative",
+icon: "absolute left-2.5 top-1/2 -translate-y-1/2 text-color2 opacity-60 z-10",
+  textareaIcon: "absolute left-2.5 top-2.5 text-color2 opacity-60 z-10", 
+      input: "w-full pl-7 pr-2.5 py-2 text-xs rounded-lg shadow text-color3 placeholder:text-slate-400 outline-none focus:border-color2 border",
+    textarea: "w-full pl-7 pr-2.5 py-2 text-xs rounded-lg border shadow text-color3 placeholder:text-slate-400 outline-none focus:border-color2 resize-none",
+    button: "self-start flex items-center gap-2 bg-color2 hover:bg-[#003070] text-white text-[12px] font-semibold uppercase tracking-[.04em] px-5 py-2.5 rounded-full transition-all duration-200 active:scale-95",
+  }}
+/>
 
       </SideCard>
 

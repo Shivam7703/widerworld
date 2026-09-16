@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation'; // Pathname hook import kiya
 import { FaWhatsapp, FaTimes } from 'react-icons/fa';
 import Image from "next/image";
 import { logo, pop } from '@/assets';
+import InquiryForm from './inquiryform';
 
 const WHATSAPP_NUMBER = '919999624998';
 const WHATSAPP_MESSAGE = "Hi WiderWorld! I'd like to know more about your Services.";
@@ -12,7 +13,7 @@ export default function Popups() {
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({
-    name: '', phone: '', email: '', country: 'canada', message: ''
+    name: '', phone: '', email: '', country: 'canada', subject: '', message: ''
   });
 
   const pathname = usePathname(); // Current route track karne ke liye
@@ -39,7 +40,7 @@ export default function Popups() {
     setTimeout(() => {
       setSubmitted(false);
       setIsFormOpen(false);
-      setForm({ name: '', phone: '', email: '', country: 'canada', message: '' });
+      setForm({ name: '', phone: '', email: '', country: 'canada', subject: '', message: '' });
     }, 2200);
   };
 
@@ -83,7 +84,6 @@ export default function Popups() {
                 <Image src={pop} alt="bg" fill className="object-contain object-bottom" />
               </div>
             </div>
-
             {/* Right Side */}
             <div className="w-full md:w-[60%] p-8 bg-gray-50">
               <button
@@ -93,96 +93,28 @@ export default function Popups() {
                 <FaTimes size={20} />
               </button>
 
-              {submitted ? (
-                <div className="h-full flex flex-col items-center justify-center text-center">
-                  <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4 text-2xl">
-                    ✓
-                  </div>
-                  <h3 className="text-xl font-medium">Request Sent!</h3>
-                  <p>Our Immigration Expert will contact you soon.</p>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-3 md:space-y-4">
-                  <div className="flex justify-between items-center">
-                    <h2 className="sm:text-2xl font-medium text-xl text-gray-800">Talk to our <br />Immigration Expert</h2>
-                    <Image src={logo} alt="logo" className="sm:w-28 w-16" />
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="space-y-1">
-                      <label className="text-sm font-medium text-zinc-800 uppercase">Name</label>
-                      <input
-                        name="name"
-                        value={form.name}
-                        required
-                        onChange={handleChange}
-                        className="text-sm w-full p-3 rounded-lg border border-gray-200 outline-none focus:ring-2 focus:ring-sky-200"
-                        placeholder="Your Name"
-                      />
-                    </div>
-                    <div className="space-y-1">
-                      <label className="text-sm font-medium text-zinc-800 uppercase">Phone</label>
-                      <input
-                        name="phone"
-                        value={form.phone}
-                        required
-                        onChange={handleChange}
-                        className="text-sm w-full p-3 rounded-lg border border-gray-200 outline-none focus:ring-2 focus:ring-sky-200"
-                        placeholder="Contact No."
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="space-y-1">
-                      <label className="text-sm font-medium text-zinc-800 uppercase">Email</label>
-                      <input
-                        name="email"
-                        value={form.email}
-                        required
-                        type="email"
-                        onChange={handleChange}
-                        className="text-sm w-full p-3 rounded-lg border border-gray-200 outline-none focus:ring-2 focus:ring-sky-200"
-                        placeholder="Your Email"
-                      />
-                    </div>
-                    <div className="space-y-1">
-                      <label className="text-sm font-medium text-zinc-800 uppercase">Country to Migrate</label>
-                      <select
-                        name="country"
-                        value={form.country}
-                        onChange={handleChange}
-                        className="text-sm w-full p-3 rounded-lg border border-gray-200 outline-none focus:ring-2 focus:ring-sky-200"
-                      >
-                        <option value="canada" className="text-zinc-500">Canada</option>
-                        <option value="australia" className="text-zinc-500">Australia</option>
-                        <option value="uk" className="text-zinc-500">UK</option>
-                        <option value="europe" className="text-zinc-500">Europe</option>
-                        <option value="uae" className="text-zinc-500">UAE</option>
-                        <option value="other" className="text-zinc-500">Other</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div className="space-y-1">
-                    <label className="text-sm font-medium text-zinc-800 uppercase">Message</label>
-                    <textarea
-                      name="message"
-                      value={form.message}
-                      rows={3}
-                      onChange={handleChange}
-                      className="text-sm w-full p-3 rounded-lg border border-gray-200 outline-none focus:ring-2 focus:ring-sky-200"
-                      placeholder="Write Your Query"
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full bg-gradient-to-r from-red-600 to-red-800 hover:from-blue-600 hover:to-blue-800 text-white font-medium py-3 rounded-lg transition-all shadow-lg"
-                  >
-                    Send Enquiry
-                  </button>
-                </form>
-              )}
+             <InquiryForm
+  header={{ title: <>Talk to our <br />Immigration Expert</>, logo }}
+  buttonContent="Send Enquiry"
+  classNames={{
+    wrapper: "",
+    header: "flex justify-between items-center mb-3",
+    title: "sm:text-2xl font-medium text-xl text-gray-800",
+    logo: "sm:w-28 w-16",
+    form: "space-y-3 md:space-y-4",
+    grid: "grid grid-cols-1 md:grid-cols-2 gap-4",
+    label: "text-sm font-medium text-zinc-800 uppercase",
+    inputWrap: "space-y-1",
+    input: "text-sm w-full p-3 rounded-lg border border-gray-200 outline-none focus:ring-2 focus:ring-sky-200",
+    textareaWrap: "space-y-1",
+    textarea: "text-sm w-full p-3 rounded-lg border border-gray-200 outline-none focus:ring-2 focus:ring-sky-200",
+    button: "w-full bg-gradient-to-r from-red-600 to-red-800 hover:from-blue-600 hover:to-blue-800 text-white font-medium py-3 rounded-lg transition-all shadow-lg",
+    successWrapper: "h-full flex flex-col items-center justify-center text-center",
+    successIcon: "w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4 text-2xl",
+    successTitle: "text-xl font-medium",
+    successText: "",
+  }}
+/>
             </div>
           </div>
         </div>

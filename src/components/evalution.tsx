@@ -3,20 +3,13 @@
 import React, { useState } from 'react'
 import {
   FaUser,
-  FaCalendarAlt,
   FaEnvelope,
   FaPhoneAlt,
-  FaBriefcase,
   FaRupeeSign,
   FaGlobeAmericas,
-  FaUserTie,
   FaHeart,
   FaGraduationCap,
-  FaClock,
-  FaPercentage,
   FaIdBadge,
-  FaHistory,
-  FaBuilding,
   FaPaperPlane,
   FaCommentAlt,
 } from 'react-icons/fa';
@@ -25,22 +18,13 @@ import { formimg } from '@/assets';
 
 const initialState = {
   name: '',
-  dob: '',
   email: '',
   contact: '',
-  experience: '',
   salary: '',
   country: '',
-  fatherName: '',
-  fatherOccupation: '',
   maritalStatus: '',
   qualification: '',
-  passingYear: '',
-  marks12: '',
-  marks10: '',
   currentDesignation: '',
-  previousDesignation: '',
-  previousCompany: '',
   message: '',
 }
 
@@ -62,17 +46,39 @@ const inputClass =
 function Page() {
   const [form, setForm] = useState(initialState)
   const [submitted, setSubmitted] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState('')
 
   const handleChange = (e: any) => {
     const { name, value } = e.target
     setForm((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault()
-    setSubmitted(true)
-    // TODO: wire this up to your API / email endpoint
-    console.log(form)
+    setError('')
+    setSending(true)
+
+    try {
+      const res = await fetch('/api/send-mail', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ formName: 'Evaluation Form', data: form }),
+      })
+
+      const data = await res.json()
+
+      if (!res.ok) {
+        throw new Error(data?.error || 'Something went wrong. Please try again.')
+      }
+
+      setSubmitted(true)
+      setForm(initialState)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Something went wrong.')
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -221,10 +227,15 @@ function Page() {
             <div className="sm:col-span-2 mt-2 flex flex-col items-center gap-3">
               <button
                 type="submit"
-                className="flex w-full items-center justify-center gap-2 rounded-xl bg-color2 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-color2/30 transition hover:bg-[#0a3450] active:scale-[0.99] sm:w-auto sm:px-10"
+                disabled={sending}
+                className="flex w-full items-center justify-center gap-2 rounded-xl bg-color2 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-color2/30 transition hover:bg-[#0a3450] active:scale-[0.99] disabled:opacity-60 sm:w-auto sm:px-10"
               >
-                Send <FaPaperPlane className="text-xs" />
+                {sending ? 'Sending...' : (<>Send <FaPaperPlane className="text-xs" /></>)}
               </button>
+
+              {error && (
+                <p className="text-sm font-medium text-red-600">{error}</p>
+              )}
 
               {submitted && (
                 <p className="text-sm font-medium text-emerald-600">
