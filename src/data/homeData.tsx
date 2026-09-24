@@ -263,7 +263,7 @@ export const aboutdata = {
   img1: about2,
   img2: about,
   title1: "ABOUT US",
-  title2: "Professional & Trusted Visa",
+  title2: "Registered & Trusted Visa",
   title3: "Consultants in Delhi",
   para:
     "We offer reliable, result-focused immigration solutions backed by expert knowledge, ethical practices, and a structured approach. Known for delivering dependable services, we assist individuals and families from visa planning to final submission, ensuring clarity, accuracy, and complete professional support throughout the entire process.",
@@ -345,13 +345,15 @@ export const visaSliderdata = {
       heading: "Work Visa",
       text:
         " Opportunities to work abroad with proper visa support and complete process guidance",
+        link:"canada-work-visa"
     },
     {
       id: 2,
       img: prvisa,
       heading: "PR Visa",
       text:
-        " Secure permanent residency with structured application support and accurate documentation assistance throughout",
+        "Secure permanent residency with structured application support and accurate documentation assistance throughout",
+      link:"canada-pr-visa"
     },
     {
       id: 3,
@@ -359,6 +361,8 @@ export const visaSliderdata = {
       heading: "Family Sponsorship Visa",
       text:
         " Reunite with your family abroad through reliable sponsorship visa application assistance and support",
+                link:"canada-spouse-visa/"
+
     },
     {
       id: 4,
@@ -366,6 +370,7 @@ export const visaSliderdata = {
       heading: "Business & Investor Visa",
       text:
         " Expand globally with business visa solutions and expert guidance for investment opportunities abroad",
+                link:"canada-business-visa"
     },
     {
       id: 5,
@@ -373,6 +378,7 @@ export const visaSliderdata = {
       heading: "Tourist/Visitor Visa",
       text:
         " Hassle-free travel visa assistance with proper documentation and smooth application processing support",
+                link:"canada-tourist-visa"
     },
   ],
 };

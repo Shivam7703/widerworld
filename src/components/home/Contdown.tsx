@@ -20,9 +20,9 @@ const stats = [
   {
     id: 1,
     icon: <FaUsers />,
-    suffix: "+",
+    suffix: "K+",
     title: "Clients Served",
-    Value: 10000,
+    Value: 10,
     desc: "Families and professionals guided through complex immigration processes worldwide.",
   },
   {

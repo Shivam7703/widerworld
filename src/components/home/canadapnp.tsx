@@ -10,17 +10,6 @@ export default function Canadapnp() {
   return (
     <section className="relative w-full overflow-hidden">
 
- {/* <Image
-          src={plane2}
-          alt="background"
-          className="absolute top-3 scale-x-[-1] left-4 md:w-80 w-64"
-        />
-
-        <Image
-          src={arrow}
-          alt="background"
-          className="absolute bottom-3 scale-x-[-1] right-0"
-        /> */}
       <div
         className="sm:p-12 md:p-16 lg:px-20 p-6"
       >

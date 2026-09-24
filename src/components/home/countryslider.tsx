@@ -92,7 +92,7 @@ export default function Countryslider({ data, uniqueId }: any) {
 
                   {/* Learn More */}
                   <Link
-                    href={"/services/"}
+                    href={card.link}
                     className="mt-6  items-center gap-4 
   px-4 py-2  flex justify-center  w-full
   rounded-2xl
