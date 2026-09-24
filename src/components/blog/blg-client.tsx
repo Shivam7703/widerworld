@@ -5,7 +5,7 @@ import Blogs from "@/components/home/blog";
 import { getBlogs } from "@/lib/api"; // Import kiya
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-export default function BlogPage() {
+export default function BlogClient() {
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   // const [total, setTotal] = useState(0);

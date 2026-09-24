@@ -88,13 +88,13 @@ export default function BlogAside() {
   }
   function formatDate(dateStr: string) {
 
-    return new Date(dateStr).toLocaleDateString("en-IN", 
-    {
-      day: "2-digit",
-      month: "short",
-      year: "numeric",
-    }
-  );
+    return new Date(dateStr).toLocaleDateString("en-IN",
+      {
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+      }
+    );
 
   }
   return (
@@ -103,22 +103,22 @@ export default function BlogAside() {
       {/* 1. Inquiry Form */}
       <SideCard title="Quick Inquiry" icon={<MdStickyNote2 size={14} />}>
 
-       <InquiryForm
-  icons={{ name: FaRegUserCircle, phone: FiPhone, email: FiMail,country: TbWorld, subject: MdSubject, message: MdOutlineChat }}
-  buttonContent={<>Submit Now <span className="w-[18px] h-[18px] rounded-full bg-color4 flex items-center justify-center"><BiRightArrowAlt size={12} className="text-color3" /></span></>}
-  classNames={{
-    wrapper: "",
-    form: "p-4 flex flex-col gap-3",
-    grid: "grid grid-cols-2 gap-2.5",
-    label: "block text-xs font-semibold uppercase tracking-[.08em] text-color3 my-2",
-    inputWrap: "relative",
-icon: "absolute left-2.5 top-1/2 -translate-y-1/2 text-color2 opacity-60 z-10",
-  textareaIcon: "absolute left-2.5 top-2.5 text-color2 opacity-60 z-10", 
-      input: "w-full pl-7 pr-2.5 py-2 text-xs rounded-lg shadow text-color3 placeholder:text-slate-400 outline-none focus:border-color2 border",
-    textarea: "w-full pl-7 pr-2.5 py-2 text-xs rounded-lg border shadow text-color3 placeholder:text-slate-400 outline-none focus:border-color2 resize-none",
-    button: "self-start flex items-center gap-2 bg-color2 hover:bg-[#003070] text-white text-[12px] font-semibold uppercase tracking-[.04em] px-5 py-2.5 rounded-full transition-all duration-200 active:scale-95",
-  }}
-/>
+        <InquiryForm
+          icons={{ name: FaRegUserCircle, phone: FiPhone, email: FiMail, country: TbWorld, subject: MdSubject, message: MdOutlineChat }}
+          buttonContent={<>Submit Now <span className="w-[18px] h-[18px] rounded-full bg-color4 flex items-center justify-center"><BiRightArrowAlt size={12} className="text-color3" /></span></>}
+          classNames={{
+            wrapper: "",
+            form: "p-4 flex flex-col gap-3",
+            grid: "grid grid-cols-2 gap-2.5",
+            label: "block text-xs font-semibold uppercase tracking-[.08em] text-color3 my-2",
+            inputWrap: "relative",
+            icon: "absolute left-2.5 top-1/2 -translate-y-1/2 text-color2 opacity-60 z-10",
+            textareaIcon: "absolute left-2.5 top-2.5 text-color2 opacity-60 z-10",
+            input: "w-full pl-7 pr-2.5 py-2 text-xs rounded-lg shadow text-color3 placeholder:text-slate-400 outline-none focus:border-color2 border",
+            textarea: "w-full pl-7 pr-2.5 py-2 text-xs rounded-lg border shadow text-color3 placeholder:text-slate-400 outline-none focus:border-color2 resize-none",
+            button: "self-start flex items-center gap-2 bg-color2 hover:bg-[#003070] text-white text-[12px] font-semibold uppercase tracking-[.04em] px-5 py-2.5 rounded-full transition-all duration-200 active:scale-95",
+          }}
+        />
 
       </SideCard>
 
@@ -203,7 +203,7 @@ icon: "absolute left-2.5 top-1/2 -translate-y-1/2 text-color2 opacity-60 z-10",
 
           <Link
 
-            href="/blogs"
+            href="/blog"
 
             className="self-center text-xs font-bold text-color2 hover:text-color1 transition-colors mt-1 flex items-center gap-1"
 

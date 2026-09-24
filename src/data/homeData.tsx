@@ -74,7 +74,7 @@ export const navigationMenu = {
       href: "#",
       subNav: [
         { id: 1, label: "News", href: "/news" },
-        { id: 2, label: "Blogs", href: "/blogs" },
+        { id: 2, label: "Blogs", href: "/blog" },
       ],
     },
 
@@ -250,12 +250,12 @@ export const sliderContent = [
 
   {
     id: 1, // Fix duplicate id issue by using unique ids
-    img: banner,    
+    img: banner,
   },
   {
     id: 2, // Fix duplicate id issue by using unique ids
     img: banner2,
-  
+
   },
 ];
 
@@ -475,7 +475,7 @@ export const canadapnp = {
       flag: usa,
       cat: "mbbs",
       heading: "USA",
-     
+
       text:
         "Global leader in education, innovation, and diverse career opportunities across industries",
       link: "/visa/usa-business-visa-b1/",
@@ -538,7 +538,7 @@ export const offercountry = {
       flag: canada,
       cat: "abroad",
       heading: "Study in Canada",
-    
+
       text: "High-quality education with post-study work and PR opportunities",
       link: "/contact-us/",
     },
@@ -548,7 +548,7 @@ export const offercountry = {
       flag: usa,
       cat: "abroad",
       heading: "Study in USA",
-    
+
       text: "Top universities with diverse courses and global career opportunities",
       link: "/contact-us/",
     },
@@ -585,7 +585,7 @@ export const offercountry = {
       flag: france,
       cat: "abroad",
       heading: "Study in France",
-       text: "Quality education with low fees and global career opportunities",
+      text: "Quality education with low fees and global career opportunities",
       link: "/contact-us/",
     },
     {
@@ -657,7 +657,7 @@ export const offercountry = {
       flag: bangladesh,
       cat: "mbbs",
       heading: "MBBS in Bangladesh",
-       text: "Similar syllabus to India with high FMGE passing rates",
+      text: "Similar syllabus to India with high FMGE passing rates",
       link: "/contact-us/",
     },
     {
@@ -738,7 +738,7 @@ export const offercountry = {
       flag: poland,
       cat: "mbbs",
       heading: "MBBS in Poland",
-     text: "European degree with high education standards and global opportunities",
+      text: "European degree with high education standards and global opportunities",
       link: "/contact-us/",
     },
     {
@@ -747,7 +747,7 @@ export const offercountry = {
       flag: germany,
       cat: "mbbs",
       heading: "MBBS in Germany",
-     text: "Low tuition fees with excellent medical education and exposure",
+      text: "Low tuition fees with excellent medical education and exposure",
       link: "/contact-us/",
     },
     {
@@ -833,7 +833,7 @@ export const footer = {
   list1: {
     title: "Resources",
     links: [
-      { id: 1, label: "Blogs", href: "/blogs" },
+      { id: 1, label: "Blogs", href: "/blog" },
       { id: 2, label: "News", href: "/news" },
       { id: 4, label: "Canada Calculator", href: "/visa/canada-67-points-calculator" },
       { id: 5, label: "Australia Calulator", href: "/visa/australia-points-calculator" },

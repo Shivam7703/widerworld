@@ -35,7 +35,7 @@ const Menu = ({ Isprimary, Items }: any) => {
 
   return (
     <ul
-      className={`hidden items-center lg:gap-x-0 md:gap-x-0 font-medium !max-w-max  md:flex`}
+      className={`hidden items-center lg:gap-x-0 md:gap-x-0 font-medium !max-w-max md:flex`}
     >
       {Items.map((item: any) => (
         <li key={item?.id} className="group relative transition-all">
