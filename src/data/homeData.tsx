@@ -18,6 +18,8 @@ import {
   cl9,
   cl2,
   cl3,
+  banner3,
+  banner4,
 } from "@/assets";
 import { FaGlobeAmericas, FaPlaneDeparture, FaUserTie } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
@@ -249,13 +251,20 @@ export const navigationMenu = {
 export const sliderContent = [
 
   {
-    id: 1, // Fix duplicate id issue by using unique ids
+    id: 1, 
     img: banner,
   },
   {
-    id: 2, // Fix duplicate id issue by using unique ids
+    id: 2, 
     img: banner2,
-
+  },
+  {
+    id: 3, 
+    img: banner3,
+  },
+  {
+    id: 4, 
+    img: banner4,
   },
 ];
 
