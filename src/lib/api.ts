@@ -1,28 +1,21 @@
 // src/lib/api.ts
 
-const getBaseUrl = () => {
-  if (process.env.NEXT_PUBLIC_SITE_URL) {
-    return process.env.NEXT_PUBLIC_SITE_URL;
-  }
-  return 'https://www.widerworld.in/';
-};
-
-const API_URL = `${getBaseUrl()}/api/blogs`;
+const BASE_URL = "https://widerworld.in";
 
 export async function getBlogs(page = 1, perPage = 12) {
   const res = await fetch(
-    `${API_URL}?page=${page}&per_page=${perPage}`,
+    `${BASE_URL}/api/blogs/?page=${page}&per_page=${perPage}`,
     { next: { revalidate: 3600 } }
   );
-  if (!res.ok) throw new Error('Failed to fetch blogs');
+  if (!res.ok) throw new Error(`Failed to fetch blogs (${res.status})`);
   return res.json();
 }
 
 export async function getBlog({ slug }: { slug: string }) {
   const res = await fetch(
-    `${API_URL}?slug=${slug}`,
+    `${BASE_URL}/api/blogs/?slug=${encodeURIComponent(slug)}`,
     { next: { revalidate: 3600 } }
   );
-  if (!res.ok) throw new Error('Failed to fetch blog');
+  if (!res.ok) throw new Error(`Failed to fetch blog (${res.status})`);
   return res.json();
 }

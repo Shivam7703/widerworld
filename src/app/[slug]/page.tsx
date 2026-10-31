@@ -1,51 +1,55 @@
 // app/[slug]/page.tsx
 
+import { cache } from "react";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { bann } from "@/assets";
 import Banner from "@/components/global/banner";
 import Blogdetails from "@/components/blog/blog-detail";
-// API functions import karein
 import { getBlog } from "@/lib/api";
 
-interface PageProps {
-  params: {
-    slug: string;
-  };
-}
+type PageProps = {
+  params: Promise<{ slug: string }>;
+};
 
-// SEO Meta Tags
-export async function generateMetadata({ params }: PageProps) {
-  // Yaha hum imported getBlog use kar rahe hain
-  const blog = await getBlog({ slug: params.slug });
+// Ek request mein sirf ek baar fetch hoga (metadata + page dono share karenge)
+const fetchBlog = cache(async (slug: string) => {
+  try {
+    const res = await getBlog({ slug });
+    const blog = Array.isArray(res)
+      ? res[0]
+      : Array.isArray(res?.data)
+      ? res.data[0]
+      : res?.data ?? res;
 
-  if (!blog || blog.error) return { title: "Blog Not Found" };
+    if (!blog || blog.error || !blog.post_title) return null;
+    return blog;
+  } catch (err) {
+    console.error("Blog fetch error:", err);
+    return null;
+  }
+});
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const blog = await fetchBlog(slug);
+
+  if (!blog) return { title: "Blog Not Found" };
 
   return {
     title: blog.post_title,
     description: blog.description || "",
     alternates: {
-      canonical: `https://www.widerworld.in/${blog.post_name}/`,
+      canonical: `https://widerworld.in/${blog.post_name}/`,
     },
   };
 }
 
-// Static paths
-// export async function generateStaticParams() {
-//   try {
-//     const API_URL = "https://widerworld.in/next-blog.php";
-//     const res = await fetch(`${API_URL}?per_page=200`);
-//     const json = await res.json();
-//     return (json.data || []).map((blog: any) => ({ slug: blog.post_name }));
-//   } catch {
-//     return [];
-//   }
-// }
-
 export default async function BlogPage({ params }: PageProps) {
-  // Yaha bhi imported getBlog use kar rahe hain
-  const blog = await getBlog({ slug: params.slug });
+  const { slug } = await params;
+  const blog = await fetchBlog(slug);
 
-  if (!blog || blog.error) notFound();
+  if (!blog) notFound();
 
   return (
     <main>

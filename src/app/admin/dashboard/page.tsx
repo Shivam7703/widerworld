@@ -221,7 +221,7 @@ export default function AdminDashboard() {
                     </td>
                     <td className="whitespace-nowrap px-4 py-3 text-right">
                       <a
-                        href={`/blog/${b.post_name}`}
+                        href={`/${b.post_name}`}
                         target="_blank"
                         rel="noreferrer"
                         className="mr-2 rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50"
