@@ -63,3 +63,6 @@ export default function AdminLogin() {
     </main>
   );
 }
+
+
+// "image:loc": "/wp-content/uploads/2026/04/What-is-the-Cost-of-Living-in-Ireland-for-Indians.webp"

@@ -4,7 +4,7 @@ const getBaseUrl = () => {
   if (process.env.NEXT_PUBLIC_SITE_URL) {
     return process.env.NEXT_PUBLIC_SITE_URL;
   }
-  return 'http://localhost:3000';
+  return 'https://www.widerworld.in/';
 };
 
 const API_URL = `${getBaseUrl()}/api/blogs`;
