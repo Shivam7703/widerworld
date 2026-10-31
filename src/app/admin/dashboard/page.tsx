@@ -137,7 +137,7 @@ export default function AdminDashboard() {
               <input
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder="Title ya slug search karo"
+                placeholder="search with title or slug"
                 className="w-56 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 outline-none focus:border-indigo-500"
               />
               <button
