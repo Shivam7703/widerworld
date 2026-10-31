@@ -53,9 +53,13 @@ export default function Blogs({ isHome, page = 1 }: Props) {
   // ... baaki functions aur JSX waisa hi rahega jaisa aapka tha
 
   function formatDate(dateStr: string) {
-    const d = new Date(dateStr);
-    return d.toLocaleDateString("en-IN", { day: "2-digit", month: "short" });
-  }
+  const d = new Date(dateStr);
+  return d.toLocaleDateString("en-IN", { 
+    day: "2-digit", 
+    month: "short", 
+    year: "numeric" 
+  });
+}
 
   function getImageUrl(images: Blog["images"]) {
     if (!images || images.length === 0) return null;
@@ -104,8 +108,7 @@ export default function Blogs({ isHome, page = 1 }: Props) {
       >
         {blogs.map((blog) => {
           const imageUrl = getImageUrl(blog.images);
-          const [day, month] = formatDate(blog.post_date).split(" ");
-
+const [day, month, year] = formatDate(blog.post_date).split(" ");
           return (
             <div
               key={blog.ID}
@@ -123,7 +126,7 @@ export default function Blogs({ isHome, page = 1 }: Props) {
                 <div className="absolute bottom-4 right-4 bg-color1 text-white text-center px-4 py-3 rounded-xl shadow-lg min-w-[52px]">
                   <p className="text-2xl font-black leading-none">{day}</p>
                   <p className="text-[10px] uppercase tracking-wider font-semibold mt-0.5">
-                    {month}
+                    {month}{" "}{year}
                   </p>
                 </div>
               </div>
