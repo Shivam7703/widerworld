@@ -115,15 +115,40 @@ export default function AdminDashboard() {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <header className="flex items-center justify-between bg-white px-6 py-4 shadow">
-        <h1 className="text-xl font-bold text-gray-900">Admin Dashboard</h1>
-        <button
-          onClick={logout}
-          className="rounded-lg bg-red-500 px-4 py-2 text-sm font-medium text-white hover:bg-red-600"
-        >
-          Logout
-        </button>
-      </header>
+
+<header className="relative overflow-hidden bg-gradient-to-r from-indigo-600 via-indigo-700 to-purple-700 px-6 py-8 shadow-lg md:py-12">
+  {/* decorative blur circles */}
+  <div className="pointer-events-none absolute -left-10 -top-10 h-40 w-40 rounded-full bg-white/10 blur-2xl" />
+  <div className="pointer-events-none absolute -bottom-12 right-20 h-48 w-48 rounded-full bg-purple-400/20 blur-3xl" />
+
+  <div className="relative mx-auto flex max-w-6xl items-center justify-between gap-4">
+    <div className="flex items-center gap-4">
+      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-2xl backdrop-blur md:h-14 md:w-14">
+        📝
+      </div>
+      <div>
+        <h1 className="text-xl font-bold tracking-tight text-white md:text-3xl">
+          Admin Dashboard
+        </h1>
+        <p className="mt-0.5 text-xs text-indigo-100 md:text-sm">
+          manage blogs here.
+        </p>
+      </div>
+    </div>
+
+    <button
+      onClick={logout}
+      className="flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur transition hover:bg-red-500 hover:border-red-500 active:scale-95"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
+        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+        <polyline points="16 17 21 12 16 7" />
+        <line x1="21" y1="12" x2="9" y2="12" />
+      </svg>
+      <span className="hidden sm:inline">Logout</span>
+    </button>
+  </div>
+</header>
 
       <main className="mx-auto max-w-6xl p-6">
         <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
