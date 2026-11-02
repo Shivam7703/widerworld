@@ -4,7 +4,7 @@ const BASE_URL = "https://widerworld.in";
 
 export async function getBlogs(page = 1, perPage = 12) {
   const res = await fetch(
-    `${BASE_URL}/api/blogs/?page=${page}&per_page=${perPage}`,
+    `/api/blogs/?page=${page}&per_page=${perPage}`,
     { next: { revalidate: 3600 } }
   );
   if (!res.ok) throw new Error(`Failed to fetch blogs (${res.status})`);
@@ -13,7 +13,7 @@ export async function getBlogs(page = 1, perPage = 12) {
 
 export async function getBlog({ slug }: { slug: string }) {
   const res = await fetch(
-    `${BASE_URL}/api/blogs/?slug=${encodeURIComponent(slug)}`,
+    `/api/blogs/?slug=${encodeURIComponent(slug)}`,
     { next: { revalidate: 3600 } }
   );
   if (!res.ok) throw new Error(`Failed to fetch blog (${res.status})`);
