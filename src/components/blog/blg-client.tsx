@@ -28,7 +28,7 @@ export default function BlogClient() {
       } catch (err: any) {
         if (cancelled) return;
         console.error("Blog fetch error:", err);
-        setError("Blogs load nahi ho paye. Please thodi der baad try karein.");
+        setError("Unable to load blogs. Please try again later.");
       } finally {
         if (!cancelled) setLoading(false);
       }
