@@ -212,7 +212,7 @@ const Header = ({ header }: any) => {
         <div className="flex md:hidden items-center justify-between px-4 h-20 transition bg-white shadow-md relative z-[101]">
           <Link href={header?.href || "/"}>
             <Image
-              src={logo}
+              src={logo3}
               alt="Globesway Immigration"
               className="h-12 w-auto object-contain"
             />
@@ -255,8 +255,8 @@ function PaymentButton() {
     <div className="flex items-center gap-4 flex-shrink-0">
       <Buttonmain href={"/contact-us/"} text2={"Get Support"} text1={"Contact Now"} />
 
-      <Link
-        href="/payment"
+      <a
+        href="https://u.payu.in/PAYUMN/mIwbLcwxy6xo"
         className="group relative flex items-center gap-3 px-8 py-4 rounded-full
   text-white font-semibold text-[15px] tracking-wide
   transition-all duration-300 hover:-translate-y-[2px] z-0"
@@ -284,7 +284,7 @@ function PaymentButton() {
         </span>
 
         <FaCreditCard className="text-[15px] text-color4 transition-all duration-300 group-hover:translate-x-1" />
-      </Link>
+      </a>
     </div>
   );
 }

@@ -55,7 +55,7 @@ export default async function BlogPage({ params }: PageProps) {
     <main>
       <Banner
         img={bann}
-        title={blog.post_title}
+        title={blog.post_title.slice(0, 50) + (blog.post_title.length > 50 ? "..." : "")}
         para={blog.description || ""}
         slug={`blogs/${blog.post_name}/`}
       />

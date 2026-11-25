@@ -18,7 +18,7 @@ export default function BlogAside() {
     async function loadLatestBlogs() {
       try {
         const res = await getBlogs(1); // Page 1 se data fetch kiya
-        setBlogs(res.data?.slice(0, 12) || []); // Sirf top 3 blogs
+        setBlogs(res.data?.slice(0, 6) || []); // Sirf top 6 blogs
       } catch (err) {
         console.error("Failed to load latest blogs:", err);
       }
