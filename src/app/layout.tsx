@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Script from 'next/script';
+
 import Header from "@/components/header/Header";
 import Footer from "@/components/Footer";
 import { footer } from "@/data/homeData";
@@ -22,6 +24,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+       <head>
+       <Script async  src="https://www.googletagmanager.com/gtm.js?id=GTM-PQTK9HT" strategy="beforeInteractive"></Script>
+        <Script strategy="beforeInteractive">
+          {`
+              window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+          `}
+        </Script></head>
+
       <body className={` relative`}>
         <Header />
             {children}
